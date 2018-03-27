@@ -12,7 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('pages.index');
+});
+
+Route::get('/listings-grid', function () {
+    return view('pages.listings-grid');
 });
 
 Auth::routes();
