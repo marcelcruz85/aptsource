@@ -49,14 +49,6 @@
                 @yield ('content')
             </section>
 
-            <section class="section submit-ticker">            
-                @yield ('submit-ticker')
-            </section>
-
-            <section class="section info-box">
-                @yield ('info-box')
-            </section>
-
         <footer id="footer">
             @include ('components.footer')
         </footer>

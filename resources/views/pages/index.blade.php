@@ -379,15 +379,15 @@
             </div>
         </div>
     </div>
-@endsection
 
-@section ('submit-ticker')
+<section class="section submit-ticker"> 
 <p>Are you looking to sell your valuable property or rent out? Roost is your destination!</p>
 
 <a href="submit-property.html">Submit your property</a>
-@endsection
+</section>
 
-@section ('info-box')
+
+<section class="section info-box">
 <div class="container">
         <div class="row">
             <div class="col-sm-4">
@@ -451,4 +451,5 @@
             </div>
         </div>
     </div>
+</section>
 @endsection
