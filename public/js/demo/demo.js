@@ -19,11 +19,11 @@ if ($('#property-price-range')[0]) {
     ]
 
     noUiSlider.create (propertyPriceRange, {
-        start: [12000, 70000],
+        start: [0, 5000],
         connect: true,
         range: {
-            'min': 12000,
-            'max': 70000
+            'min': 0,
+            'max': 5000
         }
     });
 
