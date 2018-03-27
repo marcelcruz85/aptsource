@@ -42,10 +42,10 @@ if ($('#property-area-range')[0]) {
     ]
 
     noUiSlider.create (propertyAreaRange, {
-        start: [3500, 10000],
+        start: [0, 10000],
         connect: true,
         range: {
-            'min': 3500,
+            'min': 0,
             'max': 10000
         }
     });

@@ -79,7 +79,7 @@
                                     <input type="checkbox" name="advanced-search-beds" id="bed1">1
                                 </label>
                                 <label class="btn active">
-                                    <input type="checkbox" name="advanced-search-beds" id="bed2" checked>2
+                                    <input type="checkbox" name="advanced-search-beds" id="bed2">2
                                 </label>
                                 <label class="btn">
                                     <input type="checkbox" name="advanced-search-beds" id="bed3">3
@@ -99,7 +99,7 @@
                             <label>Bathrooms</label>
                             <div class="btn-group btn-group-justified" data-toggle="buttons">
                                 <label class="btn active">
-                                    <input type="checkbox" name="advanced-search-baths" id="bath1" checked>1
+                                    <input type="checkbox" name="advanced-search-baths" id="bath1">1
                                 </label>
                                 <label class="btn">
                                     <input type="checkbox" name="advanced-search-baths" id="bath2">2

@@ -51,10 +51,7 @@
             <div class="footer__block">
                 <div class="footer__title">Disclaimer</div>
 
-                <div>Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor
-                    ligula, eget lacinia odio sem nec elit. Donec sed odio dui. Maecenas sed diam eget risus varius blandit
-                    sit amet non magna. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</div>
+                <div>The Apartment Source, located in the heart of Lincoln Park, has successfully been serving Chicagoans for 20 years.  With a full staff of dedicated, friendly and professional Leasing Agents, it is our goal to seek out and find our clients the perfect apartment. We have established great working relationships with many management companies in Chicago, as well as private owners..</div>
             </div>
         </div>
     </div>
