@@ -3,7 +3,7 @@
     <form>
         <div class="search">
             <div class="search__type dropdown">
-                <a href="" data-toggle="dropdown"><i class="zmdi zmdi-hc-lg zmdi-search"></i>RENT</a>
+                <a href="" data-toggle="dropdown">SEARCH</a>
 
                 <div class="dropdown-menu not-show">
 {{--                     <div>
