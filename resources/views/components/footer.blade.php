@@ -4,17 +4,17 @@
             <div class="footer__block">
                 <a class="logo clearfix" href="">
                     <div class="logo__text">
-                        <span>Roost</span>
-                        <span>Material Design Real Estate</span>
+                        <span>The Apartment</span>
+                        <span>Source</span>
                     </div>
                 </a>
 
                 <address class="m-t-20 m-b-20 f-14">
-                    44-46 Morningside Road, Edinburgh, Scotland
+                        2638 N. Halsted Street Chicago, IL 60614
                 </address>
 
-                <div class="f-20">0062-345678910</div>
-                <div class="f-14 m-t-5">hello@Roost.com / info@Roost.com</div>
+                <div class="f-20">773-404-9900</div>
+                <div class="f-14 m-t-5">info@apartmentsourcechicago.com</div>
 
                 <div class="f-20 m-t-20">
                     <a href="" class="m-r-10">
@@ -29,7 +29,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-4">
+        {{--  <div class="col-sm-4">
             <div class="footer__block footer__block--blog">
                 <div class="footer__title">Latest from our blog</div>
 
@@ -46,7 +46,7 @@
                     <small>On 2016/06/10 at 12:59 PM</small>
                 </a>
             </div>
-        </div>
+        </div>  --}}
         <div class="col-sm-4">
             <div class="footer__block">
                 <div class="footer__title">Disclaimer</div>
@@ -59,7 +59,7 @@
 
 <div class="footer__bottom">
     <div class="container">
-        <span class="footer__copyright">© Roost Real Estates</span>
+        <span class="footer__copyright">© Dotgital</span>
 
         <a href="">About Us</a>
         <a href="">Terms & Conditions</a>
