@@ -3,9 +3,9 @@
     <form>
         <div class="search">
             <div class="search__type dropdown">
-                <a href="" data-toggle="dropdown"><i class="zmdi zmdi-hc-lg zmdi-search"></i></a>
+                <a href="" data-toggle="dropdown"><i class="zmdi zmdi-hc-lg zmdi-search"></i>RENT</a>
 
-                <div class="dropdown-menu">
+                <div class="dropdown-menu not-show">
 {{--                     <div>
                         <input type="radio" name="property-type" value="rent">
                         <span>Rent</span>
