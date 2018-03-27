@@ -1,6 +1,6 @@
 <div class="header__main">
     <div class="container">
-        <a class="logo" href="index.html">
+        <a class="logo" href="/">
             <img src="img/logo.png" alt="">
             <div class="logo__text">
                 <span>The Apartment</span>
@@ -20,7 +20,7 @@
             </li>
 
             <li class="active navigation__dropdown">
-                <a href="index.html">Home</a>
+                <a href="/">Home</a>
             </li>
 
             <li class="navigation__dropdown">
