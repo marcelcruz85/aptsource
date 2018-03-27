@@ -42,6 +42,7 @@
             @include ('components.main-header')
             
             @yield ('search')
+            @yield ('action-header')
                         
         </header>
 
