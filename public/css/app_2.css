@@ -357,7 +357,7 @@
 .search__type > a {
   background-color: #FFEB3B;
   height: 100%;
-  padding: 17px 0 0 19px;
+  padding: 17px 0 0 12px;
   text-transform: uppercase;
   font-weight: 500;
   border-radius: 2px 0 0 2px;
@@ -371,7 +371,9 @@
   color: #3e3e3e;
   font-size: 13px;
 }
-
+.search__type > .not-show {
+  display: none;
+}
 .search__type.open > a {
   border-radius: 2px 0 0 0;
 }

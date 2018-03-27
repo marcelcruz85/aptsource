@@ -22,8 +22,8 @@
         <link rel="stylesheet" href="vendors/bower_components/nouislider/distribute/nouislider.min.css">
 
         <!-- Site -->
-        <link rel="stylesheet" href="css/app_1.min.css">
-        <link rel="stylesheet" href="css/app_2.min.css">
+        <link rel="stylesheet" href="css/app_1.css">
+        <link rel="stylesheet" href="css/app_2.css">
 
         <!-- Page Loader JS -->
         <script src="js/page-loader.min.js" async></script>
