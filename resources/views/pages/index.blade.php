@@ -379,7 +379,7 @@
             </div>
         </div>
     </div>
-
+</section>
 <section class="section submit-ticker"> 
 <p>Are you looking to sell your valuable property or rent out? Roost is your destination!</p>
 
