@@ -59,7 +59,7 @@
 
 <div class="footer__bottom">
     <div class="container">
-        <span class="footer__copyright">© Dotgital</span>
+        <span class="footer__copyright">© Copyright The Apartment Source 2018 - Powered by Dotgital</span>
 
         <a href="">About Us</a>
         <a href="">Terms & Conditions</a>
