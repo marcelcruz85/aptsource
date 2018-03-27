@@ -8,12 +8,12 @@
                 <div class="dropdown-menu">
                     <div>
                         <input type="radio" name="property-type" value="rent">
-                        <span>Rent</span>
+                        <span><i class="zmdi zmdi-search"></i></span>
                     </div>
-                    <div>
+{{--                      <div>
                         <input type="radio" name="property-type" value="buy">
                         <span>Buy</span>
-                    </div>
+                    </div>  --}}
                 </div>
             </div>
 
