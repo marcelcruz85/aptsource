@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Roost - Material Design Real Estate</title>
+        <title>{{ config('app.name', 'Laravel') }}</title>
 
         <!-- Vendors -->
 
@@ -296,142 +296,16 @@
             </div>
         </section>
 
-        <section class="section submit-ticker">
-            <p>Are you looking to sell your valuable property or rent out? Roost is your destination!</p>
-
-            <a href="submit-property.html">Submit your property</a>
+        <section class="section submit-ticker">            
+            @include ('components.submit-ticker')
         </section>
 
         <section class="section info-box">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="info-box__item">
-                            <i class="zmdi zmdi-trending-up info-box__icon"></i>
-
-                            <h3>Sed posuere consectetur</h3>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4">
-                        <div class="info-box__item">
-                            <i class="zmdi zmdi-search info-box__icon"></i>
-
-                            <h3>Donec ullamcorper nulla</h3>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4">
-                        <div class="info-box__item">
-                            <i class="zmdi zmdi-globe info-box__icon"></i>
-
-                            <h3>Integer posuere erat</h3>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4">
-                        <div class="info-box__item">
-                            <i class="zmdi zmdi-flower info-box__icon"></i>
-
-                            <h3>Nulla vitae elit</h3>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4">
-                        <div class="info-box__item">
-                            <i class="zmdi zmdi-pin info-box__icon"></i>
-
-                            <h3>Libero pharetra augue</h3>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-4">
-                        <div class="info-box__item">
-                            <i class="zmdi zmdi-sun info-box__icon"></i>
-
-                            <h3>Aenean lacinia bibendum</h3>
-                            <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @include ('components.info-box')
         </section>
 
         <footer id="footer">
-            <div class="container hidden-xs">
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="footer__block">
-                            <a class="logo clearfix" href="">
-                                <div class="logo__text">
-                                    <span>Roost</span>
-                                    <span>Material Design Real Estate</span>
-                                </div>
-                            </a>
-
-                            <address class="m-t-20 m-b-20 f-14">
-                                44-46 Morningside Road,
-                                Edinburgh, Scotland
-                            </address>
-
-                            <div class="f-20">0062-345678910</div>
-                            <div class="f-14 m-t-5">hello@Roost.com / info@Roost.com</div>
-
-                            <div class="f-20 m-t-20">
-                                <a href="" class="m-r-10"><i class="zmdi zmdi-google"></i></a>
-                                <a href="" class="m-r-10"><i class="zmdi zmdi-facebook"></i></a>
-                                <a href=""><i class="zmdi zmdi-twitter"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="footer__block footer__block--blog">
-                            <div class="footer__title">Latest from our blog</div>
-
-                            <a href="">
-                                Aenean lacinia bibendum nulla sed
-                                <small>On 2016/06/20 at 6:00 PM</small>
-                            </a>
-                            <a href="">
-                                Vestibulum id ligula porta felis euismod semper
-                                <small>On 2016/06/18 at 7:12 PM</small>
-                            </a>
-                            <a href="">
-                                Etiam porta sem malesuada magna mollis euismod
-                                <small>On 2016/06/10 at 12:59 PM</small>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="footer__block">
-                            <div class="footer__title">Disclaimer</div>
-
-                            <div>Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec sed odio dui. Maecenas sed diam eget risus varius blandit sit amet non magna. Sed posuere consectetur est at lobortis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer__bottom">
-                <div class="container">
-                    <span class="footer__copyright">© Roost Real Estates</span>
-
-                    <a href="">About Us</a>
-                    <a href="">Terms & Conditions</a>
-                    <a href="">Privacy Policy</a>
-                    <a href="">Careers</a>
-                    <a href="">Agent Login</a>
-                </div>
-
-                <div class="footer__to-top" data-rmd-action="scroll-to" data-rmd-target="html">
-                    <i class="zmdi zmdi-chevron-up"></i>
-                </div>
-            </div>
+            @include ('components.footer')
         </footer>
 
         <!-- Older IE warning message -->
