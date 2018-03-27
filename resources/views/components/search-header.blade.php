@@ -3,19 +3,19 @@
     <form>
         <div class="search">
             <div class="search__type dropdown">
-                <a href="" data-toggle="dropdown"><i class="zmdi zmdi-search"></i></a>
+                <a href="" data-toggle="dropdown"><i class="zmdi zmdi-hc-2x zmdi-search"></i></a>
 
-                <div class="dropdown-menu">
- {{--                   <div>
+ {{--               <div class="dropdown-menu">
+                    <div>
                         <input type="radio" name="property-type" value="rent">
                         <span>Rent</span>
                     </div>
                       <div>
                         <input type="radio" name="property-type" value="buy">
                         <span>Buy</span>
-                    </div>  --}}
+                    </div>  
                 </div>
-            </div>
+            </div>--}}
 
             <div class="search__body">
                 <input type="text" class="form-control search__input" placeholder="Enter any Neighorhood, Feature, Zip Code" data-rmd-action="advanced-search-open">
