@@ -3,14 +3,14 @@
     <form>
         <div class="search">
             <div class="search__type dropdown">
-                <a href="" data-toggle="dropdown">Rent</a>
+                <a href="" data-toggle="dropdown"><i class="zmdi zmdi-search"></i></a>
 
                 <div class="dropdown-menu">
-                    <div>
+ {{--                   <div>
                         <input type="radio" name="property-type" value="rent">
-                        <span><i class="zmdi zmdi-search"></i></span>
+                        <span>Rent</span>
                     </div>
-{{--                      <div>
+                      <div>
                         <input type="radio" name="property-type" value="buy">
                         <span>Buy</span>
                     </div>  --}}
