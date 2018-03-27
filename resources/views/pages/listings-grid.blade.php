@@ -1,8 +1,8 @@
 @extends ('layout')
 
-@include ('components.action-header')
-
 @section ('content')
+
+@include ('components.action-header')
 
 <div class="container">
         <header class="section__title">
