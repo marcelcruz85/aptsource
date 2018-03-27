@@ -42,10 +42,10 @@
             @include ('components.main-header')
             
             @yield ('search')
-            @yield ('action-header')
                         
         </header>
 
+            @yield ('action-header')
             <section class="section">
                 @yield ('content')
             </section>
