@@ -33,12 +33,6 @@
                     <li>
                         <a href="listings-list.html">List view</a>
                     </li>
-                    <li>
-                        <a href="listings-map.html">Map view</a>
-                    </li>
-                    <li>
-                        <a href="listing-detail.html">Listing Detail</a>
-                    </li>
                 </ul>
             </li>
 
@@ -46,79 +40,15 @@
             <li>
                 <a href="submit-property.html">Submit</a>
             </li>
-
-            <li class="navigation__dropdown">
-                <a href="mortgage.html">Mortgages</a>
-
-                <ul class="navigation__drop-menu">
-                    <li>
-                        <a href="mortgage-detail.html">Mortgage Detail</a>
-                    </li>
-                    <li>
-                        <a href="mortgage-detail-reviews.html">Mortgage Reviews</a>
-                    </li>
-                    <li>
-                        <a href="mortgage-detail-disclaimer.html">Mortgage Disclaimer</a>
-                    </li>
-                </ul>
-            </li>
-
-            <li class="navigation__dropdown">
-                <a href="agents.html">Agents</a>
-
-                <ul class="navigation__drop-menu">
-                    <li>
-                        <a href="agent-detail.html">Agent Detail</a>
-                    </li>
-                    <li>
-                        <a href="agent-detail-properties.html">Agent Properties</a>
-                    </li>
-                    <li>
-                        <a href="agent-detail-reviews.html">Agent Reviews</a>
-                    </li>
-                </ul>
+            
+            <li>
+                <a href="faq.html">FAQ</a>
             </li>
 
             <li>
                 <a href="contact.html">Contact</a>
             </li>
 
-            <li class="navigation__dropdown">
-                <a href="" class="prevent-default">More</a>
-
-                <ul class="navigation__drop-menu navigation__drop-menu--right">
-                    <li>
-                        <a href="profile.html">Profile Private</a>
-                    </li>
-                    <li>
-                        <a href="profile-public.html">Profile Public</a>
-                    </li>
-                    <li>
-                        <a href="blog.html">Blog</a>
-                    </li>
-                    <li>
-                        <a href="blog-details.html">Blog Detail</a>
-                    </li>
-                    <li>
-                        <a href="neighborhood-guide.html">Neighborhood Guide</a>
-                    </li>
-                    <li>
-                        <a href="faq.html">FAQ</a>
-                    </li>
-                    <li>
-                        <a href="team.html">Team</a>
-                    </li>
-                    <li>
-                        <a href="email/listing-mail.html">Email Template</a>
-                    </li>
-                    <li>
-                        <a href="404.html">Error - 404</a>
-                    </li>
-                    <li>
-                        <a href="empty-page.html">Empty Page</a>
-                    </li>
-                </ul>
-            </li>
         </ul>
     </div>
 </div>
