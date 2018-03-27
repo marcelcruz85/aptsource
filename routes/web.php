@@ -15,6 +15,10 @@ Route::get('/', function () {
     return view('pages.index');
 });
 
+Route::get('/listings-grid', function () {
+    return view('pages.listings-grid');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
