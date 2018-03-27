@@ -3,8 +3,8 @@
         <a class="logo" href="index.html">
             <img src="img/logo.png" alt="">
             <div class="logo__text">
-                <span>Roost</span>
-                <span>Material Design Real Estate</span>
+                <span>The Apartment</span>
+                <span>Source</span>
             </div>
         </a>
 
@@ -21,18 +21,6 @@
 
             <li class="active navigation__dropdown">
                 <a href="index.html">Home</a>
-
-                <ul class="navigation__drop-menu">
-                    <li>
-                        <a href="after-login.html">After Login</a>
-                    </li>
-                    <li class="active">
-                        <a href="home-alternative.html">Home Alternative</a>
-                    </li>
-                    <li>
-                        <a href="dashboard/index.html">Dashboard</a>
-                    </li>
-                </ul>
             </li>
 
             <li class="navigation__dropdown">
