@@ -33,8 +33,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/dev', function () {
 
     $client = new GuzzleHttp\Client();
-    $output = $client->get('https://www.yougotlistings.com/api/rentals/search.php', ['key' =>  'bVrLNhG2U1aFCKuix97RdsQyIfEnXPpl8jcSvzZO']);
-
+    $res = $client->get('https://www.yougotlistings.com/api/rentals/search.php', ['key' =>  'bVrLNhG2U1aFCKuix97RdsQyIfEnXPpl8jcSvzZO']);
+    $output = $res->getStatusCode();
 
     return view('pages.dev', [
         'output' => $output
