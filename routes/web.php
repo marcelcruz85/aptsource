@@ -19,6 +19,10 @@ Route::get('/listings-grid', function () {
     return view('pages.listings-grid');
 });
 
+Route::get('/listings-list', function () {
+    return view('pages.listings-list');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
