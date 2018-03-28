@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Roost - Material Design Real Estate</title>
+        <title>The Apoitment Source</title>
 
         <!-- Vendors -->
 
@@ -16,8 +16,8 @@
         <link rel="stylesheet" href="vendors/bower_components/animate.css/animate.min.css">
 
         <!-- Site -->
-        <link rel="stylesheet" href="css/app_1.min.css">
-        <link rel="stylesheet" href="css/app_2.min.css">
+        <link rel="stylesheet" href="css/app_1.css">
+        <link rel="stylesheet" href="css/app_2.css">
     </head>
 
     <body>
