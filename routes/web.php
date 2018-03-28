@@ -26,3 +26,12 @@ Route::get('/listings-list', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+/*   testing development */
+
+Route::get('/dev', function () {
+    return view('pages.dev', [
+        'output' => 'testing testing'
+    ]);
+});
