@@ -1,4 +1,6 @@
-@extends ('layout') @section ('action-header')
+@extends ('layout') 
+
+@section ('action-header')
 
 <div class="action-header">
     <div class="container">
@@ -32,7 +34,9 @@
     </div>
 </div>
 
-@endsection @section ('content')
+@endsection 
+
+@section ('content')
 
 <div class="container">
     <header class="section__title">
@@ -626,71 +630,6 @@
         </div>
 
         <aside class="col-sm-4 hidden-xs">
-            <div class="card">
-                <div class="card__header">
-                    <h2>Properties near your location</h2>
-                    <small>Cras mattis consectetur purus sitamet fermentum</small>
-                </div>
-
-                <div class="map-widget">
-                    <div id="nearby-properties" class="map-widget__item"></div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card__header">
-                    <h2>Talk to an Agent</h2>
-                    <small>Nullam dolorid nibh ultricies vehicula elit</small>
-                </div>
-                <div class="list-group">
-                    <a class="list-group-item media" href="">
-                        <div class="pull-left">
-                            <img src="https://placeholdit.imgix.net/~text?&w=500&h=500" alt="" class="list-group__img img-circle" width="65" height="65">
-                        </div>
-                        <div class="media-body list-group__text">
-                            <strong>Sarah Zelermyer Diaz</strong>
-                            <small class="list-group__text">+1-202-555-0121</small>
-                            <div class="rmd-rate" data-rate-value="5" data-rate-readonly="true"></div>
-                        </div>
-                    </a>
-
-                    <a class="list-group-item media" href="">
-                        <div class="pull-left">
-                            <img src="https://placeholdit.imgix.net/~text?&w=500&h=500" alt="" class="list-group__img img-circle" width="65" height="65">
-                        </div>
-                        <div class="media-body list-group__text">
-                            <strong>Malinda Hollaway</strong>
-                            <small class="list-group__text">+1-202-555-0188</small>
-                            <div class="rmd-rate" data-rate-value="5" data-rate-readonly="true"></div>
-                        </div>
-                    </a>
-
-                    <a class="list-group-item media" href="">
-                        <div class="pull-left">
-                            <img src="https://placeholdit.imgix.net/~text?&w=500&h=500" alt="" class="list-group__img img-circle" width="65" height="65">
-                        </div>
-                        <div class="media-body list-group__text">
-                            <strong>Dave Williams Jr.</strong>
-                            <small class="list-group__text">+1-202-555-0132</small>
-                            <div class="rmd-rate" data-rate-value="5" data-rate-readonly="true"></div>
-                        </div>
-                    </a>
-
-                    <a class="list-group-item media" href="">
-                        <div class="pull-left">
-                            <img src="https://placeholdit.imgix.net/~text?&w=500&h=500" alt="" class="list-group__img img-circle" width="65" height="65">
-                        </div>
-                        <div class="media-body list-group__text">
-                            <strong>Stephen Franklin</strong>
-                            <small class="list-group__text">+1-202-555-0141</small>
-                            <div class="rmd-rate" data-rate-value="5" data-rate-readonly="true"></div>
-                        </div>
-                    </a>
-
-                    <a href="" class="view-more">View all Agents</a>
-                </div>
-            </div>
-
             <div class="card subscribe mdc-bg-light-blue">
                 <div class="subscribe__icon">
                     <i class="zmdi zmdi-email"></i>
