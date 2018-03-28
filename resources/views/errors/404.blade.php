@@ -24,11 +24,10 @@
         <section id="main" class="four-zero">
             <div class="four-zero__content">
                 <h1>404</h1>
-                <p>Nullam quis risus eget urna mollis ornare vel eu leo. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vestibulum id ligula porta felis euismod semper</p>
+                <p>Sorry, the page you are looking for could not be found</p>
 
                 <div class="four-zero__links">
-                    <a href="">Home page</a>
-                    <a href="">Previous page</a>
+                    <a href="/">Home page</a>
                 </div>
             </div>
         </section>
