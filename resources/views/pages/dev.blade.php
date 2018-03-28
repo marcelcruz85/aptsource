@@ -5,7 +5,7 @@
     <body>
         <h1>Output</h1>
         <div>
-            {{output}}
+            {{ $output }}
         </div>
     </body>
 </html>
