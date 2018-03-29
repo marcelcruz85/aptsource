@@ -9,7 +9,11 @@
     <div>
         
 
-        {{ dd($output->Listings) }}
+        {{ $total }}
+
+        @foreach ($listings as $listing)
+            {{ $listing->ID }}
+        @endforeach
     </div>
 </body>
 
