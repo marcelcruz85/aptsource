@@ -15,6 +15,8 @@
         @foreach($listings as $listing => $value) 
             {{ $listing }}
         @endforeach
+
+        {{ dd($listings) }}
     </div>
 </body>
 
