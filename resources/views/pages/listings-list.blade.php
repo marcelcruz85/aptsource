@@ -57,7 +57,7 @@
 
                     <div class="media-body">
                         <div class="listings-grid__body">
-                            <small>304 East Wenatchee, WA 98801</small>
+                            <small>{{ $listing->StreetNumber }} {{ $listing->StreetName }} {{ $listing->City }}, {{ $listing->State }}{{ $listing->Zip }}</small>
                             <h5>Nullam iddolor idnibh ultricies vehicula</h5>
                         </div>
                         <ul class="listings-grid__attrs">
