@@ -20,6 +20,7 @@ class ListingController extends Controller
         return view('pages.listings-list', [
             'total' => $response->Total,
             'listings' => $response->Listings->Listing,
+            'picture' => $listings->Photos,
         ]);
     }
 }
