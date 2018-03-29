@@ -7,7 +7,7 @@ use GuzzleHttp\Client;
 
 class ListingController extends Controller
 {
-    public function index($criteria)
+    public function index()
     {
         $client = new Client();
         $res = $client->request('POST', 'https://www.yougotlistings.com/api/rentals/search.php?key=bVrLNhG2U1aFCKuix97RdsQyIfEnXPpl8jcSvzZO&listing_id=' . $criteria);

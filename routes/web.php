@@ -30,4 +30,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 /*   testing development */
 
-Route::get('/dev/{criteria}', 'ListingController@index');
+Route::get('/listings-grid', 'ListingController@index');
