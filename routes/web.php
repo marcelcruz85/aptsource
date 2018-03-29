@@ -30,14 +30,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 /*   testing development */
 
-Route::get('/dev', function () {
-
-    $client = new GuzzleHttp\Client();
-    $res = $client->request('POST', 'https://www.yougotlistings.com/api/rentals/search.php?key=bVrLNhG2U1aFCKuix97RdsQyIfEnXPpl8jcSvzZO');
-    // $output = $res->getStatusCode();
-    $output = $res->getBody('SubTotal');
-
-    return view('pages.dev', [
-        'output' => $output
-    ]);
-});
+Route::get('/dev/{criteria}', 'ListingController@index');
