@@ -51,13 +51,13 @@
             <div class="listings-grid__item">
                 <a href="listing-detail.html" class="media">
                     <div class="listings-grid__main pull-left">
-                        <img src="https://placeholdit.imgix.net/~text?&w=400&h=266" alt="">
+                        <img src={{ $listing->Photos->Photo }} alt="">
                         <div class="listings-grid__price">{{ $listing->Price }}</div>
                     </div>
 
                     <div class="media-body">
                         <div class="listings-grid__body">
-                            <small>{{ $listing->StreetNumber }} {{ $listing->StreetName }} {{ $listing->City }}, {{ $listing->State }}{{ $listing->Zip }}</small>
+                            <small>{{ $listing->StreetNumber }} {{ $listing->StreetName }} {{ $listing->City }}, {{ $listing->State }} {{ $listing->Zip }}</small>
                             <h5>Nullam iddolor idnibh ultricies vehicula</h5>
                         </div>
                         <ul class="listings-grid__attrs">
