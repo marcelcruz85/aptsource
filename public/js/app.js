@@ -488,3 +488,10 @@ $(document).ready(function () {
         $('input, textarea').placeholder();
     }
 });
+
+/*----------------------------------------------
+    LISTING FORMAT
+------------------------------------------------*/
+$(document).ready(function () {
+    $('.listings-grid__price').addClass('testing');
+});

@@ -120,7 +120,7 @@
         <![endif]-->
 
     <!-- Site functions and actions -->
-    <script src="js/app.min.js"></script>
+    <script src="js/app.js"></script>
 
     <!-- Demo only -->
     <script src="js/demo/demo.js"></script>
