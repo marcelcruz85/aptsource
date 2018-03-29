@@ -10,7 +10,7 @@ class ListingController extends Controller
     public function index()
     {
         $client = new Client();
-        $res = $client->request('POST', 'https://www.yougotlistings.com/api/rentals/search.php?key=bVrLNhG2U1aFCKuix97RdsQyIfEnXPpl8jcSvzZO&listing_id=' . $criteria);
+        $res = $client->request('POST', 'https://www.yougotlistings.com/api/rentals/search.php?key=bVrLNhG2U1aFCKuix97RdsQyIfEnXPpl8jcSvzZO&listing_id=');
 
         $xml = $res->getBody();
         $xml = simplexml_load_string($xml);
