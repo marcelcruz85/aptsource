@@ -22,7 +22,6 @@ class ListingController extends Controller
     
         return view('pages.dev', [
             'output' => $array,
-            'listings' => $array['Listings']['Listing'],
         ]);
     }
 }
