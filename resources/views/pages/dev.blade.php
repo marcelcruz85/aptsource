@@ -15,7 +15,7 @@
         @foreach($listings as $listing => $value) 
             {{ $listing }}
             @foreach($listings as $key => $value) 
-                {{ $key }}
+                {{ $value }}
             @endforeach
         @endforeach
 
