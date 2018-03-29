@@ -10,8 +10,11 @@
 
         {{ $output['Total'] }}
         {{ $output['Listings']['Listing'][0]['ID'] }}
+        
 
-        {{ dd($listing) }}
+        @foreach($listings as $listing => $value) 
+            {{ $listing }}
+        @endforeach
     </div>
 </body>
 

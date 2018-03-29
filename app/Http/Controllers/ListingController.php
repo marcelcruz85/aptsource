@@ -22,7 +22,7 @@ class ListingController extends Controller
     
         return view('pages.dev', [
             'output' => $array,
-            'listing' => $array['Listings'],
+            'listings' => $array['Listings'],
         ]);
     }
 }
