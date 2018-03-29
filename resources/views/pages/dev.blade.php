@@ -13,7 +13,7 @@
         
         {{ dd($listings) }}
 
-        {{@foreach ($listings->Listing as $listing)
+        {{@foreach ($listings as $listing)
             {{ $listing->ID }}
         @endforeach}}
     </div>

@@ -19,7 +19,7 @@ class ListingController extends Controller
     
         return view('pages.dev', [
             'total' => $response->Total,
-            'listings' => $response->Listings,
+            'listings' => $response->Listings->Listing,
         ]);
     }
 }
