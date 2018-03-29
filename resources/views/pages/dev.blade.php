@@ -11,9 +11,7 @@
 
         {{ $total }}
 
-        @foreach ($listings as $listing)
-            {{ $listing }}
-        @endforeach
+        {{ dd($listings) }}
     </div>
 </body>
 
