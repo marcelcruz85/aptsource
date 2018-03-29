@@ -495,6 +495,6 @@ $(document).ready(function () {
 $(document).ready(function () {
     $('.listings-grid__price').each(function(){     
         var listingPrice = $(this).text();   
-        $(this).number(listingPrice);
+        $(this).number(listingPrice).prepend('$');
     });
 });
