@@ -48,10 +48,11 @@
         <div class="col-sm-8 listings-list">
             
             @foreach ($listings as $listing)
+            {{ dd($listing->Photos->Photo) }}
             <div class="listings-grid__item">
                 <a href="listing-detail.html" class="media">
                     <div class="listings-grid__main pull-left">
-                            <img src={{ dd($listing->Photos->Photo) }} alt="">
+                            <img src="" alt="">
                         <div class="listings-grid__price">{{ $listing->Price }}</div>
                     </div>
 
