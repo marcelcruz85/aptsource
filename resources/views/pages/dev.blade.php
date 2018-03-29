@@ -14,7 +14,7 @@
         {{ dd($listings) }}
 
         @foreach ($listings as $listing)
-            {{ $listing->ID }}
+            {{ $listing }}
         @endforeach
     </div>
 </body>
