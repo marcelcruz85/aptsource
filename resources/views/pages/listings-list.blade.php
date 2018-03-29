@@ -51,7 +51,7 @@
         
             @foreach ($listing as $k => $v)
                 @foreach ($listing as $k => $v)
-                    {{ $v }}
+                    {{ $k }}
                 @endforeach
             @endforeach
             <div class="listings-grid__item">
