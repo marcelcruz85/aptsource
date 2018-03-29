@@ -493,5 +493,5 @@ $(document).ready(function () {
     LISTING FORMAT
 ------------------------------------------------*/
 $(document).ready(function () {
-    $('.listings-grid__price').addClass('testing');
+    $('.listings-grid__price').number();
 });

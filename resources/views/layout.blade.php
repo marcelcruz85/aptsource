@@ -114,6 +114,9 @@
     <!-- NoUiSlider -->
     <script src="vendors/bower_components/nouislider/distribute/nouislider.min.js"></script>
 
+    <!-- Jquery Number -->
+    <script src="vendors/bower_components/teamdf/jquery-number/jquery.number.min.js"></script>
+
     <!-- IE9 Placeholder -->
     <!--[if IE 9 ]>
         <script src="vendors/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
