@@ -9,7 +9,7 @@
     <div>
         
 
-        {{ dd($output) }}
+        {{ dd($output->Listings) }}
     </div>
 </body>
 
