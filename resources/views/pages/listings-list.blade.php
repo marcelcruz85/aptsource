@@ -51,7 +51,7 @@
             <div class="listings-grid__item">
                 <a href="listing-detail.html" class="media">
                     <div class="listings-grid__main pull-left">
-                        <img src={{ $listing->Photos['Photo'] }} alt="">
+                        <img src="https://placeholdit.imgix.net/~text?&w=400&h=266" alt="">
                         <div class="listings-grid__price">{{ $listing->Price }}</div>
                     </div>
 
