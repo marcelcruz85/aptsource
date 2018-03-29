@@ -10,8 +10,12 @@
         
 
         {{ $total }}
-
+        
         {{ dd($listings) }}
+
+        {{@foreach ($listings->Listing as $listing)
+            {{ $listing->ID }}
+        @endforeach}}
     </div>
 </body>
 
