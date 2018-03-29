@@ -12,8 +12,11 @@
         {{ $output['Listings']['Listing'][0]['ID'] }}
         
 
-        @foreach($listings as $listing) 
+        @foreach($listings as $listing => $value) 
             {{ $listing }}
+            @foreach($listings as $key => $value) 
+                {{ $key }}
+            @endforeach
         @endforeach
 
         {{ dd($listings) }}
