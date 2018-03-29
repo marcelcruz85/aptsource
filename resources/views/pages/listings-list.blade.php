@@ -51,9 +51,7 @@
             <div class="listings-grid__item">
                 <a href="listing-detail.html" class="media">
                     <div class="listings-grid__main pull-left">
-                        @foreach ($Photos as $photo)
-                            <img src={{ $photo }} alt="">
-                        @endforeach
+                            <img src={{ $listing->$Photos->photo }} alt="">
                         <div class="listings-grid__price">{{ $listing->Price }}</div>
                     </div>
 
