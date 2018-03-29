@@ -47,9 +47,8 @@
     <div class="row">
         <div class="col-sm-8 listings-list">
             
-                {{ dd($listings['0'])}}
             @foreach ($listings as $listing)
-
+            {{ dd($listing['Photos'])}}
             <div class="listings-grid__item">
                 <a href="listing-detail.html" class="media">
                     <div class="listings-grid__main pull-left">
