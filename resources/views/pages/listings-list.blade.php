@@ -51,7 +51,7 @@
             <div class="listings-grid__item">
                 <a href="listing-detail.html" class="media">
                     <div class="listings-grid__main pull-left">
-                            <img src=<?php echo($listing->Photos->Photo) ?> alt="">
+                            <img src=<?php print_r($listing->Photos->Photo) ?> alt="">
                         <div class="listings-grid__price">{{ $listing->Price }}</div>
                     </div>
 
