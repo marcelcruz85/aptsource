@@ -11,15 +11,7 @@
         {{ $output['Total'] }}
         {{ $output['Listings']['Listing'][0]['ID'] }}
 
-        @foreach($output['Listings'] as $listing => $value) 
-            @foreach($value as $k => $v) 
-                <ul>
-                @foreach($v as $k => $v) 
-                    <li>{{ $k }}</li>
-                @endforeach 
-                </ul>
-            @endforeach 
-        @endforeach
+        {{ dd($listing) }}
     </div>
 </body>
 

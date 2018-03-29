@@ -18,10 +18,11 @@ class ListingController extends Controller
         $xml = $res->getBody();
         $xml = simplexml_load_string($xml);
         $json = json_encode($xml);
-        $output = json_decode($json,TRUE);
+        $array = json_decode($json,TRUE);
     
         return view('pages.dev', [
-            'output' => $output
+            'output' => $array,
+            'listing' => $array['Listings'],
         ]);
     }
 }
