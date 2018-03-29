@@ -493,5 +493,7 @@ $(document).ready(function () {
     LISTING FORMAT
 ------------------------------------------------*/
 $(document).ready(function () {
-    // $('.listings-grid__price').number();
+    $('.listings-grid__price').text(function(){        
+        $($this).number();
+    });
 });
