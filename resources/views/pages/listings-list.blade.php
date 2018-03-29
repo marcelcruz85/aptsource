@@ -50,7 +50,7 @@
             @foreach ($listings as $listing)
         
             @foreach ($listing as $k => $v)
-                <?php print_r($v['Photos']) ?>
+                {{ $v['5'] }}
             @endforeach
             <div class="listings-grid__item">
                 <a href="listing-detail.html" class="media">
