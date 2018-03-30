@@ -16,7 +16,7 @@
             <li>{{ $listing->City }}</li>
         @endforeach
         </ul>
-        {{ dd($listings) }}
+        {{ var_dump($listings) }}
 
     </div>
 </body>
