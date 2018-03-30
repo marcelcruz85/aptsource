@@ -42,7 +42,7 @@
 
     <div class="row">
         <div class="col-sm-8 listings-list">
-            {{ print_r($listings['Photos'])}}
+            {{ print_r($listings['Listing']['Photos'])}}
             @foreach ($listings as $listing)
             
             @if (is_array($listing) and array_key_exists('Title', $listing) )
