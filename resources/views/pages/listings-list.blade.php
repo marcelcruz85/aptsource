@@ -41,11 +41,11 @@
     </header>
 
     <div class="row">
-        <div class="col-sm-8 listings-list">
+        <div class="col-sm-8 listings-list">k
             @foreach ($listings as $listing)
             
             @if (is_array($listing) and array_key_exists('Features', $listing) )
-                {{ $listing['Features']['Feature'] }} 
+                {{ dd($listing['Features']['Feature']) }} 
             @endif
             <div class="listings-grid__item">
                 <a href="listing-detail.html" class="media">
