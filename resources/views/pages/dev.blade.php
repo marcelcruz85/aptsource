@@ -13,12 +13,12 @@
         <ul>
         @foreach ($listings as $listing)
         
-            <li>{{ $listing['UnitDescription'] }}</li>
+            <li>{{ $listing['ID'] }}</li>
 
         @endforeach
         </ul>
         <pre>
-        {{ var_dump($listings) }}
+        {{ var_dump($listing['UnitDescription']) }}
         </pre>
 
     </div>
