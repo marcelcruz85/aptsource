@@ -41,13 +41,13 @@
     </header>
 
     <div class="row">
-        <div class="col-sm-8 listings-list">k
+        <div class="col-sm-8 listings-list">
             @foreach ($listings as $listing)
             <div class="listings-grid__item">
                 <a href="listing-detail.html" class="media">
                     <div class="listings-grid__main pull-left">
                         @if (is_array($listing) and array_key_exists('Photos', $listing) )
-                        <img src="{{ $listing['Photos']['Photo']}}" alt=""> 
+                            <img src="{{ $listing['Photos']['Photo']}}" alt=""> 
                         @endif
                         <div class="listings-grid__price">{{ $listing['Price'] }}</div>
                     </div>
