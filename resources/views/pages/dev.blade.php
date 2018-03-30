@@ -15,7 +15,7 @@
         
             <li>{{ $listing->ID }}</li>
             <li>{{ $listing->City }}</li>
-            <li>{{ $listing['Title'] }}</li>
+            <li>{{ $listing->Title }}</li>
 
         @endforeach
         </ul>
