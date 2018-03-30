@@ -16,7 +16,9 @@
             <li>{{ $listing->City }}</li>
         @endforeach
         </ul>
+        <pre>
         {{ var_dump($listings) }}
+        </pre>
 
     </div>
 </body>
