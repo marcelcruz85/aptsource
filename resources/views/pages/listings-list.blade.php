@@ -1,6 +1,4 @@
-@extends ('layout') 
-
-@section ('action-header')
+@extends ('layout') @section ('action-header')
 
 <div class="action-header">
     <div class="container">
@@ -34,9 +32,7 @@
     </div>
 </div>
 
-@endsection 
-
-@section ('content')
+@endsection @section ('content')
 
 <div class="container">
     <header class="section__title">
@@ -46,31 +42,29 @@
 
     <div class="row">
         <div class="col-sm-8 listings-list">
-            
+
             @foreach ($listings as $listing)
-        
-            @foreach ($listing as $k => $v)
-                @foreach ($listing as $k => $v)
-                    {{ $k }}
-                @endforeach
-            @endforeach
+            {{ dd($listing)}}
             <div class="listings-grid__item">
                 <a href="listing-detail.html" class="media">
                     <div class="listings-grid__main pull-left">
-                            <img src="" alt="">
-                        <div class="listings-grid__price">{{ $listing->Price }}</div>
+                        @if (is_array($listing) and array_key_exists('Photos', $listing) )
+                        <img src="{{ $listing['Photos']['Photo']}}" alt=""> 
+                        @endif
+                        <div class="listings-grid__price">{{ $listing['Price'] }}</div>
                     </div>
 
                     <div class="media-body">
                         <div class="listings-grid__body">
-                            <small>{{ $listing->StreetNumber }} {{ $listing->StreetName }} {{ $listing->City }}, {{ $listing->State }} {{ $listing->Zip }}</small>
+                            <small>{{ $listing['StreetNumber'] }} {{ $listing['StreetName'] }} {{ $listing['City'] }}, {{ $listing['State']
+                                }} {{ $listing['Zip'] }}</small>
                             <h5>Nullam iddolor idnibh ultricies vehicula</h5>
                         </div>
                         <ul class="listings-grid__attrs">
                             <li>
-                                <i class="listings-grid__icon listings-grid__icon--bed"></i> 01</li>
+                                <i class="listings-grid__icon listings-grid__icon--bed"></i> {{ $listing['Beds'] }} </li>
                             <li>
-                                <i class="listings-grid__icon listings-grid__icon--bath"></i> 01</li>
+                                <i class="listings-grid__icon listings-grid__icon--bath"></i> {{ $listing['Baths'] }}</li>
                             <li>
                                 <i class="listings-grid__icon listings-grid__icon--parking"></i> 00</li>
                         </ul>

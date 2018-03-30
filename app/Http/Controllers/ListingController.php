@@ -10,16 +10,16 @@ class ListingController extends Controller
     public function index()
     {
         $client = new Client();
-        $res = $client->request('POST', 'https://www.yougotlistings.com/api/rentals/search.php?key=bVrLNhG2U1aFCKuix97RdsQyIfEnXPpl8jcSvzZO&listing_id=');
+        $res = $client->request('POST', 'https://www.yougotlistings.com/api/rentals/search.php?key=bVrLNhG2U1aFCKuix97RdsQyIfEnXPpl8jcSvzZO&detail_level=2');
 
         $xml = $res->getBody();
         $xml = simplexml_load_string($xml);
         $json = json_encode($xml);
-        $response = json_decode($json, FALSE);
+        $response = json_decode($json, TRUE);
     
         return view('pages.listings-list', [
-            'total' => $response->Total,
-            'listings' => $response->Listings->Listing,
+            'total' => $response['Total'],
+            'listings' => $response['Listings']['Listing'],
         ]);
     }
 }
