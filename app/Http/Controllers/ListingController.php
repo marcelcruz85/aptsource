@@ -15,11 +15,11 @@ class ListingController extends Controller
         $xml = $res->getBody();
         $xml = simplexml_load_string($xml, 'SimpleXMLElement', LIBXML_NOCDATA);
         $json = json_encode($xml);
-        $response = json_decode($json, FALSE);
+        $response = json_decode($json, TRUE);
     
         return view('pages.dev', [
-            'total' => $response->Total,
-            'listings' => $response->Listings->Listing,
+            'total' => $response['Total'],
+            'listings' => $response['Listings']['Listing'],
         ]);
     }
 }
