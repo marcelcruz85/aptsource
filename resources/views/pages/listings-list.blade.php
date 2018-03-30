@@ -43,8 +43,8 @@
     <div class="row">
         <div class="col-sm-8 listings-list">k
             @foreach ($listings as $listing)
-            
-            @if (is_array($listing) and array_key_exists('Features', $listing) )
+            {{ dd($listing['UnitDescription']) }} 
+            @if (is_array($listing) and array_key_exists('Features1', $listing) )
                 {{ dd($listing['Features']['Feature']) }} 
             @endif
             <div class="listings-grid__item">
