@@ -44,7 +44,10 @@
         <div class="col-sm-8 listings-list">
 
             @foreach ($listings as $listing)
-            {{ dd($listings['Title'])}}
+            
+            @if (is_array($listing) and array_key_exists('Title', $listing) )
+            {{ dd($listing['Title'])}}
+            @endif
             <div class="listings-grid__item">
                 <a href="listing-detail.html" class="media">
                     <div class="listings-grid__main pull-left">
