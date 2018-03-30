@@ -12,8 +12,8 @@
         {{ $total }}
         <ul>
         @foreach ($listings as $listing)
-            <li>{{ $listing->ID }}</li>
-            <li>{{ $listing->City }}</li>
+            <li>{{ $listing['ID'] }}</li>
+            <li>{{ $listing['City'] }}</li>
         @endforeach
         </ul>
         {{ dd($listings) }}
