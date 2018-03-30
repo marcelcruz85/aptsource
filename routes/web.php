@@ -31,3 +31,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 /*   testing development */
 
 Route::get('/listings-list', 'ListingController@index');
+Route::get('/dev', 'ListingController@index');

@@ -17,7 +17,7 @@ class ListingController extends Controller
         $json = json_encode($xml);
         $response = json_decode($json, TRUE);
     
-        return view('pages.listings-list', [
+        return view('pages.dev', [
             'total' => $response['Total'],
             'listings' => $response['Listings']['Listing'],
         ]);
