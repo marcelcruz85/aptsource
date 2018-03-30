@@ -45,7 +45,7 @@
 
             @foreach ($listings as $listing)
             
-            {{ var_dump($listing['Title'])}}
+            {{ dd($listing['Title']) }}
             @if (is_array($listing) and array_key_exists('Title', $listing) )
                 {{ var_dump($listing['Title'])}}
             @endif
