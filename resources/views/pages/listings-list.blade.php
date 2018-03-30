@@ -45,8 +45,9 @@
 
             @foreach ($listings as $listing)
             
-            @if (is_array($listing) and array_key_exists('Title', $listing) )
             {{ var_dump($listing['Title'])}}
+            @if (is_array($listing) and array_key_exists('Title', $listing) )
+                {{ var_dump($listing['Title'])}}
             @endif
             <div class="listings-grid__item">
                 <a href="listing-detail.html" class="media">
@@ -59,8 +60,7 @@
 
                     <div class="media-body">
                         <div class="listings-grid__body">
-                            <small>{{ $listing['StreetNumber'] }} {{ $listing['StreetName'] }} {{ $listing['City'] }}, {{ $listing['State']
-                                }} {{ $listing['Zip'] }}</small>
+                            <small>{{ $listing['StreetNumber'] }} {{ $listing['StreetName'] }} {{ $listing['City'] }}, {{ $listing['State'] }} {{ $listing['Zip'] }}</small>
                             <h5>Nullam iddolor idnibh ultricies vehicula</h5>
                         </div>
                         <ul class="listings-grid__attrs">
