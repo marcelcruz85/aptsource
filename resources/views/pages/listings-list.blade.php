@@ -45,9 +45,8 @@
 
             @foreach ($listings as $listing)
             
-            {{ dd($listing['Title']) }}
             @if (is_array($listing) and array_key_exists('Title', $listing) )
-                {{ var_dump($listing['Title'])}}
+                {{ $listing['Features']['Feature'] }} 
             @endif
             <div class="listings-grid__item">
                 <a href="listing-detail.html" class="media">
