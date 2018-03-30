@@ -42,7 +42,7 @@
 
     <div class="row">
         <div class="col-sm-8 listings-list">
-            {{ dd($listings)}}
+            {{ dd($listings['0'])}}
             @foreach ($listings as $listing)
             
             @if (is_array($listing) and array_key_exists('Title', $listing) )
