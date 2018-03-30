@@ -15,7 +15,7 @@ class ListingController extends Controller
         $xml = $res->getBody();
         $xml = simplexml_load_string($xml);
         $json = json_encode($xml);
-        $response = json_decode($json, TRUE);
+        $response = json_decode($json, FALSE);
     
         return view('pages.dev', [
             'total' => $response['Total'],
