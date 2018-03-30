@@ -18,8 +18,8 @@ class ListingController extends Controller
         $response = json_decode($json, FALSE);
     
         return view('pages.dev', [
-            'total' => $response['Total'],
-            'listings' => $response['Listings']['Listing'],
+            'total' => $response->Total,
+            'listings' => $response->Listings->Listing,
         ]);
     }
 }
