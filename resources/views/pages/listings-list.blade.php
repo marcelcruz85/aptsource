@@ -45,7 +45,7 @@
             {{ print_r($listings['Listing']['Photos'])}}
             @foreach ($listings as $listing)
             
-            @if (is_array($listing) and array_key_exists('Title', $listing) )
+            @if (is_array($listing) and array_key_exists('Features', $listing) )
                 {{ $listing['Features']['Feature'] }} 
             @endif
             <div class="listings-grid__item">
