@@ -816,8 +816,26 @@
   padding-right: 0;
 }
 
-.listings-grid__main > img {
-  width: 100%;
+.listings-grid__main.grid > img {
+  width: auto;
+  min-height: 200px;
+  max-height: 200px; 
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  -webkit-transition: opacity;
+  -o-transition: opacity;
+  transition: opacity;
+  -webkit-transition-duration: 200ms;
+  transition-duration: 200ms;
+}
+
+.listings-grid__main.list > img {
+  max-width: 180px;
+  max-height: 130px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
   -webkit-transition: opacity;
   -o-transition: opacity;
   transition: opacity;

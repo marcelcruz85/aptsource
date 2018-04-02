@@ -493,8 +493,42 @@ $(document).ready(function () {
     LISTING FORMAT
 ------------------------------------------------*/
 $(document).ready(function () {
-    $('.listings-grid__price').each(function(){     
-        var listingPrice = $(this).text();   
-        $(this).number(listingPrice).prepend('$');
+    $('.listings-grid__item').each(function(){     
+        var listingPrice = $(this).find('.listings-grid__price').text(); 
+        $(this).find('.listings-grid__price').number(listingPrice).prepend('$');
+        $(this).find('.number').each(function(){
+            var iconClass = $(this).find('i').attr('class');
+            var listAttr = $(this).text();  
+            $(this).number(listAttr, 0).prepend('<i class="' + iconClass +'"></i> ');
+        });
+
+
+
+        /*--------------------------------------------
+            DATE AVAILABLE
+        --------------------------------------------*/
+
+        var dateAvailable = $(this).find(".availableDate").text();
+        //dateAvailable = new Date(dateAvailable[2], dateAvailable[1] -1, dateAvailable[0], 0, 0, 0, 0);
+        dateAvailable = new Date(dateAvailable);
+        var dateToday = new Date();
+        if (dateToday >= dateAvailable) {
+            $(this).find(".availableDate").text('now');
+        }
     });
+
+
+/*---------------------------------------------
+    PAGINATION
+----------------------------------------------*/
+
+    var pages = $('.items-pages').text();
+    var pageIndex = $('.items-page-index').text();
+    $('.pagination').pagination({
+
+        pages: pages,
+        currentPage: pageIndex,
+        hrefTextPrefix: ''
+    });
+
 });

@@ -11,23 +11,23 @@
     <!-- Vendors -->
 
     <!-- Material design colors -->
-    <link href="vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+    <link href="/vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
 
     <!-- CSS animations -->
-    <link rel="stylesheet" href="vendors/bower_components/animate.css/animate.min.css">
+    <link rel="stylesheet" href="/vendors/bower_components/animate.css/animate.min.css">
 
     <!-- Select2 - Custom Selects -->
-    <link rel="stylesheet" href="vendors/bower_components/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="/vendors/bower_components/select2/dist/css/select2.min.css">
 
     <!-- NoUiSlider - Input Slider -->
-    <link rel="stylesheet" href="vendors/bower_components/nouislider/distribute/nouislider.min.css">
+    <link rel="stylesheet" href="/vendors/bower_components/nouislider/distribute/nouislider.min.css">
 
     <!-- Site -->
-    <link rel="stylesheet" href="css/app_1.css">
-    <link rel="stylesheet" href="css/app_2.css">
+    <link rel="stylesheet" href="/css/app_1.css">
+    <link rel="stylesheet" href="/css/app_2.css">
 
     <!-- Page Loader JS -->
-    <script src="js/page-loader.min.js" async></script>
+    <script src="/js/page-loader.min.js" async></script>
 </head>
 
 <body>
@@ -100,22 +100,25 @@
     <!-- Javascript -->
 
     <!-- jQuery -->
-    <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="/vendors/bower_components/jquery/dist/jquery.min.js"></script>
 
     <!-- Bootstrap -->
-    <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- Waves button ripple effects -->
-    <script src="vendors/bower_components/Waves/dist/waves.min.js"></script>
+    <script src="/vendors/bower_components/Waves/dist/waves.min.js"></script>
 
     <!-- Select 2 - Custom Selects -->
-    <script src="vendors/bower_components/select2/dist/js/select2.full.min.js"></script>
+    <script src="/vendors/bower_components/select2/dist/js/select2.full.min.js"></script>
 
     <!-- NoUiSlider -->
-    <script src="vendors/bower_components/nouislider/distribute/nouislider.min.js"></script>
+    <script src="/vendors/bower_components/nouislider/distribute/nouislider.min.js"></script>
 
     <!-- Jquery Number -->
-    <script src="vendors/bower_components/teamdf/jquery-number/jquery.number.min.js"></script>
+    <script src="/vendors/bower_components/teamdf/jquery-number/jquery.number.min.js"></script>
+
+    <!-- Jquery Simple Pagination -->
+    <script src="/vendors/bower_components/simplePagination.js/jquery.simplePagination.js"></script>
 
     <!-- IE9 Placeholder -->
     <!--[if IE 9 ]>
@@ -123,10 +126,10 @@
         <![endif]-->
 
     <!-- Site functions and actions -->
-    <script src="js/app.js"></script>
+    <script src="/js/app.js"></script>
 
     <!-- Demo only -->
-    <script src="js/demo/demo.js"></script>
+    <script src="/js/demo/demo.js"></script>
 </body>
 
 </html>

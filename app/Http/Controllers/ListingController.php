@@ -7,18 +7,30 @@ use GuzzleHttp\Client;
 
 class ListingController extends Controller
 {
-    public function index()
+    public function index($view, $page)
     {
+        $apiKey = '&key=bVrLNhG2U1aFCKuix97RdsQyIfEnXPpl8jcSvzZO';
+        $searchParameters = 'detail_level=2&page_count=20&page_index=' . $page;
+        $searchArguments = '';
         $client = new Client();
-        $res = $client->request('POST', 'https://www.yougotlistings.com/api/rentals/search.php?key=bVrLNhG2U1aFCKuix97RdsQyIfEnXPpl8jcSvzZO&detail_level=2');
+        $res = $client->request('POST', 'https://www.yougotlistings.com/api/rentals/search.php?' . $searchParameters .  $apiKey);
 
         $xml = $res->getBody();
         $xml = simplexml_load_string($xml, 'SimpleXMLElement', LIBXML_NOCDATA);
         $json = json_encode($xml);
         $response = json_decode($json, TRUE);
-    
-        return view('pages.dev', [
-            'total' => $response['Total'],
+        
+        $pages = ceil($response['Total'] / 20);
+
+        if($view == 'list') {
+            $viewPage = 'pages.listings-list';
+        }else{
+            $viewPage = 'pages.listings-grid';
+        }
+
+        return view($viewPage, [
+            'pages' =>  $pages,
+            'pageIndex' =>  $page,
             'listings' => $response['Listings']['Listing'],
         ]);
     }

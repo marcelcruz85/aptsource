@@ -12,8 +12,8 @@
         </div>
 
         <div class="action-header__item action-header__views hidden-xs">
-            <a href="listings-grid" class="zmdi zmdi-apps"></a>
-            <a href="listings-list" class="zmdi zmdi-view-list active"></a>
+            <a href="/listings/grid/{{ $pageIndex }}" class="zmdi zmdi-apps"></a>
+            <a href="/listings/list/{{ $pageIndex }}" class="zmdi zmdi-view-list active"></a>
         </div>
 
         <div class="action-header__item action-header__item--sort hidden-xs">
@@ -21,7 +21,7 @@
 
             <select class="select2">
                 <option>Featured listings</option>
-                <option>Newest to oldest</option>
+                <option><a href="manolo">Newest to oldest</a></option>
                 <option>Oldest to Newest</option>
                 <option>Price hight to low</option>
                 <option>Price low to high</option>
@@ -45,9 +45,11 @@
             @foreach ($listings as $listing)
             <div class="listings-grid__item">
                 <a href="listing-detail.html" class="media">
-                    <div class="listings-grid__main pull-left">
+                    <div class="listings-grid__main list pull-left">
                         @if (is_array($listing) and array_key_exists('Photos', $listing) )
-                            <img src="{{ $listing['Photos']['Photo']}}" alt=""> 
+                            <img src="{{ $listing['Photos']['Photo']['0']}}" alt=""> 
+                        @else
+                            <img src="/img/nophoto.png" alt=""> 
                         @endif
                         <div class="listings-grid__price">{{ $listing['Price'] }}</div>
                     </div>
@@ -55,15 +57,16 @@
                     <div class="media-body">
                         <div class="listings-grid__body">
                             <small>{{ $listing['StreetNumber'] }} {{ $listing['StreetName'] }} {{ $listing['City'] }}, {{ $listing['State'] }} {{ $listing['Zip'] }}</small>
-                            <h5>Nullam iddolor idnibh ultricies vehicula</h5>
+                            
+                            @if (is_array($listing) and array_key_exists('Title', $listing) )
+                                <h5>{{ $listing['Title'] }}</h5>
+                            @endif
+                            <small>Available: <i class="zmdi zmdi-calendar-check"></i> <span class="availableDate">{{ $listing['AvailableDate'] }}</span></small>
                         </div>
                         <ul class="listings-grid__attrs">
-                            <li>
-                                <i class="listings-grid__icon listings-grid__icon--bed"></i> {{ $listing['Beds'] }} </li>
-                            <li>
-                                <i class="listings-grid__icon listings-grid__icon--bath"></i> {{ $listing['Baths'] }}</li>
-                            <li>
-                                <i class="listings-grid__icon listings-grid__icon--parking"></i> 00</li>
+                            <li class="number"><i class="listings-grid__icon listings-grid__icon--bed"></i> {{ $listing['Beds'] }} </li>
+                            <li class="number"><i class="listings-grid__icon listings-grid__icon--bath"></i> {{ $listing['Baths'] }}</li>
+                            <!-- <li><i class="listings-grid__icon listings-grid__icon--parking"></i> 00</li> -->
                         </ul>
                     </div>
                 </a>
@@ -79,32 +82,10 @@
             @endforeach
 
             <nav class="text-center">
+                <div class="items-page-index">{{ $pageIndex }}</div>
+                <div class="items-pages">{{ $pages }}</div>
                 <ul class="pagination">
-                    <li>
-                        <a href="#" aria-label="Previous">
-                            <i class="zmdi zmdi-chevron-left"></i>
-                        </a>
-                    </li>
-                    <li class="active">
-                        <a href="#">1</a>
-                    </li>
-                    <li>
-                        <a href="#">2</a>
-                    </li>
-                    <li>
-                        <a href="#">3</a>
-                    </li>
-                    <li>
-                        <a href="#">4</a>
-                    </li>
-                    <li>
-                        <a href="#">5</a>
-                    </li>
-                    <li>
-                        <a href="#" aria-label="Next">
-                            <i class="zmdi zmdi-chevron-right"></i>
-                        </a>
-                    </li>
+                    
                 </ul>
             </nav>
         </div>

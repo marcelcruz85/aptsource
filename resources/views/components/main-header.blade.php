@@ -1,7 +1,7 @@
 <div class="header__main">
     <div class="container">
         <a class="logo" href="/">
-            <img src="img/logo.png" alt="">
+            <img src="/img/logo.png" alt="">
             <div class="logo__text">
                 <span>The Apartment</span>
                 <span>Source</span>
@@ -28,10 +28,10 @@
 
                 <ul class="navigation__drop-menu">
                     <li>
-                        <a href="listings-grid">Grid view</a>
+                        <a href="/listings/grid/1">Grid view</a>
                     </li>
                     <li>
-                        <a href="listings-list">List view</a>
+                        <a href="/listings/list/1">List view</a>
                     </li>
                 </ul>
             </li>
