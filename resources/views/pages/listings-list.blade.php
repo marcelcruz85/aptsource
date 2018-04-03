@@ -12,21 +12,22 @@
         </div>
 
         <div class="action-header__item action-header__views hidden-xs">
-            <a href="/listings/grid/{{ $pageIndex }}" class="zmdi zmdi-apps"></a>
-            <a href="/listings/list/{{ $pageIndex }}" class="zmdi zmdi-view-list active"></a>
+            <a href="/listings/grid/{{ $pageIndex }}/1" class="zmdi zmdi-apps"></a>
+            <a href="/listings/list/{{ $pageIndex }}/1" class="zmdi zmdi-view-list active"></a>
         </div>
 
         <div class="action-header__item action-header__item--sort hidden-xs">
             <span class="action-header__small">Sort by :</span>
 
             <select class="select2">
-                <option>Featured listings</option>
-                <option><a href="manolo">Newest to oldest</a></option>
-                <option>Oldest to Newest</option>
-                <option>Price hight to low</option>
-                <option>Price low to high</option>
-                <option>Newest to Oldest</option>
-                <option>No. of photos</option>
+                <option value="updateDate-desc">Newest to Oldest</option>
+                <option value="updateDate-asc">Oldest to Newest</option>
+                <option value="rent-desc">Price hight to low</option>
+                <option value="rent-asc">Price low to high</option>
+                <option value="beds-asc">Beds Asc</option>
+                <option value="beds-desc">Beds Desc</option>
+                <option value="baths-asc">Baths Asc</option>
+                <option value="baths-desc">Baths Desc</option>
             </select>
         </div>
     </div>
@@ -82,8 +83,6 @@
             @endforeach
 
             <nav class="text-center">
-                <div class="items-page-index">{{ $pageIndex }}</div>
-                <div class="items-pages">{{ $pages }}</div>
                 <ul class="pagination">
                     
                 </ul>
@@ -113,5 +112,10 @@
         </aside>
     </div>
 </div>
-
+<div class=no-show>
+    <div class="pageindex">{{ $pageIndex }}</div>
+    <div class="pages">{{ $pages }}</div>
+    <div class="view">{{ $view }}</div>
+    <div class="view">{{ $sort }}</div>
+</div>
 @endsection

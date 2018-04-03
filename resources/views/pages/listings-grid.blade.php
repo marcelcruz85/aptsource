@@ -12,21 +12,22 @@
             </div>
 
             <div class="action-header__item action-header__views hidden-xs">
-                <a href="/listings/grid/{{ $pageIndex }}" class="zmdi zmdi-apps active"></a>
-                <a href="/listings/list/{{ $pageIndex }}" class="zmdi zmdi-view-list"></a>
+                <a href="/listings/grid/{{ $pageIndex }}/1" class="zmdi zmdi-apps active"></a>
+                <a href="/listings/list/{{ $pageIndex }}/1" class="zmdi zmdi-view-list"></a>
             </div>
 
             <div class="action-header__item action-header__item--sort hidden-xs">
                 <span class="action-header__small">Sort by :</span>
 
                 <select class="select2">
-                    <option>Featured listings</option>
-                    <option>Newest to oldest</option>
-                    <option>Oldest to Newest</option>
-                    <option>Price hight to low</option>
-                    <option>Price low to high</option>
-                    <option>Newest to Oldest</option>
-                    <option>No. of photos</option>
+                <option value="updateDate-desc">Newest to Oldest</option>
+                <option value="updateDate-asc">Oldest to Newest</option>
+                <option value="rent-desc">Price hight to low</option>
+                <option value="rent-asc">Price low to high</option>
+                <option value="beds-asc">Beds Asc</option>
+                <option value="beds-desc">Beds Desc</option>
+                <option value="baths-asc">Baths Asc</option>
+                <option value="baths-desc">Baths Desc</option>
                 </select>
             </div>
         </div>

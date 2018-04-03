@@ -522,13 +522,25 @@ $(document).ready(function () {
     PAGINATION
 ----------------------------------------------*/
 
-    var pages = $('.items-pages').text();
-    var pageIndex = $('.items-page-index').text();
+    var pages = $('.pages').text();
+    var pageIndex = $('.pageindex').text();
     $('.pagination').pagination({
 
         pages: pages,
         currentPage: pageIndex,
         hrefTextPrefix: ''
     });
+});
+/*---------------------------------------------
+    SELECT2 
+----------------------------------------------*/
+$('.select2').on('select2:select', function (e) {
+    var view = $('.view').text();
+    var pageIndex = $('.pageindex').text();
+    var sort = e.params.data.id;
+    var baseUrl = window.location.protocol + "//" + window.location.host + "/";
 
+    console.log(view);
+
+    window.location.href = baseUrl + 'listings/' + view + '/' + sort + '/' + pageIndex;
 });

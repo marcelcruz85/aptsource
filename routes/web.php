@@ -20,7 +20,7 @@ Route::get('/listings-grid', function () {
 });
 
 
-Route::get('/listings/{view}/{page}', 'ListingController@index');
+Route::get('/listings/{view}/{sort}/{page}', 'ListingController@index');
 
 Auth::routes();
 

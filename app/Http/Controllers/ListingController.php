@@ -7,7 +7,7 @@ use GuzzleHttp\Client;
 
 class ListingController extends Controller
 {
-    public function index($view, $page)
+    public function index($view, $sort, $page)
     {
         $apiKey = '&key=bVrLNhG2U1aFCKuix97RdsQyIfEnXPpl8jcSvzZO';
         $searchParameters = 'detail_level=2&page_count=20&page_index=' . $page;
@@ -23,12 +23,16 @@ class ListingController extends Controller
         $pages = ceil($response['Total'] / 20);
 
         if($view == 'list') {
-            $viewPage = 'pages.listings-list';
+            $viewType = 'pages.listings-list';
+            $view = 'list';
         }else{
-            $viewPage = 'pages.listings-grid';
+            $viewType = 'pages.listings-grid';
+            $view = 'grid';
         }
 
-        return view($viewPage, [
+        return view($viewType, [
+            'view' => $view,
+            'sort' => $sort,
             'pages' =>  $pages,
             'pageIndex' =>  $page,
             'listings' => $response['Listings']['Listing'],
