@@ -537,7 +537,7 @@ $(document).ready(function () {
 $('.select2').on('select2:select', function (e) {
     var view = $('.view').text();
     var pageIndex = $('.pageindex').text();
-    var sort = e.params.data.id;
+    var sort = $('.sort').text();
     var baseUrl = window.location.protocol + "//" + window.location.host + "/";
 
     console.log(view);
