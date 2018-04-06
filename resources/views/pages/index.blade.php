@@ -2,7 +2,7 @@
 
 @section ('search')
 <div class="header__search container">
-    <form>
+    <form action="/listings/list/updateDate-desc/1">
         <div class="search">
             <div class="search__type dropdown">
                 <a href="" data-toggle="dropdown">SEARCH</a>
@@ -20,7 +20,7 @@
             </div>
 
             <div class="search__body">
-                <input type="text" class="form-control search__input" placeholder="Enter any Neighorhood, Feature, Zip Code" data-rmd-action="advanced-search-open">
+                <input type="text" name="location" class="form-control search__input autocomplete" placeholder="Enter any Neighorhood or Zip Code" data-rmd-action="advanced-search-open">
 
                 <div class="search__advanced">
                     <div class="col-sm-6">

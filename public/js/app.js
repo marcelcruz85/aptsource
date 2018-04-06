@@ -194,10 +194,13 @@ $(document).ready(function () {
     /*------------------------------
         Select2 - Custom Selects
     -------------------------------*/
+    var selected = $('.sort').text();
+    selected = $(".select2 option[value='" + selected + "']").text();
     if($('select.select2')[0]) {
         $('select.select2').select2({
             dropdownAutoWidth: true,
-            width: '100%'
+            width: '100%',
+            placeholder: selected
         });
     }
 
@@ -517,7 +520,11 @@ $(document).ready(function () {
         }
     });
 
-
+/*---------------------------------------------
+    SELECT2 DEFAULT VALUE
+----------------------------------------------*/
+    var selected = $('.sort').text();
+    $('.select2').val(selected);
 /*---------------------------------------------
     PAGINATION
 ----------------------------------------------*/
@@ -530,6 +537,23 @@ $(document).ready(function () {
         currentPage: pageIndex,
         hrefTextPrefix: ''
     });
+
+/*---------------------------------------------
+    AUTOCOMPLETE
+---------------------------------------------*/
+    var options = {
+        url: "/js/autocomplete.json",
+
+        getValue: "name",
+    
+        list: {
+            match: {
+                enabled: true
+            }
+        }
+    };
+
+    $(".autocomplete").easyAutocomplete(options);
 });
 /*---------------------------------------------
     SELECT2 
@@ -537,10 +561,11 @@ $(document).ready(function () {
 $('.select2').on('select2:select', function (e) {
     var view = $('.view').text();
     var pageIndex = $('.pageindex').text();
-    var sort = $('.sort').text();
+    var sort = $('.select2').val();
     var baseUrl = window.location.protocol + "//" + window.location.host + "/";
 
-    console.log(view);
+    console.log(baseUrl + 'listings/' + view + '/' + sort + '/' + pageIndex);
+    console.log(sort);
 
     window.location.href = baseUrl + 'listings/' + view + '/' + sort + '/' + pageIndex;
 });

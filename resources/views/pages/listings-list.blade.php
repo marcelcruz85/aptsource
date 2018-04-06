@@ -20,8 +20,8 @@
             <span class="action-header__small">Sort by :</span>
 
             <select class="select2">
-                <option value="updateDate-desc">Newest to Oldest</option>
-                <option value="updateDate-asc">Oldest to Newest</option>
+                <option></option>
+                <option value="updateDate-desc">Last Updated</option>
                 <option value="rent-desc">Price hight to low</option>
                 <option value="rent-asc">Price low to high</option>
                 <option value="beds-asc">Beds Asc</option>

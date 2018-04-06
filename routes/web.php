@@ -22,6 +22,8 @@ Route::get('/listings-grid', function () {
 
 Route::get('/listings/{view}/{sort}/{page}', 'ListingController@index');
 
+Route::get('/search/{view}/{sort}/{search}/{page}', 'ListingController@search');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

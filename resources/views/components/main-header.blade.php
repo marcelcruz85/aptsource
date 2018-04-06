@@ -28,10 +28,10 @@
 
                 <ul class="navigation__drop-menu">
                     <li>
-                        <a href="/listings/grid/1">Grid view</a>
+                        <a href="/listings/grid/updateDate-desc/1">Grid view</a>
                     </li>
                     <li>
-                        <a href="/listings/list/1">List view</a>
+                        <a href="/listings/list/updateDate-desc/1">List view</a>
                     </li>
                 </ul>
             </li>

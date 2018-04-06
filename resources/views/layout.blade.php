@@ -21,6 +21,10 @@
 
     <!-- NoUiSlider - Input Slider -->
     <link rel="stylesheet" href="/vendors/bower_components/nouislider/distribute/nouislider.min.css">
+    
+    <!-- autocomplete -->
+    <link rel="stylesheet" href="/vendors/bower_components/EasyAutocomplete/dist/easy-autocomplete.min.css">
+    <link rel="stylesheet" href="/vendors/bower_components/EasyAutocomplete/dist/easy-autocomplete.themes.min.css">
 
     <!-- Site -->
     <link rel="stylesheet" href="/css/app_1.css">
@@ -119,6 +123,9 @@
 
     <!-- Jquery Simple Pagination -->
     <script src="/vendors/bower_components/simplePagination.js/jquery.simplePagination.js"></script>
+
+    <!-- Jquery Auto Complete Plugin -->
+    <script src="/vendors/bower_components/EasyAutocomplete/dist/jquery.easy-autocomplete.min.js"></script>
 
     <!-- IE9 Placeholder -->
     <!--[if IE 9 ]>

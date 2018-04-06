@@ -6,22 +6,22 @@
         <div class="container">
             <div class="action-header__item action-header__item--search">
                 <form>
-                    <input class="hidden-xs" type="text" placeholder="Search by neighborhood, city, zip or address..."><!-- For desktop -->
-                    <input class="visible-xs" type="text" placeholder="Search..."><!-- For mobile -->
+                    <input class="hidden-xs autocomplete" type="text" placeholder="Enter any Neighorhood or Zip Code"><!-- For desktop -->
+                    <input class="visible-xs autocomplete" type="text" placeholder="Search..."><!-- For mobile -->
                 </form>
             </div>
 
             <div class="action-header__item action-header__views hidden-xs">
-                <a href="/listings/grid/{{ $pageIndex }}/1" class="zmdi zmdi-apps active"></a>
-                <a href="/listings/list/{{ $pageIndex }}/1" class="zmdi zmdi-view-list"></a>
+                <a href="/listings/grid/{{ $sort }}/{{ $pageIndex }}" class="zmdi zmdi-apps active"></a>
+                <a href="/listings/list/{{ $sort }}/{{ $pageIndex }}" class="zmdi zmdi-view-list"></a>
             </div>
 
             <div class="action-header__item action-header__item--sort hidden-xs">
                 <span class="action-header__small">Sort by :</span>
 
                 <select class="select2">
-                <option value="updateDate-desc">Newest to Oldest</option>
-                <option value="updateDate-asc">Oldest to Newest</option>
+                <option></option>
+                <option value="updateDate-desc">Last Updated</option>
                 <option value="rent-desc">Price hight to low</option>
                 <option value="rent-asc">Price low to high</option>
                 <option value="beds-asc">Beds Asc</option>
@@ -90,12 +90,16 @@
             @endforeach
         </div>
         <nav class="text-center">
-                <div class="items-page-index">{{ $pageIndex }}</div>
-                <div class="items-pages">{{ $pages }}</div>
                 <ul class="pagination">
                     
                 </ul>
         </nav>
     </div>
 
+<div class=no-show>
+    <div class="pageindex">{{ $pageIndex }}</div>
+    <div class="pages">{{ $pages }}</div>
+    <div class="view">{{ $view }}</div>
+    <div class="sort">{{ $sort }}</div>
+</div>
 @endsection

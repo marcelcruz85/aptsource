@@ -9,8 +9,12 @@ class ListingController extends Controller
 {
     public function index($view, $sort, $page)
     {
+
         $apiKey = '&key=bVrLNhG2U1aFCKuix97RdsQyIfEnXPpl8jcSvzZO';
-        $searchParameters = 'detail_level=2&page_count=20&page_index=' . $page;
+        $sortParameter = explode("-", $sort);
+        $sortName = $sortParameter[0]; 
+        $sortDir = $sortParameter[1];
+        $searchParameters = 'detail_level=2&page_count=20&page_index=' . $page . '&sort_name=' . $sortName . '&sort_dir=' . $sortDir;
         $searchArguments = '';
         $client = new Client();
         $res = $client->request('POST', 'https://www.yougotlistings.com/api/rentals/search.php?' . $searchParameters .  $apiKey);
@@ -37,5 +41,9 @@ class ListingController extends Controller
             'pageIndex' =>  $page,
             'listings' => $response['Listings']['Listing'],
         ]);
+    }
+    public function search($view, $search)
+    {
+
     }
 }
