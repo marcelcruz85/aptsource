@@ -20,9 +20,9 @@ Route::get('/listings-grid', function () {
 });
 
 
-Route::get('/listings/{view}/{sort}/{page}', 'ListingController@index');
+Route::post('/rentals/{view}/{parameters}', 'ListingController@index');
 
-Route::get('/search/{view}/{sort}/{search}/{page}', 'ListingController@search');
+Route::get('/search/{view}', 'ListingController@search');
 
 Auth::routes();
 

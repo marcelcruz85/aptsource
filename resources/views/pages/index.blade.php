@@ -2,7 +2,8 @@
 
 @section ('search')
 <div class="header__search container">
-    <form action="/listings/list/updateDate-desc/1">
+    <form action="/rentals/list/search" method="post">
+    {{ csrf_field() }}
         <div class="search">
             <div class="search__type dropdown">
                 <a href="" data-toggle="dropdown">SEARCH</a>

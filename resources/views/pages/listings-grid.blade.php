@@ -12,8 +12,8 @@
             </div>
 
             <div class="action-header__item action-header__views hidden-xs">
-                <a href="/listings/grid/{{ $sort }}/{{ $pageIndex }}" class="zmdi zmdi-apps active"></a>
-                <a href="/listings/list/{{ $sort }}/{{ $pageIndex }}" class="zmdi zmdi-view-list"></a>
+                <a href="/rentals/grid/{{ $sort }}/{{ $pageIndex }}" class="zmdi zmdi-apps active"></a>
+                <a href="/rentals/list/{{ $sort }}/{{ $pageIndex }}" class="zmdi zmdi-view-list"></a>
             </div>
 
             <div class="action-header__item action-header__item--sort hidden-xs">

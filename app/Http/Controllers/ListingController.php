@@ -7,13 +7,16 @@ use GuzzleHttp\Client;
 
 class ListingController extends Controller
 {
-    public function index($view, $sort, $page)
+    public function index($view, $parameters,Request $request)
     {
 
         $apiKey = '&key=bVrLNhG2U1aFCKuix97RdsQyIfEnXPpl8jcSvzZO';
-        $sortParameter = explode("-", $sort);
-        $sortName = $sortParameter[0]; 
-        $sortDir = $sortParameter[1];
+        $location = $request->input('location');
+        //$sortParameter = explode("-", $sort);
+        $sort = '1';
+        $page = '1';
+        $sortName = ""; 
+        $sortDir = "";
         $searchParameters = 'detail_level=2&page_count=20&page_index=' . $page . '&sort_name=' . $sortName . '&sort_dir=' . $sortDir;
         $searchArguments = '';
         $client = new Client();
@@ -39,6 +42,7 @@ class ListingController extends Controller
             'sort' => $sort,
             'pages' =>  $pages,
             'pageIndex' =>  $page,
+            'location' => $location,
             'listings' => $response['Listings']['Listing'],
         ]);
     }
