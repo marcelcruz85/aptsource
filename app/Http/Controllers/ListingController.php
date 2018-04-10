@@ -9,19 +9,28 @@ class ListingController extends Controller
 {
     public function index($view, $parameters,Request $request)
     {
-
+        //Getting parameters 
         $apiKey = '&key=bVrLNhG2U1aFCKuix97RdsQyIfEnXPpl8jcSvzZO';
+
         $location = $request->input('location');
+        if(is_numeric($location)){
+            $location = '&zip=' . $location;
+        }else{
+            $location = '&city_neighborhood=chicago:' . $location;
+        }
         //$sortParameter = explode("-", $sort);
         $sort = '1';
         $page = '1';
         $sortName = ""; 
         $sortDir = "";
-        $searchParameters = 'detail_level=2&page_count=20&page_index=' . $page . '&sort_name=' . $sortName . '&sort_dir=' . $sortDir;
+
+        //building the url for the API request
+        $searchParameters = 'detail_level=2&page_count=20&page_index=' . $page . $location .'&sort_name=' . $sortName . '&sort_dir=' . $sortDir;
         $searchArguments = '';
+
+        //Making the API request
         $client = new Client();
         $res = $client->request('POST', 'https://www.yougotlistings.com/api/rentals/search.php?' . $searchParameters .  $apiKey);
-
         $xml = $res->getBody();
         $xml = simplexml_load_string($xml, 'SimpleXMLElement', LIBXML_NOCDATA);
         $json = json_encode($xml);
