@@ -14,9 +14,11 @@ class ListingController extends Controller
 
         $location = $request->input('location');
         if(is_numeric($location)){
-            $location = '&zip=' . $location;
+            $locationZip = '&zip=' . $location;
+            $locationCity = '';
         }else{
-            $location = '&city_neighborhood=chicago:' . $location;
+            $locationCity = '&city_neighborhood=chicago:' . $location;
+            $locationZip = '';
         }
         //$sortParameter = explode("-", $sort);
         $sort = '1';
@@ -25,7 +27,7 @@ class ListingController extends Controller
         $sortDir = "";
 
         //building the url for the API request
-        $searchParameters = 'detail_level=2&page_count=20&page_index=' . $page . $location . '&sort_name=' . $sortName . '&sort_dir=' . $sortDir;
+        $searchParameters = 'detail_level=2&page_count=20&page_index=' . $page . $locationZip . $locationCity . '&sort_name=' . $sortName . '&sort_dir=' . $sortDir;
         $searchArguments = '';
 
         //Making the API request
