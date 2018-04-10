@@ -3,11 +3,10 @@
 @section ('header')
 
 <header id="header" class="header--minimal">
-        @include ('components.top-header') 
-        @include ('components.main-header') 
+    @include ('components.top-header') @include ('components.main-header')
 </header>
 
-@endsection
+@endsection 
 
 @section ('action-header')
 
@@ -44,101 +43,108 @@
     </div>
 </div>
 
-@endsection @section ('content')
+@endsection 
+
+@section ('content') 
 
 @if ($listings == 0)
-<div class="container">    
-    <div class="row">
-        <div class="col-sm-8 listings-list">
-    <header class="section__title">
-        <h2>No Properties found</h2>
-        <small>Vestibulum id ligula porta felis euismod semper</small>
-    </header>
-@else
 <div class="container">
-    <header class="section__title">
-        <h2>Duis mollisest non commodo luctus nisierat porttito</h2>
-        <small>Vestibulum id ligula porta felis euismod semper</small>
-    </header>
     <div class="row">
         <div class="col-sm-8 listings-list">
-            @foreach ($listings as $listing)
-            <div class="listings-grid__item">
-                <a href="listing-detail.html" class="media">
-                    <div class="listings-grid__main list pull-left">
-                        @if (is_array($listing) and array_key_exists('Photos', $listing) )
-                            <img src="{{ $listing['Photos']['Photo']['0']}}" alt=""> 
-                        @else
-                            <img src="/img/nophoto.png" alt=""> 
-                        @endif
-                        <div class="listings-grid__price">{{ $listing['Price'] }}</div>
-                    </div>
-
-                    <div class="media-body">
-                        <div class="listings-grid__body">
-                            <small>{{ $listing['StreetNumber'] }} {{ $listing['StreetName'] }} {{ $listing['City'] }}, {{ $listing['State'] }} {{ $listing['Zip'] }}</small>
-                            
-                            @if (is_array($listing) and array_key_exists('Title', $listing) )
-                                <h5>{{ $listing['Title'] }}</h5>
-                            @endif
-                            <small>Available: <i class="zmdi zmdi-calendar-check"></i> <span class="availableDate">{{ $listing['AvailableDate'] }}</span></small>
-                        </div>
-                        <ul class="listings-grid__attrs">
-                            <li class="number"><i class="listings-grid__icon listings-grid__icon--bed"></i> {{ $listing['Beds'] }} </li>
-                            <li class="number"><i class="listings-grid__icon listings-grid__icon--bath"></i> {{ $listing['Baths'] }}</li>
-                            <!-- <li><i class="listings-grid__icon listings-grid__icon--parking"></i> 00</li> -->
-                        </ul>
-                    </div>
-                </a>
-
-                <div class="actions listings-grid__favorite">
-{{--                     <div class="actions__toggle">
-                        <input type="checkbox">
-                        <i class="zmdi zmdi-favorite-outline"></i>
-                        <i class="zmdi zmdi-favorite"></i>
-                    </div> --}}
-                </div>
-            </div>
-            @endforeach
-
-            <nav class="text-center">
-                <ul class="pagination">
-                    
-                </ul>
-            </nav>
+            <header class="section__title">
+                <h2>No Properties found</h2>
+                <small>Vestibulum id ligula porta felis euismod semper</small>
+            </header>
         </div>
-@endif
-        <aside class="col-sm-4 hidden-xs">
-            <div class="card subscribe mdc-bg-light-blue">
-                <div class="subscribe__icon">
-                    <i class="zmdi zmdi-email"></i>
-                </div>
+@else
+        <div class="container">
+            <header class="section__title">
+                <h2>Duis mollisest non commodo luctus nisierat porttito</h2>
+                <small>Vestibulum id ligula porta felis euismod semper</small>
+            </header>
+            <div class="row">
+                <div class="col-sm-8 listings-list">
+                    @foreach ($listings as $listing)
+                    <div class="listings-grid__item">
+                        <a href="listing-detail.html" class="media">
+                            <div class="listings-grid__main list pull-left">
+                                @if (is_array($listing) and array_key_exists('Photos', $listing) )
+                                <img src="{{ $listing['Photos']['Photo']['0']}}" alt=""> @else
+                                <img src="/img/nophoto.png" alt=""> @endif
+                                <div class="listings-grid__price">{{ $listing['Price'] }}</div>
+                            </div>
 
-                <h2>Subscribe for Newsletters</h2>
-                <small>Curabitur blandit tempus porttitor adipiscing maecenas faucibus mollis interdum</small>
+                            <div class="media-body">
+                                <div class="listings-grid__body">
+                                    <small>{{ $listing['StreetNumber'] }} {{ $listing['StreetName'] }} {{ $listing['City'] }}, {{
+                                        $listing['State'] }} {{ $listing['Zip'] }}</small>
 
-                <form>
-                    <div class="form-group form-group--light form-group--float">
-                        <input type="text" class="form-control text-center" placeholder="Email Address">
-                        <i class="form-group__bar"></i>
+                                    @if (is_array($listing) and array_key_exists('Title', $listing) )
+                                    <h5>{{ $listing['Title'] }}</h5>
+                                    @endif
+                                    <small>Available:
+                                        <i class="zmdi zmdi-calendar-check"></i>
+                                        <span class="availableDate">{{ $listing['AvailableDate'] }}</span>
+                                    </small>
+                                </div>
+                                <ul class="listings-grid__attrs">
+                                    <li class="number">
+                                        <i class="listings-grid__icon listings-grid__icon--bed"></i> {{ $listing['Beds'] }} </li>
+                                    <li class="number">
+                                        <i class="listings-grid__icon listings-grid__icon--bath"></i> {{ $listing['Baths'] }}</li>
+                                    <!-- <li><i class="listings-grid__icon listings-grid__icon--parking"></i> 00</li> -->
+                                </ul>
+                            </div>
+                        </a>
+
+                        <div class="actions listings-grid__favorite">
+                            {{--
+                            <div class="actions__toggle">
+                                <input type="checkbox">
+                                <i class="zmdi zmdi-favorite-outline"></i>
+                                <i class="zmdi zmdi-favorite"></i>
+                            </div> --}}
+                        </div>
                     </div>
+                    @endforeach
 
-                    <button class="btn btn--circle">
-                        <i class="zmdi zmdi-check mdc-text-light-blue"></i>
-                    </button>
-                </form>
-            </div>
-        </aside>
-    </div>
-</div>
+                    <nav class="text-center">
+                        <ul class="pagination">
+
+                        </ul>
+                    </nav>
+                </div>
 @endif
+                <aside class="col-sm-4 hidden-xs">
+                    <div class="card subscribe mdc-bg-light-blue">
+                        <div class="subscribe__icon">
+                            <i class="zmdi zmdi-email"></i>
+                        </div>
 
-<div class=no-show>
-    <div class="pageindex">{{ $location }}</div>
-    <div class="pageindex">{{ $pageIndex }}</div>
-    <div class="pages">{{ $pages }}</div>
-    <div class="view">{{ $view }}</div>
-    <div class="sort">{{ $sort }}</div>    
-    <div class="urlparameters ">{{ $urlParameters }}</div>
-</div>
-@endsection
+                        <h2>Subscribe for Newsletters</h2>
+                        <small>Curabitur blandit tempus porttitor adipiscing maecenas faucibus mollis interdum</small>
+
+                        <form>
+                            <div class="form-group form-group--light form-group--float">
+                                <input type="text" class="form-control text-center" placeholder="Email Address">
+                                <i class="form-group__bar"></i>
+                            </div>
+
+                            <button class="btn btn--circle">
+                                <i class="zmdi zmdi-check mdc-text-light-blue"></i>
+                            </button>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+        <div class=no-show>
+            <div class="pageindex">{{ $location }}</div>
+            <div class="pageindex">{{ $pageIndex }}</div>
+            <div class="pages">{{ $pages }}</div>
+            <div class="view">{{ $view }}</div>
+            <div class="sort">{{ $sort }}</div>
+            <div class="urlparameters ">{{ $urlParameters }}</div>
+        </div>
+        @endsection
