@@ -7,7 +7,7 @@ use GuzzleHttp\Client;
 
 class ListingController extends Controller
 {
-    public function index($view, $parameters)
+    public function index($view, $parameters,Request $request)
     {
 
         $apiKey = '&key=bVrLNhG2U1aFCKuix97RdsQyIfEnXPpl8jcSvzZO';

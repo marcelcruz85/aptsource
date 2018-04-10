@@ -20,7 +20,7 @@ Route::get('/listings-grid', function () {
 });
 
 
-Route::post('/rentals/{view}/{parameters}', 'ListingController@index');
+Route::get('/rentals/{view}/{parameters}', 'ListingController@index');
 
 Route::get('/search/{view}', 'ListingController@search');
 
