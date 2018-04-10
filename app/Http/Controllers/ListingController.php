@@ -25,7 +25,7 @@ class ListingController extends Controller
         $sortDir = "";
 
         //building the url for the API request
-        $searchParameters = 'detail_level=2&page_count=20&page_index=' . $page . $location .'&sort_name=' . $sortName . '&sort_dir=' . $sortDir;
+        $searchParameters = 'detail_level=2&page_count=20&page_index=' . $page . '&sort_name=' . $sortName . '&sort_dir=' . $sortDir;
         $searchArguments = '';
 
         //Making the API request
