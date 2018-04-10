@@ -56,6 +56,7 @@
         </div>        
     <div class="row">
             <div class="col-sm-8 listings-list">
+            </div>
 @else
         <div class="container">
             <header class="section__title">
