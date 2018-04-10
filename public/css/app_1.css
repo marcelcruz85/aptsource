@@ -12909,13 +12909,23 @@ a {
   margin-bottom: 55px;
 }
 
-.header--minimal {
-  background: #3F51B5 url(../img/patterns/header_pattern.png) repeat-x bottom 20px left;
-  padding-bottom: 30px;
+.header--minimal__index {
+  background: #3F51B5 url(../img/apto.jpg) no-repeat top 0px left;
+  background-size: 105% auto;
+  padding-bottom: 220px;
 }
 
-.header__main {
-  padding: 32px 0;
+.header--minimal__index .header__main {
+  padding: 25px 0 140px;
+}
+
+.header--minimal {
+  background: #3F51B5 url(../img/patterns/header_pattern.png) repeat-x  top 10px left;
+  padding-bottom: 0px;
+}
+
+.header--minimal .header__main {
+  padding: 25px 0;
 }
 
 @media (max-width: 767px) {

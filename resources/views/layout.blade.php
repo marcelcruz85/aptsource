@@ -41,12 +41,8 @@
     </div>
     <!-- End page loader -->
 
-    <header id="header" class="header--minimal">
-        @include ('components.top-header') 
-        @include ('components.main-header') 
-        @yield ('search')
+    @yield ('header')
 
-    </header>
 
     @yield ('action-header')
     <section class="section">

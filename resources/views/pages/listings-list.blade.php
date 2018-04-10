@@ -1,4 +1,15 @@
-@extends ('layout') @section ('action-header')
+@extends ('layout') 
+
+@section ('header')
+
+<header id="header" class="header--minimal">
+        @include ('components.top-header') 
+        @include ('components.main-header') 
+</header>
+
+@endsection
+
+@section ('action-header')
 
 <div class="action-header">
     <div class="container">
