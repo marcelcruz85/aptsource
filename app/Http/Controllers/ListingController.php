@@ -61,7 +61,7 @@ class ListingController extends Controller
             'pageIndex' =>  $page,
             'urlParameters' => $request->getQueryString(),
             'location' => $location,
-            'listings' => $response['Listings']['Listing'],
+            'listings' => $listings,
         ]);
     }
     public function search($view, $search)
