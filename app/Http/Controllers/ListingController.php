@@ -35,9 +35,17 @@ class ListingController extends Controller
         $xml = simplexml_load_string($xml, 'SimpleXMLElement', LIBXML_NOCDATA);
         $json = json_encode($xml);
         $response = json_decode($json, TRUE);
-        
-        $pages = ceil($response['Total'] / 20);
 
+
+        if($response['Total'] > 0){
+            $pages = ceil($response['Total'] / 20);
+            $listings = $response['Listings']['Listing'];
+        }else{
+            $listings = 0;
+            $pages = 0;
+        }
+
+        //
         if($view == 'list') {
             $viewType = 'pages.listings-list';
             $view = 'list';

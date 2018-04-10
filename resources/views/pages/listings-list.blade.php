@@ -46,6 +46,14 @@
 
 @endsection @section ('content')
 
+@if ($listings ==0)
+<div class="container">
+    <header class="section__title">
+        <h2>No Properties found</h2>
+        <small>Vestibulum id ligula porta felis euismod semper</small>
+    </header>
+</div>
+@else
 <div class="container">
     <header class="section__title">
         <h2>Duis mollisest non commodo luctus nisierat porttito</h2>
@@ -99,7 +107,7 @@
                 </ul>
             </nav>
         </div>
-
+@endif
         <aside class="col-sm-4 hidden-xs">
             <div class="card subscribe mdc-bg-light-blue">
                 <div class="subscribe__icon">
