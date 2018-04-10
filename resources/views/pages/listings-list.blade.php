@@ -46,20 +46,20 @@
 
 @endsection @section ('content')
 
-@if ($listings ==0)
-<div class="container">
+@if ($listings == 0)
+<div class="container">    
+    <div class="row">
+        <div class="col-sm-8 listings-list">
     <header class="section__title">
         <h2>No Properties found</h2>
         <small>Vestibulum id ligula porta felis euismod semper</small>
     </header>
-</div>
 @else
 <div class="container">
     <header class="section__title">
         <h2>Duis mollisest non commodo luctus nisierat porttito</h2>
         <small>Vestibulum id ligula porta felis euismod semper</small>
     </header>
-
     <div class="row">
         <div class="col-sm-8 listings-list">
             @foreach ($listings as $listing)
@@ -131,6 +131,8 @@
         </aside>
     </div>
 </div>
+@endif
+
 <div class=no-show>
     <div class="pageindex">{{ $location }}</div>
     <div class="pageindex">{{ $pageIndex }}</div>
