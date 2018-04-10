@@ -21,7 +21,7 @@
                 <input type="text" name="location" class="form-control search__input autocomplete" placeholder="Enter any Neighorhood or Zip Code" data-rmd-action="advanced-search-open">
 
                 <div class="search__advanced">
-                    <div class="col-sm-6">
+                    {{-- <div class="col-sm-6">
                         <div class="form-group form-group--float">
                             <input type="text" class="form-control" value="New York, NY">
                             <label>Location</label>
@@ -41,7 +41,7 @@
                                 <option value="">Room</option>
                             </select>
                         </div>
-                    </div>
+                    </div> --}}
 
                     <div class="col-sm-6">
                         <div class="form-group form-group--range">
