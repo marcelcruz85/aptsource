@@ -48,15 +48,14 @@
 @section ('content') 
 
 @if ($listings == 0)
-<div class="container">
+<div class="container">    
+        <div class="row">
+                <div class="col-sm-8 listings-list">
             <header class="section__title">
                 <h2>No Properties found</h2>
                 <small>Vestibulum id ligula porta felis euismod semper</small>
             </header>
         </div>        
-    <div class="row">
-            <div class="col-sm-8 listings-list">
-            </div>
 @else
         <div class="container">
             <header class="section__title">
