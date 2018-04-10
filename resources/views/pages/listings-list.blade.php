@@ -84,11 +84,11 @@
                 </a>
 
                 <div class="actions listings-grid__favorite">
-                     <div class="actions__toggle">
+{{--                     <div class="actions__toggle">
                         <input type="checkbox">
                         <i class="zmdi zmdi-favorite-outline"></i>
                         <i class="zmdi zmdi-favorite"></i>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
             @endforeach
