@@ -18,8 +18,8 @@
                 <!-- For desktop -->
                 <input class="visible-xs" type="text" placeholder="Search...">
                 <!-- For mobile -->
-                <div class="col-xs-12 m-t-10">
-                        <button class="btn btn-primary">Search</button>
+                <div class="search__type">
+                        <button class="btn btn-primary no-show">Search</button>
                 </div>
             </form>
         </div>
