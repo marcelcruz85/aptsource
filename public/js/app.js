@@ -535,6 +535,7 @@ $(document).ready(function () {
 
         pages: pages,
         currentPage: pageIndex,
+        displayedPages: 3,
         hrefTextPrefix: ''
     });
 
