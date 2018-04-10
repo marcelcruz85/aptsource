@@ -19,7 +19,7 @@
                 <input class="visible-xs" type="text" placeholder="Search...">
                 <!-- For mobile -->
                 <div class="search__type">
-                        <button class="btn btn-primary no-show">Search</button>
+                        <button class="btn btn-primary not-show">Search</button>
                 </div>
             </form>
         </div>
