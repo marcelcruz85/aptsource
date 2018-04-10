@@ -20,7 +20,6 @@
                 <!-- For mobile -->
                 <div class="col-xs-12 m-t-10">
                         <button class="btn btn-primary">Search</button>
-                        <button class="btn btn-link" data-rmd-action="advanced-search-close">Cancel</button>
                 </div>
             </form>
         </div>
