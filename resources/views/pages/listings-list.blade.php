@@ -14,7 +14,7 @@
     <div class="container">
         <div class="action-header__item action-header__item--search">
             <form>
-                <input class="hidden-xs" type="text" placeholder="Search by neighborhood, city, zip or address...">
+                <input class="hidden-xs" type="text" name="location" value="{{ $location }}" placeholder="Search by neighborhood, city, zip or address...">
                 <!-- For desktop -->
                 <input class="visible-xs" type="text" placeholder="Search...">
                 <!-- For mobile -->
