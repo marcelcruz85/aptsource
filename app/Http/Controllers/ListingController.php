@@ -42,7 +42,7 @@ class ListingController extends Controller
             'sort' => $sort,
             'pages' =>  $pages,
             'pageIndex' =>  $page,
-            'urlParameters' => $parameters . $request,
+            'urlParameters' => $request->path(),
             'location' => $location,
             'listings' => $response['Listings']['Listing'],
         ]);
