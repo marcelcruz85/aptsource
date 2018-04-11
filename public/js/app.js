@@ -574,7 +574,7 @@ $('.select2').on('select2:select', function (e) {
 /*---------------------------------------------
     SEARCH SUBMIT
 ---------------------------------------------*/
-$('#index-search').submit(function(){
+$('.form-search').submit(function(){
     var minRent = $('#property-price-upper').text();
     minRent = parseInt(minRent);
     $('#min-rent').val(minRent);

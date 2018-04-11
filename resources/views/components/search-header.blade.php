@@ -1,5 +1,5 @@
 <div class="header__search container">
-    <form id="index-search" action="/rentals/list/search" method="get">
+    <form id="index-search" class="form-search" action="/rentals/list/search" method="get">
     {{-- {{ csrf_field() }} --}}
         <div class="search">
             <div class="search__type dropdown">

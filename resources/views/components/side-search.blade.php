@@ -4,7 +4,7 @@
         </button>
 
         <aside id="advanced-search" class="rmd-sidebar">
-            <form class="card">
+            <form class="card form-search">
                 <div class="card__header">
                     <h2>Advanced Property Search</h2>
 
