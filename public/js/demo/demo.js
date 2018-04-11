@@ -21,6 +21,7 @@ if ($('#property-price-range')[0]) {
     noUiSlider.create (propertyPriceRange, {
         start: [0, 5000],
         connect: true,
+        step: 50,
         range: {
             'min': 0,
             'max': 5000
@@ -29,7 +30,12 @@ if ($('#property-price-range')[0]) {
 
     propertyPriceRange.noUiSlider.on('update', function( values, handle ) {
         propertyPriceRangeValues[handle].innerHTML = values[handle];
+        var maxRent = $('#property-price-lower').text();
+        if(maxRent > 4999){
+            $('#property-price-lower').text('No Max');
+        }
     });
+
 }
 
 // 2. Property Area Size
@@ -44,6 +50,7 @@ if ($('#property-area-range')[0]) {
     noUiSlider.create (propertyAreaRange, {
         start: [0, 10000],
         connect: true,
+        step: 100,
         range: {
             'min': 0,
             'max': 10000
@@ -52,6 +59,10 @@ if ($('#property-area-range')[0]) {
 
     propertyAreaRange.noUiSlider.on('update', function( values, handle ) {
         propertyAreaRangeValues[handle].innerHTML = values[handle];
+        var maxSize = $('#property-area-lower').text();
+        if(maxSize > 9999){
+            $('#property-area-lower').text('No Max');
+        }
     });
 }
 
