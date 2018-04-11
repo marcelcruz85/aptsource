@@ -139,6 +139,7 @@
                         </form>
                     </div>
                 </aside>
+                @include('side-search');
             </div>
         </div>
 
