@@ -8,7 +8,7 @@
                 <div class="card__header">
                     <h2>Advanced Property Search</h2>
 
-                    <div class="dropdown m-t-5">
+{{--                     <div class="dropdown m-t-5">
                         <a data-toggle="dropdown" href="" class="text-muted">05 Saved Searches <i class="caret"></i></a>
 
                         <ul class="dropdown-menu">
@@ -18,12 +18,12 @@
                             <li><a href="">2012/08/19</a></li>
                             <li><a href="">2012/08/20</a></li>
                         </ul>
-                    </div>
+                    </div> --}}
                 </div>
 
                 <div class="card__body m-t-20">
                     <div class="form-group form-group--float">
-                        <input type="text" class="form-control" value="New York, NY">
+                        <input type="text" class="form-control" name="location" value="{{ $location }}">
                         <label class="fg-float">Location</label>
                         <i class="form-group__bar"></i>
                     </div>
@@ -51,7 +51,7 @@
                             <option value="">Room</option>
                         </select>
                     </div>
-                    
+
                     <div class="form-group form-group--range">
                         <label>Price Range</label>
                         <div class="input-slider-values clearfix">
