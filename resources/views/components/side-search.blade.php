@@ -28,7 +28,7 @@
                         <i class="form-group__bar"></i>
                     </div>
 
-                    <div class="form-group">
+{{--                     <div class="form-group">
                         <label>Listing Type</label>
                         <div class="btn-group btn-group-justified" data-toggle="buttons">
                             <label class="btn active">
@@ -38,7 +38,7 @@
                                 <input type="radio" name="advanced-search-beds" id="buy">Buy
                             </label>
                         </div>
-                    </div>
+                    </div> --}}
 
                     <div class="form-group">
                         <label>Ownership Type</label>
@@ -51,21 +51,32 @@
                             <option value="">Room</option>
                         </select>
                     </div>
-
+                    
                     <div class="form-group form-group--range">
                         <label>Price Range</label>
                         <div class="input-slider-values clearfix">
-                            <div class="pull-left"><span>$</span><span id="property-price-upper"></span></div>
-                            <div class="pull-right"><span>$</span><span id="property-price-lower"></span></div>
+                            <div class="pull-left">
+                                <span>$</span>
+                                <span id="property-price-upper"></span>
+                                <input id="min-rent" name="min-rent" type="hidden" value="0">
+                            </div>
+                            <div class="pull-right">
+                                <span>$</span>
+                                <span id="property-price-lower"></span>
+                                <input id="max-rent" name="max-rent" type="hidden" value="0">
+                            </div>
                         </div>
                         <div id="property-price-range"></div>
                     </div>
 
+                    
                     <div class="form-group form-group--range">
                         <label>Area Size (sqft)</label>
                         <div class="input-slider-values clearfix">
                             <div class="pull-left" id="property-area-upper"></div>
+                            <input id="min-size" name="min-size" type="hidden" value="0">
                             <div class="pull-right" id="property-area-lower"></div>
+                            <input id="max-size" name="max-size" type="hidden" value="0">
                         </div>
                         <div id="property-area-range"></div>
                     </div>
@@ -74,20 +85,22 @@
                         <label>Bedrooms</label>
                         <div class="btn-group btn-group-justified" data-toggle="buttons">
                             <label class="btn">
-                                <input type="checkbox" name="inner-search-beds" id="bed1">1
-                            </label>
-                            <label class="btn active">
-                                <input type="checkbox" name="inner-search-beds" id="bed2" checked>2
+                                <input type="checkbox" class="beds" value="1" id="bed1">1
                             </label>
                             <label class="btn">
-                                <input type="checkbox" name="inner-search-beds" id="bed3">3
+                                <input type="checkbox" class="beds" value="2" id="bed2">2
                             </label>
                             <label class="btn">
-                                <input type="checkbox" name="inner-search-beds" id="bed4">4
+                                <input type="checkbox" class="beds" value="3" id="bed3">3
                             </label>
                             <label class="btn">
-                                <input type="checkbox" name="inner-search-beds" id="bed5">4+
+                                <input type="checkbox" class="beds" value="4" id="bed4">4
                             </label>
+                            <label class="btn">
+                                <input type="checkbox" class="beds" value="5,6,7,8,9,10" id="bed5">4+
+                            </label>
+
+                            <input id="beds" name="beds" type="hidden" value="0">
                         </div>
                     </div>
 
@@ -95,20 +108,22 @@
                         <label>Bathrooms</label>
                         <div class="btn-group btn-group-justified" data-toggle="buttons">
                             <label class="btn">
-                                <input type="checkbox" name="inner-search-baths" id="bath1">1
-                            </label>
-                            <label class="btn active">
-                                <input type="checkbox" name="inner-search-baths" id="bath2" checked>2
+                                <input type="checkbox" class="beds" value="1" id="bed1">1
                             </label>
                             <label class="btn">
-                                <input type="checkbox" name="inner-search-baths" id="bath3">3
+                                <input type="checkbox" class="beds" value="2" id="bed2">2
                             </label>
                             <label class="btn">
-                                <input type="checkbox" name="inner-search-baths" id="bath4">4
+                                <input type="checkbox" class="beds" value="3" id="bed3">3
                             </label>
                             <label class="btn">
-                                <input type="checkbox" name="inner-search-baths" id="bath5">4+
+                                <input type="checkbox" class="beds" value="4" id="bed4">4
                             </label>
+                            <label class="btn">
+                                <input type="checkbox" class="beds" value="5,6,7,8,9,10" id="bed5">4+
+                            </label>
+
+                            <input id="beds" name="beds" type="hidden" value="0">
                         </div>
                     </div>
 
@@ -131,15 +146,6 @@
                                 <input type="checkbox" name="inner-search-garage" id="garage5">4+
                             </label>
                         </div>
-                    </div>
-
-                    <div class="form-group form-group--range">
-                        <label>Lot Size (sqft)</label>
-                        <div class="input-slider-values clearfix">
-                            <div class="pull-left" id="property-lot-upper"></div>
-                            <div class="pull-right" id="property-lot-lower"></div>
-                        </div>
-                        <div id="property-lot-range"></div>
                     </div>
 
                     <div class="form-group form-group--range">
