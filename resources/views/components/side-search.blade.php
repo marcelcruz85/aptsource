@@ -23,7 +23,7 @@
 
                 <div class="card__body m-t-20">
                     <div class="form-group form-group--float">
-                        <input type="text" class="form-control" name="location" value="{{ $location }}">
+                        <input type="text" class="form-control autocomplete" name="location" value="{{ $location }}">
                         <label class="fg-float">Location</label>
                         <i class="form-group__bar"></i>
                     </div>
