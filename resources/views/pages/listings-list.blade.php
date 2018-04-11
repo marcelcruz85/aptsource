@@ -139,7 +139,7 @@
                         </form>
                     </div>
                 </aside>
-                @include('side-search');
+                @include('components.side-search');
             </div>
         </div>
 
