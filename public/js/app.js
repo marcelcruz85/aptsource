@@ -570,3 +570,38 @@ $('.select2').on('select2:select', function (e) {
 
     window.location.href = baseUrl + 'listings/' + view + '/' + sort + '/' + pageIndex;
 });
+
+/*---------------------------------------------
+    SEARCH SUBMIT
+---------------------------------------------*/
+$('#index-search').submit(function(){
+    var minRent = $('#property-price-upper').text();
+    minRent = parseInt(minRent);
+    $('#min-rent').val(minRent);
+
+
+    var maxRent = $('#property-price-lower').text();
+    maxRent = parseInt(maxRent);
+    $('#max-rent').val(maxRent);
+
+    var minSize = $('#property-area-upper').text();
+    minSize = parseInt(minSize);
+    $('#min-size').val(minSize);
+
+
+    var maxSize = $('#property-area-lower').text();
+    maxSize = parseInt(maxSize);
+    $('#max-size').val(maxSize);
+
+    var beds = $(".beds[type='checkbox']:checked").map( function(){
+                    return $(this).val();        
+                }).get().join(",");
+
+    $('#beds').val(beds);
+
+    var baths = $(".baths[type='checkbox']:checked").map( function(){
+                    return $(this).val();        
+                }).get().join(",");
+
+    $('#baths').val(baths);
+});

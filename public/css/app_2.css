@@ -5775,3 +5775,9 @@ html:not(.ie9) .page-loader__spinner {
     display: none;
   }
 }
+
+/* Custom style */
+
+.top-search{
+  box-shadow: none !important;
+}

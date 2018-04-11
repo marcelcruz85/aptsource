@@ -12,14 +12,38 @@ class ListingController extends Controller
         //Getting parameters 
         $apiKey = '&key=bVrLNhG2U1aFCKuix97RdsQyIfEnXPpl8jcSvzZO';
 
+        //location
         $location = $request->input('location');
-        if(is_numeric($location)){
-            $locationZip = '&zip=' . $location;
-            $locationCity = '';
+        if($location == ""){
+            $rentLocation = '';
+        }else if(is_numeric($location)){
+            $rentLocation = '&zip=' . $location;
         }else{
-            $locationCity = '&city_neighborhood=chicago:' . $location;
-            $locationZip = '';
+            $rentLocation = '&city_neighborhood=chicago:' . $location;
         }
+
+        //Rent range
+        $minRent = $request->input('min-rent');
+        $minRent = '&min_rent=' . $minRent;
+
+        $maxRent = $request->input('max-rent');
+        $maxRent = '&max_rent=' . $maxRent;
+
+        //Rent range
+        $minSize = $request->input('min-size');
+        $minSize = '&square_footage_min=' . $minSize;
+        
+        $maxSize = $request->input('max-size');
+        $maxSize = '&square_footage_max=' . $maxSize;
+
+        //Beds
+        $beds = $request->input('beds');
+        $beds = '&beds=' . $beds;
+
+        //Baths
+        $baths = $request->input('baths');
+        $baths = '&baths=' . $baths;
+
         //$sortParameter = explode("-", $sort);
         $sort = '1';
         $page = '1';
@@ -27,8 +51,7 @@ class ListingController extends Controller
         $sortDir = "";
 
         //building the url for the API request
-        $searchParameters = 'detail_level=2&page_count=20&page_index=' . $page . $locationZip . $locationCity . '&sort_name=' . $sortName . '&sort_dir=' . $sortDir;
-        $searchArguments = '';
+        $searchParameters = 'include_mls=1&detail_level=2&page_count=20&page_index=' . $page . $rentLocation . $minRent . $maxRent . $minSize . $maxSize . $beds . $baths . '&sort_name=' . $sortName . '&sort_dir=' . $sortDir;
 
         //Making the API request
         $client = new Client();
