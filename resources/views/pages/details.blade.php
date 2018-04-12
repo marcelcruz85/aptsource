@@ -283,6 +283,9 @@
     @endsection
 
     @section('script')
+
+    <!-- NoUiSlider -->
+    <script src="/vendors/bower_components/nouislider/distribute/nouislider.min.js"></script>
     
     <!-- Jquery Light Gallery -->    
     <script src="/vendors/bower_components/lightgallery/dist/js/lightgallery-all.min.js"></script>
