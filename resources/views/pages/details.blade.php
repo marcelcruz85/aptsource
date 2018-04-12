@@ -71,21 +71,16 @@
                         <div class="detail-media">
                             <div class="tab-content">
                                 <div class="tab-pane fade in active light-gallery" id="detail-media-images">
-                                    <a href="img/demo/listing/16.jpg">
+                                    @if (is_array($listing) and array_key_exists('Photos', $listing) )
+                                        @foreach($listing['Photos']['Photo'] as $photo)                                        
+                                        <a href="{{ $photo }}">
+                                            <img src="{{ $photo }}" alt="">                                        
+                                        </a>
+                                        @endforeach 
+                                    @else                                        
                                         <img src="https://placeholdit.imgix.net/~text?&w=960&h=600" alt="">
-                                    </a>
-                                    <a href="img/demo/listing/1.jpg">
-                                        <img src="https://placeholdit.imgix.net/~text?&w=400&h=266" alt="">
-                                    </a>
-                                    <a href="img/demo/listing/2.jpg">
-                                        <img src="https://placeholdit.imgix.net/~text?&w=400&h=266" alt="">
-                                    </a>
-                                    <a href="img/demo/listing/3.jpg">
-                                        <img src="https://placeholdit.imgix.net/~text?&w=400&h=266" alt="">
-                                    </a>
-                                    <a href="img/demo/listing/4.jpg">
-                                        <img src="https://placeholdit.imgix.net/~text?&w=400&h=266" alt="">
-                                    </a>
+                                    @endif
+                                    
                                 </div>
                                 <div class="tab-pane fade light-gallery" id="detail-media-floorplan">
                                     <a href="img/demo/floor-plan.png">
