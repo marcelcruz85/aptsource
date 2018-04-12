@@ -17,17 +17,25 @@ class ListingController extends Controller
             'listings' => $response['Listings']['Listing'],
         ]);
     }
-    public function details()
+    
+
+    public function details($lisitng_id)
     {
         
-        $searchParameters = '';
+        $searchParameters = 'listing_id=' . $lisitng_id;
         $response = $this->apiRequest($searchParameters);
-        return view('pages.details');
-/*         return view('pages.index', [            
-            'listings' => $response['Total'],
-            'listings' => $response['Listings']['Listing'],
-        ]); */
+
+        //nearby properties
+        $nearby = $response['zip'];
+
+        //return view('pages.details');
+        return view('pages.index', [            
+            'nearby' => $nearby,
+            'listing' => $response['Listings']['Listing'],
+        ]);
     }
+
+
     public function search($view, $parameters,Request $request)
     {
         //Getting parameters 

@@ -25,7 +25,7 @@ Route::get('/listings-grid', function () {
 
 Route::get('/rentals/{view}/{parameters}', 'ListingController@search');
 
-Route::get('/rental/details', 'ListingController@details');
+Route::get('/rental/details/{listing_id}', 'ListingController@details');
 
 Route::get('/search/{view}', 'ListingController@search');
 
