@@ -14,8 +14,12 @@
         <div class="container">
             <div class="action-header__item action-header__item--search">
                 <form>
-                    <input class="hidden-xs autocomplete" type="text" placeholder="Enter any Neighorhood or Zip Code"><!-- For desktop -->
+                    <input class="top-search autocomplete" type="text" placeholder="Enter any Neighorhood or Zip Code"><!-- For desktop -->
                     <input class="visible-xs autocomplete" type="text" placeholder="Search..."><!-- For mobile -->
+                    
+                    <div class="search__type hidden-xs ">
+                        <button class="btn btn-primary not-show">Search</button>
+                    </div>
                 </form>
             </div>
 
