@@ -10,7 +10,7 @@ class ListingController extends Controller
     public function index()
     {
 
-        $searchParameters = '';
+        $searchParameters = 'detail_level=2&page_count=8';
         $response = $this->apiRequest($searchParameters);
         return view('pages.index', [            
             'listings' => $response['Total'],
