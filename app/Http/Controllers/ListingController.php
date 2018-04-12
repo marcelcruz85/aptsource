@@ -11,7 +11,7 @@ class ListingController extends Controller
     {
 
         $searchParameters = '';
-        $this->apiRequest($searchParameters);
+        $response = $this->apiRequest($searchParameters);
         return view('pages.index', [            
             'listings' => $response['Total'],
             'listings' => $response['Listings']['Listing'],
@@ -21,7 +21,7 @@ class ListingController extends Controller
     {
         
         $searchParameters = '';
-        $this->apiRequest($searchParameters);
+        $response = $this->apiRequest($searchParameters);
         return view('pages.details');
 /*         return view('pages.index', [            
             'listings' => $response['Total'],
@@ -72,8 +72,7 @@ class ListingController extends Controller
 
         //building the url for the API request
         $searchParameters = 'include_mls=1&detail_level=2&page_count=20&page_index=' . $page . $rentLocation . $minRent . $maxRent . $minSize . $maxSize . $beds . $baths . '&sort_name=' . $sortName . '&sort_dir=' . $sortDir;
-
-        $this->apiRequest($searchParameters);
+        $response = $this->apiRequest($searchParameters);
 
         if($response['Total'] > 0){
             $pages = ceil($response['Total'] / 20);
