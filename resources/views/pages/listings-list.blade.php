@@ -25,8 +25,8 @@
         </div>
 
         <div class="action-header__item action-header__views hidden-xs">
-            <a href="/rentals/grid/{{ $sort }}/{{ $pageIndex }}" class="zmdi zmdi-apps"></a>
-            <a href="/rentas/list/{{ $sort }}/{{ $pageIndex }}" class="zmdi zmdi-view-list active"></a>
+            <a href="/rentals/grid/search?{{ $urlParameters }}" class="zmdi zmdi-apps"></a>
+            <a href="/rentals/list/search?{{ $urlParameters }}" class="zmdi zmdi-view-list  active"></a>
         </div>
 
         <div class="action-header__item action-header__item--sort hidden-xs">
