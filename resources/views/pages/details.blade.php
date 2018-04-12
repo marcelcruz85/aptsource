@@ -257,19 +257,21 @@
                         <div class="list-group">
                             
                             @foreach ($nearby as $listing)
-                            <a href="" class="list-group-item media">
+                            <a href="/rental/details/{{ $listing['ID'] }}" class="list-group-item media">
                                 <div class="pull-left">
                                     @if (is_array($listing) and array_key_exists('Photos', $listing) )
-                                        <img src="{{ $listing['Photos']['Photo']['0']}}" alt=""> 
+                                        <img src="{{ $listing['Photos']['Photo']['0']}}"  alt="" class="list-group__img" width="65"> 
                                     @else
-                                        <img src="/img/nophoto.png" alt=""> 
+                                        <img src="/img/nophoto.png"  alt="" class="list-group__img" width="65"> 
                                     @endif                                </div>
                                 <div class="media-body list-group__text">
                                     <strong>{{ $listing['StreetNumber'] }} {{ $listing['StreetName'] }} {{ $listing['City'] }}</strong>
-                                    <div class="listings-grid__price">{{ $listing['Price'] }}</div>                                     
+                                    <div class="listings-grid__price">{{ $listing['Price'] }}</div>    
+                                    
+                        <ul class="listings-grid__attrs">                                 
                                     <li class="number"><i class="listings-grid__icon listings-grid__icon--bed"></i> {{ $listing['Beds'] }}</li>
                                     <li class="number"><i class="listings-grid__icon listings-grid__icon--bath"></i> {{ $listing['Baths'] }}</li>
-                            
+                        </ul>
                                 </div>
                             </a>
                             @endforeach
