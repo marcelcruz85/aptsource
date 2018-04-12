@@ -29,7 +29,7 @@ class ListingController extends Controller
         $nearby = $response;
 
         //return view('pages.details');
-        return view('pages.index', [            
+        return view('pages.details', [            
             'nearby' => $nearby,
             //'listing' => $response['Listings']['Listing'],
         ]);
