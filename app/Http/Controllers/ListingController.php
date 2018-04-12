@@ -77,7 +77,7 @@ class ListingController extends Controller
         }else if($view == 'grid'){
             $viewType = 'pages.listings-grid';
             $view = 'grid';
-        }else{
+        }else if(isset($view)){
             $viewType = 'pages.index';
             $view = 'index';
         }
