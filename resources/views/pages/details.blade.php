@@ -168,18 +168,6 @@
                             <p>Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vestibulum id ligula porta felis euismod semper. Donec ullamcorper nulla non metus auctor fringilla.</p>
                         </div>
                     </div>
-
-                    <div class="card">
-                        <div class="card__header">
-                            <h2>Chart data</h2>
-                            <small>Donec ullamcorper nulla non metus auctor fringilla</small>
-                        </div>
-
-                        <div class="card__body">
-                            <div id="flot-chart--line" class="flot-chart"></div>
-                            <div class="flot-chart__legends"></div>
-                        </div>
-                    </div>
                 </div>
 
                 <div id="inquire" class="col-md-4 rmd-sidebar-mobile">

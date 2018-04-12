@@ -9,16 +9,8 @@ class ListingController extends Controller
 {
     public function index()
     {
-        //Getting parameters 
-        $apiKey = '&key=bVrLNhG2U1aFCKuix97RdsQyIfEnXPpl8jcSvzZO';
 
-        //Making the API request
-        $client = new Client();
-        $res = $client->request('POST', 'https://www.yougotlistings.com/api/rentals/search.php?detail_level=2&page_count=8'.  $apiKey);
-        $xml = $res->getBody();
-        $xml = simplexml_load_string($xml, 'SimpleXMLElement', LIBXML_NOCDATA);
-        $json = json_encode($xml);
-        $response = json_decode($json, TRUE);
+        apiRequest();
 
 
         return view('pages.index', [            
@@ -28,16 +20,7 @@ class ListingController extends Controller
     }
     public function details()
     {
-        //Getting parameters 
-        $apiKey = '&key=bVrLNhG2U1aFCKuix97RdsQyIfEnXPpl8jcSvzZO';
-
-        //Making the API request
-        $client = new Client();
-        $res = $client->request('POST', 'https://www.yougotlistings.com/api/rentals/search.php?detail_level=2&page_count=8'.  $apiKey);
-        $xml = $res->getBody();
-        $xml = simplexml_load_string($xml, 'SimpleXMLElement', LIBXML_NOCDATA);
-        $json = json_encode($xml);
-        $response = json_decode($json, TRUE);
+        apiRequest();
 
 
         return view('pages.details');
@@ -49,7 +32,6 @@ class ListingController extends Controller
     public function search($view, $parameters,Request $request)
     {
         //Getting parameters 
-        $apiKey = '&key=bVrLNhG2U1aFCKuix97RdsQyIfEnXPpl8jcSvzZO';
 
         //location
         $location = $request->input('location');
@@ -92,14 +74,7 @@ class ListingController extends Controller
         //building the url for the API request
         $searchParameters = 'include_mls=1&detail_level=2&page_count=20&page_index=' . $page . $rentLocation . $minRent . $maxRent . $minSize . $maxSize . $beds . $baths . '&sort_name=' . $sortName . '&sort_dir=' . $sortDir;
 
-        //Making the API request
-        $client = new Client();
-        $res = $client->request('POST', 'https://www.yougotlistings.com/api/rentals/search.php?' . $searchParameters .  $apiKey);
-        $xml = $res->getBody();
-        $xml = simplexml_load_string($xml, 'SimpleXMLElement', LIBXML_NOCDATA);
-        $json = json_encode($xml);
-        $response = json_decode($json, TRUE);
-
+        apiRequest($searchParameters);
 
         if($response['Total'] > 0){
             $pages = ceil($response['Total'] / 20);
@@ -127,5 +102,20 @@ class ListingController extends Controller
             'location' => $location,
             'listings' => $listings,
         ]);
+    }
+    public function apiRequest($searchParameters)
+    {
+        
+        $apiKey = '&key=bVrLNhG2U1aFCKuix97RdsQyIfEnXPpl8jcSvzZO';
+
+                //Making the API request
+                $client = new Client();
+                $res = $client->request('POST', 'https://www.yougotlistings.com/api/rentals/search.php?' . $searchParameters .  $apiKey);
+                $xml = $res->getBody();
+                $xml = simplexml_load_string($xml, 'SimpleXMLElement', LIBXML_NOCDATA);
+                $json = json_encode($xml);
+                $response = json_decode($json, TRUE);
+
+        return $response;
     }
 }
