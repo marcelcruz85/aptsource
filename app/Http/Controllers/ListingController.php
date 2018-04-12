@@ -19,10 +19,10 @@ class ListingController extends Controller
     }
     
 
-    public function details($lisitng_id)
+    public function details($listing_id)
     {
         
-        $searchParameters = 'listing_id=' . $lisitng_id;
+        $searchParameters = 'listing_id=' . $listing_id;
         $response = $this->apiRequest($searchParameters);
 
         //nearby properties
