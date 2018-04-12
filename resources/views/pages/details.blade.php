@@ -24,7 +24,7 @@
                     </div>
 
 
-                    {{ dd($nearby) }}
+                    
                     <a href="" data-rmd-action="print"><i class="zmdi zmdi-print"></i></a>
                     <div class="dropdown actions__email">
                         <a href="" data-toggle="dropdown"><i class="zmdi zmdi-email"></i></a>
@@ -255,55 +255,21 @@
                         </div>
 
                         <div class="list-group">
+                            
+                            @foreach ($listings as $listing)
                             <a href="" class="list-group-item media">
                                 <div class="pull-left">
-                                    <img src="https://placeholdit.imgix.net/~text?&w=400&h=266" alt="" class="list-group__img" width="65">
-                                </div>
+                                    @if (is_array($listing) and array_key_exists('Photos', $listing) )
+                                        <img src="{{ $listing['Photos']['Photo']['0']}}" alt=""> 
+                                    @else
+                                        <img src="/img/nophoto.png" alt=""> 
+                                    @endif                                </div>
                                 <div class="media-body list-group__text">
-                                    <strong>Vivamus sagittis lacus vel augue laoreet rutrum faucibus</strong>
-                                    <small>$810,000 . 04 Beds . 03 Baths</small>
+                                    <strong>{{ $listing['StreetNumber'] }} {{ $listing['StreetName'] }} {{ $listing['City'] }}</strong>
+                                    <small>${{ $listing['Price'] }} . 0{{ $listing['Beds'] }} Beds . 0{{ $listing['Baths'] }} Baths</small>
                                 </div>
                             </a>
-
-                            <a href="" class="list-group-item media">
-                                <div class="pull-left">
-                                    <img src="https://placeholdit.imgix.net/~text?&w=400&h=266" alt="" class="list-group__img" width="65">
-                                </div>
-                                <div class="media-body list-group__text">
-                                    <strong>Fusce dapibus tellusac cursus</strong>
-                                    <small>$910,300 . 03 Beds . 02 Baths</small>
-                                </div>
-                            </a>
-
-                            <a href="" class="list-group-item media">
-                                <div class="pull-left">
-                                    <img src="https://placeholdit.imgix.net/~text?&w=400&h=266" alt="" class="list-group__img" width="65">
-                                </div>
-                                <div class="media-body list-group__text">
-                                    <strong>Praesent commodo cursus magnavel scelerisque nisl</strong>
-                                    <small>$2,560,000 . 08 Beds . 07 Baths</small>
-                                </div>
-                            </a>
-
-                            <a href="" class="list-group-item media">
-                                <div class="pull-left">
-                                    <img src="https://placeholdit.imgix.net/~text?&w=400&h=266" alt="" class="list-group__img" width="65">
-                                </div>
-                                <div class="media-body list-group__text">
-                                    <strong>Lorem ipsum dolor sitamet consectetur adipiscing elit</strong>
-                                    <small>$1,140,650 . 06 Beds . 03 Baths</small>
-                                </div>
-                            </a>
-
-                            <a href="" class="list-group-item media">
-                                <div class="pull-left">
-                                    <img src="https://placeholdit.imgix.net/~text?&w=400&h=266" alt="" class="list-group__img" width="65">
-                                </div>
-                                <div class="media-body list-group__text">
-                                    <strong>Fusce dapibus accursus commodo</strong>
-                                    <small>$780,900 . 02 Beds . 02 Baths</small>
-                                </div>
-                            </a>
+                            @endforeach
 
                             <div class="p-10"></div>
                         </div>
