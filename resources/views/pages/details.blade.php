@@ -299,6 +299,6 @@
     <script src="/vendors/bower_components/rateYo/src/jquery.rateyo.js"></script>
 
     <!-- jsSocials - Social link sharing -->
-    <script src="vendors/bower_components/jssocials/dist/jssocials.min.js"></script>
+    <script src="/vendors/bower_components/jssocials/dist/jssocials.min.js"></script>
 
     @endsection
