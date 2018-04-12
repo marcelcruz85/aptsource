@@ -40,7 +40,7 @@ class ListingController extends Controller
         $response = json_decode($json, TRUE);
 
 
-        return view('pages.datails');
+        return view('pages.details');
 /*         return view('pages.index', [            
             'listings' => $response['Total'],
             'listings' => $response['Listings']['Listing'],
