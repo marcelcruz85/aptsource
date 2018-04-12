@@ -268,10 +268,11 @@
                                     <strong>{{ $listing['StreetNumber'] }} {{ $listing['StreetName'] }} {{ $listing['City'] }}</strong>
                                     <div class="listings-grid__item">
                                         
-                                        <ul class="listings-grid__attrs">       
-                                            <li class="number listings-grid__price">{{ $listing['Price'] }}</li>                         
-                                            <li class="number"><i class="listings-grid__icon listings-grid__icon--bed"></i> {{ $listing['Beds'] }}</li>
-                                            <li class="number"><i class="listings-grid__icon listings-grid__icon--bath"></i> {{ $listing['Baths'] }}</li>
+                                        <ul class="listings-grid__attrs">                       
+                                            <li class="number"><i class="listings-grid__icon listings-grid__icon--bed"> {{ $listing['Beds'] }}</li>
+                                            <li class="number"><i class="listings-grid__icon listings-grid__icon--bath"> {{ $listing['Baths'] }}</li>
+                                                
+                                            <li class="number listings-grid__price">{{ $listing['Price'] }}</li>   
                                         </ul>
                                     </div>
                                 </div>
