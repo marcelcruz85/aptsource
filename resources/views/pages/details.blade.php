@@ -295,4 +295,7 @@
     <!-- Jquery Autosize -->
     <script src="/vendors/bower_components/autosize/dist/autosize.min.js"></script>
 
+    <!-- rateYo - Ratings -->
+    <script src="vendors/bower_components/rateYo/src/jquery.rateyo.js"></script>
+
     @endsection
