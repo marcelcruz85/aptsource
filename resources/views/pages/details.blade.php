@@ -256,7 +256,7 @@
 
                         <div class="list-group">
                             
-                            @foreach ($listings as $listing)
+                            @foreach ($nearby as $listing)
                             <a href="" class="list-group-item media">
                                 <div class="pull-left">
                                     @if (is_array($listing) and array_key_exists('Photos', $listing) )
