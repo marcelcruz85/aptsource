@@ -26,6 +26,26 @@ class ListingController extends Controller
             'listings' => $response['Listings']['Listing'],
         ]);
     }
+    public function details()
+    {
+        //Getting parameters 
+        $apiKey = '&key=bVrLNhG2U1aFCKuix97RdsQyIfEnXPpl8jcSvzZO';
+
+        //Making the API request
+        $client = new Client();
+        $res = $client->request('POST', 'https://www.yougotlistings.com/api/rentals/search.php?detail_level=2&page_count=8'.  $apiKey);
+        $xml = $res->getBody();
+        $xml = simplexml_load_string($xml, 'SimpleXMLElement', LIBXML_NOCDATA);
+        $json = json_encode($xml);
+        $response = json_decode($json, TRUE);
+
+
+        return view('pages.datails');
+/*         return view('pages.index', [            
+            'listings' => $response['Total'],
+            'listings' => $response['Listings']['Listing'],
+        ]); */
+    }
     public function search($view, $parameters,Request $request)
     {
         //Getting parameters 

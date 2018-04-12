@@ -69,7 +69,7 @@
                 <div class="col-sm-8 listings-list">
                     @foreach ($listings as $listing)
                     <div class="listings-grid__item">
-                        <a href="listing-detail.html" class="media">
+                        <a href="/rental/details"  class="media">
                             <div class="listings-grid__main list pull-left">
                                 @if (is_array($listing) and array_key_exists('Photos', $listing) )
                                 <img src="{{ $listing['Photos']['Photo']['0']}}" alt=""> @else
