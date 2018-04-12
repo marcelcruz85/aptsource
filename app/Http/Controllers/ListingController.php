@@ -23,7 +23,7 @@ class ListingController extends Controller
 
         return view('pages.index', [            
             'listings' => $response['Total'],
-            //'listings' => $response['Listings']['Listing'],
+            'listings' => $response['Listings']['Listing'],
         ]);
     }
     public function search($view, $parameters,Request $request)
