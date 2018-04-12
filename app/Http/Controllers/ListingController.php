@@ -10,9 +10,8 @@ class ListingController extends Controller
     public function index()
     {
 
-        $this->apiRequest();
-
-
+        $searchParameters = '';
+        $this->apiRequest($searchParameters);
         return view('pages.index', [            
             'listings' => $response['Total'],
             'listings' => $response['Listings']['Listing'],
@@ -20,9 +19,9 @@ class ListingController extends Controller
     }
     public function details()
     {
-        $this->apiRequest();
-
-
+        
+        $searchParameters = '';
+        $this->apiRequest($searchParameters);
         return view('pages.details');
 /*         return view('pages.index', [            
             'listings' => $response['Total'],
