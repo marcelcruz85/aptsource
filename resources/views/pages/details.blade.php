@@ -269,7 +269,7 @@
                                     <div class="listings-grid__item">
                                         
                                         <ul class="listings-grid__attrs">       
-                                            <li class="number"><i class="listings-grid__icon listings-grid__icon--money"></i>{{ $listing['Price'] }}</li>                         
+                                            <li class="number"><i class="zmdi zmdi-money"></i>{{ $listing['Price'] }}</li>                         
                                             <li class="number"><i class="listings-grid__icon listings-grid__icon--bed"></i> {{ $listing['Beds'] }}</li>
                                             <li class="number"><i class="listings-grid__icon listings-grid__icon--bath"></i> {{ $listing['Baths'] }}</li>
                                         </ul>
