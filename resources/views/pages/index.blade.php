@@ -24,7 +24,7 @@
             <div class="col-sm-4 col-md-3">
                 <div class="listings-grid__item">
                     <a href="listing-detail.html">
-                        <div class="listings-grid__main">
+                        <div class="listings-grid__main grid">
                             @if (is_array($listing) and array_key_exists('Photos', $listing) )
                                 <img src="{{ $listing['Photos']['Photo']['0']}}" alt=""> 
                             @else
