@@ -16,7 +16,7 @@ class ListingController extends Controller
         $location = $request->input('location');
         if($location == ""){
             $rentLocation = '';
-        }else if(is_numeric($location)){
+        }else if(is_numeric($location) && strlen($location) == 5 ){
             $rentLocation = '&zip=' . $location;
         }else{
             $rentLocation = '&city_neighborhood=chicago:' . $location;
