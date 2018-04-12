@@ -15,7 +15,7 @@
     return view('pages.index');
 }); */
 
-Route::get('/{view}', 'ListingController@index');
+Route::get('/', 'ListingController@index');
 
 
 Route::get('/listings-grid', function () {
@@ -23,7 +23,7 @@ Route::get('/listings-grid', function () {
 });
 
 
-Route::get('/rentals/{view}/{parameters}', 'ListingController@index');
+Route::get('/rentals/{view}/{parameters}', 'ListingController@search');
 
 Route::get('/search/{view}', 'ListingController@search');
 
