@@ -19,9 +19,9 @@
 
         <div class="row listings-grid">
             
-            <div class="col-sm-4 col-md-3">
                 
-                @foreach ($listings as $listing)
+            @foreach ($listings as $listing)
+            <div class="col-sm-4 col-md-3">
                 <div class="listings-grid__item">
                     <a href="listing-detail.html">
                         <div class="listings-grid__main">
@@ -59,8 +59,8 @@
                         </div> --}}
                     </div>
                 </div>
-                @endforeach
             </div>
+            @endforeach
         </div>
     </div>
 </section>
