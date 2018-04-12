@@ -21,7 +21,8 @@
             
             <div class="col-sm-4 col-md-3">
                 
-                @foreach ($listings as $listing)
+                {{-- @foreach ($listings as $listing) --}}
+                {{ $listings }}
                 <div class="listings-grid__item">
                     <a href="listing-detail.html">
                         <div class="listings-grid__main">
@@ -49,7 +50,7 @@
                         </div>
                     </div>
                 </div>
-                @endforeach
+                {{-- @endforeach --}}
             </div>
         </div>
     </div>

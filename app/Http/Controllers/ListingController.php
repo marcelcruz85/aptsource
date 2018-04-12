@@ -21,8 +21,9 @@ class ListingController extends Controller
                 $response = json_decode($json, TRUE);
 
 
-        return view('pages.index', [
-            'listings' => $response['Listings']['Listing'],
+        return view('pages.index', [            
+            'listings' => $response['Total'],
+            //'listings' => $response['Listings']['Listing'],
         ]);
     }
     public function search($view, $parameters,Request $request)
