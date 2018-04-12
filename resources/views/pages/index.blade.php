@@ -22,32 +22,41 @@
             <div class="col-sm-4 col-md-3">
                 
                 @foreach ($listings as $listing)
-                {{ dd($listings) }}
                 <div class="listings-grid__item">
                     <a href="listing-detail.html">
                         <div class="listings-grid__main">
-                            <img src="https://placeholdit.imgix.net/~text?&w=400&h=266" alt="">
-                            <div class="listings-grid__price">$1,175,000</div>
+                            @if (is_array($listing) and array_key_exists('Photos', $listing) )
+                                <img src="{{ $listing['Photos']['Photo']['0']}}" alt=""> 
+                            @else
+                                <img src="/img/nophoto.png" alt=""> 
+                            @endif
+
+                            <div class="listings-grid__price">{{ $listing['Price'] }}</div>
                         </div>
 
                         <div class="listings-grid__body">
-                            <small>21 Shop St, San Francisco</small>
-                            <h5>Integer tempor luctus maximus</h5>
+                                <small>{{ $listing['StreetNumber'] }} {{ $listing['StreetName'] }} {{ $listing['City'] }}, {{ $listing['State'] }} {{ $listing['Zip'] }}</small>
+                                @if (is_array($listing) and array_key_exists('Title', $listing) )
+                                    <h5>{{ $listing['Title'] }}</h5>
+                                @else
+                                    <h5>Click for details</h5>
+                                @endif
+                                <small>Available: <i class="zmdi zmdi-calendar-check"></i> <span class="availableDate">{{ $listing['AvailableDate'] }}</span></small>    
                         </div>
 
                         <ul class="listings-grid__attrs">
-                            <li><i class="listings-grid__icon listings-grid__icon--bed"></i> 03</li>
-                            <li><i class="listings-grid__icon listings-grid__icon--bath"></i> 02</li>
-                            <li><i class="listings-grid__icon listings-grid__icon--parking"></i> 02</li>
+                                <li class="number"><i class="listings-grid__icon listings-grid__icon--bed"></i> {{ $listing['Beds'] }}</li>
+                                <li class="number"><i class="listings-grid__icon listings-grid__icon--bath"></i> {{ $listing['Baths'] }}</li>
+                                <!-- <li><i class="listings-grid__icon listings-grid__icon--parking"></i> 00</li> -->
                         </ul>
                     </a>
 
                     <div class="actions listings-grid__favorite">
-                        <div class="actions__toggle">
+{{--                         <div class="actions__toggle">
                             <input type="checkbox">
                             <i class="zmdi zmdi-favorite-outline"></i>
                             <i class="zmdi zmdi-favorite"></i>
-                        </div>
+                        </div> --}}
                     </div>
                 </div>
                 @endforeach
