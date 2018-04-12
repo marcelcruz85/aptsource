@@ -266,7 +266,10 @@
                                     @endif                                </div>
                                 <div class="media-body list-group__text">
                                     <strong>{{ $listing['StreetNumber'] }} {{ $listing['StreetName'] }} {{ $listing['City'] }}</strong>
-                                    <small><span class='listings-grid__price'>{{ $listing['Price'] }}</span> . 0{{ $listing['Beds'] }} Beds . 0{{ $listing['Baths'] }} Baths</small>
+                                    <div class="listings-grid__price">{{ $listing['Price'] }}</div>                                     
+                                    <li class="number"><i class="listings-grid__icon listings-grid__icon--bed"></i> {{ $listing['Beds'] }}</li>
+                                    <li class="number"><i class="listings-grid__icon listings-grid__icon--bath"></i> {{ $listing['Baths'] }}</li>
+                            
                                 </div>
                             </a>
                             @endforeach
