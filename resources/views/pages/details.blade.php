@@ -24,7 +24,7 @@
                     </div>
 
 
-                    {{ dd($nearby) }}
+                    {{ dd($listing) }}
                     <a href="" data-rmd-action="print"><i class="zmdi zmdi-print"></i></a>
                     <div class="dropdown actions__email">
                         <a href="" data-toggle="dropdown"><i class="zmdi zmdi-email"></i></a>
