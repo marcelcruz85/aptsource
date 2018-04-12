@@ -10,7 +10,7 @@ class ListingController extends Controller
     public function index()
     {
 
-        apiRequest();
+        $this->apiRequest();
 
 
         return view('pages.index', [            
