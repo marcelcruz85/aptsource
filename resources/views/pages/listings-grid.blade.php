@@ -14,7 +14,7 @@
         <div class="container">
             <div class="action-header__item action-header__item--search">
                 <form>
-                    <input class="top-search autocomplete" type="text" placeholder="Enter any Neighorhood or Zip Code"><!-- For desktop -->
+                    <input class="hidden-xs top-search autocomplete" type="text" name="location" value="{{ $location }}" placeholder="Search by neighborhood, city, zip or address...">
                     <input class="visible-xs autocomplete" type="text" placeholder="Search..."><!-- For mobile -->
                     
                     <div class="search__type hidden-xs ">
@@ -115,6 +115,8 @@
                 </ul>
         </nav>
     </div>
+    
+    @include('components.side-search');
 
 <div class=no-show>
     <div class="pageindex">{{ $pageIndex }}</div>
