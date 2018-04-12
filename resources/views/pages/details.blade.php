@@ -287,7 +287,7 @@
     </section>
     @endsection
 
-    @section('scripts')
+    @section('script')
     
     <!-- Jquery Light Gallery -->    
     <script src="/vendors/bower_components/lightgallery/dist/js/lightgallery-all.min.js"></script>
