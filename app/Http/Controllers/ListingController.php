@@ -20,7 +20,7 @@ class ListingController extends Controller
     }
     public function details()
     {
-        apiRequest();
+        $this->apiRequest();
 
 
         return view('pages.details');
@@ -74,7 +74,7 @@ class ListingController extends Controller
         //building the url for the API request
         $searchParameters = 'include_mls=1&detail_level=2&page_count=20&page_index=' . $page . $rentLocation . $minRent . $maxRent . $minSize . $maxSize . $beds . $baths . '&sort_name=' . $sortName . '&sort_dir=' . $sortDir;
 
-        apiRequest($searchParameters);
+        $this->apiRequest($searchParameters);
 
         if($response['Total'] > 0){
             $pages = ceil($response['Total'] / 20);
