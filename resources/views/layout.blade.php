@@ -123,8 +123,7 @@
     <!-- Jquery Auto Complete Plugin -->
     <script src="/vendors/bower_components/EasyAutocomplete/dist/jquery.easy-autocomplete.min.js"></script>
 
-    <!-- Jquery Auto Complete Plugin -->
-    <script src="/vendors/bower_components/lightgallery/dist/js/lightgallery.min.js"></script>
+    @yield ('script')    
 
     <!-- IE9 Placeholder -->
     <!--[if IE 9 ]>

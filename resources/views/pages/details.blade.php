@@ -286,3 +286,13 @@
         </div>
     </section>
     @endsection
+
+    @section('scripts')
+    
+    <!-- Jquery Light Gallery -->    
+    <script src="/vendors/bower_components/lightgallery/dist/js/lightgallery-all.min.js"></script>
+    
+    <!-- Jquery Autosize -->
+    <script src="/vendors/bower_components/autosize/dist/autosize.min.js"></script>
+
+    @endsection
