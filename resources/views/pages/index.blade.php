@@ -22,7 +22,7 @@
             <div class="col-sm-4 col-md-3">
                 
                 {{-- @foreach ($listings as $listing) --}}
-                {{ $listings }}
+                {{ dd($listings) }}
                 <div class="listings-grid__item">
                     <a href="listing-detail.html">
                         <div class="listings-grid__main">
