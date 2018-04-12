@@ -1,5 +1,14 @@
 @extends ('layout')
 
+@section ('header')
+
+<header id="header" class="header--minimal">
+    @include ('components.top-header') 
+    @include ('components.main-header')
+</header>
+
+@endsection 
+
 @section ('content')
 <section class="section">
         <div class="container">
