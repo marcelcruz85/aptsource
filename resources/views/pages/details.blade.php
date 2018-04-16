@@ -10,13 +10,12 @@
 @endsection 
 
 @section ('content')
-<section class="section">
         <div class="container">
             <header class="section__title section__title-alt">
-                <h2>Duis mollisest non commodo luctus nisierat porttito</h2>
-                <small>The Villa, Murano Hill, Manhattan, NY, 90082</small>
+                <h2>{{ $listing['Title'] }}</h2>
+                <small>{{ $listing['StreetNumber'] }} {{ $listing['StreetName'] }} {{ $listing['City'] }}, {{ $listing['State'] }} {{ $listing['Zip'] }}</small>
 
-                <div class="actions actions--section">
+                <!-- <div class="actions actions--section">
                     <div class="actions__toggle">
                         <input type="checkbox">
                         <i class="zmdi zmdi-favorite-outline"></i>
@@ -62,7 +61,7 @@
                             <div></div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </header>
 
             <div class="row">
@@ -94,43 +93,35 @@
 
                             <ul class="detail-media__nav hidden-print">
                                 <li class="active"><a href="#detail-media-images" data-toggle="tab"><i class="zmdi zmdi-collection-image"></i></a></li>
-                                <li><a href="#detail-media-floorplan" data-toggle="tab"><i class="zmdi zmdi-view-dashboard"></i></a></li>
-                                <li><a href="#detail-media-map" data-toggle="tab"><i class="zmdi zmdi-map"></i></a></li>
+                                <!-- <li><a href="#detail-media-floorplan" data-toggle="tab"><i class="zmdi zmdi-view-dashboard"></i></a></li>
+                                <li><a href="#detail-media-map" data-toggle="tab"><i class="zmdi zmdi-map"></i></a></li> -->
                             </ul>
                         </div>
 
                         <div class="detail-info">
                             <div class="detail-info__header clearfix">
-                                <strong>$1,175,000</strong>
-                                <small>Est. Mortgage: $5,328/month</small>
+                                <strong class="price-details">{{ $listing['Price'] }}</strong>
+                                <!-- <small>Est. Mortgage: $5,328/month</small> -->
 
-                                <span>For Sale</span>
+                                <span>{{ $listing['Status']}}</span> 
                             </div>
 
                             <ul class="detail-info__list clearfix">
                                 <li>
-                                    <span>Ownership Type</span>
-                                    <span>Villa</span>
+                                    <span>Available Date</span>                                        
+                                    <span class="availableDate">{{ $listing['AvailableDate'] }}</span>
                                 </li>
                                 <li>
-                                    <span>Property Area</span>
-                                    <span>2435+ sqft</span>
-                                </li>
-                                <li>
-                                    <span>Garages</span>
-                                    <span>04</span>
-                                </li>
-                                <li>
-                                    <span>Floors</span>
-                                    <span>03</span>
+                                    <span>Pets</span>
+                                    <span>{{ $listing['Pet'] }}</span>
                                 </li>
                                 <li>
                                     <span>Bedrooms</span>
-                                    <span>06</span>
+                                    <span class='listing-attr'>{{ $listing['Beds'] }}</span>
                                 </li>
                                 <li>
                                     <span>Bathrooms</span>
-                                    <span>06</span>
+                                    <span class='listing-attr'>{{ $listing['Baths'] }}</span>
                                 </li>
                             </ul>
                         </div>
@@ -162,8 +153,7 @@
                             <h2>Property Overview</h2>
                         </div>
                         <div class="card__body">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-                            <p>Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Nulla vitae elit libero, a pharetra augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vestibulum id ligula porta felis euismod semper. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                            {{ $listing['UnitDescription'] }}
                         </div>
                     </div>
                 </div>
@@ -178,7 +168,7 @@
                         <div class="card__body">
                             <div class="inquire__number">
                                 <i class="zmdi zmdi-phone"></i>
-                                +1-541-754-3010
+                                773-404-9900
                             </div>
 
                             <div class="form-group form-group--float">
@@ -211,38 +201,7 @@
                         </div>
                     </form>
 
-                    <div class="card hidden-xs hidden-sm hidden-print">
-                        <div class="card__header">
-                            <h2>Agents representing</h2>
-                            <small>Etiam porta sem malesuada magna mollis</small>
-                        </div>
-                        <div class="list-group">
-                            <a class="list-group-item media" href="">
-                                <div class="pull-left">
-                                    <img src="https://placeholdit.imgix.net/~text?&w=500&h=500" alt="" class="list-group__img img-circle" width="65" height="65">
-                                </div>
-                                <div class="media-body list-group__text">
-                                    <strong>Sarah Zelermyer Diaz</strong>
-                                    <small class="list-group__text">+1-202-555-0121</small>
-                                    <div class="rmd-rate" data-rate-value="5" data-rate-readonly="true"></div>
-                                </div>
-                            </a>
-
-                            <a class="list-group-item media" href="">
-                                <div class="pull-left">
-                                    <img src="https://placeholdit.imgix.net/~text?&w=500&h=500" alt="" class="list-group__img img-circle" width="65" height="65">
-                                </div>
-                                <div class="media-body list-group__text">
-                                    <strong>Malinda Hollaway</strong>
-                                    <small class="list-group__text">+1-202-555-0188</small>
-                                    <div class="rmd-rate" data-rate-value="5" data-rate-readonly="true"></div>
-                                </div>
-                            </a>
-
-                            <div class="p-10"></div>
-                        </div>
-                    </div>
-
+                    
                     <div class="card hidden-xs hidden-sm hidden-print">
                         <div class="card__header">
                             <h2>You may also like...</h2>
@@ -258,7 +217,8 @@
                                         <img src="{{ $listing['Photos']['Photo']['0']}}"  alt="" class="list-group__img" width="65"> 
                                     @else
                                         <img src="/img/nophoto.png"  alt="" class="list-group__img" width="65"> 
-                                    @endif                                </div>
+                                    @endif  
+</div>
                                 <div class="media-body list-group__text">
                                     <strong>{{ $listing['StreetNumber'] }} {{ $listing['StreetName'] }} {{ $listing['City'] }}</strong>
                                     <div class="listings-grid__item">
@@ -279,7 +239,6 @@
                 </div>
             </div>
         </div>
-    </section>
     @endsection
 
     @section('script')

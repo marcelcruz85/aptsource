@@ -5781,3 +5781,27 @@ html:not(.ie9) .page-loader__spinner {
 .top-search{
   box-shadow: none !important;
 }
+
+.light-gallery img{
+  height: 550px;
+  width: auto !important;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.list-group-item.media img{  
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.list-group-item.media{  
+  padding: 0px 10px;
+  margin: 10px;
+}
+.list-group-item.media ul{  
+  padding: 7px 0px;
+  margin: 0px;
+}

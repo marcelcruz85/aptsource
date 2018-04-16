@@ -520,6 +520,20 @@ $(document).ready(function () {
         }
     });
 
+    var listingPrice = $('.price-details').text();
+    $('.price-details').number(listingPrice).prepend('$');
+
+    var dateAvailable = $(".availableDate").text();
+    dateAvailable = new Date(dateAvailable);
+    var dateToday = new Date();
+    if (dateToday >= dateAvailable) {
+        $(".availableDate").text('now');
+    }
+    
+    $('.listing-attr').each(function(){
+        var Attr = $(this).text();
+        $(this).number(Attr, 0);
+    })
 /*---------------------------------------------
     SELECT2 DEFAULT VALUE
 ----------------------------------------------*/
