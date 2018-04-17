@@ -63,8 +63,9 @@
                     var listings = data;
 
 
+                    var geocoder = new google.maps.Geocoder();
                     var map = new google.maps.Map(document.getElementById('map'), {
-                        zoom: 10,
+                        zoom: 11,
                         center: {lat: 41.942463, lng: -87.652900}
                     });
 
@@ -93,20 +94,25 @@
 
                     for (i = 0; i < listings['Listings']['Listing'].length; i++) {  
                         var lat = listings['Listings']['Listing'][i]['Latitude'];  
-                        var lng = listings['Listings']['Listing'][i]['Longitude'];                       
-                        
-                        var location = {
-                            lat: parseFloat(lat),
-                            lng: parseFloat(lng)
-                        };
-                        var marker = new google.maps.Marker({
-                            position: location,
-                            map: map,
-                            title: listings['Listings']['Listing'][i]['Price']
-                        });
-                        marker.addListener('click', function () {
-                            infowindow.open(map, marker);
-                        });
+                        var lng = listings['Listings']['Listing'][i]['Longitude'];      
+
+                        function codeAddress() {
+                            var address = '1025 Randolph St Unit 113 oak park il 60302';
+                            geocoder.geocode( { 'address': address}, function(results, status) {
+                                if (status == 'OK') {
+                                    map.setCenter(results[0].geometry.location);
+                                    var marker = new google.maps.Marker({
+                                        map: map,
+                                        position: results[0].geometry.location
+                                    });                                    
+                                    marker.addListener('click', function () {
+                                        infowindow.open(map, marker);
+                                    });
+                                } else {
+                                    alert('Geocode was not successful for the following reason: ' + status);
+                                }
+                            });
+                        }
                     }
                     
                 },
