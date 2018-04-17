@@ -95,8 +95,8 @@
                         console.log(listings['Listings']['Listing'][i]);                        
                         
                         var location = {
-                            lat: listings['Listings']['Listing'][i]['Latitude'],
-                            lng: listings['Listings']['Listing'][i]['Longitude']
+                            lat: 41.886618,
+                            lng: -87.620331
                         };
                         var marker = new google.maps.Marker({
                             position: location,
