@@ -100,6 +100,7 @@
                             var address = '1025 Randolph St Unit 113 oak park il 60302';
                             geocoder.geocode( { 'address': address}, function(results, status) {
                                 if (status == 'OK') {
+                                    console.log(status);
                                     map.setCenter(results[0].geometry.location);
                                     var marker = new google.maps.Marker({
                                         map: map,
@@ -108,7 +109,8 @@
                                     marker.addListener('click', function () {
                                         infowindow.open(map, marker);
                                     });
-                                } else {
+                                } else {                                    
+                                    console.log(status);
                                     alert('Geocode was not successful for the following reason: ' + status);
                                 }
                             });
