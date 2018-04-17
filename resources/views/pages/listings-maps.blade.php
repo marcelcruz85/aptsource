@@ -78,7 +78,7 @@
                     var state = listings['Listings']['Listing'][i]['State'];
                     var zip = listings['Listings']['Listing'][i]['Zip'];
 
-                    var addressInput = streetNumber + streetName + unit + city + state + zip;
+                    var addressInput = streetNumber + " " + streetName + " " + unit + " " + city + " " + state + " " + zip;
 
                     console.log(addressInput);
 
