@@ -91,7 +91,7 @@
                         content: contentString
                     });
 
-                    for (i = 0; i < listings['listing'].length; i++) {  
+                    for (i = 0; i < listings.length; i++) {  
                         var uluru = {
                             lat: -25.363,
                             lng: 131.044
