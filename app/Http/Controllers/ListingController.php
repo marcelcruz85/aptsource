@@ -100,8 +100,8 @@ class ListingController extends Controller
             $viewType = 'pages.listings-grid';
             $view = 'grid';
         }else{
-            $viewType = 'pages.listings-maps';
             $view = 'maps';
+            return $response;
         }
 
         return view($viewType, [
