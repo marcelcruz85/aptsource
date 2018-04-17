@@ -57,18 +57,8 @@
                 data: {
                     "location": "60601"
                 },
-                success: callback,
-                error: function () {
-                    console.log('API request fail');
-                },
-            });
-        }
-        
-        getListings('http://aptsource.dotgital.com/rentals/api/search', function(response) {
-            console.log(response);
-        });
-        
-        var uluru = {
+                success: function () {
+                    var uluru = {
             lat: -25.363,
             lng: 131.044
         };
@@ -108,6 +98,18 @@
         marker.addListener('click', function () {
             infowindow.open(map, marker);
         });
+                },
+                error: function () {
+                    console.log('API request fail');
+                },
+            });
+        }
+        
+        getListings('http://aptsource.dotgital.com/rentals/api/search', function(response) {
+            console.log(response);
+        });
+        
+        
     }
 </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbHsbSThuJHEQpfVqp91y3CRS5KiXxS-4&callback=initMap">
