@@ -52,9 +52,8 @@
     <div id="map"></div>
     <div id="properties"></div>
     <script>
-
-
-        $.ajax({
+$(document).ready(function () {
+    $.ajax({
         type: "POST",
         url: 'https://www.yougotlistings.com/api/rentals/search.php',
         data: {
@@ -64,6 +63,9 @@
         error: function(){$('#map').html('<h1>Login error</h1>');},
         dataType: dataType
         });
+});
+
+
 
 
       function initMap() {
