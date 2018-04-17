@@ -96,8 +96,8 @@
                         var lng = listings['Listings']['Listing'][i]['Longitude'];                       
                         
                         var location = {
-                            lat: lat,
-                            lng: lng
+                            lat: parseFloat(lat),
+                            lng: parseFloat(lng)
                         };
                         var marker = new google.maps.Marker({
                             position: location,
