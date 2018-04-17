@@ -57,7 +57,7 @@ $(document).ready(function () {
         type: "GET",
         url: 'http://aptsource.dotgital.com/rentals/api/search',
         data: {
-            "zip": "60601"
+            "Zip": "60601"
             },
         success: function(data){
             console.log(data);
@@ -100,21 +100,17 @@ $(document).ready(function () {
                 infowindow.open(map, marker);
                 });
             }
-
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbHsbSThuJHEQpfVqp91y3CRS5KiXxS-4&callback=initMap">
+    </script>
         },
         error: function(){
             console.log('API request fail');
         },
     });
 });
-
-
-
-
       
 </script>
 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbHsbSThuJHEQpfVqp91y3CRS5KiXxS-4&callback=initMap">
-    </script>
+    
 
 @endsection
