@@ -61,9 +61,9 @@
 
                     console.log(data);
                     var listings = data;
+                    var geocoder;
 
-
-                    var geocoder = new google.maps.Geocoder();
+                    geocoder = new google.maps.Geocoder();
                     var map = new google.maps.Map(document.getElementById('map'), {
                         zoom: 11,
                         center: {lat: 41.942463, lng: -87.652900}
