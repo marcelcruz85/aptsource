@@ -79,7 +79,7 @@
                     var zip = listings['Listings']['Listing'][i]['Zip'];
 
                     var addressInput = streetNumber + " " + streetName + " " + unit + " " + city + " " + state + " " + zip;
-
+                    var price = listings['Listings']['Listing'][i]['Price'];
                     console.log(addressInput);
 
                     var geocoder = new google.maps.Geocoder();
@@ -95,7 +95,8 @@
                             
                             marker = new google.maps.Marker({
                                 map: map,
-                                position: myResult
+                                position: myResult,
+                                title: price
                             });
 
                             map.setCenter(myResult);
