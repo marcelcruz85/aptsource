@@ -50,7 +50,7 @@
 
 @section ('content') 
     <div id="map"></div>
-    <div id="properties">{{ $listings }}</div>
+    <div id="properties"></div>
     <script>
       function initMap() {
         var uluru = {lat: -25.363, lng: 131.044};
@@ -59,8 +59,9 @@
           center: uluru
         });
 
-        var listing = document.getElementById('properties');
-        listing = JSON.parse('listing');
+        //var listing = document.getElementById('properties');
+        var = listing = JSON.parse('<?php $listings ?>');
+        //listing = JSON.parse('listing');
         console.log(listing['Latitude']);
         var contentString = '<div id="content">'+
             '<div id="siteNotice">'+
