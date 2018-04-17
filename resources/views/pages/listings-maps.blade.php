@@ -50,15 +50,27 @@
 <script>
     function initMap() {
 
-        function listings() {
-            var httpRequest = new XMLHttpRequest();
-            httpRequest.open('GET', "http://aptsource.dotgital.com/rentals/api/search");
-            httpRequest.send();
-            return httpRequest.responseText;
+        function getListings(url, callback){            
+            $.ajax({
+                type: "GET",
+                url: url,
+                data: {
+                    "location": "60601"
+                },
+                success: callback,
+                },
+                error: function () {
+                    console.log('API request fail');
+                },
+            });
         }
+
+        getListings('http://aptsource.dotgital.com/rentals/api/search', function(response) {
+            listings = response;
+        });
         
-        var listings = listings();
         console.log(listings);
+
         var uluru = {
             lat: -25.363,
             lng: 131.044
