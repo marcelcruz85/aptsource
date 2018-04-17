@@ -64,10 +64,11 @@
             });
         }
         
-        var listings = getListings('http://aptsource.dotgital.com/rentals/api/search', function(response) {
-            return response;
+        getListings('http://aptsource.dotgital.com/rentals/api/search', function(response) {
+            console.log(response);
         });
         
+        var listings = getListings();
         console.log(listings);
 
         var uluru = {
