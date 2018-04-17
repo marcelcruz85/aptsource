@@ -80,6 +80,8 @@
 
                     var addressInput = streetNumber + streetName + unit + city + state + zip;
 
+                    console.log(addressInput);
+
                     var geocoder = new google.maps.Geocoder();
 
                     geocoder.geocode({
