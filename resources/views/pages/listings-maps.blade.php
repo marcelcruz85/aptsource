@@ -62,9 +62,6 @@
                 var map;
                 var marker;
 
-
-                function initialize() {
-
                     var mapOptions = {
                         center: new google.maps.LatLng(41.942463, -87.652900),
                         zoom: 11,
@@ -73,9 +70,6 @@
 
                     map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
-                }
-
-                google.maps.event.addDomListener(window, 'load', initialize);
 
 
                 function searchAddress() {
