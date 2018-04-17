@@ -70,10 +70,15 @@
 
                     map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
+                for (i = 0; i < listings['Listings']['Listing'].length; i++) {
+                    var streetNumber = listings['Listings']['Listing'][i]['StreetNumber'];
+                    var streetName = listings['Listings']['Listing'][i]['StreetName'];
+                    var unit = listings['Listings']['Listing'][i]['Unit'];
+                    var city = listings['Listings']['Listing'][i]['City'];
+                    var state = listings['Listings']['Listing'][i]['State'];
+                    var zip = listings['Listings']['Listing'][i]['Zip'];
 
-
-
-                    var addressInput = '1025 Randolph St Unit 113 oak park, il 60302';
+                    var addressInput = streetNumber + streetName + unit + city + state + zip;
 
                     var geocoder = new google.maps.Geocoder();
 
@@ -92,6 +97,12 @@
                             map.setZoom(17);
                         }
                     });
+
+
+                }
+
+
+                    
 
                 var contentString = '<div id="content">' +
                     '<div id="siteNotice">' +
@@ -128,18 +139,13 @@
                         position: latlng
                     });
                     marker.addListener('click', function () {
-                                infowindow.open(map, marker);
+                        infowindow.open(map, marker);
                     });
                 }
 
 
 
-                for (i = 0; i < listings['Listings']['Listing'].length; i++) {
-                    var lat = listings['Listings']['Listing'][i]['Latitude'];
-                    var lng = listings['Listings']['Listing'][i]['Longitude'];
 
-
-                }
 
             },
             error: function () {
