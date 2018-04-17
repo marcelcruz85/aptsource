@@ -101,10 +101,11 @@
                             map: {lat: -25.363, lng: 131.044},
                             title: 'Uluru (Ayers Rock)'
                         });
+                        marker.addListener('click', function () {
+                            infowindow.open(map, marker);
+                        });
                     }
-                    marker.addListener('click', function () {
-                        infowindow.open(map, marker);
-                    });
+                    
                 },
                 error: function () {
                     console.log('API request fail');
