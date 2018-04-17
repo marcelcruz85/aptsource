@@ -38,6 +38,8 @@
 
     <!-- Page Loader JS -->
     <script src="/js/page-loader.min.js" async></script>
+    
+    @yield('head-scripts')
 </head>
 
 <body>

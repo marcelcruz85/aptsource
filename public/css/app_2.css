@@ -5805,3 +5805,9 @@ html:not(.ie9) .page-loader__spinner {
   padding: 7px 0px;
   margin: 0px;
 }
+
+/* Google Maps */
+#map {
+  height: 400px;
+  width: 100%;
+ }
