@@ -65,7 +65,7 @@
 
                     var map = new google.maps.Map(document.getElementById('map'), {
                         zoom: 4,
-                        center: uluru
+                        center: {lat: -25.363, lng: 131.044}
                     });
 
 
@@ -103,7 +103,7 @@
                             infowindow.open(map, marker);
                         });
                     for (i = 0; i < listings['Listings']['Listing'].length; i++) {  
-                        console.log(listings['Listings']['Listing']);
+                        console.log(listings['Listings']['Listing'][i]);
                     }
                     
                 },
