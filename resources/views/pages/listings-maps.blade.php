@@ -90,20 +90,22 @@
                     var infowindow = new google.maps.InfoWindow({
                         content: contentString
                     });
-                    var uluru = {
-                            lat: -25.363,
-                            lng: 131.044
+
+                    for (i = 0; i < listings['Listings']['Listing'].length; i++) {  
+                        console.log(listings['Listings']['Listing'][i]);                        
+                        
+                        var location = {
+                            lat: listings['Listings']['Listing'][i]['Latitude'],
+                            lng: listings['Listings']['Listing'][i]['Longitude']
                         };
                         var marker = new google.maps.Marker({
-                            position: uluru,
+                            position: location,
                             map: map,
-                            title: 'Uluru (Ayers Rock)'
+                            title: listings['Listings']['Listing'][i]['Price']
                         });
                         marker.addListener('click', function () {
                             infowindow.open(map, marker);
                         });
-                    for (i = 0; i < listings['Listings']['Listing'].length; i++) {  
-                        console.log(listings['Listings']['Listing'][i]);
                     }
                     
                 },
