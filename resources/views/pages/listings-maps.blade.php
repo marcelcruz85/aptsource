@@ -92,7 +92,7 @@
                     });
 
                     for (i = 0; i < listings['Listings']['Listing'].length; i++) {  
-                        console.log(listings['Listings']['Listing'][i]);                        
+                        console.log(listings['Listings']['Listing'][i]['Latitude']);                        
                         
                         var location = {
                             lat: 41.886618,
