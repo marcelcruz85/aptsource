@@ -58,7 +58,7 @@
           center: uluru
         });
 
-        var listing = ['{{ $listings }}']
+        var listing = '{{ $listings }}';
         var contentString = '<div id="content">'+
             '<div id="siteNotice">'+
             '</div>'+
