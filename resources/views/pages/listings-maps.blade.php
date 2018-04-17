@@ -55,7 +55,7 @@
                 type: "GET",
                 url: url,
                 data: {
-                    "location": "60601"
+                    "location": ""
                 },
                 success: function (data) {
 
