@@ -96,7 +96,7 @@
                             marker = new google.maps.Marker({
                                 map: map,
                                 position: myResult,
-                                title: price
+                                title: streetNumber
                             });
 
                             map.setCenter(myResult);
