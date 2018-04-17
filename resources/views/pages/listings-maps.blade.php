@@ -52,6 +52,20 @@
     <div id="map"></div>
     <div id="properties"></div>
     <script>
+
+
+        $.ajax({
+        type: "POST",
+        url: 'https://www.yougotlistings.com/api/rentals/search.php',
+        data: {
+            "key": "bVrLNhG2U1aFCKuix97RdsQyIfEnXPpl8jcSvzZO"
+            },
+        success: function(){$('#map').html('<h1>Login successfull</h1>');},
+        error: function(){$('#map').html('<h1>Login error</h1>');},
+        dataType: dataType
+        });
+
+
       function initMap() {
         var uluru = {lat: -25.363, lng: 131.044};
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -60,9 +74,9 @@
         });
 
         //var listing = document.getElementById('properties');
-        var listing = new array('<?php echo $listings ?>');
+        //var listing = new array('<?php echo $listings ?>');
         //listing = JSON.parse('listing');
-        console.log(listing['Latitude']);
+        //console.log(listing['Latitude']);
         var contentString = '<div id="content">'+
             '<div id="siteNotice">'+
             '</div>'+
