@@ -60,7 +60,7 @@
         });
 
         var listing = document.getElementById('properties');
-        listing JSON.parse('listing');
+        listing = JSON.parse('listing');
         console.log(listing['Latitude']);
         var contentString = '<div id="content">'+
             '<div id="siteNotice">'+
