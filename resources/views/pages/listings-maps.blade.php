@@ -97,8 +97,8 @@
 
                     for (i = 0; i < listings.length; i++) {  
                         var marker = new google.maps.Marker({
-                            position: chicago,
-                            map: {lat: -25.363, lng: 131.044},
+                            position: {lat: -25.363, lng: 131.044},
+                            map: map,
                             title: 'Uluru (Ayers Rock)'
                         });
                         marker.addListener('click', function () {
