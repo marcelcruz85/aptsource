@@ -90,9 +90,7 @@
                     var infowindow = new google.maps.InfoWindow({
                         content: contentString
                     });
-
-                    for (i = 0; i < listings.length; i++) {  
-                        var uluru = {
+                    var uluru = {
                             lat: -25.363,
                             lng: 131.044
                         };
@@ -104,6 +102,8 @@
                         marker.addListener('click', function () {
                             infowindow.open(map, marker);
                         });
+                    for (i = 0; i < listings['Listings']['Listing'].length; i++) {  
+                        console.log(listings['Listings']['Listing']);
                     }
                     
                 },
