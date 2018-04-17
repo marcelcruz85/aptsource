@@ -54,9 +54,11 @@
     <script>
 $(document).ready(function () {
     $.ajax({
-        type: "POST",
+        type: "GET",
         url: 'http://aptsource.dotgital.com/rentals/list/search',
-
+        data: {
+            "key": "bVrLNhG2U1aFCKuix97RdsQyIfEnXPpl8jcSvzZO"
+            },
         success: function(){$('#map').html('<h1>Login successfull</h1>');},
         error: function(){$('#map').html('<h1>Login error</h1>');},
         });
