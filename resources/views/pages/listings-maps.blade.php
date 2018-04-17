@@ -65,10 +65,10 @@
         }
 
         getListings('http://aptsource.dotgital.com/rentals/api/search', function(response) {
-            var listings = response;
+            console.log(response);
         });
         
-        console.log(listings);
+        
 
         var uluru = {
             lat: -25.363,
