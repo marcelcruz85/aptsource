@@ -72,7 +72,6 @@
 
 
 
-                function searchAddress() {
 
                     var addressInput = '1025 Randolph St Unit 113 oak park, il 60302';
 
@@ -93,8 +92,6 @@
                             map.setZoom(17);
                         }
                     });
-
-                }
 
                 var contentString = '<div id="content">' +
                     '<div id="siteNotice">' +
