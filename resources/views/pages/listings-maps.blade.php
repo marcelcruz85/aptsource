@@ -64,9 +64,8 @@
             });
         }
         
-        getListings('http://aptsource.dotgital.com/rentals/api/search', function(response) {
-            listings = response;
-            return listings;
+        var listings = getListings('http://aptsource.dotgital.com/rentals/api/search', function(response) {
+            return response;
         });
         
         console.log(listings);
