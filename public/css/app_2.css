@@ -5808,6 +5808,6 @@ html:not(.ie9) .page-loader__spinner {
 
 /* Google Maps */
 #map {
-  height: 400px;
+  height: 800px;
   width: 100%;
  }

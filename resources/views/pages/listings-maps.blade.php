@@ -49,8 +49,6 @@
 @endsection 
 
 @section ('content') 
-
-    <h3>My Google Maps Demo</h3>
     <div id="map"></div>
     <script>
       function initMap() {
@@ -60,6 +58,7 @@
           center: uluru
         });
 
+        var listing = [{{ $listings }}]
         var contentString = '<div id="content">'+
             '<div id="siteNotice">'+
             '</div>'+
@@ -75,9 +74,6 @@
             'Aboriginal people of the area. It has many springs, waterholes, '+
             'rock caves and ancient paintings. Uluru is listed as a World '+
             'Heritage Site.</p>'+
-            '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
-            'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
-            '(last visited June 22, 2009).</p>'+
             '</div>'+
             '</div>';
 
