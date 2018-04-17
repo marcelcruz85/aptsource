@@ -92,12 +92,12 @@
                     });
 
                     for (i = 0; i < listings['Listings']['Listing'].length; i++) {  
-                        console.log(listings['Listings']['Listing'][i]['Latitude']);  
-                        console.log(listings['Listings']['Listing'][i]['Longitude']);                       
+                        var lat = listings['Listings']['Listing'][i]['Latitude'];  
+                        var lng = listings['Listings']['Listing'][i]['Longitude'];                       
                         
                         var location = {
-                            lat: 41.886618,
-                            lng: -87.620331
+                            lat: lat,
+                            lng: lng
                         };
                         var marker = new google.maps.Marker({
                             position: location,
