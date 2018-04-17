@@ -61,7 +61,6 @@ $(document).ready(function () {
             },
         success: function(){$('#map').html('<h1>Login successfull</h1>');},
         error: function(){$('#map').html('<h1>Login error</h1>');},
-        dataType: json
         });
 });
 
