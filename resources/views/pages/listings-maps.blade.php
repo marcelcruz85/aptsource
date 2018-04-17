@@ -94,17 +94,10 @@
 
                             map.setCenter(myResult);
 
-                            map.setZoom(17);
+                            map.setZoom(11);
                         }
                     });
-
-
-                }
-
-
-                    
-
-                var contentString = '<div id="content">' +
+                    var contentString = '<div id="content">' +
                     '<div id="siteNotice">' +
                     '</div>' +
                     '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
@@ -142,6 +135,13 @@
                         infowindow.open(map, marker);
                     });
                 }
+
+                }
+
+
+                    
+
+                
 
 
 
