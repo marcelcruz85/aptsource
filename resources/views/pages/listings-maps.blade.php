@@ -91,13 +91,13 @@
                         content: contentString
                     });
 
-                    for (i = 0; i < listings.length; i++) {  
+                    for (i = 0; i < listings['listing'].length; i++) {  
                         var uluru = {
                             lat: -25.363,
                             lng: 131.044
                         };
                         var marker = new google.maps.Marker({
-                            position: {lat: -25.363, lng: 131.044},
+                            position: uluru,
                             map: map,
                             title: 'Uluru (Ayers Rock)'
                         });
