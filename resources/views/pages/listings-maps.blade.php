@@ -59,7 +59,7 @@
           center: uluru
         });
 
-        var listing = jQuery("#properties").text();
+        var listing = document.getElementById('properties');
         console.log(listing);
         var contentString = '<div id="content">'+
             '<div id="siteNotice">'+
