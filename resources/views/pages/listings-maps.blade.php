@@ -50,6 +50,7 @@
 
 @section ('content') 
     <div id="map"></div>
+    <div id="properties">{{ json_encode($listings) }}</div>
     <script>
       function initMap() {
         var uluru = {lat: -25.363, lng: 131.044};
@@ -58,7 +59,8 @@
           center: uluru
         });
 
-        var listing = '{{ $listings }}';
+        var listing = $("#properties").text();
+        console.log(listing);
         var contentString = '<div id="content">'+
             '<div id="siteNotice">'+
             '</div>'+
