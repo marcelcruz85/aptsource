@@ -42,95 +42,120 @@
     </div>
 </div>
 
-@endsection 
-
-@section ('content')
+@endsection @section ('content')
 <div id="map"></div>
 <div id="properties"></div>
 <script>
     function initMap() {
 
-        function getListings(url, callback){            
-            $.ajax({
-                type: "GET",
-                url: url,
-                data: {
-                    "location": ""
-                },
-                success: function (data) {
+        $.ajax({
+            type: "GET",
+            url: url,
+            data: {
+                "location": ""
+            },
+            success: function (data) {
 
-                    console.log(data);
-                    var listings = data;
-                    var geocoder;
+                console.log(data);
 
-                    geocoder = new google.maps.Geocoder();
-                    var map = new google.maps.Map(document.getElementById('map'), {
+                var listings = data;
+                var map;
+                var marker;
+
+
+                function initialize() {
+
+                    var mapOptions = {
+                        center: new google.maps.LatLng(41.942463, -87.652900),
                         zoom: 11,
-                        center: {lat: 41.942463, lng: -87.652900}
-                    });
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                    };
+
+                    map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+                }
+
+                google.maps.event.addDomListener(window, 'load', initialize);
 
 
-                    var contentString = '<div id="content">' +
-                        '<div id="siteNotice">' +
-                        '</div>' +
-                        '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
-                        '<div id="bodyContent">' +
-                        '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-                        'sandstone rock formation in the southern part of the ' +
-                        'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) ' +
-                        'south west of the nearest large town, Alice Springs; 450&#160;km ' +
-                        '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major ' +
-                        'features of the Uluru - Kata Tjuta National Park. Uluru is ' +
-                        'sacred to the Pitjantjatjara and Yankunytjatjara, the ' +
-                        'Aboriginal people of the area. It has many springs, waterholes, ' +
-                        'rock caves and ancient paintings. Uluru is listed as a World ' +
-                        'Heritage Site.</p>' +
-                        '</div>' +
-                        '</div>';
+                function searchAddress() {
 
-                    var infowindow = new google.maps.InfoWindow({
-                        content: contentString
-                    });
+                    var addressInput = '1025 Randolph St Unit 113 oak park, il 60302';
 
-                        function codeAddress() {
-                            var address = '1025 Randolph St Unit 113 oak park il 60302';
-                            geocoder.geocode( { 'address': address}, function(results, status) {
-                                if (status == 'OK') {
-                                    console.log(status);
-                                    map.setCenter(results[0].geometry.location);
-                                    var marker = new google.maps.Marker({
-                                        map: map,
-                                        position: results[0].geometry.location
-                                    });                                    
-                                    marker.addListener('click', function () {
-                                        infowindow.open(map, marker);
-                                    });
-                                } else {                                    
-                                    console.log(status);
-                                    alert('Geocode was not successful for the following reason: ' + status);
-                                }
-                            });
+                    var geocoder = new google.maps.Geocoder();
+
+                    geocoder.geocode({
+                        address: addressInput
+                    }, function (results, status) {
+
+                        if (status == google.maps.GeocoderStatus.OK) {
+
+                            var myResult = results[0].geometry.location;
+
+                            createMarker(myResult);
+
+                            map.setCenter(myResult);
+
+                            map.setZoom(17);
                         }
-                        
-                    for (i = 0; i < listings['Listings']['Listing'].length; i++) {  
-                        var lat = listings['Listings']['Listing'][i]['Latitude'];  
-                        var lng = listings['Listings']['Listing'][i]['Longitude'];      
+                    });
 
-                        
+                }
+
+                var contentString = '<div id="content">' +
+                    '<div id="siteNotice">' +
+                    '</div>' +
+                    '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
+                    '<div id="bodyContent">' +
+                    '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
+                    'sandstone rock formation in the southern part of the ' +
+                    'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) ' +
+                    'south west of the nearest large town, Alice Springs; 450&#160;km ' +
+                    '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major ' +
+                    'features of the Uluru - Kata Tjuta National Park. Uluru is ' +
+                    'sacred to the Pitjantjatjara and Yankunytjatjara, the ' +
+                    'Aboriginal people of the area. It has many springs, waterholes, ' +
+                    'rock caves and ancient paintings. Uluru is listed as a World ' +
+                    'Heritage Site.</p>' +
+                    '</div>' +
+                    '</div>';
+
+                var infowindow = new google.maps.InfoWindow({
+                    content: contentString
+                });
+
+                function createMarker(latlng) {
+
+
+                    if (marker != undefined && marker != '') {
+                        marker.setMap(null);
+                        marker = '';
                     }
-                    
-                },
-                error: function () {
-                    console.log('API request fail');
-                },
-            });
-        }
-        
-        getListings('http://aptsource.dotgital.com/rentals/api/search', function(response) {
-            console.log(response);
+
+                    marker = new google.maps.Marker({
+                        map: map,
+                        position: latlng
+                    });
+                    marker.addListener('click', function () {
+                                infowindow.open(map, marker);
+                    });
+                }
+
+
+
+                for (i = 0; i < listings['Listings']['Listing'].length; i++) {
+                    var lat = listings['Listings']['Listing'][i]['Latitude'];
+                    var lng = listings['Listings']['Listing'][i]['Longitude'];
+
+
+                }
+
+            },
+            error: function () {
+                console.log('API request fail');
+            },
         });
-        
-        
+
     }
 </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbHsbSThuJHEQpfVqp91y3CRS5KiXxS-4&callback=initMap">
