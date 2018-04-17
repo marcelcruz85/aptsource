@@ -60,7 +60,7 @@
         });
 
         //var listing = document.getElementById('properties');
-        var listing = '<?php echo $listings ?>';
+        var listing = new array('<?php echo $listings ?>');
         //listing = JSON.parse('listing');
         console.log(listing['Latitude']);
         var contentString = '<div id="content">'+
