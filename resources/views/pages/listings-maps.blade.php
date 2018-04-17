@@ -63,12 +63,13 @@
                 },
             });
         }
-
+        
+        var listings = '';
         getListings('http://aptsource.dotgital.com/rentals/api/search', function(response) {
-            console.log(response);
+            listings = response;
         });
         
-        
+        console.log(listings);
 
         var uluru = {
             lat: -25.363,
