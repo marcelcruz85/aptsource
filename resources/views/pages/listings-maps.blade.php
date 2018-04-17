@@ -57,13 +57,15 @@
                 "location": "60601"
             },
             success: function (data) {
-                console.log(data);
             },
             error: function () {
                 console.log('API request fail');
             },
         });
 
+        
+        console.log(data);
+        
         var uluru = {
             lat: -25.363,
             lng: 131.044
