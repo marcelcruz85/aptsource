@@ -92,7 +92,11 @@
 
                             var myResult = results[0].geometry.location;
 
-                            createMarker(myResult);
+                            
+                            marker = new google.maps.Marker({
+                                map: map,
+                                position: myResult
+                            });
 
                             map.setCenter(myResult);
 
@@ -129,10 +133,6 @@
                         marker = '';
                     }
 
-                    marker = new google.maps.Marker({
-                        map: map,
-                        position: latlng
-                    });
                     marker.addListener('click', function () {
                         infowindow.open(map, marker);
                     });
