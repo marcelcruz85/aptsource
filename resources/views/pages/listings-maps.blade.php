@@ -60,7 +60,9 @@
                 success: function (data) {
 
                     console.log(data);
-                    
+                    var listings = data;
+
+
                     var uluru = {
                         lat: -25.363,
                         lng: 131.044
@@ -93,11 +95,13 @@
                         content: contentString
                     });
 
-                    var marker = new google.maps.Marker({
-                        position: uluru,
-                        map: map,
-                        title: 'Uluru (Ayers Rock)'
-                    });
+                    for (i = 0; i < listings.length; i++) {  
+                        var marker = new google.maps.Marker({
+                            position: chicago,
+                            map: {lat: -25.363, lng: 131.044},
+                            title: 'Uluru (Ayers Rock)'
+                        });
+                    }
                     marker.addListener('click', function () {
                         infowindow.open(map, marker);
                     });
