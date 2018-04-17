@@ -58,7 +58,6 @@
                     "location": "60601"
                 },
                 success: callback,
-                },
                 error: function () {
                     console.log('API request fail');
                 },
