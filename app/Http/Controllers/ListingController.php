@@ -99,8 +99,10 @@ class ListingController extends Controller
         }else if($view == 'grid'){
             $viewType = 'pages.listings-grid';
             $view = 'grid';
-        }else{
+        }else if($view == 'maps'){
+            $viewType = 'pages.listings-maps';
             $view = 'maps';
+        }else if($view == 'api'){
             return $response;
         }
 

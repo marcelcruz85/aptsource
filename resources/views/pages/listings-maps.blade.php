@@ -55,7 +55,7 @@
 $(document).ready(function () {
     $.ajax({
         type: "GET",
-        url: 'http://aptsource.dotgital.com/rentals/list/search',
+        url: 'http://aptsource.dotgital.com/rentals/api/search',
         data: {
             "zip": "60601"
             },
