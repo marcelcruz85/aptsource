@@ -52,12 +52,20 @@
     <div id="map"></div>
     <div id="properties"></div>
     <script>
+$(document).ready(function () {
+    $.ajax({
+        type: "POST",
+        url: 'http://aptsource.dotgital.com/rentals/list/search',
+
+        success: function(){$('#map').html('<h1>Login successfull</h1>');},
+        error: function(){$('#map').html('<h1>Login error</h1>');},
+        });
+});
+
+
 
 
       function initMap() {
-
-        var rentals = "<?php echo $listings ?>"
-        
         var uluru = {lat: -25.363, lng: 131.044};
         var map = new google.maps.Map(document.getElementById('map'), {
           zoom: 4,
