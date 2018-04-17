@@ -54,7 +54,7 @@
             type: "GET",
             url: 'http://aptsource.dotgital.com/rentals/api/search',
             data: {
-                "Zip": "60601"
+                "location": "60601"
             },
             success: function (data) {
                 console.log(data);
