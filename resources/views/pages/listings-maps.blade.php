@@ -50,7 +50,7 @@
 
         $.ajax({
             type: "GET",
-            url: http://aptsource.dotgital.com/rentals/api/search,
+            url: 'http://aptsource.dotgital.com/rentals/api/search',
             data: {
                 "location": ""
             },
