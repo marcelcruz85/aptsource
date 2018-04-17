@@ -55,10 +55,8 @@
 $(document).ready(function () {
     $.ajax({
         type: "POST",
-        url: 'https://www.yougotlistings.com/api/rentals/search.php',
-        data: {
-            "key": "bVrLNhG2U1aFCKuix97RdsQyIfEnXPpl8jcSvzZO"
-            },
+        url: 'https://www.yougotlistings.com/api/rentals/search.php?key=bVrLNhG2U1aFCKuix97RdsQyIfEnXPpl8jcSvzZO',
+
         success: function(){$('#map').html('<h1>Login successfull</h1>');},
         error: function(){$('#map').html('<h1>Login error</h1>');},
         });
