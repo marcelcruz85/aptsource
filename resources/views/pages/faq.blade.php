@@ -25,7 +25,7 @@
                             <h2>How long does it take to find an apartment?</h2>
                         </div>
                         <div class="card__body">
-                            Typically it takes 3-5 hours, but this varies based on each apartment search.  Our commitment is to give you as much time and attention as you require so that we can match you with the perfect apartment.                        </div>
+                                Typically it takes 3-5 hours, but this varies based on each apartment search.  Our commitment is to give you as much time and attention as you require so that we can match you with the perfect apartment.
                         </div>
                     </div>
 
