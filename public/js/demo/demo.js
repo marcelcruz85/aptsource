@@ -75,7 +75,7 @@ if ($('#available-date-range')[0]) {
 
     availableDateRange.noUiSlider.on('update', function( values, handle ) {
         dateValues[handle].innerHTML = formatDate(new Date(+values[handle]));
-    });
+    
 // Create a list of day and monthnames.
     var
         weekdays = [
@@ -109,6 +109,7 @@ if ($('#available-date-range')[0]) {
             months[date.getMonth()] + " " +
             date.getFullYear();
     }
+});
 // 3. Property Area Size
 
 if ($('#property-area-range')[0]) {
