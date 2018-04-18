@@ -64,37 +64,16 @@
 
                     <div class="col-sm-6">
                         <div class="form-group form-group--range">
-                            <label>Area Size (sqft)</label>
+                            <label>Avialable (sqft)</label>
                             <div class="input-slider-values clearfix">
-                                <div class="pull-left" id="property-area-upper"></div>
+                                <div class="pull-left" id="available-date-upper"></div>
                                 <input id="min-size" name="min-size" type="hidden" value="0">
-                                <div class="pull-right" id="property-area-lower"></div>
+                                <div class="pull-right" id="available-date-lower"></div>
                                 <input id="max-size" name="max-size" type="hidden" value="0">
                             </div>
-                            <div id="property-area-range"></div>
+                            <div id="available-date-range"></div>
                         </div>
                     </div>
-
-                            <div class='col-sm-6'>
-                                <div class="form-group">
-                                    <div class='input-group date' data-provide="datepicker" id='datetimepicker6'>
-                                        <input type='text' class="form-control" />
-                                        <span class="input-group-addon">
-                                            <span class="glyphicon glyphicon-calendar"></span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class='col-sm-6'>
-                                <div class="form-group">
-                                    <div class='input-group date' data-provide="datepicker" id='datetimepicker7'>
-                                        <input type='text' class="form-control" />
-                                        <span class="input-group-addon">
-                                            <span class="glyphicon glyphicon-calendar"></span>
-                                        </span>
-                                    </div>
-                                </div>
-                            </div>
 
                     <div class="col-sm-6">
                         <div class="form-group">

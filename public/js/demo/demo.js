@@ -40,6 +40,77 @@ if ($('#property-price-range')[0]) {
 
 // 2. Property Area Size
 
+
+if ($('#available-date-range')[0]) {
+
+    var str = '04/18/2018';
+    function timestamp(str){
+        return new Date(str).getTime();   
+    }
+
+    var availableDateRange = document.getElementById('available-date-range');
+    var availableDateRange = [
+        document.getElementById('available-date-upper'),
+        document.getElementById('available-date-lower')
+    ]
+
+    noUiSlider.create (availableDateRange, {
+        // Create two timestamps to define a range.
+        range: {
+            min: timestamp('2010'),
+            max: timestamp('2016')
+        },
+
+        // Steps of one week
+            step: 7 * 24 * 60 * 60 * 1000,
+
+        // Two more timestamps indicate the handle starting positions.
+            start: [ timestamp('2011'), timestamp('2015') ],
+
+        // No decimals
+            format: wNumb({
+                decimals: 0
+            })
+        });
+
+    availableDateRange.noUiSlider.on('update', function( values, handle ) {
+        dateValues[handle].innerHTML = formatDate(new Date(+values[handle]));
+    });
+// Create a list of day and monthnames.
+    var
+        weekdays = [
+            "Sunday", "Monday", "Tuesday",
+            "Wednesday", "Thursday", "Friday",
+            "Saturday"
+        ],
+        months = [
+            "January", "February", "March",
+            "April", "May", "June", "July",
+            "August", "September", "October",
+            "November", "December"
+        ];
+
+    // Append a suffix to dates.
+    // Example: 23 => 23rd, 1 => 1st.
+    function nth (d) {
+    if(d>3 && d<21) return 'th';
+    switch (d % 10) {
+            case 1:  return "st";
+            case 2:  return "nd";
+            case 3:  return "rd";
+            default: return "th";
+        }
+    }
+
+    // Create a string representation of the date.
+    function formatDate ( date ) {
+        return weekdays[date.getDay()] + ", " +
+            date.getDate() + nth(date.getDate()) + " " +
+            months[date.getMonth()] + " " +
+            date.getFullYear();
+    }
+// 3. Property Area Size
+
 if ($('#property-area-range')[0]) {
     var propertyAreaRange = document.getElementById('property-area-range');
     var propertyAreaRangeValues = [
@@ -66,7 +137,7 @@ if ($('#property-area-range')[0]) {
     });
 }
 
-// 3. Lot Size
+// 4. Lot Size
 
 if ($('#property-lot-range')[0]) {
     var propertyLotRange = document.getElementById('property-lot-range');
