@@ -163,7 +163,7 @@
                                 map: map,
                                 position: myResult,
                             });
-                            google.maps.event.addListener(marker, 'mouseover', (function (marker, i) {
+                            google.maps.event.addListener(marker, 'click', (function (marker, i) {
                                 return function () {
                                     infowindow.setContent(infowindow);
                                     infowindow.open(map, marker);
