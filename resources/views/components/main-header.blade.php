@@ -38,15 +38,15 @@
             </li>
 
 
-            <li>
+            <li class="navigation__dropdown">
                 <a href="/submit">Submit</a>
             </li>
             
-            <li>
+            <li class="navigation__dropdown">
                 <a href="/faq">FAQ</a>
             </li>
 
-            <li>
+            <li class="navigation__dropdown">
                 <a href="/contact">Contact</a>
             </li>
 
