@@ -67,7 +67,7 @@ if ($('#available-date-range')[0]) {
     });
 
     availableDateRange.noUiSlider.on('update', function( values, handle ) {
-        availableDateRangeValues[handle].innerHTML = formatDate(new Date(+values[handle]));
+        availableDateRangeValues[handle].innerHTML = values[handle];
     });
 
     // Create a list of day and monthnames.
