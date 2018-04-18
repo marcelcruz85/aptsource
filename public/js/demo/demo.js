@@ -43,9 +43,12 @@ if ($('#property-price-range')[0]) {
 
 if ($('#available-date-range')[0]) {
 
-    var str = '04/18/2018';
-    function timestamp(str){
-        return new Date(str).getTime();   
+    
+    function formatDate ( date ) {
+        return weekdays[date.getDay()] + ", " +
+            date.getDate() + nth(date.getDate()) + " " +
+            months[date.getMonth()] + " " +
+            date.getFullYear();
     }
 
     var availableDateRange = document.getElementById('available-date-range');
@@ -59,9 +62,9 @@ if ($('#available-date-range')[0]) {
         range: {
             min: timestamp('2010'),
             max: timestamp('2016')
-        }
+        },
 
-/*         // Steps of one week
+        // Steps of one week
             step: 7 * 24 * 60 * 60 * 1000,
 
         // Two more timestamps indicate the handle starting positions.
@@ -70,7 +73,7 @@ if ($('#available-date-range')[0]) {
         // No decimals
             format: wNumb({
                 decimals: 0
-            }) */
+            })
     });
 
     availableDateRange.noUiSlider.on('update', function( values, handle ) {
