@@ -37,8 +37,7 @@
     <link rel="stylesheet" href="/css/app_2.css">
 
     <!-- jQuery -->
-    <script src="/vendors/bower_components/jquery/dist/jquery.min.js"></script>
-        
+    <script src="/vendors/bower_components/jquery/dist/jquery.min.js"></script>        
 
     <!-- Bootstrap -->
     <script src="/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -119,6 +118,9 @@
 
     <!-- Select 2 - Custom Selects -->
     <script src="/vendors/bower_components/select2/dist/js/select2.full.min.js"></script>
+
+    <!-- wNumb -->
+    <script src="/vendors/bower_components/wnumb/wnumb.js"></script>
 
     <!-- NoUiSlider -->
     <script src="/vendors/bower_components/nouislider/distribute/nouislider.min.js"></script>
