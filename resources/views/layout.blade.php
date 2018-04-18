@@ -120,7 +120,7 @@
     <script src="/vendors/bower_components/select2/dist/js/select2.full.min.js"></script>
 
     <!-- wNumb -->
-    <script src="/vendors/bower_components/wnumb/wnumb.js"></script>
+    <script src="/vendors/bower_components/wnumb/wNumb.js"></script>
 
     <!-- NoUiSlider -->
     <script src="/vendors/bower_components/nouislider/distribute/nouislider.min.js"></script>
