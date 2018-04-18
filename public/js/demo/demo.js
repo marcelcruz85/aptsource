@@ -61,6 +61,9 @@ if ($('#available-date-range')[0]) {
             min: timestamp('2010'),
             max: timestamp('2016')
         },
+        format: wNumb({
+            decimals: 0
+        })
     });
 
     availableDateRange.noUiSlider.on('update', function( values, handle ) {
