@@ -44,11 +44,8 @@ if ($('#property-price-range')[0]) {
 if ($('#available-date-range')[0]) {
 
     
-    function formatDate ( date ) {
-        return weekdays[date.getDay()] + ", " +
-            date.getDate() + nth(date.getDate()) + " " +
-            months[date.getMonth()] + " " +
-            date.getFullYear();
+    function timestamp(str){
+        return new Date(str).getTime();   
     }
 
     var availableDateRange = document.getElementById('available-date-range');
