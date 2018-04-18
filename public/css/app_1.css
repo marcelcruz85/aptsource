@@ -12909,6 +12909,7 @@ a {
   margin-bottom: 55px;
 }
 
+
 .header--minimal__index {
   background: #3F51B5 url(../img/apto.jpg) no-repeat top 0px left;
   background-size: 105% auto;
@@ -12931,6 +12932,15 @@ a {
 @media (max-width: 767px) {
   .header__main {
     padding: 32px 10px;
+  }
+
+  .header--minimal__index {
+    background: #3F51B5 url(../img/patterns/header_pattern.png) repeat-x  top 10px left;
+    padding-bottom: 0px;
+  }
+  
+  .header--minimal__index .header__main {
+    padding: 25px 0;
   }
 }
 
