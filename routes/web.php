@@ -21,6 +21,10 @@ Route::get('/listings-grid', function () {
     return view('pages.listings-grid');
 });
 
+Route::get('/submit', function () {
+    return view('pages.rental-submit');
+});
+
 Route::get('/faq', function () {
     return view('pages.faq');
 });

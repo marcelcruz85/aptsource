@@ -39,7 +39,7 @@
 
 
             <li>
-                <a href="submit-property.html">Submit</a>
+                <a href="/submit">Submit</a>
             </li>
             
             <li>
