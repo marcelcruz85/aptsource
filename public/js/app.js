@@ -590,19 +590,6 @@ $('.select2').on('select2:select', function (e) {
 ---------------------------------------------*/
 
 
-
-$('#datetimepicker6').datetimepicker();
-$('#datetimepicker7').datetimepicker({
-    useCurrent: false //Important! See issue #1075
-});
-$("#datetimepicker6").on("dp.change", function (e) {
-    $('#datetimepicker7').data("DateTimePicker").minDate(e.date);
-});
-$("#datetimepicker7").on("dp.change", function (e) {
-    $('#datetimepicker6').data("DateTimePicker").maxDate(e.date);
-});
-
-
 $('.form-search').submit(function(){
     var minRent = $('#property-price-upper').text();
     minRent = parseInt(minRent);
