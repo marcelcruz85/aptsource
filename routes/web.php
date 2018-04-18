@@ -17,7 +17,6 @@
 
 Route::get('/', 'ListingController@index');
 
-
 Route::get('/listings-grid', function () {
     return view('pages.listings-grid');
 });
@@ -35,7 +34,6 @@ Route::get('/search/{view}', 'ListingController@search');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
 
 /*   testing development */
 Route::get('/dev', 'ListingController@index');
