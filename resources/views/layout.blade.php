@@ -119,12 +119,14 @@
     <!-- Select 2 - Custom Selects -->
     <script src="/vendors/bower_components/select2/dist/js/select2.full.min.js"></script>
 
-    <!-- wNumb -->
-    <script src="/vendors/bower_components/wnumb/wNumb.js"></script>
+
 
     <!-- NoUiSlider -->
     <script src="/vendors/bower_components/nouislider/distribute/nouislider.min.js"></script>
 
+        <!-- wNumb -->
+        <script src="/vendors/bower_components/wnumb/wNumb.js"></script>
+        
     <!-- Jquery Number -->
     <script src="/vendors/bower_components/teamdf/jquery-number/jquery.number.min.js"></script>
 
