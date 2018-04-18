@@ -10,8 +10,6 @@
 
 
 @section ('content')
-
-<section class="section">
         <div class="container">
             <header class="section__title">
                 <h2>Duis mollisest non commodo luctus nisierat porttito</h2>
@@ -82,6 +80,4 @@
                 </div>
             </div>
         </div>
-    </section>
-
 @endsection
