@@ -61,7 +61,7 @@ if ($('#available-date-range')[0]) {
             max: timestamp('2016')
         },
 
-        // Steps of one week
+/*         // Steps of one week
             step: 7 * 24 * 60 * 60 * 1000,
 
         // Two more timestamps indicate the handle starting positions.
@@ -70,8 +70,8 @@ if ($('#available-date-range')[0]) {
         // No decimals
             format: wNumb({
                 decimals: 0
-            })
-        });
+            }) */
+    });
 
     availableDateRange.noUiSlider.on('update', function( values, handle ) {
         dateValues[handle].innerHTML = formatDate(new Date(+values[handle]));
@@ -111,6 +111,7 @@ if ($('#available-date-range')[0]) {
         date.getFullYear();
     }
 }
+
 // 3. Property Area Size
 
 if ($('#property-area-range')[0]) {
