@@ -12929,7 +12929,7 @@ a {
   padding: 25px 0;
 }
 
-@media (orientation : portrait){
+@media (max-width: 767px) {
   .header__main {
     padding: 32px 10px;
   }

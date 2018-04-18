@@ -22,6 +22,9 @@ Route::get('/listings-grid', function () {
     return view('pages.listings-grid');
 });
 
+Route::get('/faq', function () {
+    return view('pages.faq');
+});
 
 Route::get('/rentals/{view}/{parameters}', 'ListingController@search');
 
