@@ -36,8 +36,12 @@
     <link rel="stylesheet" href="/css/app_1.css">
     <link rel="stylesheet" href="/css/app_2.css">
 
-        <!-- jQuery -->
-        <script src="/vendors/bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- jQuery -->
+    <script src="/vendors/bower_components/jquery/dist/jquery.min.js"></script>
+        
+
+    <!-- Bootstrap -->
+    <script src="/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- Page Loader JS -->
     <script src="/js/page-loader.min.js" async></script>
@@ -109,9 +113,6 @@
 
 
     <!-- Javascript -->
-
-    <!-- Bootstrap -->
-    <script src="/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- Waves button ripple effects -->
     <script src="/vendors/bower_components/Waves/dist/waves.min.js"></script>
