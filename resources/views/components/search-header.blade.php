@@ -61,8 +61,15 @@
                             <div id="property-price-range"></div>
                         </div>
                     </div>
-
                     <div class="col-sm-6">
+                            <div class="form-group">
+                                <label>Available</label>
+                            <label class="btn">
+                                    <input type="checkbox" class="beds" value="1" id="bed1">Now
+                                </label>
+                            </div>
+                     </div>
+{{--                     <div class="col-sm-6">
                         <div class="form-group form-group--range">
                             <label>Area Size (sqft)</label>
                             <div class="input-slider-values clearfix">
@@ -73,7 +80,7 @@
                             </div>
                             <div id="property-area-range"></div>
                         </div>
-                    </div>
+                    </div> --}}
 
                     <div class="col-sm-6">
                         <div class="form-group">
