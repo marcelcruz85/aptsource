@@ -31,28 +31,34 @@
 
                     <div class="card faq__item">
                         <div class="card__header">
-                            <h2>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec pharetra Ligula Parturient elit?</h2>
+                            <h2>Can I lease an apartment for less than a 12 month period?</h2>
                         </div>
                         <div class="card__body">
-                            Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Etiam porta sem malesuada magna mollis euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue.
+                                No, unfortunatly our company and the managment companies we work with mostly deal with 1 year leases.
                         </div>
                     </div>
 
                     <div class="card faq__item">
                         <div class="card__header">
-                            <h2>Maecenas sed diam eget risus varius blandit sit amet non magna?</h2>
+                            <h2>What should you bring with you when searching for an apartment?</h2>
                         </div>
                         <div class="card__body">
-                            Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum.
+                                We recommend bringing a camera and a note pad, so when looking at number of places it’s helpful to compare notes and pictures.
                         </div>
                     </div>
 
                     <div class="card faq__item">
                         <div class="card__header">
-                            <h2>Risus Fermentum Cras Tristique?</h2>
+                            <h2>What will I need if I want to apply for an apartment?</h2>
                         </div>
-                        <div class="card__body">
-                            Donec ullamcorper nulla non metus auctor fringilla. Donec sed odio dui. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+                        <div class="card__body">                            
+                            <ul>
+                                <li>Check book</li>
+                                <li>Employment Information</li>
+                                <li>Landlord Information</li>
+                                <li>Co-signer application-if a student or unemployed</li>
+                                <li>Student loan documentation, if student loans will be used to pay rent</li>
+                            </ul>
                         </div>
                     </div>
 
