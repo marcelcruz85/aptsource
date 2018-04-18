@@ -1,4 +1,50 @@
-@extends ('layout')
+@extends ('layout') @section ('header')
+
+<header id="header" class="header--minimal">
+    @include ('components.top-header') 
+    @include ('components.main-header')
+</header>
+
+@endsection 
+
+@section ('action-header')
+
+<div class="action-header">
+    <div class="container">
+        <div class="action-header__item action-header__item--search">
+            <form>
+                <input class="hidden-xs top-search autocomplete" type="text" name="location" value="{{ $location }}" placeholder="Search by neighborhood, city, zip or address...">
+                <!-- For desktop -->
+                <input class="visible-xs autocomplete" type="text" placeholder="Search...">
+                <!-- For mobile -->
+                <div class="search__type">
+                    <button class="btn btn-primary not-show">Search</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="action-header__item action-header__views hidden-xs">
+            <a href="/rentals/grid/search?{{ $urlParameters }}" class="zmdi zmdi-apps"></a>
+            <a href="/rentals/list/search?{{ $urlParameters }}" class="zmdi zmdi-view-list  active"></a>
+        </div>
+
+        <div class="action-header__item action-header__item--sort hidden-xs">
+            <span class="action-header__small">Sort by :</span>
+
+            <select class="select2">
+                <option></option>
+                <option value="updateDate-desc">Last Updated</option>
+                <option value="rent-desc">Price hight to low</option>
+                <option value="rent-asc">Price low to high</option>
+                <option value="beds-asc">Beds Asc</option>
+                <option value="beds-desc">Beds Desc</option>
+                <option value="baths-asc">Baths Asc</option>
+                <option value="baths-desc">Baths Desc</option>
+            </select>
+        </div>
+    </div>
+</div>
+@endsection 
 
 @section ('content')
 
