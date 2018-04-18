@@ -59,7 +59,7 @@ if ($('#available-date-range')[0]) {
         range: {
             min: timestamp('2010'),
             max: timestamp('2016')
-        },
+        }
 
 /*         // Steps of one week
             step: 7 * 24 * 60 * 60 * 1000,
