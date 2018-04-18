@@ -64,21 +64,19 @@
 
                     <div class="card faq__item">
                         <div class="card__header">
-                            <h2>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor?</h2>
+                            <h2>What form of payment can I use for my first month’s rent?</h2>
                         </div>
                         <div class="card__body">
-                            Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+                                We only accept personal and cashier’s checks. 
                         </div>
                     </div>
 
                     <div class="card faq__item">
                         <div class="card__header">
-                            <h2>Integer posuere erat a ante venenatis dapibus posuere velit aliquet?</h2>
+                            <h2>What if I have no credit history or a challenged credit history?</h2>
                         </div>
                         <div class="card__body">
-                            Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur.
-
-                            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit tempus porttitor. Donec sed odio dui. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                                We work with a variety of landlords, each of whom have different approval guidelines.  We will do our best to match you with an apartment that fits your needs. 
                         </div>
                     </div>
                 </div>
