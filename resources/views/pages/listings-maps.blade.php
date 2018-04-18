@@ -1,10 +1,13 @@
 @extends ('layout') @section ('header')
 
 <header id="header" class="header--minimal">
-    @include ('components.top-header') @include ('components.main-header')
+    @include ('components.top-header') 
+    @include ('components.main-header')
 </header>
 
-@endsection @section ('action-header')
+@endsection 
+
+@section ('action-header')
 
 <div class="action-header">
     <div class="container">
@@ -42,15 +45,44 @@
     </div>
 </div>
 
-@endsection @section ('content')
-<div id="map"></div>
-<div id="properties"></div>
+@endsection 
+
+@section ('content')
+<div class="container">
+    <div class="row">
+        <div class="col-sm-8 listings-list">
+            <div id="map"></div>
+        </div>
+        <aside class="col-sm-4 hidden-xs">
+            <div class="card subscribe mdc-bg-light-blue">
+                <div class="subscribe__icon">
+                    <i class="zmdi zmdi-email"></i>
+                </div>
+
+                <h2>Subscribe for Newsletters</h2>
+                <small>Curabitur blandit tempus porttitor adipiscing maecenas faucibus mollis interdum</small>
+
+                <form>
+                    <div class="form-group form-group--light form-group--float">
+                        <input type="text" class="form-control text-center" placeholder="Email Address">
+                        <i class="form-group__bar"></i>
+                    </div>
+
+                    <button class="btn btn--circle">
+                        <i class="zmdi zmdi-check mdc-text-light-blue"></i>
+                    </button>
+                </form>
+            </div>
+        </aside>
+        @include('components.side-search');
+    </div>
+</div>
 <script>
     function initMap() {
 
         $.ajax({
             type: "GET",
-            url: 'http://aptsource.dotgital.com/rentals/api/search',
+            url: 'http://dev-aptsource.dotgital.com/rentals/api/search',
             data: {
                 "location": ""
             },
@@ -62,24 +94,57 @@
                 var map;
                 var marker;
 
-                    var mapOptions = {
-                        center: new google.maps.LatLng(41.942463, -87.652900),
-                        zoom: 11,
-                        mapTypeId: google.maps.MapTypeId.ROADMAP
-                    };
+                var bounds = new google.maps.LatLngBounds();
 
-                    map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                var mapOptions = {
+                    center: new google.maps.LatLng(41.942463, -87.652900),
+                    zoom: 11,
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+
+                map = new google.maps.Map(document.getElementById("map"), mapOptions);
+                google.maps.event.addListener(map, "click", function (event) {
+                    infowindow.close();
+                });
 
                 for (i = 0; i < listings['Listings']['Listing'].length; i++) {
+                    var contentString = '<div class="infowindow">' +
+                        '<div class="listings-grid__item">' +
+                        '<a href="listing-detail.html">' +
+                        '<div class="listings-grid__main">' +
+                        '<img src="https://placeholdit.imgix.net/~text?&w=400&h=266" alt="">' +
+                        '</div>' +
+
+                        '<div class="listings-grid__body">' +
+                        '<small>$1,150 </small>' +
+                        '<small>21 Shop St, San Francisco</small>' +
+                        '</div>' +
+
+                        '<ul class="listings-grid__attrs">' +
+                        '<li><i class="listings-grid__icon listings-grid__icon--bed"></i> 03 </li>' +
+                        '<li><i class="listings-grid__icon listings-grid__icon--bath"></i> 02</li>' +
+                        '</ul>' +
+                        '</a>' +
+                        '</div>' +
+                        '</div>';
+
+                    var infowindow = new google.maps.InfoWindow({
+                        content: contentString,
+                        maxWidth: 180
+                    });
+
                     var streetNumber = listings['Listings']['Listing'][i]['StreetNumber'];
                     var streetName = listings['Listings']['Listing'][i]['StreetName'];
                     var unit = listings['Listings']['Listing'][i]['Unit'];
                     var city = listings['Listings']['Listing'][i]['City'];
                     var state = listings['Listings']['Listing'][i]['State'];
                     var zip = listings['Listings']['Listing'][i]['Zip'];
+                    var title = listings['Listings']['Listing'][i]['Title'];
 
-                    var addressInput = streetNumber + " " + streetName + " " + unit + " " + city + " " + state + " " + zip;
+                    var addressInput = streetNumber + " " + streetName + " " + unit + " " + city + " " +
+                        state + " " + zip;
                     var price = listings['Listings']['Listing'][i]['Price'];
+
                     console.log(addressInput);
 
                     var geocoder = new google.maps.Geocoder();
@@ -91,65 +156,26 @@
                         if (status == google.maps.GeocoderStatus.OK) {
 
                             var myResult = results[0].geometry.location;
+                            bounds.extend(myResult);
+                            //console.log(myResult);
 
-                            
                             marker = new google.maps.Marker({
                                 map: map,
                                 position: myResult,
-                                title: streetNumber
                             });
+                            google.maps.event.addListener(marker, 'mouseover', (function (marker, i) {
+                                return function () {
+                                    infowindow.setContent(infowindow);
+                                    infowindow.open(map, marker);
+                                }
+                            })(marker, i));
 
-                            map.setCenter(myResult);
-
-                            map.setZoom(11);
+                            map.fitBounds(bounds);
                         }
                     });
-                    var contentString = '<div id="content">' +
-                    '<div id="siteNotice">' +
-                    '</div>' +
-                    '<h1 id="firstHeading" class="firstHeading">Uluru</h1>' +
-                    '<div id="bodyContent">' +
-                    '<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
-                    'sandstone rock formation in the southern part of the ' +
-                    'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) ' +
-                    'south west of the nearest large town, Alice Springs; 450&#160;km ' +
-                    '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major ' +
-                    'features of the Uluru - Kata Tjuta National Park. Uluru is ' +
-                    'sacred to the Pitjantjatjara and Yankunytjatjara, the ' +
-                    'Aboriginal people of the area. It has many springs, waterholes, ' +
-                    'rock caves and ancient paintings. Uluru is listed as a World ' +
-                    'Heritage Site.</p>' +
-                    '</div>' +
-                    '</div>';
 
-                var infowindow = new google.maps.InfoWindow({
-                    content: contentString
-                });
-
-                function createMarker(latlng) {
-
-
-                    if (marker != undefined && marker != '') {
-                        marker.setMap(null);
-                        marker = '';
-                    }
-
-                    marker.addListener('click', function () {
-                        infowindow.open(map, marker);
-                    });
-                }
 
                 }
-
-
-                    
-
-                
-
-
-
-
-
             },
             error: function () {
                 console.log('API request fail');
