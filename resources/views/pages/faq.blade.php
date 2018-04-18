@@ -22,10 +22,10 @@
                 <div class="col-md-8 faq">
                     <div class="card faq__item">
                         <div class="card__header">
-                            <h2>Donec id elit non mi porta gravida at eget metus?</h2>
+                            <h2>How long does it take to find an apartment?</h2>
                         </div>
                         <div class="card__body">
-                            Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Sed posuere consectetur est at lobortis. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam porta sem malesuada magna mollis euismod. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                            Typically it takes 3-5 hours, but this varies based on each apartment search.  Our commitment is to give you as much time and attention as you require so that we can match you with the perfect apartment.                        </div>
                         </div>
                     </div>
 
