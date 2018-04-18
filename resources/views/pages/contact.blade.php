@@ -27,17 +27,10 @@
                     <div class="col-sm-6">
                         <div class="contact__info">
                             <ul class="rmd-contact-list">
-                                <li class="rmd-contact-list__title"><i class="zmdi zmdi-home"></i>New York Office</li>
-                                <li><i class="zmdi zmdi-pin"></i>5470 Madison Street Severna Park, <br>MD 21146</li>
-                                <li><i class="zmdi zmdi-phone"></i>308-360-8938</li>
-                                <li><i class="zmdi zmdi-email"></i>new-york@Roost.estate</li>
-                            </ul>
-
-                            <ul class="rmd-contact-list">
-                                <li class="rmd-contact-list__title"><i class="zmdi zmdi-home"></i>San Jose Office</li>
-                                <li><i class="zmdi zmdi-pin"></i>7094 Leeton Ridge Mountain View, <br>CA 94043</li>
-                                <li><i class="zmdi zmdi-phone"></i>702-210-6015</li>
-                                <li><i class="zmdi zmdi-email"></i>san-jose@Roost.estate</li>
+                                <li class="rmd-contact-list__title"><i class="zmdi zmdi-home"></i>Apartment Source Chicago</li>
+                                <li><i class="zmdi zmdi-pin"></i>2638 N. Halsted Street Chicago, <br>IL 60614</li>
+                                <li><i class="zmdi zmdi-phone"></i>773-404-9900</li>
+                                <li><i class="zmdi zmdi-email"></i>info@apartmentsourcechicago.com</li>
                             </ul>
 
                             <div class="contact__social">
