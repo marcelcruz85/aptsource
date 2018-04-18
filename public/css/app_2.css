@@ -5809,7 +5809,6 @@ html:not(.ie9) .page-loader__spinner {
 /* Google Maps */
 #map {
   height: 500px;
-  margin: -60px 0px -55px -100px;
  }
 
  .infowindow img{
