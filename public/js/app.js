@@ -616,7 +616,7 @@ $('.form-search').submit(function(){
 
 
     var availableBefore = $('#available-date-lower').text();
-    $('#available-before').val(vailableBefore);
+    $('#available-before').val(availableBefore);
 
     var beds = $(".beds[type='checkbox']:checked").map( function(){
                     return $(this).val();        
