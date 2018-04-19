@@ -68,7 +68,7 @@
                             <div class="input-slider-values clearfix">
                                 <div class="pull-left" id="available-date-upper"></div>
                                 <input id="available-after" name="available-after" type="hidden" value="0">
-                                <div class="pull-right" id="available-before"></div>
+                                <div class="pull-right" id="available-date-lower"></div>
                                 <input id="available-before" name="available-before" type="hidden" value="0">
                             </div>
                             <div id="available-date-range"></div>

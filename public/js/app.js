@@ -611,12 +611,12 @@ $('.form-search').submit(function(){
 
 
 
-    var availableAfter = $('#available-after').text();
+    var availableAfter = $('#available-date-upper').text();
     availableAftere = parseInt(availableAfter);
     $('#available-after').val(availableAfter);
 
 
-    var availableBefore = $('#available-before').text();
+    var availableBefore = $('#available-date-lower').text();
     vailableBefore = parseInt(vailableBefore);
     $('#available-before').val(vailableBefore);
 
