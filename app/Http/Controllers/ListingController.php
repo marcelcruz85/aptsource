@@ -67,8 +67,17 @@ class ListingController extends Controller
         $maxSize = '&square_footage_max=' . $maxSize;
 
         //Available range
+
         $availableAfter = $request->input('available-after');
-        $availableAfter = '&avail_from=' . $availableAfter;
+
+        $now = time();
+        $availableAfterUnix = time($availableAfter);
+
+        if ( $now > $availableAfterUnix ){
+            $availableAfter = '&avail_from=01/01/2000';
+        }else{
+            $availableAfter = '&avail_from=' . $availableAfter;
+        }
                 
         $availableBefore = $request->input('available-before');
         $availableBefore = '&avail_to=' . $availableBefore;
