@@ -64,7 +64,7 @@
 
                     <div class="col-sm-6">
                         <div class="form-group form-group--range">
-                            <label>Avialable (sqft)</label>
+                            <label>Avialable</label>
                             <div class="input-slider-values clearfix">
                                 <div class="pull-left" id="available-date-upper"></div>
                                 <input id="min-size" name="min-size" type="hidden" value="0">

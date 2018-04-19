@@ -2832,6 +2832,7 @@ html:not(.ie9) .page-loader__spinner {
 
 .contact__form {
   padding: 40px;
+  /* background-color: #03a9f4; */
   background-color: #FFD54F;
 }
 
@@ -2857,6 +2858,7 @@ html:not(.ie9) .page-loader__spinner {
 .contact__form .btn:focus,
 .contact__form .btn {
   color: #FFB300;
+  /* color: #FFFFFF; */
   box-shadow: none;
 }
 

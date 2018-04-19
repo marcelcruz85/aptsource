@@ -1,5 +1,11 @@
 @extends ('layout')
 
+@section ('head-scripts')
+
+  <!-- ... -->
+  <script type="text/javascript" src="/vendors/bower_components/moment/min/moment.min.js"></script>
+@endsection
+
 @section ('header')
 
 <header id="header" class="header--minimal__index">

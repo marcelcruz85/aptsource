@@ -48,6 +48,8 @@ if ($('#available-date-range')[0]) {
         return new Date(str).getTime();   
     }
 
+    var todate = Math.round((new Date()).getTime() / 1000);
+    var nextYear = (Math.round((new Date()).getTime() / 1000)) + 31536000
     var availableDateRange = document.getElementById('available-date-range');
     var availableDateRangeValues = [
         document.getElementById('available-date-upper'),
@@ -55,11 +57,12 @@ if ($('#available-date-range')[0]) {
     ]
 
     noUiSlider.create (availableDateRange, {
-        start: [ timestamp('2011'), timestamp('2015') ],
-        step: 7 * 24 * 60 * 60 * 1000,
+        start: [ todate, nextYear ],
+        step: 1,
+        connect: true,
         range: {
-            min: timestamp('2010'),
-            max: timestamp('2016')
+            min: todate,
+            max: nextYear
         },
         format: wNumb({
             decimals: 0
@@ -67,41 +70,15 @@ if ($('#available-date-range')[0]) {
     });
 
     availableDateRange.noUiSlider.on('update', function( values, handle ) {
-        availableDateRangeValues[handle].innerHTML = values[handle];
+        availableDateRangeValues[handle].innerHTML = timeConverter(values[handle]);
+        console.log(values[handle]);
     });
 
     // Create a list of day and monthnames.
-    var
-    weekdays = [
-        "Sunday", "Monday", "Tuesday",
-        "Wednesday", "Thursday", "Friday",
-        "Saturday"
-    ],
-    months = [
-        "January", "February", "March",
-        "April", "May", "June", "July",
-        "August", "September", "October",
-        "November", "December"
-    ];
-
-    // Append a suffix to dates.
-    // Example: 23 => 23rd, 1 => 1st.
-    function nth (d) {
-    if(d>3 && d<21) return 'th';
-    switch (d % 10) {
-        case 1:  return "st";
-        case 2:  return "nd";
-        case 3:  return "rd";
-        default: return "th";
-    }
-    }
-
-    // Create a string representation of the date.
-    function formatDate ( date ) {
-    return weekdays[date.getDay()] + ", " +
-        date.getDate() + nth(date.getDate()) + " " +
-        months[date.getMonth()] + " " +
-        date.getFullYear();
+    function timeConverter(UNIX_timestamp){
+        var timestamp = moment.unix(UNIX_timestamp);
+        var time = timestamp.format("MM/DD/YYYY");
+        return time;
     }
 }
 
