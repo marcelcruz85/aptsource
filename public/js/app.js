@@ -609,6 +609,17 @@ $('.form-search').submit(function(){
     maxSize = parseInt(maxSize);
     $('#max-size').val(maxSize);
 
+
+
+    var availableAfter = $('#available-after').text();
+    availableAftere = parseInt(availableAfter);
+    $('#available-after').val(availableAfter);
+
+
+    var availableBefore = $('#available-before').text();
+    vailableBefore = parseInt(vailableBefore);
+    $('#available-before').val(vailableBefore);
+
     var beds = $(".beds[type='checkbox']:checked").map( function(){
                     return $(this).val();        
                 }).get().join(",");
