@@ -612,12 +612,10 @@ $('.form-search').submit(function(){
 
 
     var availableAfter = $('#available-date-upper').text();
-    availableAftere = parseInt(availableAfter);
     $('#available-after').val(availableAfter);
 
 
     var availableBefore = $('#available-date-lower').text();
-    vailableBefore = parseInt(vailableBefore);
     $('#available-before').val(vailableBefore);
 
     var beds = $(".beds[type='checkbox']:checked").map( function(){
