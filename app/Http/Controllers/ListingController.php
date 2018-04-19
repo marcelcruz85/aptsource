@@ -88,7 +88,7 @@ class ListingController extends Controller
         $sortDir = "";
 
         //building the url for the API request
-        $searchParameters = 'include_mls=1&detail_level=2&page_count=20&page_index=' . $page . $aviableBefore . $availableAfter . $rentLocation . $minRent . $maxRent . $minSize . $maxSize . $beds . $baths . '&sort_name=' . $sortName . '&sort_dir=' . $sortDir;
+        $searchParameters = 'include_mls=1&detail_level=2&page_count=20&page_index=' . $page . $availableBefore . $availableAfter . $rentLocation . $minRent . $maxRent . $minSize . $maxSize . $beds . $baths . '&sort_name=' . $sortName . '&sort_dir=' . $sortDir;
         $response = $this->apiRequest($searchParameters);
 
         if($response['Total'] > 0){
