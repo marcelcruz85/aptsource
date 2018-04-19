@@ -119,8 +119,6 @@
     <!-- Select 2 - Custom Selects -->
     <script src="/vendors/bower_components/select2/dist/js/select2.full.min.js"></script>
 
-
-
     <!-- NoUiSlider -->
     <script src="/vendors/bower_components/nouislider/distribute/nouislider.min.js"></script>
 
