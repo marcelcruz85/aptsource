@@ -59,12 +59,19 @@ class ListingController extends Controller
         $maxRent = $request->input('max-rent');
         $maxRent = '&max_rent=' . $maxRent;
 
-        //Rent range
+        //Size range
         $minSize = $request->input('min-size');
         $minSize = '&square_footage_min=' . $minSize;
         
         $maxSize = $request->input('max-size');
         $maxSize = '&square_footage_max=' . $maxSize;
+
+        //Available range
+        $availableAfter = $request->input('available-after');
+        $availableAfter = '&avail_from=' . $availableAfter;
+                
+        $availableBefore = $request->input('available-before');
+        $availableBefore = '&avail_to=' . $availableBefore;
 
         //Beds
         $beds = $request->input('beds');
@@ -81,7 +88,7 @@ class ListingController extends Controller
         $sortDir = "";
 
         //building the url for the API request
-        $searchParameters = 'include_mls=1&detail_level=2&page_count=20&page_index=' . $page . $rentLocation . $minRent . $maxRent . $minSize . $maxSize . $beds . $baths . '&sort_name=' . $sortName . '&sort_dir=' . $sortDir;
+        $searchParameters = 'include_mls=1&detail_level=2&page_count=20&page_index=' . $page . $aviableBefore . $availableAfter . $rentLocation . $minRent . $maxRent . $minSize . $maxSize . $beds . $baths . '&sort_name=' . $sortName . '&sort_dir=' . $sortDir;
         $response = $this->apiRequest($searchParameters);
 
         if($response['Total'] > 0){
