@@ -71,9 +71,9 @@ class ListingController extends Controller
         $availableAfter = $request->input('available-after');
 
         $now = time();
-        $availableAfterUnix = time($availableAfter);
+        $availableDate = time($availableAfter);
 
-        if ( $now > $availableAfterUnix ){
+        if ( $now >= $availableDate ){
             $availableAfter = '&avail_from=01/01/2000';
         }else{
             $availableAfter = '&avail_from=' . $availableAfter;
@@ -123,6 +123,8 @@ class ListingController extends Controller
         }
 
         return view($viewType, [
+            'now' => $now,
+            'available' => $availableDate,
             'view' => $view,
             'sort' => $sort,
             'pages' =>  $pages,
