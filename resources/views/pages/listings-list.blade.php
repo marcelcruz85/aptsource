@@ -145,7 +145,7 @@
 
         <div class=no-show>
             <div class="pageindex">{{ $now }}</div>
-            <div class="pageindex">{{ $availableDate }}</div>
+            <div class="pageindex">{{ $available }}</div>
             <div class="pageindex">{{ $location }}</div>
             <div class="pageindex">{{ $pageIndex }}</div>
             <div class="pages">{{ $pages }}</div>
