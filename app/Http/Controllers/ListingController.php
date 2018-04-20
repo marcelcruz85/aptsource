@@ -71,7 +71,7 @@ class ListingController extends Controller
         $availableAfter = $request->input('available-after');
 
         $now = time();
-        $availableDate = '04/19/2018';
+        $availableDate = strtotime('04/19/2018');
 
         if ( $now >= $availableDate ){
             $availableAfter = '&avail_from=01/01/2000';
