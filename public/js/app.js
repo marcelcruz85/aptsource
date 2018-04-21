@@ -545,13 +545,13 @@ $(document).ready(function () {
 
     var pages = $('.pages').text();
     var pageIndex = $('.pageindex').text();
-    var urlparameters =$('.urlparameters').text();
+    var urlparameters = $('.urlparameters').text().replace(/&page=(.+?)/, "");
     $('.pagination').pagination({
 
         pages: pages,
         currentPage: pageIndex,
         displayedPages: 3,
-        hrefTextPrefix: urlparameters + '&page='
+        hrefTextPrefix: 'search?' + urlparameters + '&page='
     });
 
 /*---------------------------------------------
