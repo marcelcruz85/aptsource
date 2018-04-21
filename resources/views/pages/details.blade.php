@@ -12,8 +12,8 @@
 @section ('content')
         <div class="container">
             <header class="section__title section__title-alt">
-                <h2>{{ $listing['Title'] }}</h2>
-                <small>{{ $listing['StreetNumber'] }} {{ $listing['StreetName'] }} {{ $listing['City'] }}, {{ $listing['State'] }} {{ $listing['Zip'] }}</small>
+                <h2>{{ $listing['Title']  ?? "" }}</h2>
+                <small>{{ $listing['StreetNumber']  ?? "" }} {{ $listing['StreetName']  ?? "" }} {{ $listing['City']  ?? "" }}, {{ $listing['State']  ?? "" }} {{ $listing['Zip']  ?? "" }}</small>
 
                 <!-- <div class="actions actions--section">
                     <div class="actions__toggle">
@@ -100,7 +100,7 @@
 
                         <div class="detail-info">
                             <div class="detail-info__header clearfix">
-                                <strong class="price-details">{{ $listing['Price'] }}</strong>
+                                <strong class="price-details">{{ $listing['Price']  ?? "" }}</strong>
                                 <!-- <small>Est. Mortgage: $5,328/month</small> -->
 
                                 <span>{{ $listing['Status']}}</span> 
@@ -109,7 +109,7 @@
                             <ul class="detail-info__list clearfix">
                                 <li>
                                     <span>Available Date</span>                                        
-                                    <span class="availableDate">{{ $listing['AvailableDate'] }}</span>
+                                    <span class="availableDate">{{ $listing['AvailableDate']  ?? "" }}</span>
                                 </li>
                                 <li>
                                     <span>Pets</span>
@@ -117,11 +117,11 @@
                                 </li>
                                 <li>
                                     <span>Bedrooms</span>
-                                    <span class='listing-attr'>{{ $listing['Beds'] }}</span>
+                                    <span class='listing-attr'>{{ $listing['Beds']  ?? "" }}</span>
                                 </li>
                                 <li>
                                     <span>Bathrooms</span>
-                                    <span class='listing-attr'>{{ $listing['Baths'] }}</span>
+                                    <span class='listing-attr'>{{ $listing['Baths']  ?? "" }}</span>
                                 </li>
                             </ul>
                         </div>
