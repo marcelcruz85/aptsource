@@ -70,6 +70,7 @@
                         <div class="detail-media">
                             <div class="tab-content">
                                 <div class="tab-pane fade in active light-gallery" id="detail-media-images">
+                                    {{ dd($listing) }}
                                     @if (is_array($listing) and array_key_exists('Photos', $listing) )
                                         @foreach($listing['Photos']['Photo'] as $photo)                                        
                                         <a href="{{ $photo }}">
@@ -202,8 +203,8 @@
                     </form>
 
                     
+                    @if (count($nearby) < 6 ) 
                     <div class="card hidden-xs hidden-sm hidden-print">
-                        @if (count($nearby) < 6 ) 
                         <div class="card__header">
                             <h2>You may also like...</h2>
                             <small>Morbi risus porta consectetur vestibulum ateros</small>
@@ -232,10 +233,10 @@
                                 </div>
                             </a>
                             @endforeach
-                        @endif
                             <div class="p-10"></div>
                         </div>
-                    </div>
+                    </div>                    
+                    @endif
                 </div>
             </div>
         </div>
