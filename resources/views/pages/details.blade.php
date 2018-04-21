@@ -203,13 +203,13 @@
 
                     
                     <div class="card hidden-xs hidden-sm hidden-print">
+                        @if (is_array($nearby) and array_key_exists('ID', $nearby)) 
                         <div class="card__header">
                             <h2>You may also like...</h2>
                             <small>Morbi risus porta consectetur vestibulum ateros</small>
                         </div>
 
                         <div class="list-group">
-                         @if (is_array($nearby)) 
                             @foreach ($nearby as $listing)
                             <a href="/rental/details/{{ $listing['ID'] }}" class="list-group-item media">
                                 <div class="pull-left">
