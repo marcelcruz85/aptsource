@@ -151,6 +151,6 @@
             <div class="pages">{{ $pages }}</div>
             <div class="view">{{ $view }}</div>
             <div class="sort">{{ $sort }}</div>
-            <div class="urlparameters ">{{ $urlParameters }}</div>
+            <div class="urlparameters">{{ $urlParameters }}</div>
         </div>
         @endsection
