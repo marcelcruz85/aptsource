@@ -544,8 +544,19 @@ $(document).ready(function () {
 ----------------------------------------------*/
 
     var pages = $('.pages').text();
-    var pageIndex = $('.pageindex').text();
     var urlparameters = $('.urlparameters').text().replace(/&page=(.+?)/, "");
+
+    $.urlParam = function(name){
+        var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+        if (results==null){
+           return null;
+        }
+        else{
+           return decodeURI(results[1]) || 0;
+        }
+    }    
+    var pageIndex = $.urlParam('page');
+
     $('.pagination').pagination({
 
         pages: pages,
