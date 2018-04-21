@@ -141,13 +141,12 @@
 
                         <div class="card__body">
                             <ul class="detail-amenities__list">
-                            {{dd($listing)}}
-                            @if (is_array($listing['Features']['Featured']) and array_key_exists('Photos', $listing) )
-                                @foreach($listing['Features']['Featured'] as $featured)                                          
-                                    <li class="mdc-bg-light-blue-500">{{$featured}}</li>
+                            @if (is_array($listing['Features']['Feature']))
+                                @foreach($listing['Features']['Feature'] as $feature)                                          
+                                    <li class="mdc-bg-light-blue-500">{{$feature}}</li>
                                 @endforeach 
                             @else                                        
-                                <li class="mdc-bg-light-blue-500">{{$listing['Features']['Featured']}}</li>
+                                <li class="mdc-bg-light-blue-500">{{$listing['Features']['Feature']}}</li>
                             @endif
                             </ul>
                         </div>
