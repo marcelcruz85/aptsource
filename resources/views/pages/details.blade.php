@@ -71,7 +71,7 @@
                             <div class="tab-content">
                                 <div class="tab-pane fade in active light-gallery" id="detail-media-images">
                                     @if (is_array($listing) and array_key_exists('Photos', $listing) )
-                                        @if(count($listing['Photos']['Photo']) > 0)
+                                        @if(is_array($listing['Photos']['Photo']))
                                             @foreach($listing['Photos']['Photo'] as $photo)                                        
                                             <a href="{{ $photo }}">
                                                 <img src="{{ $photo }}" alt="">                                        
