@@ -70,13 +70,18 @@
                         <div class="detail-media">
                             <div class="tab-content">
                                 <div class="tab-pane fade in active light-gallery" id="detail-media-images">
-                                    {{ dd($listing) }}
                                     @if (is_array($listing) and array_key_exists('Photos', $listing) )
-                                        @foreach($listing['Photos']['Photo'] as $photo)                                        
-                                        <a href="{{ $photo }}">
-                                            <img src="{{ $photo }}" alt="">                                        
-                                        </a>
-                                        @endforeach 
+                                        @if(count($listing['Photos']['Photo']) > 0)
+                                            @foreach($listing['Photos']['Photo'] as $photo)                                        
+                                            <a href="{{ $photo }}">
+                                                <img src="{{ $photo }}" alt="">                                        
+                                            </a>
+                                            @endforeach 
+                                        @else                                                                   
+                                            <a href="{{ $listing['Photos']['Photo'] }}">
+                                                <img src="{{ $listing['Photos']['Photo'] }}" alt="">                                        
+                                            </a>
+                                        @endif
                                     @else                                        
                                         <img src="https://placeholdit.imgix.net/~text?&w=960&h=600" alt="">
                                     @endif
