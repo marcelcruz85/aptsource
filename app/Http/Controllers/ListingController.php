@@ -32,7 +32,7 @@ class ListingController extends Controller
 
         //return view('pages.details');
         return view('pages.details', [  
-            'nearby' => $nearby['Listings']['Listing'],
+            'nearby' => $nearby['Listings']['Listing'] ?? "",
             'listing' => $response['Listings']['Listing'],
         ]);
     }
