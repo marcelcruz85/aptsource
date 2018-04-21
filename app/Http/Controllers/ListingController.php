@@ -90,9 +90,12 @@ class ListingController extends Controller
         $baths = $request->input('baths');
         $baths = '&baths=' . $baths;
 
+        //Page
+        $page = $request->input('page');
+        $page = '&baths=' . $page;
+
         //$sortParameter = explode("-", $sort);
         $sort = '1';
-        $page = '1';
         $sortName = ""; 
         $sortDir = "";
 
