@@ -208,7 +208,7 @@
                     </form>
 
                     
-                    @if (count($nearby) < 6 ) 
+                    @if (count($nearby) < 6 && $nearby != "") 
                     <div class="card hidden-xs hidden-sm hidden-print">
                         <div class="card__header">
                             <h2>You may also like...</h2>
