@@ -203,7 +203,7 @@
 
                     
                     <div class="card hidden-xs hidden-sm hidden-print">
-                        @if (is_array($nearby) and array_key_exists('ID', $nearby)) 
+                        @if ($nearby != "none") 
                         <div class="card__header">
                             <h2>You may also like...</h2>
                             <small>Morbi risus porta consectetur vestibulum ateros</small>
@@ -211,7 +211,7 @@
 
                         <div class="list-group">
                             @foreach ($nearby as $listing)
-                            <a href="/rental/details/{{ $listing['ID'] ?? "" }}" class="list-group-item media">
+                            <a href="/rental/details/{{ $listing['ID'] }}" class="list-group-item media">
                                 <div class="pull-left">
                                     @if (is_array($listing) and array_key_exists('Photos', $listing) )
                                         <img src="{{ $listing['Photos']['Photo']['0']}}"  alt="" class="list-group__img" width="65"> 
