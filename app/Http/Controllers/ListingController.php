@@ -26,15 +26,20 @@ class ListingController extends Controller
         $response = $this->apiRequest($searchParameters);
 
         //nearby properties
-        if(is_array($response)){
+        if(is_array($response))
+        {
             $nearby = $response['Listings']['Listing']['Zip'];
             $searchParameters = 'detail_level=2&page_count=5&zip=' . $nearby;
             $nearby = $this->apiRequest($searchParameters);
+            $listingsNearby = $nearby['Listings']['Listing'];
+        } else 
+        {
+            $listingsNearby = "none";
         }
 
         //return view('pages.details');
         return view('pages.details', [  
-            'nearby' => $nearby['Listings']['Listing'] ?? "none",
+            'nearby' =>  $listingsNearby,
             'listing' => $response['Listings']['Listing'],
         ]);
     }
