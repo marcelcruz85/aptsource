@@ -209,7 +209,7 @@
                         </div>
 
                         <div class="list-group">
-                            
+                         @if (is_array($nearby)) 
                             @foreach ($nearby as $listing)
                             <a href="/rental/details/{{ $listing['ID'] }}" class="list-group-item media">
                                 <div class="pull-left">
@@ -232,7 +232,7 @@
                                 </div>
                             </a>
                             @endforeach
-
+                        @endif
                             <div class="p-10"></div>
                         </div>
                     </div>
