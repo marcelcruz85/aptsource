@@ -25,12 +25,12 @@ class ListingController extends Controller
         $searchParameters = 'listing_id=' . $listing_id;
         $response = $this->apiRequest($searchParameters);
 
-        //nearby properties
-        if(is_array($response))
+        //nearby properties        
+        $nearby = $response['Listings']['Listing']['Zip'];
+        $searchParameters = 'detail_level=2&page_count=5&zip=' . $nearby;        
+        $nearby = $this->apiRequest($searchParameters);
+        if(is_array($nearby))
         {
-            $nearby = $response['Listings']['Listing']['Zip'];
-            $searchParameters = 'detail_level=2&page_count=5&zip=' . $nearby;
-            $nearby = $this->apiRequest($searchParameters);
             $listingsNearby = $nearby['Listings']['Listing'];
         } else 
         {
