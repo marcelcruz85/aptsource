@@ -153,7 +153,7 @@
                             <h2>Property Overview</h2>
                         </div>
                         <div class="card__body">
-                            {{ $listing['UnitDescription'] || "" }}
+                            {{ $listing['UnitDescription'] ?? "" }}
                         </div>
                     </div>
                 </div>
