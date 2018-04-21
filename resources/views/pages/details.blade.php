@@ -141,15 +141,14 @@
 
                         <div class="card__body">
                             <ul class="detail-amenities__list">
-                                <li class="mdc-bg-red-300">Full-Time Doorman</li>
-                                <li class="mdc-bg-purple-300">River Views</li>
-                                <li class="mdc-bg-pink-300">Common Roof Deck</li>
-                                <li class="mdc-bg-light-blue-500">City Views</li>
-                                <li class="mdc-bg-amber-400">Gym</li>
-                                <li class="mdc-bg-teal-400">Sauna</li>
-                                <li class="mdc-bg-light-green-500">Open Views</li>
-                                <li class="mdc-bg-brown-400">Basketball Court</li>
-                                <li class="mdc-bg-blue-grey-400">Pool</li>
+                            {{dd($listing)}}
+                            @if (is_array($listing['Features']['Featured']) and array_key_exists('Photos', $listing) )
+                                @foreach($listing['Features']['Featured'] as $featured)                                          
+                                    <li class="mdc-bg-light-blue-500">{{$featured}}</li>
+                                @endforeach 
+                            @else                                        
+                                <li class="mdc-bg-light-blue-500">{{$listing['Features']['Featured']}}</li>
+                            @endif
                             </ul>
                         </div>
                     </div>
