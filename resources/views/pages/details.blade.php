@@ -113,7 +113,7 @@
                                 </li>
                                 <li>
                                     <span>Pets</span>
-                                    <span>{{ $listing['Pet'] }}</span>
+                                    <span>{{ $listing['Pet']  ?? "" }}</span>
                                 </li>
                                 <li>
                                     <span>Bedrooms</span>
