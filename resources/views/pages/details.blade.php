@@ -203,7 +203,7 @@
 
                     
                     <div class="card hidden-xs hidden-sm hidden-print">
-                        @if ($nearby != "none") 
+                        @if (count($nearby) < 6 ) 
                         <div class="card__header">
                             <h2>You may also like...</h2>
                             <small>Morbi risus porta consectetur vestibulum ateros</small>
