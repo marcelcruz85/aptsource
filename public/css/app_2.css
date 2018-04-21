@@ -5828,12 +5828,12 @@ html:not(.ie9) .page-loader__spinner {
   margin: 5px 0px !important;
 }
 
-.autocomplete{
+.advance-search.search__input{
   border-radius: 0px !important;
   border: none !important;
   border-bottom: 1px solid #cecece !important;
   box-shadow: none !important
 }
-.autocomplete:hover{  
+.advance-search.search__input:hover{  
   border-bottom: 1px solid #03a9f4 !important;
 }
