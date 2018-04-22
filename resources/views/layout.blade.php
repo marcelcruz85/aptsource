@@ -42,6 +42,10 @@
     <!-- Bootstrap -->
     <script src="/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
+      <!-- ... -->
+  <script type="text/javascript" src="/vendors/bower_components/moment/min/moment.min.js"></script>
+
+
     <!-- Page Loader JS -->
     <script src="/js/page-loader.min.js" async></script>
     

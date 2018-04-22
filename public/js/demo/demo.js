@@ -11,6 +11,26 @@
 
 // 1. Price Range
 
+// 1. Price Range advance search
+$.urlParam = function(name){
+    var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+    if (results==null){
+       return null;
+    }
+    else{
+       return decodeURI(results[1]) || 0;
+    }
+}    
+
+if($.urlParam('max-rent') == null){
+    var maxPrice = 5000;
+    var minPrice = 0;
+} else {
+    var maxPrice = $.urlParam('max-rent');
+    var minPrice = $.urlParam('min-rent');
+}
+
+
 if ($('#property-price-range')[0]) {
     var propertyPriceRange = document.getElementById('property-price-range');
     var propertyPriceRangeValues = [
@@ -19,7 +39,7 @@ if ($('#property-price-range')[0]) {
     ]
 
     noUiSlider.create (propertyPriceRange, {
-        start: [0, 5000],
+        start: [minPrice, maxPrice],
         connect: true,
         step: 50,
         range: {
@@ -38,18 +58,40 @@ if ($('#property-price-range')[0]) {
 
 }
 
-// 2. Property Area Size
-
 
 if ($('#available-date-range')[0]) {
+
+    $.urlParam = function(name){
+        var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+        if (results==null){
+           return null;
+        }
+        else{
+           return decodeURI(results[1]) || 0;
+        }
+    }  
+
+    var fromtodate = Math.round((new Date()).getTime() / 1000);
+    var tonextYear = (Math.round((new Date()).getTime() / 1000)) + 31536000;
+
+    if($.urlParam('available-after') == null){
+        var todate = fromtodate;
+        var nextYear = tonextYear;
+    }else{
+        var todate = $.urlParam('available-after').replace('%2F', '/').replace('%2F', '/');
+        var nextYear = $.urlParam('available-before').replace('%2F', '/').replace('%2F', '/');
+        todate = Math.round((new Date(todate)).getTime() / 1000);
+        nextYear = Math.round((new Date(nextYear)).getTime() / 1000);
+    }
+
+    console.log(todate + ' ' + nextYear);
 
     
     function timestamp(str){
         return new Date(str).getTime();   
     }
 
-    var todate = Math.round((new Date()).getTime() / 1000);
-    var nextYear = (Math.round((new Date()).getTime() / 1000)) + 31536000
+
     var availableDateRange = document.getElementById('available-date-range');
     var availableDateRangeValues = [
         document.getElementById('available-date-upper'),
@@ -61,8 +103,8 @@ if ($('#available-date-range')[0]) {
         step: 1,
         connect: true,
         range: {
-            min: todate,
-            max: nextYear
+            min: fromtodate,
+            max: tonextYear
         },
         format: wNumb({
             decimals: 0
@@ -71,7 +113,6 @@ if ($('#available-date-range')[0]) {
 
     availableDateRange.noUiSlider.on('update', function( values, handle ) {
         availableDateRangeValues[handle].innerHTML = timeConverter(values[handle]);
-        console.log(values[handle]);
     });
 
     // Create a list of day and monthnames.
@@ -81,6 +122,7 @@ if ($('#available-date-range')[0]) {
         return time;
     }
 }
+
 
 // 3. Property Area Size
 

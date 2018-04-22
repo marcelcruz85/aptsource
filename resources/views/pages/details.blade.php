@@ -13,7 +13,7 @@
         <div class="container">
             <header class="section__title section__title-alt">
                 <h2>{{ $listing['Title']  ?? "" }}</h2>
-                <small>{{ $listing['StreetNumber']  ?? "" }} {{ $listing['StreetName']  ?? "" }} {{ $listing['City']  ?? "" }}, {{ $listing['State']  ?? "" }} {{ $listing['Zip']  ?? "" }}</small>
+                <small class="address">{{ $listing['StreetNumber']  ?? "" }} {{ $listing['StreetName']  ?? "" }} {{ $listing['City']  ?? "" }}, {{ $listing['State']  ?? "" }} {{ $listing['Zip']  ?? "" }}</small>
 
                 <!-- <div class="actions actions--section">
                     <div class="actions__toggle">
@@ -99,8 +99,8 @@
 
                             <ul class="detail-media__nav hidden-print">
                                 <li class="active"><a href="#detail-media-images" data-toggle="tab"><i class="zmdi zmdi-collection-image"></i></a></li>
-                                <!-- <li><a href="#detail-media-floorplan" data-toggle="tab"><i class="zmdi zmdi-view-dashboard"></i></a></li>
-                                <li><a href="#detail-media-map" data-toggle="tab"><i class="zmdi zmdi-map"></i></a></li> -->
+                                <!-- <li><a href="#detail-media-floorplan" data-toggle="tab"><i class="zmdi zmdi-view-dashboard"></i></a></li> -->
+                                <li><a href="#detail-media-map" data-toggle="tab"><i class="zmdi zmdi-map"></i></a></li>
                             </ul>
                         </div>
 
@@ -133,24 +133,22 @@
                         </div>
                     </div>
 
-                    <div class="card detail-amenities">
-                        <div class="card__header">
-                            <h2>Amenities</h2>
-                            <small>Maecenas seddiam eget risus varius blandit sitamet nonmagna</small>
-                        </div>
+                    @if (array_key_exists('Features', $listing))
+                        <div class="card detail-amenities">
+                            <div class="card__header">
+                                <h2>Amenities</h2>
+                                <small>Maecenas seddiam eget risus varius blandit sitamet nonmagna</small>
+                            </div>
 
-                        <div class="card__body">
-                            <ul class="detail-amenities__list">
-                            @if (is_array($listing['Features']['Feature']))
-                                @foreach($listing['Features']['Feature'] as $feature)                                          
-                                    <li class="mdc-bg-light-blue-500">{{$feature}}</li>
-                                @endforeach 
-                            @else                                        
-                                <li class="mdc-bg-light-blue-500">{{$listing['Features']['Feature']}}</li>
-                            @endif
-                            </ul>
-                        </div>
-                    </div>
+                            <div class="card__body">
+                                <ul class="detail-amenities__list">
+                                    @foreach($listing['Features']['Feature'] as $feature)                                          
+                                        <li class="mdc-bg-light-blue-500">{{$feature}}</li>
+                                    @endforeach      
+                                </ul>
+                            </div>
+                        </div>                                                    
+                    @endif
 
                     <div class="card">
                         <div class="card__header">
@@ -243,6 +241,35 @@
                 </div>
             </div>
         </div>
+<script>
+    function initMap() {
+
+        var addressInput = $('.address').text();
+        var geocoder = new google.maps.Geocoder();
+
+        geocoder.geocode({
+                address: addressInput
+            }, function (results, status) {
+
+                if (status == google.maps.GeocoderStatus.OK) {
+
+                    var myResult = results[0].geometry.location;
+                    var map = new google.maps.Map(document.getElementById('listing-map'), {
+                        zoom: 15,
+                        center: myResult
+                    });
+                    var marker = new google.maps.Marker({
+                        position: myResult,
+                        map: map
+                    });
+                }
+        });
+    }
+    
+</script>
+              <script async defer
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbHsbSThuJHEQpfVqp91y3CRS5KiXxS-4&callback=initMap">
+        </script>
     @endsection
 
     @section('script')

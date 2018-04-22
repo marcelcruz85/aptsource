@@ -5791,6 +5791,9 @@ html:not(.ie9) .page-loader__spinner {
   margin-right: auto;
   display: block;
 }
+#listing-map{
+  height: 575px;
+}
 
 .list-group-item.media img{  
   height: 50px;

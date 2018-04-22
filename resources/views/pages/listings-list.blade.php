@@ -25,14 +25,14 @@
         </div>
 
         <div class="action-header__item action-header__views hidden-xs">
-            <a href="/rentals/grid/search?{{ $urlParameters }}" class="zmdi zmdi-apps"></a>
-            <a href="/rentals/list/search?{{ $urlParameters }}" class="zmdi zmdi-view-list  active"></a>
+            <a href="/rentals/grid/{{ $sort }}/search?{{ $urlParameters }}" class="zmdi zmdi-apps"></a>
+            <a href="/rentals/list/{{ $sort }}/search?{{ $urlParameters }}" class="zmdi zmdi-view-list  active"></a>
         </div>
 
         <div class="action-header__item action-header__item--sort hidden-xs">
             <span class="action-header__small">Sort by :</span>
 
-            <select class="select2">
+            <select class="select2 sort__by">
                 <option></option>
                 <option value="updateDate-desc">Last Updated</option>
                 <option value="rent-desc">Price hight to low</option>

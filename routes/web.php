@@ -33,7 +33,7 @@ Route::get('/contact', function () {
     return view('pages.contact');
 });
 
-Route::get('/rentals/{view}/{parameters}', 'ListingController@search');
+Route::get('/rentals/{view}/{sort}/{parameters}', 'ListingController@search');
 
 Route::get('/rental/details/{listing_id}', 'ListingController@details');
 

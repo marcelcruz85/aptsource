@@ -39,7 +39,7 @@ class ListingController extends Controller
     }
 
 
-    public function search($view, $parameters,Request $request)
+    public function search($view, $sort, $parameters,Request $request)
     {
         //Getting parameters 
 
@@ -72,7 +72,7 @@ class ListingController extends Controller
         $availableAfter = $request->input('available-after');
 
         $now = time();
-        $availableDate = strtotime('04/19/2018');
+        $availableDate = strtotime($availableAfter);
 
         if ( $now >= $availableDate ){
             $availableAfter = '&avail_from=01/01/2000';
@@ -95,13 +95,18 @@ class ListingController extends Controller
         $page = $request->input('page');
         $page = '&page_index=' . $page;
 
-        //$sortParameter = explode("-", $sort);
-        $sort = '1';
-        $sortName = ""; 
-        $sortDir = "";
+        //Sort by
+        if($sort != "1"){            
+            $sortParameter = explode("-", $sort);
+            $sortName = '&sort_name=' . $sortParameter[0]; 
+            $sortDir = '&sort_dir=' . $sortParameter[1];    
+        } else {            
+            $sortName = '&sort_name='; 
+            $sortDir = '&sort_dir=';   
+        }
 
         //building the url for the API request
-        $searchParameters = 'include_mls=1&detail_level=2&page_count=20' . $page . $availableBefore . $availableAfter . $rentLocation . $minRent . $maxRent . $minSize . $maxSize . $beds . $baths . '&sort_name=' . $sortName . '&sort_dir=' . $sortDir;
+        $searchParameters = 'include_mls=1&detail_level=2&page_count=20' . $page . $availableBefore . $availableAfter . $rentLocation . $minRent . $maxRent . $minSize . $maxSize . $beds . $baths . $sortName . $sortDir;
         $response = $this->apiRequest($searchParameters);
 
         if($response['Total'] > 0){

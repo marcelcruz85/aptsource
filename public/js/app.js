@@ -538,7 +538,7 @@ $(document).ready(function () {
     SELECT2 DEFAULT VALUE
 ----------------------------------------------*/
     var selected = $('.sort').text();
-    $('.select2').val(selected);
+    $('.sort__by').val(selected);
 /*---------------------------------------------
     PAGINATION
 ----------------------------------------------*/
@@ -589,12 +589,12 @@ $('.select2').on('select2:select', function (e) {
     var view = $('.view').text();
     var pageIndex = $('.pageindex').text();
     var sort = $('.select2').val();
+    var urlparameters = $('.urlparameters').text();
     var baseUrl = window.location.protocol + "//" + window.location.host + "/";
+    
+    console.log(baseUrl + 'rentals/' + view + '/' + sort + '/search?' + urlparameters);
 
-    console.log(baseUrl + 'listings/' + view + '/' + sort + '/' + pageIndex);
-    console.log(sort);
-
-    window.location.href = baseUrl + 'listings/' + view + '/' + sort + '/' + pageIndex;
+    window.location.href = baseUrl + 'rentals/' + view + '/' + sort + '/search?' + urlparameters;
 });
 
 /*---------------------------------------------

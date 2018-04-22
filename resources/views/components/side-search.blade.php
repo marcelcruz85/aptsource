@@ -8,7 +8,7 @@
                 <div class="card__header">
                     <h2>Advanced Property Search</h2>
 
-{{--                     <div class="dropdown m-t-5">
+                     <!-- <div class="dropdown m-t-5">
                         <a data-toggle="dropdown" href="" class="text-muted">05 Saved Searches <i class="caret"></i></a>
 
                         <ul class="dropdown-menu">
@@ -18,7 +18,7 @@
                             <li><a href="">2012/08/19</a></li>
                             <li><a href="">2012/08/20</a></li>
                         </ul>
-                    </div> --}}
+                    </div>  -->
                 </div>
 
                 <div class="card__body m-t-20">
@@ -28,7 +28,7 @@
                         <i class="form-group__bar"></i>
                     </div>
 
-{{--                     <div class="form-group">
+                     <!-- <div class="form-group">
                         <label>Listing Type</label>
                         <div class="btn-group btn-group-justified" data-toggle="buttons">
                             <label class="btn active">
@@ -38,9 +38,9 @@
                                 <input type="radio" name="advanced-search-beds" id="buy">Buy
                             </label>
                         </div>
-                    </div> --}}
+                    </div>  -->
 
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <label>Ownership Type</label>
 
                         <select class="select2">
@@ -50,7 +50,7 @@
                             <option value="">Apartment Community</option>
                             <option value="">Room</option>
                         </select>
-                    </div>
+                    </div> -->
 
                     <div class="form-group form-group--range">
                         <label>Price Range</label>
@@ -69,8 +69,17 @@
                         <div id="property-price-range"></div>
                     </div>
 
-                    
                     <div class="form-group form-group--range">
+                            <label>Avialable</label>
+                            <div class="input-slider-values clearfix">
+                                <div class="pull-left" id="available-date-upper"></div>
+                                <input id="available-after" name="available-after" type="hidden" value="">
+                                <div class="pull-right" id="available-date-lower"></div>
+                                <input id="available-before" name="available-before" type="hidden" value="">
+                            </div>
+                            <div id="available-date-range"></div>
+                    </div>
+                    <!-- <div class="form-group form-group--range">
                         <label>Area Size (sqft)</label>
                         <div class="input-slider-values clearfix">
                             <div class="pull-left" id="property-area-upper"></div>
@@ -78,8 +87,8 @@
                             <div class="pull-right" id="property-area-lower"></div>
                             <input id="max-size" name="max-size" type="hidden" value="0">
                         </div>
-                        <div id="property-area-range"></div>
-                    </div>
+                        <div id="property-area-range-advance"></div>
+                    </div> -->
 
                     <div class="form-group">
                         <label>Bedrooms</label>
@@ -149,18 +158,20 @@
                     </div>
 
                     <div class="form-group form-group--range">
-                        <label>Year Built</label>
+                        <label>Area Size</label>
                         <div class="input-slider-values clearfix">
-                            <div class="pull-left" id="property-yb-upper"></div>
-                            <div class="pull-right" id="property-yb-lower"></div>
+                            <div class="pull-left" id="property-area-upper"></div>
+                            <input id="min-size" name="min-size" type="hidden" value="0">
+                            <div class="pull-right" id="property-area-lower"></div>
+                            <input id="max-size" name="max-size" type="hidden" value="0">
                         </div>
-                        <div id="property-year-built"></div>
+                        <div id="property-area-range"></div>
                     </div>
                 </div>
 
                 <div class="card__footer">
                     <button class="btn btn-sm btn-primary">Search</button>
-                    <a href="" class="btn btn-sm btn-link" data-rmd-action="block-close" data-rmd-target="#advanced-search">Save</a>
+                    <!-- <a href="" class="btn btn-sm btn-link" data-rmd-action="block-close" data-rmd-target="#advanced-search">Save</a> -->
                     <a href="" class="btn btn-sm btn-link" data-rmd-action="block-close" data-rmd-target="#advanced-search">Cancel</a>
                 </div>
             </form>
