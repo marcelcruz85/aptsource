@@ -3,10 +3,10 @@
     <div class="container">
         <a class="logo" href="/">
             <img src="/img/logo.png" alt="">
-            <div class="logo__text">
+            <!-- <div class="logo__text">
                 <span>The Apartment</span>
                 <span>Source</span>
-            </div>
+            </div> -->
         </a>
 
         <div class="navigation-trigger visible-xs visible-sm" data-rmd-action="block-open" data-rmd-target=".navigation">

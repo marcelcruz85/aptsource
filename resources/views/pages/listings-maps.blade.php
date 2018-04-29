@@ -82,7 +82,7 @@
 
         $.ajax({
             type: "GET",
-            url: 'http://aptsource.dotgital.com/rentals/api/search',
+            url: 'http://dev-aptsource.dotgital.com/rentals/api/1/search',
             data: {
                 "location": ""
             },

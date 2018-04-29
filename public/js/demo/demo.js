@@ -21,12 +21,20 @@ $.urlParam = function(name){
        return decodeURI(results[1]) || 0;
     }
 }    
+var maxRent = $.urlParam('max-rent');
+var minRent = $.urlParam('min-rent');
 
-if($.urlParam('max-rent') == null){
-    var maxPrice = 5000;
-    var minPrice = 0;
+console.log(maxPrice);
+
+if(!maxRent || isNaN(maxRent)){
+    maxPrice = 5000;
 } else {
     var maxPrice = $.urlParam('max-rent');
+}
+
+if(!minRent || isNaN(minRent)){
+    minPrice = 0;
+} else {
     var minPrice = $.urlParam('min-rent');
 }
 

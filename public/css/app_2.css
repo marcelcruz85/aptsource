@@ -2089,10 +2089,10 @@
 /* Miscellaneous */
 
 .logo > img {
-  width: 50px;
+  width: 200px;
   display: inline-block;
   float: left;
-  margin-right: 12px;
+  margin-left: 40px;
 }
 
 .logo__text {
