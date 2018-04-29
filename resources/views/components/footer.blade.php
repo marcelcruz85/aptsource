@@ -61,11 +61,11 @@
     <div class="container">
         <span class="footer__copyright">© Copyright The Apartment Source 2018 - Powered by Dotgital</span>
 
-        <a href="">About Us</a>
+        <!-- <a href="">About Us</a>
         <a href="">Terms & Conditions</a>
         <a href="">Privacy Policy</a>
         <a href="">Careers</a>
-        <a href="">Agent Login</a>
+        <a href="">Agent Login</a> -->
     </div>
 
     <div class="footer__to-top" data-rmd-action="scroll-to" data-rmd-target="html">
