@@ -14,7 +14,7 @@
 <div class="container">
         <header class="section__title">
             <h2>Submit your property</h2>
-            <small>Praesent commodo cursus magnavel sceleris quenisl consecte turet</small>
+            <small>Post your property to the web, potential tenants could find your property easier.</small>
         </header>
 
         <div class="submit-property">
@@ -226,10 +226,10 @@
                             <div class="form-group">
                                 <label>Bedrooms</label>
                                 <div class="btn-group btn-group-justified" data-toggle="buttons">
-                                    <label class="btn">
+                                    <label class="btn active">
                                         <input type="radio" name="inner-search-beds" checked>1
                                     </label>
-                                    <label class="btn active">
+                                    <label class="btn">
                                         <input type="radio" name="inner-search-beds">2
                                     </label>
                                     <label class="btn">
@@ -247,10 +247,10 @@
                             <div class="form-group">
                                 <label>Bathrooms</label>
                                 <div class="btn-group btn-group-justified" data-toggle="buttons">
-                                    <label class="btn">
+                                    <label class="btn active">
                                         <input type="radio" name="inner-search-beds"  checked>1
                                     </label>
-                                    <label class="btn active">
+                                    <label class="btn">
                                         <input type="radio" name="inner-search-beds">2
                                     </label>
                                     <label class="btn">
@@ -268,10 +268,10 @@
                             <div class="form-group">
                                 <label>No. of Floors</label>
                                 <div class="btn-group btn-group-justified" data-toggle="buttons">
-                                    <label class="btn">
+                                    <label class="btn active">
                                         <input type="radio" name="inner-search-beds"  checked>1
                                     </label>
-                                    <label class="btn active">
+                                    <label class="btn">
                                         <input type="radio" name="inner-search-beds">2
                                     </label>
                                     <label class="btn">
@@ -289,10 +289,10 @@
                             <div class="form-group">
                                 <label>Parking Space</label>
                                 <div class="btn-group btn-group-justified" data-toggle="buttons">
-                                    <label class="btn">
+                                    <label class="btn active">
                                         <input type="radio" name="inner-search-beds" checked>1
                                     </label>
-                                    <label class="btn active">
+                                    <label class="btn">
                                         <input type="radio" name="inner-search-beds">2
                                     </label>
                                     <label class="btn">
@@ -317,7 +317,7 @@
                             <i class="zmdi zmdi-check"></i>
 
                             <h2>Successful!</h2>
-                            <p>Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
+                            <p>Thanks for submit your property, one of our agents will be in contact with you soon.</p>
                         </div>
                     </div>
                 </div>
