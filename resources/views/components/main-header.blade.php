@@ -20,21 +20,21 @@
                 </a>
             </li>
 
-            <li class="active navigation__dropdown">
+            <li class="navigation__dropdown">
                 <a href="/">Home</a>
             </li>
 
             <li class="navigation__dropdown">
-                <a href="" class="prevent-default">Listings</a>
+                <a href="href="/rentals/grid/1/search?location" {{-- class="prevent-default" --}}>Listings</a>
 
-                <ul class="navigation__drop-menu">
+{{--                 <ul class="navigation__drop-menu">
                     <li>
                         <a href="/rentals/grid/1/search">Grid view</a>
                     </li>
                     <li>
                         <a href="/rentals/list/1/search">List view</a>
                     </li>
-                </ul>
+                </ul> --}}
             </li>
 
 
