@@ -84,9 +84,8 @@
                 <div class="info-box__item">
                     <i class="zmdi zmdi-trending-up info-box__icon"></i>
     
-                    <h3>Sed posuere consectetur</h3>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui. Vivamus sagittis lacus vel
-                        augue laoreet rutrum faucibus dolor auctor.</p>
+                    <h3>New properties every day</h3>
+                    <p>We are constantly uptading our listing, We have new properties every day, come and check frequently or subscribe to get information about new properties.</p>
                 </div>
             </div>
     
