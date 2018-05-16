@@ -59,15 +59,15 @@
                                 <label>Unit/Floor/Block</label>
                             </div>
 
-                            {{-- <div class="form-group">
-                                <div class="checkbox">
+                            <div class="form-group">
+                                {{-- <div class="checkbox">
                                     <label>
                                         <input type="checkbox">
                                         <i class="input-helper"></i>
                                         Hide U/Floor/Block on listing
                                     </label>
-                                </div>
-                            </div> --}}
+                                </div> --}}
+                            </div>
 
                             <a href="#submit-property-2" data-toggle="tab" class="btn btn--circle btn-primary submit-property__button">
                                 <i class="zmdi zmdi-long-arrow-right"></i>
@@ -89,28 +89,28 @@
                                 <i class="form-group__bar"></i>
                                 <label>Full Name</label>
                             </div>
-{{-- 
+
                             <div class="form-group form-group--float form-group--float-center">
-                                <input type="text" class="form-control text-center">
+                                {{-- <input type="text" class="form-control text-center">
                                 <i class="form-group__bar"></i>
-                                <label>Organization Name (Opt.)</label>
-                            </div> --}}
+                                <label>Organization Name (Opt.)</label> --}}
+                            </div>
 
                             <div class="form-group form-group--float form-group--float-center m-b-5">
                                 <input type="text" class="form-control text-center">
                                 <i class="form-group__bar"></i>
                                 <label>Email Address</label>
                             </div>
-{{-- 
+
                             <div class="form-group">
-                                <div class="checkbox">
+                                {{-- <div class="checkbox">
                                     <label>
                                         <input type="checkbox">
                                         <i class="input-helper"></i>
                                         Hide Email Address on listing
                                     </label>
-                                </div>
-                            </div> --}}
+                                </div> --}}
+                            </div>
 
                             <div class="form-group form-group--float form-group--float-center">
                                 <input type="text" class="form-control text-center">
@@ -175,8 +175,8 @@
                         </div>
 
                         <form class="card__body">
-                            {{-- <div class="form-group">
-                                <label>Property Type</label>
+                            <div class="form-group">
+                                {{-- <label>Property Type</label>
 
                                 <select class="select2">
                                     <option value="">Single Family Home</option>
@@ -184,8 +184,8 @@
                                     <option value="">Townhome</option>
                                     <option value="">Apartment Community</option>
                                     <option value="">Room</option>
-                                </select>
-                            </div> --}}
+                                </select> --}}
+                            </div>
 
                             <div class="form-group form-group--float form-group--float-center">
                                 <input type="text" class="form-control text-center">
