@@ -1,7 +1,7 @@
 <div class="header__top">
     <div class="container">
         <ul class="top-nav">
-             <li class="dropdown top-nav__guest">
+             {{-- <li class="dropdown top-nav__guest">
                 <a data-toggle="dropdown" href="">Register</a>
                 @if (Route::has('login'))
                     @auth
@@ -124,7 +124,7 @@
                         </form>
                     </div>
                 </div>
-            </li> 
+            </li>  --}}
 
             <li class="pull-right top-nav__icon">
                 <a href="">
