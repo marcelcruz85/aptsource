@@ -94,9 +94,8 @@
                 <div class="info-box__item">
                     <i class="zmdi zmdi-search info-box__icon"></i>
     
-                    <h3>Donec ullamcorper nulla</h3>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui. Vivamus sagittis lacus vel
-                        augue laoreet rutrum faucibus dolor auctor.</p>
+                    <h3>Easy to find you new place</h3>
+                    <p>With apartment source is easy to find your new place, our website have all you need from new properties to less expensive places.</p>
                 </div>
             </div>
     
