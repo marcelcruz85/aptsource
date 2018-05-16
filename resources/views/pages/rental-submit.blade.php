@@ -43,15 +43,15 @@
                                 <label>Address</label>
                             </div>
 
-                            {{-- <div class="form-group">
-                                <div class="checkbox">
+                            <div class="form-group">
+                                {{-- <div class="checkbox">
                                     <label>
                                         <input type="checkbox">
                                         <i class="input-helper"></i>
                                         Hide Street number on listing
                                     </label>
-                                </div>
-                            </div> --}}
+                                </div> --}}
+                            </div>
 
                             <div class="form-group form-group--float m-b-5">
                                 <input type="text" class="form-control text-center">
