@@ -189,7 +189,7 @@
                                 <i class="form-group__bar"></i>
                             </div>
                             <div class="form-group form-group--float">
-                                <textarea class="form-control textarea-autoheight">Hi there, I am interested in 35 West 33rd Street, Unit 14B</textarea>
+                                <textarea class="form-control textarea-autoheight"></textarea>
                                 <label>Message</label>
                                 <i class="form-group__bar"></i>
                             </div>
@@ -208,7 +208,7 @@
                     <div class="card hidden-xs hidden-sm hidden-print">
                         <div class="card__header">
                             <h2>You may also like...</h2>
-                            <small>Morbi risus porta consectetur vestibulum ateros</small>
+                            {{-- <small>Morbi risus porta consectetur vestibulum ateros</small> --}}
                         </div>
 
                         <div class="list-group">
