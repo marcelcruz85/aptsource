@@ -95,6 +95,14 @@ class ListingController extends Controller
         $page = $request->input('page');
         $page = '&page_index=' . $page;
 
+        //Page count
+        $pageCount = $request->input('pagecount');
+        if($pageCount != ""){
+            $pageCount = '&page_count=' . $pageCount;
+        }else{
+            $pageCount = '&page_count=20';
+        }
+
         //Sort by
         if($sort != "1"){            
             $sortParameter = explode("-", $sort);
@@ -106,7 +114,7 @@ class ListingController extends Controller
         }
 
         //building the url for the API request
-        $searchParameters = 'include_mls=1&detail_level=2&page_count=20' . $page . $availableBefore . $availableAfter . $rentLocation . $minRent . $maxRent . $minSize . $maxSize . $beds . $baths . $sortName . $sortDir;
+        $searchParameters = 'include_mls=1&detail_level=2' . $page . $pageCount . $availableBefore . $availableAfter . $rentLocation . $minRent . $maxRent . $minSize . $maxSize . $beds . $baths . $sortName . $sortDir;
         $response = $this->apiRequest($searchParameters);
 
         if($response['Total'] > 0){

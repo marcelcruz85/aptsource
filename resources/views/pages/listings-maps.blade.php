@@ -24,8 +24,9 @@
         </div>
 
         <div class="action-header__item action-header__views hidden-xs">
-            <a href="/rentals/grid/search?{{ $urlParameters }}" class="zmdi zmdi-apps"></a>
-            <a href="/rentals/list/search?{{ $urlParameters }}" class="zmdi zmdi-view-list  active"></a>
+            <a href="/rentals/grid/{{ $sort }}/search?{{ $urlParameters }}" class="zmdi zmdi-apps"></a>
+            <a href="/rentals/list/{{ $sort }}/search?{{ $urlParameters }}" class="zmdi zmdi-view-list"></a>
+            <a href="/rentals/maps/{{ $sort }}/search?{{ $urlParameters }}" class="zmdi zmdi-map active"></a>
         </div>
 
         <div class="action-header__item action-header__item--sort hidden-xs">
@@ -84,7 +85,8 @@
             type: "GET",
             url: 'http://dev-aptsource.dotgital.com/rentals/api/1/search',
             data: {
-                "location": ""
+                "location": "",
+                "pagecount": 200,
             },
             success: function (data) {
 
@@ -97,8 +99,7 @@
                 var bounds = new google.maps.LatLngBounds();
 
                 var mapOptions = {
-                    center: new google.maps.LatLng(41.942463, -87.652900),
-                    zoom: 11,
+                    zoom: 17,
                     mapTypeId: google.maps.MapTypeId.ROADMAP
                 };
 
@@ -157,7 +158,7 @@
 
                             var myResult = results[0].geometry.location;
                             bounds.extend(myResult);
-                            //console.log(myResult);
+                            console.log(myResult);
 
                             marker = new google.maps.Marker({
                                 map: map,

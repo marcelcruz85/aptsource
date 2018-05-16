@@ -1,22 +1,32 @@
 <div class="header__top">
     <div class="container">
         <ul class="top-nav">
-{{--             <li class="dropdown top-nav__guest">
+             <li class="dropdown top-nav__guest">
                 <a data-toggle="dropdown" href="">Register</a>
+                @if (Route::has('login'))
+                    @auth
+                        <a href="{{ url('/home') }}">Home</a>
+                    @else
+                <form class="dropdown-menu stop-propagate" method="POST" action="{{ route('register') }}">
+                {{ csrf_field() }}
 
-                <form class="dropdown-menu stop-propagate">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Email Address">
+                    <div class="form-group form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+                    <input id="name" type="text" class="form-control" placeholder="Name" name="name" value="{{ old('name') }}" required autofocus>
+                        <i class="form-group__bar"></i>
+                    </div>
+                    
+                    <div class="form-group form-group{{ $errors->has('email') ? ' has-error' : '' }}"> 
+                        <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required placeholder="Email Address">
+                        <i class="form-group__bar"></i>
+                    </div>
+
+                    <div class="form-group form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+                        <input id="password" type="password" class="form-control" name="password" required placeholder="Password">
                         <i class="form-group__bar"></i>
                     </div>
 
                     <div class="form-group">
-                        <input type="password" class="form-control" placeholder="Password">
-                        <i class="form-group__bar"></i>
-                    </div>
-
-                    <div class="form-group">
-                        <input type="password" class="form-control" placeholder="Confirm Password">
+                        <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required placeholder="Confirm Password">
                         <i class="form-group__bar"></i>
                     </div>
 
@@ -25,7 +35,7 @@
                             <a href="">terms and conditions</a>.</small>
                     </p>
 
-                    <button class="btn btn-primary btn-block m-t-10 m-b-10">Register</button>
+                    <button type="submit" class="btn btn-primary btn-block m-t-10 m-b-10">Register</button>
 
                     <div class="text-center">
                         <small>
@@ -52,6 +62,9 @@
                     </div>
 
                 </form>
+
+                    @endauth
+            @endif
             </li>
 
             <li class="dropdown top-nav__guest">
@@ -111,7 +124,7 @@
                         </form>
                     </div>
                 </div>
-            </li> --}}
+            </li> 
 
             <li class="pull-right top-nav__icon">
                 <a href="">

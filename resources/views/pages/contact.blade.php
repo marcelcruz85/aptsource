@@ -43,24 +43,24 @@
                     </div>
 
                     <div class="col-sm-6">
-                        <form class="contact__form">
+                        <form class="contact__form" action="email">
                             <div class="form-group form-group--light form-group--float">
-                                <input type="text" class="form-control">
+                                <input type="text" name="name" class="form-control">
                                 <label>Name</label>
                                 <i class="form-group__bar"></i>
                             </div>
                             <div class="form-group form-group--light form-group--float">
-                                <input type="text" class="form-control">
+                                <input type="text" name="email" class="form-control">
                                 <label>Email Address</label>
                                 <i class="form-group__bar"></i>
                             </div>
                             <div class="form-group form-group--light form-group--float">
-                                <input type="text" class="form-control">
+                                <input type="text" name="phone" class="form-control">
                                 <label>Contact Number</label>
                                 <i class="form-group__bar"></i>
                             </div>
                             <div class="form-group form-group--light form-group--float">
-                                <textarea class="form-control textarea-autoheight"></textarea>
+                                <textarea name="text" class="form-control textarea-autoheight"></textarea>
                                 <label>Message</label>
                                 <i class="form-group__bar"></i>
                             </div>

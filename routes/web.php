@@ -44,4 +44,8 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 /*   testing development */
-Route::get('/dev', 'ListingController@index');
+Route::get('/dev', function () {
+    return view('pages.dev');
+});
+
+Route::get('{parameters}', 'EmailController@send');
