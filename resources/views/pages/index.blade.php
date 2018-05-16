@@ -19,8 +19,8 @@
 @section ('content')
 <div class="container">
         <header class="section__title">
-            <h2>Our Featured Exclusives</h2>
-            <small>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</small>
+            <h2>Discover Over 10,000 apartments for rent</h2>
+            {{-- <small>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</small> --}}
         </header>
 
         <div class="row listings-grid">
