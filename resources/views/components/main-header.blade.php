@@ -25,7 +25,7 @@
             </li>
 
             <li class="navigation__dropdown">
-                <a href="href="/rentals/grid/1/search?location" {{-- class="prevent-default" --}}>Listings</a>
+                <a href="/rentals/grid/1/search?location" {{-- class="prevent-default" --}}>Listings</a>
 
 {{--                 <ul class="navigation__drop-menu">
                     <li>
