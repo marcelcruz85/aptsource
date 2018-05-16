@@ -33,7 +33,7 @@
                     <div class="card">
                         <div class="card__header">
                             <h2>Property Location</h2>
-                            <small>Aenean lacinia bibendum nulla sed consectetur</small>
+                            {{-- <small>Aenean lacinia bibendum nulla sed consectetur</small> --}}
                         </div>
 
                         <form class="card__body">
@@ -43,7 +43,7 @@
                                 <label>Address</label>
                             </div>
 
-                            <div class="form-group">
+                            {{-- <div class="form-group">
                                 <div class="checkbox">
                                     <label>
                                         <input type="checkbox">
@@ -51,7 +51,7 @@
                                         Hide Street number on listing
                                     </label>
                                 </div>
-                            </div>
+                            </div> --}}
 
                             <div class="form-group form-group--float m-b-5">
                                 <input type="text" class="form-control text-center">
@@ -59,7 +59,7 @@
                                 <label>Unit/Floor/Block</label>
                             </div>
 
-                            <div class="form-group">
+                            {{-- <div class="form-group">
                                 <div class="checkbox">
                                     <label>
                                         <input type="checkbox">
@@ -67,7 +67,7 @@
                                         Hide U/Floor/Block on listing
                                     </label>
                                 </div>
-                            </div>
+                            </div> --}}
 
                             <a href="#submit-property-2" data-toggle="tab" class="btn btn--circle btn-primary submit-property__button">
                                 <i class="zmdi zmdi-long-arrow-right"></i>
@@ -80,7 +80,7 @@
                     <div class="card">
                         <div class="card__header">
                             <h2>Contact Information</h2>
-                            <small>Curabitur blandit tempus porttitor ligula malesuada</small>
+                            {{-- <small>Curabitur blandit tempus porttitor ligula malesuada</small> --}}
                         </div>
 
                         <form class="card__body">
@@ -89,19 +89,19 @@
                                 <i class="form-group__bar"></i>
                                 <label>Full Name</label>
                             </div>
-
+{{-- 
                             <div class="form-group form-group--float form-group--float-center">
                                 <input type="text" class="form-control text-center">
                                 <i class="form-group__bar"></i>
                                 <label>Organization Name (Opt.)</label>
-                            </div>
+                            </div> --}}
 
                             <div class="form-group form-group--float form-group--float-center m-b-5">
                                 <input type="text" class="form-control text-center">
                                 <i class="form-group__bar"></i>
                                 <label>Email Address</label>
                             </div>
-
+{{-- 
                             <div class="form-group">
                                 <div class="checkbox">
                                     <label>
@@ -110,7 +110,7 @@
                                         Hide Email Address on listing
                                     </label>
                                 </div>
-                            </div>
+                            </div> --}}
 
                             <div class="form-group form-group--float form-group--float-center">
                                 <input type="text" class="form-control text-center">
@@ -129,7 +129,7 @@
                     <div class="card">
                         <div class="card__header">
                             <h2>Sale Information</h2>
-                            <small>Nullam iddolor dnibh ultricies vehicula utielit</small>
+                            {{-- <small>Nullam iddolor dnibh ultricies vehicula utielit</small> --}}
                         </div>
 
                         <form class="card__body">
@@ -171,11 +171,11 @@
                     <div class="card">
                         <div class="card__header">
                             <h2>Property Information</h2>
-                            <small>Sed posuere consectetur estat lobortis ultricies</small>
+                            {{-- <small>Sed posuere consectetur estat lobortis ultricies</small> --}}
                         </div>
 
                         <form class="card__body">
-                            <div class="form-group">
+                            {{-- <div class="form-group">
                                 <label>Property Type</label>
 
                                 <select class="select2">
@@ -185,7 +185,7 @@
                                     <option value="">Apartment Community</option>
                                     <option value="">Room</option>
                                 </select>
-                            </div>
+                            </div> --}}
 
                             <div class="form-group form-group--float form-group--float-center">
                                 <input type="text" class="form-control text-center">
@@ -227,10 +227,10 @@
                                 <label>Bedrooms</label>
                                 <div class="btn-group btn-group-justified" data-toggle="buttons">
                                     <label class="btn">
-                                        <input type="radio" name="inner-search-beds">1
+                                        <input type="radio" name="inner-search-beds" checked>1
                                     </label>
                                     <label class="btn active">
-                                        <input type="radio" name="inner-search-beds" checked>2
+                                        <input type="radio" name="inner-search-beds">2
                                     </label>
                                     <label class="btn">
                                         <input type="radio" name="inner-search-beds">3
@@ -248,10 +248,10 @@
                                 <label>Bathrooms</label>
                                 <div class="btn-group btn-group-justified" data-toggle="buttons">
                                     <label class="btn">
-                                        <input type="radio" name="inner-search-beds">1
+                                        <input type="radio" name="inner-search-beds"  checked>1
                                     </label>
                                     <label class="btn active">
-                                        <input type="radio" name="inner-search-beds" checked>2
+                                        <input type="radio" name="inner-search-beds">2
                                     </label>
                                     <label class="btn">
                                         <input type="radio" name="inner-search-beds">3
@@ -269,10 +269,10 @@
                                 <label>No. of Floors</label>
                                 <div class="btn-group btn-group-justified" data-toggle="buttons">
                                     <label class="btn">
-                                        <input type="radio" name="inner-search-beds">1
+                                        <input type="radio" name="inner-search-beds"  checked>1
                                     </label>
                                     <label class="btn active">
-                                        <input type="radio" name="inner-search-beds" checked>2
+                                        <input type="radio" name="inner-search-beds">2
                                     </label>
                                     <label class="btn">
                                         <input type="radio" name="inner-search-beds">3
@@ -290,10 +290,10 @@
                                 <label>Parking Space</label>
                                 <div class="btn-group btn-group-justified" data-toggle="buttons">
                                     <label class="btn">
-                                        <input type="radio" name="inner-search-beds">1
+                                        <input type="radio" name="inner-search-beds" checked>1
                                     </label>
                                     <label class="btn active">
-                                        <input type="radio" name="inner-search-beds" checked>2
+                                        <input type="radio" name="inner-search-beds">2
                                     </label>
                                     <label class="btn">
                                         <input type="radio" name="inner-search-beds">3
