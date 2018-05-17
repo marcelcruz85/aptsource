@@ -99,16 +99,33 @@
                 var bounds = new google.maps.LatLngBounds();
 
                 var mapOptions = {
-                    zoom: 17,
+                    zoom: 10,
                     mapTypeId: google.maps.MapTypeId.ROADMAP
                 };
 
+                //Display the map in the DOM
                 map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+                //close Info windows when click any part of the map
                 google.maps.event.addListener(map, "click", function (event) {
                     infowindow.close();
                 });
 
+                //loop over all properties
                 for (i = 0; i < listings['Listings']['Listing'].length; i++) {
+                    var streetNumber = listings['Listings']['Listing'][i]['StreetNumber'];
+                    var streetName = listings['Listings']['Listing'][i]['StreetName'];
+                    var unit = listings['Listings']['Listing'][i]['Unit'];
+                    var city = listings['Listings']['Listing'][i]['City'];
+                    var state = listings['Listings']['Listing'][i]['State'];
+                    var zip = listings['Listings']['Listing'][i]['Zip'];
+                    var title = listings['Listings']['Listing'][i]['Title'];
+                    var beds = listings['Listings']['Listing'][i]['Beds'];
+                    var baths = listings['Listings']['Listing'][i]['Baths'];
+
+                    var addressInput = streetNumber + " " + streetName + " " + unit + " " + city + " " + state + " " + zip;
+                    var price = listings['Listings']['Listing'][i]['Price'];
+
                     var contentString = '<div class="infowindow">' +
                         '<div class="listings-grid__item">' +
                         '<a href="listing-detail.html">' +
@@ -117,13 +134,13 @@
                         '</div>' +
 
                         '<div class="listings-grid__body">' +
-                        '<small>$1,150 </small>' +
-                        '<small>21 Shop St, San Francisco</small>' +
+                        '<small>$'price'</small>' +
+                        '<small>'addressInput'</small>' +
                         '</div>' +
 
                         '<ul class="listings-grid__attrs">' +
-                        '<li><i class="listings-grid__icon listings-grid__icon--bed"></i> 03 </li>' +
-                        '<li><i class="listings-grid__icon listings-grid__icon--bath"></i> 02</li>' +
+                        '<li><i class="listings-grid__icon listings-grid__icon--bed"></i> 'beds' </li>' +
+                        '<li><i class="listings-grid__icon listings-grid__icon--bath"></i> 'baths'</li>' +
                         '</ul>' +
                         '</a>' +
                         '</div>' +
@@ -134,17 +151,7 @@
                         maxWidth: 180
                     });
 
-                    var streetNumber = listings['Listings']['Listing'][i]['StreetNumber'];
-                    var streetName = listings['Listings']['Listing'][i]['StreetName'];
-                    var unit = listings['Listings']['Listing'][i]['Unit'];
-                    var city = listings['Listings']['Listing'][i]['City'];
-                    var state = listings['Listings']['Listing'][i]['State'];
-                    var zip = listings['Listings']['Listing'][i]['Zip'];
-                    var title = listings['Listings']['Listing'][i]['Title'];
 
-                    var addressInput = streetNumber + " " + streetName + " " + unit + " " + city + " " +
-                        state + " " + zip;
-                    var price = listings['Listings']['Listing'][i]['Price'];
 
                     console.log(addressInput);
 
