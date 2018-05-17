@@ -169,9 +169,6 @@
                     });
 
 
-
-                    console.log(contentString);
-
                     var geocoder = new google.maps.Geocoder();
 
                     geocoder.geocode({
@@ -179,6 +176,8 @@
                     }, function (results, status) {
 
                         if (status == google.maps.GeocoderStatus.OK) {
+
+                            console.log(status);
 
                             var myResult = results[0].geometry.location;
                             bounds.extend(myResult);
