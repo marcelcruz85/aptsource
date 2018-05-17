@@ -134,13 +134,13 @@
                         '</div>' +
 
                         '<div class="listings-grid__body">' +
-                        '<small>$'price'</small>' +
-                        '<small>'addressInput'</small>' +
+                        '<small>$' + price + '</small>' +
+                        '<small>' + addressInput + '</small>' +
                         '</div>' +
 
                         '<ul class="listings-grid__attrs">' +
-                        '<li><i class="listings-grid__icon listings-grid__icon--bed"></i> 'beds' </li>' +
-                        '<li><i class="listings-grid__icon listings-grid__icon--bath"></i> 'baths'</li>' +
+                        '<li><i class="listings-grid__icon listings-grid__icon--bed"></i> ' + beds + ' </li>' +
+                        '<li><i class="listings-grid__icon listings-grid__icon--bath"></i> ' + baths + 'com</li>' +
                         '</ul>' +
                         '</a>' +
                         '</div>' +
