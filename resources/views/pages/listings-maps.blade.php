@@ -181,7 +181,7 @@
                             });
                             google.maps.event.addListener(marker, 'click', (function (marker, i) {
                                 return function () {
-                                    infowindow.setContent(contentString[i][1]);
+                                    infowindow.setContent(contentString);
                                     infowindow.setOptions({maxWidth: 180});
                                     infowindow.open(map, marker);
                                 }
