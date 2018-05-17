@@ -127,7 +127,7 @@
                      type: 'poly'
                 };
 
-
+                var properties = [];
                 //loop over all properties
                 for (i = 0; i < listings['Listings']['Listing'].length; i++) {
                     var streetNumber = listings['Listings']['Listing'][i]['StreetNumber'];
@@ -148,6 +148,7 @@
                     var addressInput = streetNumber + " " + streetName + " " + unit + " " + city + " " + state + " " + zip;
                     var price = listings['Listings']['Listing'][i]['Price'];
 
+                    
                     var contentString = '<div class="infowindow">' +
                         '<div class="listings-grid__item">' +
                         '<a href="listing-detail.html">' +
@@ -167,11 +168,13 @@
                         '</a>' +
                         '</div>' +
                         '</div>';
-
+                    
+                    properties.push(contentString);
                     infowindow = new google.maps.InfoWindow();
 
+                            console.log(properties);
+                            
                             var myResult = {lat: lat,lng: lng};
-                            console.log(myResult);
                             bounds.extend(myResult);
                             marker = new google.maps.Marker({
                                 map: map,
