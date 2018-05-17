@@ -168,10 +168,7 @@
                         '</div>' +
                         '</div>';
 
-                    var infowindow = new google.maps.InfoWindow({
-                        content: contentString[i],
-                        maxWidth: 180
-                    });
+                    infowindow = new google.maps.InfoWindow();
 
                             var myResult = {lat: lat,lng: lng};
                             console.log(myResult);
@@ -184,7 +181,8 @@
                             });
                             google.maps.event.addListener(marker, 'click', (function (marker, i) {
                                 return function () {
-                                    infowindow.setContent(infowindow);
+                                    infowindow.setContent(contentString[i][1]);
+                                    infowindow.setOptions({maxWidth: 180});
                                     infowindow.open(map, marker);
                                 }
                             })(marker, i));
