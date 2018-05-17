@@ -114,7 +114,7 @@
 
                             //map Icon
                             var image = {
-                                url: 'https://www.iconfinder.com/icons/430669/base_marker_home_house_map_pointer_pin_real_estate_residence_icon',
+                                url: 'http://aptsource.dotgital.com/img/mapico.png',
                                 // This marker is 20 pixels wide by 32 pixels high.
                                 size: new google.maps.Size(20, 32),
                                 // The origin for this image is (0, 0).
