@@ -144,7 +144,7 @@
                     var lat = listings['Listings']['Listing'][i]['Latitude'];                    
                     var lng = listings['Listings']['Listing'][i]['Longitude'];
 
-                    console.log(lat + ',' + lng)
+                    
                     var addressInput = streetNumber + " " + streetName + " " + unit + " " + city + " " + state + " " + zip;
                     var price = listings['Listings']['Listing'][i]['Price'];
 
@@ -174,6 +174,7 @@
                     });
 
                             var myResult = {lat: lat,lng: lng};
+                            console.log(myResult);
                             bounds.extend(myResult);
                             marker = new google.maps.Marker({
                                 map: map,
