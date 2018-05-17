@@ -83,10 +83,11 @@
 
         $.ajax({
             type: "GET",
-            url: 'http://aptsource.dotgital.com/rentals/api/1/search',
+            url: 'http://aptsource.dotgital.com/rentals/api/updateDate-desc/search',
             data: {
                 "location": "",
                 "pagecount": 200,
+                ""
             },
             success: function (data) {
 
