@@ -87,7 +87,6 @@
             data: {
                 "location": "",
                 "pagecount": 200,
-                ""
             },
             success: function (data) {
 
