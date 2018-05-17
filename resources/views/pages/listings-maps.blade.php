@@ -111,16 +111,22 @@
                     infowindow.close();
                 });
 
-                //map Icon
-                var image = {
-                    url: 'https://www.iconfinder.com/icons/430669/base_marker_home_house_map_pointer_pin_real_estate_residence_icon',
-                    // This marker is 20 pixels wide by 32 pixels high.
-                    size: new google.maps.Size(20, 32),
-                    // The origin for this image is (0, 0).
-                    origin: new google.maps.Point(0, 0),
-                    // The anchor for this image is the base of the flagpole at (0, 32).
-                    anchor: new google.maps.Point(0, 32)
-                };
+
+                            //map Icon
+                            var image = {
+                                url: 'https://www.iconfinder.com/icons/430669/base_marker_home_house_map_pointer_pin_real_estate_residence_icon',
+                                // This marker is 20 pixels wide by 32 pixels high.
+                                size: new google.maps.Size(20, 32),
+                                // The origin for this image is (0, 0).
+                                origin: new google.maps.Point(0, 0),
+                                // The anchor for this image is the base of the flagpole at (0, 32).
+                                anchor: new google.maps.Point(0, 32)
+                            };
+                            var shape = {
+                                coords: [1, 1, 1, 20, 18, 20, 18, 1],
+                                type: 'poly'
+                            };
+
 
                 //loop over all properties
                 for (i = 0; i < listings['Listings']['Listing'].length; i++) {
@@ -181,6 +187,7 @@
                             marker = new google.maps.Marker({
                                 map: map,
                                 icon: image,
+                                shape: shape,
                                 position: myResult,
                             });
                             google.maps.event.addListener(marker, 'click', (function (marker, i) {
