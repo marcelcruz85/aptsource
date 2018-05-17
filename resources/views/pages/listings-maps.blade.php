@@ -173,7 +173,7 @@
                         maxWidth: 180
                     });
 
-                            var myResult = {'lat:' + lat + ',' + 'lng:' + lng};
+                            var myResult = {lat: lat,lng: lng};
                             bounds.extend(myResult);
                             marker = new google.maps.Marker({
                                 map: map,
