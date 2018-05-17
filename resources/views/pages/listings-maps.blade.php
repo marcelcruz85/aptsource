@@ -99,7 +99,7 @@
                 var bounds = new google.maps.LatLngBounds();
 
                 var mapOptions = {
-                    zoom: 10,
+                    zoom: 15,
                     mapTypeId: google.maps.MapTypeId.ROADMAP
                 };
 
