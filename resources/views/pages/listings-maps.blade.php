@@ -127,7 +127,8 @@
                      type: 'poly'
                 };
 
-                
+                var properties = [];
+
                 //loop over all properties
                 for (i = 0; i < listings['Listings']['Listing'].length; i++) {
                     var streetNumber = listings['Listings']['Listing'][i]['StreetNumber'];
@@ -148,7 +149,7 @@
                     var addressInput = streetNumber + " " + streetName + " " + unit + " " + city + " " + state + " " + zip;
                     var price = listings['Listings']['Listing'][i]['Price'];
 
-                    var properties = [];
+                    
                     
                     var contentString = {
                         infoProperties: '<div class="infowindow">' +
@@ -173,9 +174,9 @@
                     };
                     
                     properties.push(contentString);
+
                     infowindow = new google.maps.InfoWindow();
 
-                            console.log(properties);
 
                             var myResult = {lat: lat,lng: lng};
                             bounds.extend(myResult);
@@ -226,6 +227,8 @@
 
 
                 }
+                
+                console.log(properties);
             },
             error: function () {
                 console.log('API request fail');
