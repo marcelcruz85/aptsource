@@ -140,6 +140,11 @@
                     var beds = listings['Listings']['Listing'][i]['Beds'];
                     var baths = listings['Listings']['Listing'][i]['Baths'];
 
+
+                    var lat = listings['Listings']['Listing'][i]['Latitude'];                    
+                    var lng = listings['Listings']['Listing'][i]['Longitude'];
+
+                    console.log(lat + ',' + lng)
                     var addressInput = streetNumber + " " + streetName + " " + unit + " " + city + " " + state + " " + zip;
                     var price = listings['Listings']['Listing'][i]['Price'];
 
@@ -175,7 +180,7 @@
                         address: addressInput
                     }, function (results, status) {
 
-                        console.log(status);
+                        //console.log(status);
 
                         if (status == google.maps.GeocoderStatus.OK) {                            
 
