@@ -175,9 +175,9 @@
                         address: addressInput
                     }, function (results, status) {
 
-                        if (status == google.maps.GeocoderStatus.OK) {
+                        console.log(status);
 
-                            console.log(status);
+                        if (status == google.maps.GeocoderStatus.OK) {                            
 
                             var myResult = results[0].geometry.location;
                             bounds.extend(myResult);
