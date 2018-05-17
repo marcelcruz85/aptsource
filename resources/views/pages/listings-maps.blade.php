@@ -149,7 +149,8 @@
                     var price = listings['Listings']['Listing'][i]['Price'];
 
                     
-                    var contentString = '<div class="infowindow">' +
+                    var contentString = {
+                        infoProperties: '<div class="infowindow">' +
                         '<div class="listings-grid__item">' +
                         '<a href="listing-detail.html">' +
                         '<div class="listings-grid__main">' +
@@ -167,13 +168,14 @@
                         '</ul>' +
                         '</a>' +
                         '</div>' +
-                        '</div>';
+                        '</div>'
+                    };
                     
                     properties.push(contentString);
                     infowindow = new google.maps.InfoWindow();
 
                             console.log(properties);
-                            
+
                             var myResult = {lat: lat,lng: lng};
                             bounds.extend(myResult);
                             marker = new google.maps.Marker({
