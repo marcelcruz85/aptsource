@@ -86,8 +86,7 @@
             url: 'http://aptsource.dotgital.com/rentals/api/1/search',
             data: {
                 "location": "",
-                "pagecount": 200,
-                "available-before": 05/17/2018,
+                "pagecount": 500,
             },
             success: function (data) {
 
