@@ -151,8 +151,7 @@
 
                     
                     
-                    var contentString = {
-                        infoProperties: '<div class="infowindow">' +
+                    var contentString = '<div class="infowindow">' +
                         '<div class="listings-grid__item">' +
                         '<a href="listing-detail.html">' +
                         '<div class="listings-grid__main">' +
@@ -170,8 +169,7 @@
                         '</ul>' +
                         '</a>' +
                         '</div>' +
-                        '</div>'
-                    };
+                        '</div>';
                     
                     properties.push(contentString);
 
@@ -188,7 +186,7 @@
                             });
                             google.maps.event.addListener(marker, 'click', (function (marker, i) {
                                 return function () {
-                                    infowindow.setContent(contentString);
+                                    infowindow.setContent(properties[i]);
                                     infowindow.setOptions({maxWidth: 180});
                                     infowindow.open(map, marker);
                                 }
