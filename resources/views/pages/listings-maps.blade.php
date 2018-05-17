@@ -111,6 +111,17 @@
                     infowindow.close();
                 });
 
+                //map Icon
+                var image = {
+                    url: 'https://www.iconfinder.com/icons/430669/base_marker_home_house_map_pointer_pin_real_estate_residence_icon',
+                    // This marker is 20 pixels wide by 32 pixels high.
+                    size: new google.maps.Size(20, 32),
+                    // The origin for this image is (0, 0).
+                    origin: new google.maps.Point(0, 0),
+                    // The anchor for this image is the base of the flagpole at (0, 32).
+                    anchor: new google.maps.Point(0, 32)
+                };
+
                 //loop over all properties
                 for (i = 0; i < listings['Listings']['Listing'].length; i++) {
                     var streetNumber = listings['Listings']['Listing'][i]['StreetNumber'];
@@ -169,6 +180,7 @@
 
                             marker = new google.maps.Marker({
                                 map: map,
+                                icon: image,
                                 position: myResult,
                             });
                             google.maps.event.addListener(marker, 'click', (function (marker, i) {
