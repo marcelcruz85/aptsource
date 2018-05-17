@@ -141,8 +141,8 @@
                     var baths = listings['Listings']['Listing'][i]['Baths'];
 
 
-                    var lat = listings['Listings']['Listing'][i]['Latitude'];                    
-                    var lng = listings['Listings']['Listing'][i]['Longitude'];
+                    var lat = parseFloat(listings['Listings']['Listing'][i]['Latitude']);                    
+                    var lng = parseFloat(listings['Listings']['Listing'][i]['Longitude']);
 
                     
                     var addressInput = streetNumber + " " + streetName + " " + unit + " " + city + " " + state + " " + zip;
