@@ -170,7 +170,7 @@
 
 
 
-                    console.log(addressInput);
+                    console.log(contentString);
 
                     var geocoder = new google.maps.Geocoder();
 
@@ -182,8 +182,6 @@
 
                             var myResult = results[0].geometry.location;
                             bounds.extend(myResult);
-                            console.log(myResult);
-
                             marker = new google.maps.Marker({
                                 map: map,
                                 icon: image,
