@@ -173,18 +173,7 @@
                         maxWidth: 180
                     });
 
-
-                    var geocoder = new google.maps.Geocoder();
-
-                    geocoder.geocode({
-                        address: addressInput
-                    }, function (results, status) {
-
-                        //console.log(status);
-
-                        if (status == google.maps.GeocoderStatus.OK) {                            
-
-                            var myResult = results[0].geometry.location;
+                            var myResult = {'lat:' + lat + ',' + 'lng:' + lng};
                             bounds.extend(myResult);
                             marker = new google.maps.Marker({
                                 map: map,
@@ -200,8 +189,35 @@
                             })(marker, i));
 
                             map.fitBounds(bounds);
-                        }
-                    });
+
+                    // var geocoder = new google.maps.Geocoder();
+
+                    // geocoder.geocode({
+                    //     address: addressInput
+                    // }, function (results, status) {
+
+                    //     //console.log(status);
+
+                    //     if (status == google.maps.GeocoderStatus.OK) {                            
+
+                    //         var myResult = results[0].geometry.location;
+                    //         bounds.extend(myResult);
+                    //         marker = new google.maps.Marker({
+                    //             map: map,
+                    //             icon: image,
+                    //             shape: shape,
+                    //             position: myResult,
+                    //         });
+                    //         google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                    //             return function () {
+                    //                 infowindow.setContent(infowindow);
+                    //                 infowindow.open(map, marker);
+                    //             }
+                    //         })(marker, i));
+
+                    //         map.fitBounds(bounds);
+                    //     }
+                    // });
 
 
                 }
