@@ -188,13 +188,8 @@
                             bounds.extend(myResult);
                             marker = new google.maps.Marker({
                                 map: map,
-<<<<<<< HEAD
-                                //icon: image,
-                                //shape: shape,
-=======
                                 // icon: image,
                                 // shape: shape,
->>>>>>> 04babe989a7c99d0ad46fc9f5eda69a0725b5c97
                                 position: myResult,
                             });
                             google.maps.event.addListener(marker, 'click', (function (marker, i) {
