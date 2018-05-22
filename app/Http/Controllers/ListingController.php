@@ -95,6 +95,10 @@ class ListingController extends Controller
         $page = $request->input('page');
         $page = '&page_index=' . $page;
 
+        //Page
+        $picture = $request->input('picture');
+        $picture = '&photo=' . $picture;
+
         //Page count
         $pageCount = $request->input('pagecount');
         if($pageCount != ""){

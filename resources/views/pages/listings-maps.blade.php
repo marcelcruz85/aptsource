@@ -83,10 +83,11 @@
 
         $.ajax({
             type: "GET",
-            url: 'http://aptsource.dotgital.com/rentals/api/1/search',
+            url: 'http://dev-aptsource.dotgital.com/rentals/api/1/search',
             data: {
                 "location": "",
-                "pagecount": 500,
+                "pagecount": 100,
+                "picture": "Y",
             },
             success: function (data) {
 
@@ -131,6 +132,7 @@
 
                 //loop over all properties
                 for (i = 0; i < listings['Listings']['Listing'].length; i++) {
+                    var listingId = listings['Listings']['Listing'][i]['ID'];
                     var streetNumber = listings['Listings']['Listing'][i]['StreetNumber'];
                     var streetName = listings['Listings']['Listing'][i]['StreetName'];
                     var unit = listings['Listings']['Listing'][i]['Unit'];
@@ -140,7 +142,12 @@
                     var title = listings['Listings']['Listing'][i]['Title'];
                     var beds = listings['Listings']['Listing'][i]['Beds'];
                     var baths = listings['Listings']['Listing'][i]['Baths'];
-
+                    var picture = listings['Listings']['Listing'][i]['Photos'];
+                    if (picture === undefined) {
+                        picture = "https://placeholdit.imgix.net/~text?&w=400&h=266";
+                    } else {
+                        picture = listings['Listings']['Listing'][i]['Photos']['Photo']['0'];
+                    }  
 
                     var lat = parseFloat(listings['Listings']['Listing'][i]['Latitude']);                    
                     var lng = parseFloat(listings['Listings']['Listing'][i]['Longitude']);
@@ -150,12 +157,11 @@
                     var price = listings['Listings']['Listing'][i]['Price'];
 
                     
-                    
                     var contentString = '<div class="infowindow">' +
                         '<div class="listings-grid__item">' +
-                        '<a href="listing-detail.html">' +
-                        '<div class="listings-grid__main">' +
-                        '<img src="https://placeholdit.imgix.net/~text?&w=400&h=266" alt="">' +
+                        '<a href="/rental/details/' + listingId + '">' +
+                        '<div class="listings-grid__maps">' +
+                        '<img src="' + picture + '" alt="">' +
                         '</div>' +
 
                         '<div class="listings-grid__body">' +
@@ -177,11 +183,13 @@
 
 
                             var myResult = {lat: lat,lng: lng};
+
+                            console.log(lat);
                             bounds.extend(myResult);
                             marker = new google.maps.Marker({
                                 map: map,
-                                icon: image,
-                                shape: shape,
+                                //icon: image,
+                                //shape: shape,
                                 position: myResult,
                             });
                             google.maps.event.addListener(marker, 'click', (function (marker, i) {
@@ -225,8 +233,6 @@
 
 
                 }
-                
-                console.log(properties);
             },
             error: function () {
                 console.log('API request fail');

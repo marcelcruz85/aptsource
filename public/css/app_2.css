@@ -5840,3 +5840,10 @@ html:not(.ie9) .page-loader__spinner {
 .advance-search.search__input:hover{  
   border-bottom: 1px solid #03a9f4 !important;
 }
+.listings-grid__maps img{
+  height: 100px;
+  width: auto;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  display: block;
+}
