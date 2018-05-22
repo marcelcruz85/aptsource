@@ -83,7 +83,7 @@
 
         $.ajax({
             type: "GET",
-            url: 'http://dev-aptsource.dotgital.com/rentals/api/1/search',
+            url: 'http://aptsource.dotgital.com/rentals/api/1/search',
             data: {
                 "location": "",
                 "pagecount": 100,
@@ -129,6 +129,7 @@
                 };
 
                 var properties = [];
+                var markers = [];
 
                 //loop over all properties
                 for (i = 0; i < listings['Listings']['Listing'].length; i++) {
@@ -187,7 +188,7 @@
                             console.log(lat);
                             bounds.extend(myResult);
                             marker = new google.maps.Marker({
-                                map: map,
+                                //map: map,
                                 // icon: image,
                                 // shape: shape,
                                 position: myResult,
@@ -201,7 +202,7 @@
                             })(marker, i));
 
                             map.fitBounds(bounds);
-
+markers.push(marker);
                     // var geocoder = new google.maps.Geocoder();
 
                     // geocoder.geocode({
@@ -233,6 +234,10 @@
 
 
                 }
+                var markerCluster = new MarkerClusterer(map, markers,
+            {imagePath: '/images/m'});
+   
+
             },
             error: function () {
                 console.log('API request fail');
@@ -241,6 +246,8 @@
 
     }
 </script>
+    <script src="/js/markerclusterer.js">
+    </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbHsbSThuJHEQpfVqp91y3CRS5KiXxS-4&callback=initMap">
 </script>
 
