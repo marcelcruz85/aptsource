@@ -177,7 +177,7 @@
                             {
                                 console.log(coordinates);
                                 function getRandomInt(max) {
-                                    return Math.floor(Math.random() * Math.floor(max));
+                                    return Math.floor(Math.random() * Math.floor(max) + 10);
                                 }
                                 randomN = getRandomInt(20)/1000000;
                                 coordinates = {
