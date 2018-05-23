@@ -174,7 +174,7 @@
                             var coordinates = {lat: lat,lng: lng};
 
                             console.log(lat);
-                            bounds.extend(myResult);
+                            bounds.extend(coordinates);
                             marker = new google.maps.Marker({
                                 //map: map,
                                 position: coordinates,
