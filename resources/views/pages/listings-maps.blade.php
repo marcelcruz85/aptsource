@@ -175,11 +175,11 @@
 
                             if (coordinatesArr.filter(function(e) { return e.lat === coordinates.lat; }).length > 0) 
                             {
-                                console.log( coordinates);
+                                console.log(coordinates);
                                 function getRandomInt(max) {
                                     return Math.floor(Math.random() * Math.floor(max));
                                 }
-                                randomN = getRandomInt(10)/1000000;
+                                randomN = getRandomInt(10)/100000;
                                 coordinates = {
                                         lat: coordinates.lat + randomN,
                                         lng: coordinates.lng + randomN
