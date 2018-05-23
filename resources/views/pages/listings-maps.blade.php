@@ -199,7 +199,7 @@
                                         lat: coordinates.lat + randomN,
                                         lng: coordinates.lng + randomN
                                     };
-                                console.log("coordinates");
+                                console.log(coordinates);
                                 
                             }
                             
