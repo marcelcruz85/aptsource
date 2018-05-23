@@ -187,8 +187,9 @@
                             })(marker, i));
 
                             console.log(coordinatesArr);
-                            console.log(coordinatesArr.indexOf(coordinates));
-
+                            console.log(coordinates);
+                            console.log(coordinatesArr.includes(coordinates));
+                            
                             map.fitBounds(bounds);
                             markers.push(marker);
                             coordinatesArr.push(coordinates);
