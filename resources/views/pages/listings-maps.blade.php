@@ -173,7 +173,6 @@
 
                             var coordinates = {lat: lat,lng: lng};
 
-                            console.log(lat);
                             bounds.extend(coordinates);
                             marker = new google.maps.Marker({
                                 //map: map,
@@ -187,7 +186,9 @@
                                 }
                             })(marker, i));
 
-                            console.log(coordinatesArr.includes(coordinates));
+                            console.log(coordinatesArr);
+                            console.log(coordinatesArr.indexOf(coordinates));
+
                             map.fitBounds(bounds);
                             markers.push(marker);
                             coordinatesArr.push(coordinates);
