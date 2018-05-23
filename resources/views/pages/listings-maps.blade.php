@@ -206,8 +206,9 @@
 
 
                 }
-                var markerCluster = new MarkerClusterer(map, markers,
-            {imagePath: '/images/m'});
+
+                var mcOptions = {gridSize: 50, maxZoom: 15, imagePath: '/images/m'};
+                var markerCluster = new MarkerClusterer(map, markers, mcOptions);
             
 
             },
