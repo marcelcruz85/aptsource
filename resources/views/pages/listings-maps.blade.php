@@ -190,7 +190,7 @@
                             {
                                 console.log(coordinates);
                                 console.log("repetida");
-                                /* vendors contains the element we're looking for */
+                                console.log(getRandomInt(10));
                             }
                             
                             map.fitBounds(bounds);
