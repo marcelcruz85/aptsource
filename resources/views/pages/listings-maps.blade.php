@@ -194,8 +194,13 @@
                                 function getRandomInt(max) {
                                     return Math.floor(Math.random() * Math.floor(max));
                                 }
+                                randomN = getRandomInt(10)/1000000;
+                                coordinates = {
+                                        lat: coordinates.lat + randomN,
+                                        lng: coordinates.lng + randomN
+                                    };
+                                console.log("coordinates");
                                 
-                                console.log(getRandomInt(10));
                             }
                             
                             map.fitBounds(bounds);
