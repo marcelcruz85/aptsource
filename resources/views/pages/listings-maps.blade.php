@@ -115,6 +115,7 @@
 
                 var properties = [];
                 var markers = [];
+                var coordinatesArr = [];
 
                 //loop over all properties
                 for (i = 0; i < listings['Listings']['Listing'].length; i++) {
@@ -170,13 +171,13 @@
                     infowindow = new google.maps.InfoWindow();
 
 
-                            var myResult = {lat: lat,lng: lng};
+                            var coordinates = {lat: lat,lng: lng};
 
                             console.log(lat);
                             bounds.extend(myResult);
                             marker = new google.maps.Marker({
                                 //map: map,
-                                position: myResult,
+                                position: coordinates,
                             });
                             google.maps.event.addListener(marker, 'click', (function (marker, i) {
                                 return function () {
@@ -186,9 +187,10 @@
                                 }
                             })(marker, i));
 
-                            console.log(markers.includes(marker));
+                            console.log(coordinatesArr.includes(coordinates));
                             map.fitBounds(bounds);
                             markers.push(marker);
+                            coordinatesArr.push(coordinates);
 
 
                 }
