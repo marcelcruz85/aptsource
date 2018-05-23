@@ -113,21 +113,6 @@
                 });
 
 
-                //map Icon
-                var image = {
-                    url: 'http://aptsource.dotgital.com/img/mapico.png',
-                    // This marker is 20 pixels wide by 32 pixels high.
-                    size: new google.maps.Size(20, 32),
-                    // The origin for this image is (0, 0).
-                    origin: new google.maps.Point(0, 0),
-                    // The anchor for this image is the base of the flagpole at (0, 32).
-                    anchor: new google.maps.Point(0, 32)
-                };
-                var shape = {
-                    coords: [1, 1, 1, 20, 18, 20, 18, 1],
-                     type: 'poly'
-                };
-
                 var properties = [];
                 var markers = [];
 
@@ -152,6 +137,8 @@
 
                     var lat = parseFloat(listings['Listings']['Listing'][i]['Latitude']);                    
                     var lng = parseFloat(listings['Listings']['Listing'][i]['Longitude']);
+
+                    
 
                     
                     var addressInput = streetNumber + " " + streetName + " " + unit + " " + city + " " + state + " " + zip;
@@ -189,8 +176,6 @@
                             bounds.extend(myResult);
                             marker = new google.maps.Marker({
                                 //map: map,
-                                // icon: image,
-                                // shape: shape,
                                 position: myResult,
                             });
                             google.maps.event.addListener(marker, 'click', (function (marker, i) {
@@ -201,42 +186,15 @@
                                 }
                             })(marker, i));
 
+                            console.log(markers.includes(marker));
                             map.fitBounds(bounds);
-markers.push(marker);
-                    // var geocoder = new google.maps.Geocoder();
-
-                    // geocoder.geocode({
-                    //     address: addressInput
-                    // }, function (results, status) {
-
-                    //     //console.log(status);
-
-                    //     if (status == google.maps.GeocoderStatus.OK) {                            
-
-                    //         var myResult = results[0].geometry.location;
-                    //         bounds.extend(myResult);
-                    //         marker = new google.maps.Marker({
-                    //             map: map,
-                    //             icon: image,
-                    //             shape: shape,
-                    //             position: myResult,
-                    //         });
-                    //         google.maps.event.addListener(marker, 'click', (function (marker, i) {
-                    //             return function () {
-                    //                 infowindow.setContent(infowindow);
-                    //                 infowindow.open(map, marker);
-                    //             }
-                    //         })(marker, i));
-
-                    //         map.fitBounds(bounds);
-                    //     }
-                    // });
+                            markers.push(marker);
 
 
                 }
                 var markerCluster = new MarkerClusterer(map, markers,
             {imagePath: '/images/m'});
-   
+            
 
             },
             error: function () {
