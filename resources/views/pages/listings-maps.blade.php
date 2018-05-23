@@ -188,8 +188,7 @@
 
                             if (coordinatesArr.filter(function(e) { return e.lat === coordinates.lat; }).length > 0) 
                             {
-                                console.log(coordinates);
-                                console.log("repetida");
+                                console.log("old" + coordinates);
 
                                 function getRandomInt(max) {
                                     return Math.floor(Math.random() * Math.floor(max));
@@ -199,7 +198,7 @@
                                         lat: coordinates.lat + randomN,
                                         lng: coordinates.lng + randomN
                                     };
-                                console.log(coordinates);
+                                console.log("new" + coordinates);
                                 
                             }
                             
