@@ -173,19 +173,6 @@
 
                             var coordinates = {lat: lat,lng: lng};
 
-                            bounds.extend(coordinates);
-                            marker = new google.maps.Marker({
-                                //map: map,
-                                position: coordinates,
-                            });
-                            google.maps.event.addListener(marker, 'click', (function (marker, i) {
-                                return function () {
-                                    infowindow.setContent(properties[i]);
-                                    infowindow.setOptions({maxWidth: 180});
-                                    infowindow.open(map, marker);
-                                }
-                            })(marker, i));
-
                             if (coordinatesArr.filter(function(e) { return e.lat === coordinates.lat; }).length > 0) 
                             {
                                 console.log( coordinates);
@@ -200,7 +187,19 @@
                                 console.log(coordinates);
                                 
                             }
-                            
+
+                            bounds.extend(coordinates);
+                            marker = new google.maps.Marker({
+                                //map: map,
+                                position: coordinates,
+                            });
+                            google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                                return function () {
+                                    infowindow.setContent(properties[i]);
+                                    infowindow.setOptions({maxWidth: 180});
+                                    infowindow.open(map, marker);
+                                }
+                            })(marker, i));
                             map.fitBounds(bounds);
                             markers.push(marker);
                             coordinatesArr.push(coordinates);
