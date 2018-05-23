@@ -179,7 +179,7 @@
                                 function getRandomInt(max) {
                                     return Math.floor(Math.random() * Math.floor(max));
                                 }
-                                randomN = getRandomInt(10)/10000;
+                                randomN = getRandomInt(10)/1000000;
                                 coordinates = {
                                         lat: coordinates.lat + randomN,
                                         lng: coordinates.lng + randomN
