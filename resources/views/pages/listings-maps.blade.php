@@ -182,7 +182,7 @@
                                 randomN = getRandomInt(20)/1000000;
                                 coordinates = {
                                         lat: coordinates.lat + randomN,
-                                        lng: coordinates.lng
+                                        lng: coordinates.lng + randomN
                                     };
                                 console.log(coordinates);
                                 
@@ -207,7 +207,7 @@
 
                 }
 
-                var mcOptions = {gridSize: 50, maxZoom: 15, imagePath: '/images/m'};
+                var mcOptions = {gridSize: 50, maxZoom: 17, imagePath: '/images/m'};
                 var markerCluster = new MarkerClusterer(map, markers, mcOptions);
             
 
