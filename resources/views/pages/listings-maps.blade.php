@@ -186,9 +186,12 @@
                                 }
                             })(marker, i));
 
-                            console.log(coordinatesArr);
-                            console.log(coordinates);
-                            console.log(coordinatesArr.includes(coordinates));
+                            if (coordinatesArr.filter(function(e) { return e.lat === coordinates.lat; }).length > 0) 
+                            {
+                                console.log(coordinates);
+                                console.log("repetida");
+                                /* vendors contains the element we're looking for */
+                            }
                             
                             map.fitBounds(bounds);
                             markers.push(marker);
