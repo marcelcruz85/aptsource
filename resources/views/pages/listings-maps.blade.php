@@ -60,19 +60,36 @@
                     <i class="zmdi zmdi-email"></i>
                 </div>
 
-                <h2>Subscribe for Newsletters</h2>
-                <small>Curabitur blandit tempus porttitor adipiscing maecenas faucibus mollis interdum</small>
+                <h2>Contact Us</h2>
+                        <small>If you have a question, do not hesitate to contact us</small>
+                        <form  action="email">
+                            <div class="form-group form-group--light form-group--float">
+                                <input type="text" name="name" class="form-control">
+                                <label>Name</label>
+                                <i class="form-group__bar"></i>
+                            </div>
+                            <div class="form-group form-group--light form-group--float">
+                                <input type="text" name="email" class="form-control">
+                                <label>Email Address</label>
+                                <i class="form-group__bar"></i>
+                            </div>
+                            <div class="form-group form-group--light form-group--float">
+                                <input type="text" name="phone" class="form-control">
+                                <label>Contact Number</label>
+                                <i class="form-group__bar"></i>
+                            </div>
+                            <div class="form-group form-group--light form-group--float">
+                                <textarea name="text" class="form-control textarea-autoheight"></textarea>
+                                <label>Message</label>
+                                <i class="form-group__bar"></i>
+                            </div>
 
-                <form>
-                    <div class="form-group form-group--light form-group--float">
-                        <input type="text" class="form-control text-center" placeholder="Email Address">
-                        <i class="form-group__bar"></i>
-                    </div>
+                            <small class="mdc-text-white-darker">By sending us your information, you agree to Roost’s Terms of Use & Privacy Policy.</small>
 
-                    <button class="btn btn--circle">
-                        <i class="zmdi zmdi-check mdc-text-light-blue"></i>
-                    </button>
-                </form>
+                            <div class="m-t-30">
+                                <button type="submit" class="btn brn-sm btn-default btn-static">Send</button>
+                            </div>
+                        </form>
             </div>
         </aside>
         @include('components.side-search');

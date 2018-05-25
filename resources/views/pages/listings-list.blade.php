@@ -125,9 +125,9 @@
                             <i class="zmdi zmdi-email"></i>
                         </div>
 
-                        <h2>Subscribe for Newsletters</h2>
-                        <small>Curabitur blandit tempus porttitor adipiscing maecenas faucibus mollis interdum</small>
-                        <form class="contact__form" action="email">
+                        <h2>Contact Us</h2>
+                        <small>If you have a question, do not hesitate to contact us</small>
+                        <form  action="email">
                             <div class="form-group form-group--light form-group--float">
                                 <input type="text" name="name" class="form-control">
                                 <label>Name</label>
