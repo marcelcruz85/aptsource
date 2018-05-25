@@ -127,16 +127,33 @@
 
                         <h2>Subscribe for Newsletters</h2>
                         <small>Curabitur blandit tempus porttitor adipiscing maecenas faucibus mollis interdum</small>
-
-                        <form>
+                        <form class="contact__form" action="email">
                             <div class="form-group form-group--light form-group--float">
-                                <input type="text" class="form-control text-center" placeholder="Email Address">
+                                <input type="text" name="name" class="form-control">
+                                <label>Name</label>
+                                <i class="form-group__bar"></i>
+                            </div>
+                            <div class="form-group form-group--light form-group--float">
+                                <input type="text" name="email" class="form-control">
+                                <label>Email Address</label>
+                                <i class="form-group__bar"></i>
+                            </div>
+                            <div class="form-group form-group--light form-group--float">
+                                <input type="text" name="phone" class="form-control">
+                                <label>Contact Number</label>
+                                <i class="form-group__bar"></i>
+                            </div>
+                            <div class="form-group form-group--light form-group--float">
+                                <textarea name="text" class="form-control textarea-autoheight"></textarea>
+                                <label>Message</label>
                                 <i class="form-group__bar"></i>
                             </div>
 
-                            <button class="btn btn--circle">
-                                <i class="zmdi zmdi-check mdc-text-light-blue"></i>
-                            </button>
+                            <small class="mdc-text-white-darker">By sending us your information, you agree to Roost’s Terms of Use & Privacy Policy.</small>
+
+                            <div class="m-t-30">
+                                <button type="submit" class="btn brn-sm btn-default btn-static">Send</button>
+                            </div>
                         </form>
                     </div>
                 </aside>
