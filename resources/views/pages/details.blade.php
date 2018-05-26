@@ -161,7 +161,7 @@
                     </div>
                 </div>
 
-                <div id="inquire" class="col-md-4 rmd-sidebar-mobile">
+                <div id="inquire" class="col-md-4">
 
                     <form class="card hidden-print" method="post" action="/email">
                         {{ csrf_field() }} 
