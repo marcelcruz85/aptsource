@@ -11,6 +11,7 @@
 
 @section ('content')
         <div class="container">
+        <button onclick="goBack()" class="btn btn-primary">Back to Listings</button>
             <header class="section__title section__title-alt">
                 <h2>{{ $listing['Title']  ?? "" }}</h2>
                 <small class="address">{{ $listing['StreetNumber']  ?? "" }} {{ $listing['StreetName']  ?? "" }} {{ $listing['City']  ?? "" }}, {{ $listing['State']  ?? "" }} {{ $listing['Zip']  ?? "" }}</small>
@@ -241,6 +242,12 @@
                 </div>
             </div>
         </div>
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
 <script>
     function initMap() {
 
