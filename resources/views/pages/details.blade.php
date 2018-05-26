@@ -198,7 +198,7 @@
                         </div>
 
                         <div class="card__footer">
-                            <button type="submit" class="btn btn-primary">Request Information</button>
+                            <button type="submit" class="btn btn-primary">SUBMIT</button>
                             <button class="btn btn-link hidden-lg hidden-md" data-rmd-action="block-close" data-rmd-target="#inquire">Cancel</button>
                         </div>
                     </form>
