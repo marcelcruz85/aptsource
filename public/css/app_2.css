@@ -5847,3 +5847,7 @@ html:not(.ie9) .page-loader__spinner {
   margin-right: auto !important;
   display: block;
 }
+
+.mailto{
+  color: #fff !important;
+}

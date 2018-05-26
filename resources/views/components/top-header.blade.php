@@ -31,7 +31,7 @@
                     </div>
 
                     <p>
-                        <small>By Signing up with Roost, you're agreeing to our
+                        <small>By Signing up with Apartment Source, you're agreeing to our
                             <a href="">terms and conditions</a>.</small>
                     </p>
 
@@ -144,7 +144,9 @@
 
             <li class="pull-right hidden-xs">
                 <span>
-                    <i class="zmdi zmdi-email"></i>info@apartmentsourcechicago.com</span>
+                    <a class="mailto" href="mailto:info@apartmentsourcechicago.com" target="_top">
+                        <i class="zmdi zmdi-email"></i>info@apartmentsourcechicago.com</a>
+                </span>
             </li>
             <li class="pull-right hidden-xs">
                 <span>
