@@ -128,7 +128,7 @@
                 <div class="tab-pane fade" id="submit-property-3">
                     <div class="card">
                         <div class="card__header">
-                            <h2>Sale Information</h2>
+                            <h2>Rental Price</h2>
                             {{-- <small>Nullam iddolor dnibh ultricies vehicula utielit</small> --}}
                         </div>
 
