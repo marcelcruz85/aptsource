@@ -163,7 +163,7 @@
                 <div id="inquire" class="col-md-4 rmd-sidebar-mobile">
                     <form class="card hidden-print">
                         <div class="card__header">
-                            <h2>Inquire this Proeprty</h2>
+                            <h2>Property Inquiry</h2>
                             <small>Call us now or send us your information</small>
                         </div>
 
