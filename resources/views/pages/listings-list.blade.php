@@ -161,7 +161,7 @@
             </div>
         </div>
 
-        <div class=no-show>
+        <div class="no-show">
             <div class="pageindex">{{ $now }}</div>
             <div class="pageindex">{{ $available }}</div>
             <div class="pageindex">{{ $pageIndex }}</div>

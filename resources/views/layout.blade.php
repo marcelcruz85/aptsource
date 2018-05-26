@@ -48,6 +48,10 @@
       <!-- ... -->
   <script type="text/javascript" src="/vendors/bower_components/moment/min/moment.min.js"></script>
 
+  <!-- Jquery Autosize -->
+<script src="/vendors/bower_components/autosize/dist/autosize.min.js"></script>
+
+
 
     <!-- Page Loader JS -->
     <script src="/js/page-loader.min.js" async></script>
