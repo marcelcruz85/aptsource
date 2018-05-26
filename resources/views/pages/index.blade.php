@@ -84,7 +84,7 @@
                 <div class="info-box__item">
                     <i class="zmdi zmdi-trending-up info-box__icon"></i>
     
-                    <h3>New properties every day</h3>
+                    <h3>New Units Daily</h3>
                     <p>We are constantly uptading our listing, We have new properties every day, come and check frequently or subscribe to get information about new properties.</p>
                 </div>
             </div>
@@ -93,7 +93,7 @@
                 <div class="info-box__item">
                     <i class="zmdi zmdi-search info-box__icon"></i>
     
-                    <h3>Easy to find you new place</h3>
+                    <h3>Easy to find your new place</h3>
                     <p>With apartment source is easy to find your new place, our website have all you need from new properties to less expensive places.</p>
                 </div>
             </div>
