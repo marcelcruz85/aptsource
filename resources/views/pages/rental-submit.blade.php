@@ -317,7 +317,7 @@
                             <i class="zmdi zmdi-check"></i>
 
                             <h2>Successful!</h2>
-                            <p>Thanks for submit your property, one of our agents will be in contact with you soon.</p>
+                            <p>Thank you for listing your unit with us, we appreciate you business.</p>
                         </div>
                     </div>
                 </div>
