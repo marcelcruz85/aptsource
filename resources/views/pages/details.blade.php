@@ -137,7 +137,7 @@
                         <div class="card detail-amenities">
                             <div class="card__header">
                                 <h2>Amenities</h2>
-                                <small>Maecenas seddiam eget risus varius blandit sitamet nonmagna</small>
+                                <!-- <small>Maecenas seddiam eget risus varius blandit sitamet nonmagna</small> -->
                             </div>
 
                             <div class="card__body">
