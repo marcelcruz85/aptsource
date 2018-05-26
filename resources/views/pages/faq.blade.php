@@ -85,7 +85,7 @@
                     <form class="card">
                         <div class="card__header">
                             <h2>Write to us</h2>
-                            <small>Aeneanquam ellentesque ornare lacinia</small>
+                            <!-- <small>Aeneanquam ellentesque ornare lacinia</small> -->
                         </div>
 
                         <div class="card__body m-t-10">
@@ -110,7 +110,7 @@
                                 <label>Message</label>
                             </div>
 
-                            <small class="text-muted">By sending us your information, you agree to Root’s Terms of Use & Privacy Policy.</small>
+                            <small class="text-muted">By sending us your information, you agree to Apartment Source Terms of Use & Privacy Policy.</small>
                         </div>
 
                         <div class="card__footer">

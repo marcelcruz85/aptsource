@@ -65,7 +65,7 @@
                                 <i class="form-group__bar"></i>
                             </div>
 
-                            <small class="mdc-text-white-darker">By sending us your information, you agree to Roost’s Terms of Use & Privacy Policy.</small>
+                            <small class="mdc-text-white-darker">By sending us your information, you agree to Apartment Source Terms of Use & Privacy Policy.</small>
 
                             <div class="m-t-30">
                                 <button type="submit" class="btn brn-sm btn-default btn-static">Send</button>

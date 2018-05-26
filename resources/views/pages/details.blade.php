@@ -194,7 +194,7 @@
                                 <i class="form-group__bar"></i>
                             </div>
 
-                            <small class="text-muted">By sending us your information, you agree to Roost’s Terms of Use & Privacy Policy.</small>
+                            <small class="text-muted">By sending us your information, you agree to Apartment Source Terms of Use & Privacy Policy.</small>
                         </div>
 
                         <div class="card__footer">
