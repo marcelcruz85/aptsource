@@ -4,8 +4,7 @@
             <div class="footer__block">
                 <a class="logo clearfix" href="">
                     <div class="logo__text">
-                        <span>The Apartment</span>
-                        <span>Source</span>
+                        <span>The Apartment Source</span>
                     </div>
                 </a>
 
@@ -13,7 +12,7 @@
                         2638 N. Halsted Street Chicago, IL 60614
                 </address>
 
-                <div class="f-20">773-404-9900</div>
+                <div class="f-20">773-404-9900</div></br>
                 <div class="f-14 m-t-5">info@apartmentsourcechicago.com</div>
 
                 <div class="f-20 m-t-20">
