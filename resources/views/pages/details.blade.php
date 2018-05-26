@@ -162,7 +162,9 @@
                 </div>
 
                 <div id="inquire" class="col-md-4 rmd-sidebar-mobile">
-                    <form class="card hidden-print">
+
+                    <form class="card hidden-print" method="post" action="/email">
+                        {{ csrf_field() }} 
                         <div class="card__header">
                             <h2>Property Inquiry</h2>
                             <small>Call us now or send us your information</small>
@@ -175,7 +177,7 @@
                             </div>
 
                             <div class="form-group form-group--float">
-                                <input type="text" class="form-control">
+                                <input type="text" class="form-control" name="name">
                                 <label>Name</label>
                                 <i class="form-group__bar"></i>
                             </div>

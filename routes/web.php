@@ -48,4 +48,7 @@ Route::get('/dev', function () {
     return view('pages.dev');
 });
 
-Route::get('{parameters}', 'EmailController@send');
+Route::post('email', 'EmailController@send');
+
+Route::get('/contact', 'RecaptchaController@create');
+Route::post('/store', 'RecaptchaController@store');

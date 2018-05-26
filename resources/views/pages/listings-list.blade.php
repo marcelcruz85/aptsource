@@ -127,7 +127,8 @@
 
                         <h2>Contact Us</h2>
                         <small>If you have a question, do not hesitate to contact us</small>
-                        <form  action="email">
+                        <form  method="post" action="/email">
+                            {{ csrf_field() }}
                             <div class="form-group form-group--light form-group--float">
                                 <input type="text" name="name" class="form-control">
                                 <label>Name</label>
@@ -147,6 +148,17 @@
                                 <textarea name="text" class="form-control textarea-autoheight"></textarea>
                                 <label>Message</label>
                                 <i class="form-group__bar"></i>
+                            </div>
+                            @if ($errors->any())
+                                <small class="errors">Please, verify that you are a human!</small>
+                            @endif
+                            <div class="row">
+                                <div class="col-md-12"></div>
+                                    <div class="form-group col-md-12">
+                                        <!-- <label for="ReCaptcha">Recaptcha:</label> -->
+                                        {!! NoCaptcha::renderJs() !!}
+                                        {!! NoCaptcha::display() !!}
+                                    </div>
                             </div>
 
                             <small class="mdc-text-white-darker">By sending us your information, you agree to Apartment Source Terms of Use & Privacy Policy.</small>

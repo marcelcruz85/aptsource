@@ -174,7 +174,8 @@
                             {{-- <small>Sed posuere consectetur estat lobortis ultricies</small> --}}
                         </div>
 
-                        <form class="card__body">
+                        <form class="card__body" method="post" action="/email">
+                            {{ csrf_field() }}
                             <div class="form-group">
                                 {{-- <label>Property Type</label>
 
@@ -302,6 +303,19 @@
                                         <input type="radio" name="inner-search-beds">3+
                                     </label>
                                 </div>
+                            </div>
+
+
+                            @if ($errors->any())
+                                <small class="errors">Please, verify that you are a human!</small>
+                            @endif
+                            <div class="row">
+                                <div class="col-md-12"></div>
+                                    <div class="form-group col-md-12">
+                                        <!-- <label for="ReCaptcha">Recaptcha:</label> -->
+                                        {!! NoCaptcha::renderJs() !!}
+                                        {!! NoCaptcha::display() !!}
+                                    </div>
                             </div>
 
                             <a href="#submit-property-5" data-toggle="tab" class="btn btn--circle btn-primary submit-property__button">

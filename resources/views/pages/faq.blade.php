@@ -82,7 +82,9 @@
                 </div>
 
                 <div class="col-md-4 rmd-sidebar-mobile" id="write-to-us">
-                    <form class="card">
+                    <form class="card"method="post" action="/email">
+
+                        {{ csrf_field() }} >
                         <div class="card__header">
                             <h2>Write to us</h2>
                             <!-- <small>Aeneanquam ellentesque ornare lacinia</small> -->
@@ -108,6 +110,18 @@
                                 <textarea class="form-control textarea-autoheight"></textarea>
                                 <i class="form-group__bar"></i>
                                 <label>Message</label>
+                            </div>
+
+                             @if ($errors->any())
+                                <small class="errors">Please, verify that you are a human!</small>
+                            @endif
+                            <div class="row">
+                                <div class="col-md-12"></div>
+                                    <div class="form-group col-md-12">
+                                        <!-- <label for="ReCaptcha">Recaptcha:</label> -->
+                                        {!! NoCaptcha::renderJs() !!}
+                                        {!! NoCaptcha::display() !!}
+                                    </div>
                             </div>
 
                             <small class="text-muted">By sending us your information, you agree to Apartment Source Terms of Use & Privacy Policy.</small>

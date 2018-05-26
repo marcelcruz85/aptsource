@@ -5855,3 +5855,12 @@ html:not(.ie9) .page-loader__spinner {
 .no-show{
   display: none;
 }
+
+.errors-ul{
+  margin: 0px 0px 25px;
+  padding: 0px
+}
+.errors{
+  list-style: none;
+  color: red;
+}

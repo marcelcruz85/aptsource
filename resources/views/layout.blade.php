@@ -54,7 +54,7 @@
   <!-- Jquery Autosize -->
 <script src="/vendors/bower_components/autosize/dist/autosize.min.js"></script>
 
-
+ <script src='https://www.google.com/recaptcha/api.js'></script>
 
     <!-- Page Loader JS -->
     <script src="/js/page-loader.min.js" async></script>

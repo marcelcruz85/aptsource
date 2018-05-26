@@ -3,12 +3,18 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
 use Mail;
 
 class EmailController extends Controller
 {
     //
-    public function send($parameters,Request $request){
+    public function send(Request $request){
+
+        $request->validate([
+            'g-recaptcha-response' => 'required|captcha'
+        ]);
+
 
         $name = $request->input('name');
         $email = $request->input('email');
