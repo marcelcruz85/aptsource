@@ -137,13 +137,13 @@
                     </div>
 
                     <div class="form-group">
-                        <label>Garages</label>
+                        <label>Parking</label>
                         <div class="btn-group btn-group-justified" data-toggle="buttons">
                             <label class="btn">
                                 <input type="checkbox" name="inner-search-garage" id="garage1">1
                             </label>
-                            <label class="btn active">
-                                <input type="checkbox" name="inner-search-garage" id="garage2" checked>2
+                            <label class="btn">
+                                <input type="checkbox" name="inner-search-garage" id="garage2">2
                             </label>
                             <label class="btn">
                                 <input type="checkbox" name="inner-search-garage" id="garage3">3
@@ -157,7 +157,7 @@
                         </div>
                     </div>
 
-                    <div class="form-group form-group--range">
+                    <!-- <div class="form-group form-group--range">
                         <label>Area Size</label>
                         <div class="input-slider-values clearfix">
                             <div class="pull-left" id="property-area-upper"></div>
@@ -166,7 +166,7 @@
                             <input id="max-size" name="max-size" type="hidden" value="0">
                         </div>
                         <div id="property-area-range"></div>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="card__footer">
