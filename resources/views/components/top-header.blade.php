@@ -126,19 +126,15 @@
                 </div>
             </li>  --}}
 
+
             <li class="pull-right top-nav__icon">
                 <a href="">
-                    <i class="zmdi zmdi-facebook"></i>
+                    <i class="fab fa-yelp fa-lg"></i>
                 </a>
             </li>
             <li class="pull-right top-nav__icon">
                 <a href="">
-                    <i class="zmdi zmdi-twitter"></i>
-                </a>
-            </li>
-            <li class="pull-right top-nav__icon">
-                <a href="">
-                    <i class="zmdi zmdi-google"></i>
+                    <i class="fab fa-facebook-f fa-lg"></i>
                 </a>
             </li>
 

@@ -16,14 +16,11 @@
                 <div class="f-14 m-t-5">info@apartmentsourcechicago.com</div>
 
                 <div class="f-20 m-t-20">
-                    <a href="" class="m-r-10">
-                        <i class="zmdi zmdi-google"></i>
+                    <a href="" class="m-r-10">                        
+                        <i class="fab fa-facebook-f fa-sm"></i>
                     </a>
-                    <a href="" class="m-r-10">
-                        <i class="zmdi zmdi-facebook"></i>
-                    </a>
-                    <a href="">
-                        <i class="zmdi zmdi-twitter"></i>
+                    <a href="">                        
+                        <i class="fab fa-yelp fa-sm"></i>
                     </a>
                 </div>
             </div>

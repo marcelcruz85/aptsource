@@ -32,12 +32,22 @@
                                 <li><i class="zmdi zmdi-phone"></i>773-404-9900</li>
                                 <li><i class="zmdi zmdi-email"></i>info@apartmentsourcechicago.com</li>
                             </ul>
-
                             <div class="contact__social">
-                                <a href="" class="zmdi zmdi-facebook mdc-bg-indigo-300"></a>
-                                <a href="" class="zmdi zmdi-twitter mdc-bg-cyan-300"></a>
-                                <a href="" class="zmdi zmdi-google mdc-bg-red-300"></a>
-                                <a href="" class="zmdi zmdi-instagram mdc-bg-blue-grey-400"></a>
+                                <div class="fa-2x">
+                                    <a href="" style="color:#fff">
+                                        <span class="fa-layers fa-fw" style="background:#fff">
+                                            <i class="fas fa-circle fa-lg" style="color:#3b5998"></i>
+                                            <i class="fab fa-facebook-f"></i>
+                                        </span>
+
+                                    </a>
+                                    <a href="" style="color:#fff">
+                                        <span class="fa-layers fa-fw" style="background:#fff">
+                                            <i class="fas fa-circle fa-lg" style="color:#d32323"></i>
+                                            <i class="fab fa-yelp"></i>
+                                        </span>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
