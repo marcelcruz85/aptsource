@@ -73,7 +73,7 @@
 <section class="section submit-ticker"> 
 <p>Are you looking to rent out your property? Apartment Source is your destination!</p>
 
-<a href="/submit">Submit your property</a>
+<a href="/submit">List your property</a>
 </section>
 
 
