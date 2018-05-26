@@ -200,7 +200,7 @@
                             </div>
 
                             <div class="row">
-                                <div class="col-sm-6">
+                                <div class="col-sm-12">
                                     <div class="form-group form-group--float form-group--float-center">
                                         <input type="text" class="form-control text-center">
                                         <i class="form-group__bar"></i>
@@ -208,20 +208,20 @@
                                     </div>
                                 </div>
 
-                                <div class="col-sm-6">
+                                <!-- <div class="col-sm-6">
                                     <div class="form-group form-group--float form-group--float-center">
                                         <input type="text" class="form-control text-center">
                                         <i class="form-group__bar"></i>
                                         <label>Lot Size</label>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
 
-                            <div class="form-group form-group--float form-group--float-center">
+                            <!-- <div class="form-group form-group--float form-group--float-center">
                                 <input type="text" class="form-control text-center">
                                 <i class="form-group__bar"></i>
                                 <label>Year Built</label>
-                            </div>
+                            </div> -->
 
                             <div class="form-group">
                                 <label>Bedrooms</label>
