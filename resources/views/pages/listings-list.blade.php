@@ -57,14 +57,14 @@
                 <div class="col-sm-8 listings-list">
             <header class="section__title">
                 <h2>No Properties found</h2>
-                <small>Vestibulum id ligula porta felis euismod semper</small>
+                <!-- <small>Vestibulum id ligula porta felis euismod semper</small> -->
             </header>
         </div>        
 @else
         <div class="container">
             <header class="section__title">
-                <h2>Duis mollisest non commodo luctus nisierat porttito</h2>
-                <small>Vestibulum id ligula porta felis euismod semper</small>
+                <!-- <h2>Duis mollisest non commodo luctus nisierat porttito</h2>
+                <small>Vestibulum id ligula porta felis euismod semper</small> -->
             </header>
             <div class="row">
                 <div class="col-sm-8 listings-list">

@@ -56,14 +56,14 @@
 <div class="container">    
             <header class="section__title">
                 <h2>No Properties found</h2>
-                <small>Vestibulum id ligula porta felis euismod semper</small>
+                <!-- <small>Vestibulum id ligula porta felis euismod semper</small> -->
             </header>
         </div>        
 @endif
 <div class="container">
         <header class="section__title">
-            <h2>Duis mollisest non commodo luctus nisierat porttito</h2>
-            <small>Vestibulum id ligula porta felis euismod semper</small>
+            <!-- <h2>Duis mollisest non commodo luctus nisierat porttito</h2>
+            <small>Vestibulum id ligula porta felis euismod semper</small> -->
         </header>
 
         <div class="row listings-grid">
