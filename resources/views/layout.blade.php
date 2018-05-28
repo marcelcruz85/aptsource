@@ -78,6 +78,21 @@
         @yield ('content')
     </section>
 
+    <div class="email-success-modal modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-body">
+                <p><i class="fa fa-check-circle"></i></p>
+                <p>Thank You. </p>
+                <p>Your message has been successfully sent.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
     <footer id="footer">
         @include ('components.footer')
     </footer>
@@ -149,9 +164,9 @@
                     url: '/email',
                     data: $('.contact-email').serialize(),
                     success: function(msg) {
-                        $( ".errors" ).html( "<p></p>" );   
-                        $( ".email-success" ).html( "<p>Thank You. </br>Your message has been successfully sent.</p>" );
-                        $('.contact-email').find("input[type=text], textarea").val("");
+                        grecaptcha.reset();
+                        $('.email-success-modal').modal('show')  
+                        $( ".errors" ).html( "<p></p>" );   $('.contact-email').find("input[type=text], textarea").val("");
                         console.log(msg);
                     }
                 });

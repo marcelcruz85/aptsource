@@ -144,5 +144,4 @@
     <button class="btn btn--action btn--circle visible-sm visible-xs" data-rmd-action="block-open" data-rmd-target="#write-to-us">
         <i class="zmdi zmdi-edit"></i>
     </button>
-    
 @endsection

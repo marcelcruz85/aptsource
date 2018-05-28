@@ -5865,6 +5865,12 @@ html:not(.ie9) .page-loader__spinner {
   color: red;
 }
 
-.email-success{
-  color: green;
+.email-success-modal .modal-body{
+  padding-bottom: 0px;
+  text-align: center;
+}
+.email-success-modal .modal-body p{
+  padding: 0px;
+  margin: 0px;
+  font-size: 18px
 }
