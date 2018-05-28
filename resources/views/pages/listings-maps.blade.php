@@ -132,7 +132,7 @@
 
         $.ajax({
             type: "GET",
-            url: 'http://dev-aptsource.dotgital.com/rentals/api/1/search',
+            url: 'http://aptsource.dotgital.com/rentals/api/1/search',
             data: {
                 "location": $('.search-location').val(),
                 "min-rent": minRent,
