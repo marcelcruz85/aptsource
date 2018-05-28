@@ -601,6 +601,19 @@ $('.select2').on('select2:select', function (e) {
     SEARCH SUBMIT
 ---------------------------------------------*/
 
+// var availableAfter = $('#available-date-upper').text();
+
+// var availableBefore = $('#available-date-lower').text();
+
+// var beds = $(".beds[type='checkbox']:checked").map( function(){
+//                 return $(this).val();        
+//             }).get().join(",");
+
+
+// var baths = $(".baths[type='checkbox']:checked").map( function(){
+//                 return $(this).val();        
+//             }).get().join(",");
+
 
 $('.form-search').submit(function(){
     var minRent = $('#property-price-upper').text();

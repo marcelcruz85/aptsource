@@ -23,7 +23,7 @@
 
                 <div class="card__body m-t-20">
                     <div class="form-group form-group--float">
-                    <input type="text" name="location" value="{{ $location }}" class="form-control advance-search search__input autocomplete" placeholder="Enter any Neighorhood or Zip Code" data-rmd-action="advanced-search-open">
+                    <input type="text" name="location" value="{{ $location }}" class="form-control search-location advance-search search__input autocomplete" placeholder="Enter any Neighorhood or Zip Code" data-rmd-action="advanced-search-open">
 
                         <i class="form-group__bar"></i>
                     </div>

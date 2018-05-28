@@ -105,16 +105,43 @@
 <script>
     function initMap() {
 
+        $.urlParam = function(name){
+            var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+            if (results==null){
+            return null;
+            }
+            else{
+            return decodeURI(results[1]) || 0;
+            }
+        }    
+        var beds = $.urlParam('beds');
+        var baths = $.urlParam('baths');
+        var minRent = $.urlParam('min-rent');
+        if (minRent == null){            
+            minRent =  0;
+        }else{
+            minRent = parseInt(minRent);
+        }
+
+        var maxRent = $.urlParam('max-rent');
+        if (maxRent == null){            
+            maxRent =  5000000;
+        }else{
+            maxRent = parseInt(maxRent);
+        }
+
         $.ajax({
             type: "GET",
-            url: 'http://aptsource.dotgital.com/rentals/api/1/search',
+            url: 'http://dev-aptsource.dotgital.com/rentals/api/1/search',
             data: {
-                "location": "",
-                "pagecount": 100,
-                "picture": "Y",
+                "location": $('.search-location').val(),
+                "min-rent": minRent,
+                "max-rent": maxRent,
+                "beds": beds,
+                "baths": baths,
+                "pagecount": 100, 
             },
             success: function (data) {
-
                 console.log(data);
 
                 var listings = data;
@@ -199,7 +226,6 @@
 
                             if (coordinatesArr.filter(function(e) { return e.lat === coordinates.lat; }).length > 0) 
                             {
-                                console.log(coordinates);
                                 function getRandomInt(max) {
                                     return Math.floor(Math.random() * Math.floor(max) + 10);
                                 }
@@ -208,7 +234,6 @@
                                         lat: coordinates.lat + randomN,
                                         lng: coordinates.lng + randomN
                                     };
-                                console.log(coordinates);
                                 
                             }
 
@@ -225,6 +250,8 @@
                                 }
                             })(marker, i));
                             map.fitBounds(bounds);
+                            console.log(marker);
+
                             markers.push(marker);
                             coordinatesArr.push(coordinates);
 
@@ -243,8 +270,7 @@
 
     }
 </script>
-    <script src="/js/markerclusterer.js">
-    </script>
+<script src="/js/markerclusterer.js"></script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDbHsbSThuJHEQpfVqp91y3CRS5KiXxS-4&callback=initMap">
 </script>
 
