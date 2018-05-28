@@ -654,4 +654,10 @@ $('.form-search').submit(function(){
                 }).get().join(",");
 
     $('#baths').val(baths);
+
+    var parking = $(".parking[type='checkbox']:checked").map( function(){
+            return $(this).val();        
+        }).get().join(",");
+
+    $('#parking').val(parking);
 });

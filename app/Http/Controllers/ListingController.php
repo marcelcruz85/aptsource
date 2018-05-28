@@ -91,11 +91,15 @@ class ListingController extends Controller
         $baths = $request->input('baths');
         $baths = '&baths=' . $baths;
 
+        //parking
+        $parking = $request->input('parking');
+        $parking = '&parking_spots=' . $parking;
+
         //Page
         $page = $request->input('page');
         $page = '&page_index=' . $page;
 
-        //Page
+        //Picture
         $picture = $request->input('picture');
         $picture = '&photo=' . $picture;
 
@@ -118,7 +122,7 @@ class ListingController extends Controller
         }
 
         //building the url for the API request
-        $searchParameters = 'include_mls=1&detail_level=2' . $page . $pageCount . $availableBefore . $availableAfter . $rentLocation . $minRent . $maxRent . $minSize . $maxSize . $beds . $baths . $sortName . $sortDir;
+        $searchParameters = 'include_mls=1&detail_level=2' . $page . $pageCount . $availableBefore . $availableAfter . $rentLocation . $minRent . $maxRent . $minSize . $maxSize . $beds . $baths . $parking . $sortName . $sortDir;
         $response = $this->apiRequest($searchParameters);
 
         if($response['Total'] > 0){

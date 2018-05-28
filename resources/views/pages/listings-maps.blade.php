@@ -116,6 +116,9 @@
         }    
         var beds = $.urlParam('beds');
         var baths = $.urlParam('baths');
+        var availableBefore = $.urlParam('available-before');
+        var availableAfter = $.urlParam('available-after');
+
         var minRent = $.urlParam('min-rent');
         if (minRent == null){            
             minRent =  0;
@@ -132,13 +135,15 @@
 
         $.ajax({
             type: "GET",
-            url: 'http://aptsource.dotgital.com/rentals/api/1/search',
+            url: 'http://dev-aptsource.dotgital.com/rentals/api/1/search',
             data: {
                 "location": $('.search-location').val(),
                 "min-rent": minRent,
                 "max-rent": maxRent,
                 "beds": beds,
                 "baths": baths,
+                "available-before": availableBefore,
+                "available-after": availableAfter,
                 "pagecount": 100, 
             },
             success: function (data) {
@@ -250,7 +255,6 @@
                                 }
                             })(marker, i));
                             map.fitBounds(bounds);
-                            console.log(marker);
 
                             markers.push(marker);
                             coordinatesArr.push(coordinates);

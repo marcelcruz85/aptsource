@@ -117,22 +117,22 @@
                         <label>Bathrooms</label>
                         <div class="btn-group btn-group-justified" data-toggle="buttons">
                             <label class="btn">
-                                <input type="checkbox" class="beds" value="1" id="bed1">1
-                            </label>
-                            <label class="btn">
-                                <input type="checkbox" class="beds" value="2" id="bed2">2
-                            </label>
-                            <label class="btn">
-                                <input type="checkbox" class="beds" value="3" id="bed3">3
-                            </label>
-                            <label class="btn">
-                                <input type="checkbox" class="beds" value="4" id="bed4">4
-                            </label>
-                            <label class="btn">
-                                <input type="checkbox" class="beds" value="5,6,7,8,9,10" id="bed5">4+
-                            </label>
+                                    <input type="checkbox" class="baths" value="1" id="bath1">1
+                                </label>
+                                <label class="btn">
+                                    <input type="checkbox" class="baths" value="2" id="bath2">2
+                                </label>
+                                <label class="btn">
+                                    <input type="checkbox" class="baths" value="3" id="bath3">3
+                                </label>
+                                <label class="btn">
+                                    <input type="checkbox" class="baths" value="4" id="bath4">4
+                                </label>
+                                <label class="btn">
+                                    <input type="checkbox" class="baths" value="5,6,7,8,9,10" id="bath5">4+
+                                </label>
 
-                            <input id="beds" name="beds" type="hidden" value="0">
+                            <input id="baths" name="baths" type="hidden" value="0">
                         </div>
                     </div>
 
@@ -140,20 +140,22 @@
                         <label>Parking</label>
                         <div class="btn-group btn-group-justified" data-toggle="buttons">
                             <label class="btn">
-                                <input type="checkbox" name="inner-search-garage" id="garage1">1
+                                <input type="checkbox" class="parking" id="garage1" value="1">1
                             </label>
                             <label class="btn">
-                                <input type="checkbox" name="inner-search-garage" id="garage2">2
+                                <input type="checkbox" class="parking" id="garage2" value="2">2
                             </label>
                             <label class="btn">
-                                <input type="checkbox" name="inner-search-garage" id="garage3">3
+                                <input type="checkbox" class="parking" id="garage3" value="3">3
                             </label>
                             <label class="btn">
-                                <input type="checkbox" name="inner-search-garage" id="garage4">4
+                                <input type="checkbox" class="parking" id="garage4" value="4">4
                             </label>
                             <label class="btn">
-                                <input type="checkbox" name="inner-search-garage" id="garage5">4+
+                                <input type="checkbox" class="parking" id="garage5" value="5,6,7,8,9,10">4+
                             </label>
+
+                            <input id="parking" name="parking" type="hidden" value="0">
                         </div>
                     </div>
 
