@@ -127,6 +127,38 @@
 
 
     <!-- Javascript -->
+<script>
+    $(function() {        
+        $( '.email-form' ).click( function(e) {
+            e.preventDefault();
+
+            //validating recaptcha
+            var response = grecaptcha.getResponse();
+
+            if(response.length == 0){
+                $( ".errors" ).html( "<p>Please, verify that you are a human!</p>" );             
+            }else{
+                console.log('valida');
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
+                $.ajax({
+                    type: "POST",
+                    url: '/email',
+                    data: $('.contact-email').serialize(),
+                    success: function(msg) {
+                        $( ".errors" ).html( "<p></p>" );   
+                        $( ".email-success" ).html( "<p>Thank You. </br>Your message has been successfully sent.</p>" );
+                        $('.contact-email').find("input[type=text], textarea").val("");
+                        console.log(msg);
+                    }
+                });
+            }
+        });
+    });
+</script>
 
     <!-- Waves button ripple effects -->
     <script src="/vendors/bower_components/Waves/dist/waves.min.js"></script>

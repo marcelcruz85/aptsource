@@ -163,7 +163,7 @@
 
                 <div id="inquire" class="col-md-4">
 
-                    <form class="card hidden-print" method="post" action="/email">
+                    <form class="card hidden-print contact-email" method="post" action="/email">
                         {{ csrf_field() }} 
                         <div class="card__header">
                             <h2>Property Inquiry</h2>
@@ -197,12 +197,16 @@
                                 <i class="form-group__bar"></i>
                             </div>
 
+                            <small class="errors"></small>
+                            <div class="g-recaptcha" data-sitekey="{{ env('NOCAPTCHA_SITEKEY') }}"></div>
+
                             <small class="text-muted">By sending us your information, you agree to Apartment Source Terms of Use & Privacy Policy.</small>
                         </div>
 
                         <div class="card__footer">
-                            <button type="submit" class="btn btn-primary">SUBMIT</button>
+                            <button type="submit" class="email-form btn btn-primary">SUBMIT</button>
                             <button class="btn btn-link hidden-lg hidden-md" data-rmd-action="block-close" data-rmd-target="#inquire">Cancel</button>
+                            <div class="email-success"></div>
                         </div>
                     </form>
 

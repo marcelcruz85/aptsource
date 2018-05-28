@@ -55,12 +55,8 @@
                     <div class="col-sm-6">
 
                         <!-- <form class="contact__form" action="email"> -->
-                        <form class="contact__form" method="post" action="email">
+                        <form class="contact__form contact-email" method="post" action="email">
                             {{ csrf_field() }} 
-
-                            <div class="email-success">{{ $success or '' }}</div>
-
-                            <input name="form" type="hidden" value="Contact">
 
                             <div class="form-group form-group--light form-group--float">
                                 <input type="text" name="name" class="form-control">
@@ -81,23 +77,17 @@
                                 <textarea name="text" class="form-control textarea-autoheight"></textarea>
                                 <label>Message</label>
                                 <i class="form-group__bar"></i>
-                            </div>                            
-                            @if ($errors->any())
-                                <small class="errors">Please, verify that you are a human!</small>
-                            @endif
-                            <div class="row">
-                                <div class="col-md-12"></div>
-                                    <div class="form-group col-md-12">
-                                        <!-- <label for="ReCaptcha">Recaptcha:</label> -->
-                                        {!! NoCaptcha::renderJs() !!}
-                                        {!! NoCaptcha::display() !!}
-                                    </div>
-                            </div>
+                            </div>   
+
+                            <small class="errors"></small>
+                            <div class="g-recaptcha" data-sitekey="{{ env('NOCAPTCHA_SITEKEY') }}"></div>
+
 
                             <small class="mdc-text-white-darker">By sending us your information, you agree to Apartment Source Terms of Use & Privacy Policy.</small>
 
                             <div class="m-t-30">
-                                <button type="submit" class="btn brn-sm btn-default btn-static">Send</button>
+                                <button type="submit" class="email-form btn brn-sm btn-default btn-static">Send</button>
+                                <div class="email-success"></div>
                             </div>
                         </form>
                     </div>
