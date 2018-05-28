@@ -5864,3 +5864,7 @@ html:not(.ie9) .page-loader__spinner {
   list-style: none;
   color: red;
 }
+
+.email-success{
+  color: green;
+}

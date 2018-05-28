@@ -57,6 +57,11 @@
                         <!-- <form class="contact__form" action="email"> -->
                         <form class="contact__form" method="post" action="email">
                             {{ csrf_field() }} 
+
+                            <div class="email-success">{{ $success or '' }}</div>
+
+                            <input name="form" type="hidden" value="Contact">
+
                             <div class="form-group form-group--light form-group--float">
                                 <input type="text" name="name" class="form-control">
                                 <label>Name</label>

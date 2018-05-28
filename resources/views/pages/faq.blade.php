@@ -82,55 +82,57 @@
                 </div>
 
                 <div class="col-md-4 rmd-sidebar-mobile" id="write-to-us">
-                    <form class="card"method="post" action="/email">
+                    <form class="card contact-email" method="post" action="/email">
 
-                        {{ csrf_field() }} >
+                        {{ csrf_field() }}
                         <div class="card__header">
                             <h2>Write to us</h2>
                             <!-- <small>Aeneanquam ellentesque ornare lacinia</small> -->
                         </div>
 
+                        
+
                         <div class="card__body m-t-10">
                             <div class="form-group form-group--float">
-                                <input type="text" class="form-control">
+                                <input type="text" name="name" class="form-control">
                                 <i class="form-group__bar"></i>
                                 <label>Name</label>
                             </div>
                             <div class="form-group form-group--float">
-                                <input type="text" class="form-control">
+                                <input type="text" name="email" class="form-control">
                                 <i class="form-group__bar"></i>
                                 <label>Email Address</label>
                             </div>
                             <div class="form-group form-group--float">
-                                <input type="text" class="form-control">
+                                <input type="text" name="phone" class="form-control">
                                 <i class="form-group__bar"></i>
                                 <label>Contact Number</label>
                             </div>
                             <div class="form-group form-group--float">
-                                <textarea class="form-control textarea-autoheight"></textarea>
+                                <textarea name="text" class="form-control textarea-autoheight"></textarea>
                                 <i class="form-group__bar"></i>
                                 <label>Message</label>
                             </div>
 
-                             @if ($errors->any())
-                                <small class="errors">Please, verify that you are a human!</small>
-                            @endif
-                            <div class="row">
+                            <small class="errors"></small>
+                            <div class="g-recaptcha" data-sitekey="{{ env('NOCAPTCHA_SITEKEY') }}"></div>
+                            <!-- <div class="row">
                                 <div class="col-md-12"></div>
                                     <div class="form-group col-md-12">
-                                        <!-- <label for="ReCaptcha">Recaptcha:</label> -->
                                         {!! NoCaptcha::renderJs() !!}
                                         {!! NoCaptcha::display() !!}
                                     </div>
-                            </div>
+                            </div> -->
 
                             <small class="text-muted">By sending us your information, you agree to Apartment Source Terms of Use & Privacy Policy.</small>
-                        </div>
 
+                        </div>
+                        
                         <div class="card__footer">
-                            <button class="btn btn-primary">Submit</button>
-                            <button class="btn btn-link">Reset</button>
+                            <button class="btn btn-primary email-form">Submit</button>
                             <button class="btn btn-link visible-sm-inline visible-xs-inline" data-rmd-action="block-close" data-rmd-target="#write-to-us">Cancel</button>
+
+                            <div class="email-success"></div>
                         </div>
                     </form>
                 </div>
@@ -142,5 +144,40 @@
     <button class="btn btn--action btn--circle visible-sm visible-xs" data-rmd-action="block-open" data-rmd-target="#write-to-us">
         <i class="zmdi zmdi-edit"></i>
     </button>
+    
+@endsection
 
+@section ('script')
+<script>
+    $(function() {        
+        $( '.email-form' ).click( function(e) {
+            e.preventDefault();
+
+            //validating recaptcha
+            var response = grecaptcha.getResponse();
+
+            if(response.length == 0){
+                $( ".errors" ).html( "<p>Please, verify that you are a human!</p>" );             
+            }else{
+                console.log('valida');
+                $.ajaxSetup({
+                    headers: {
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    }
+                });
+                $.ajax({
+                    type: "POST",
+                    url: '/email',
+                    data: $('.contact-email').serialize(),
+                    success: function(msg) {
+                        $( ".errors" ).html( "<p></p>" );   
+                        $( ".email-success" ).html( "<p>Thank You. </br>Your message has been successfully sent.</p>" );
+                        $('.contact-email').find("input[type=text], textarea").val("");
+                        console.log(msg);
+                    }
+                });
+            }
+        });
+    });
+</script>
 @endsection

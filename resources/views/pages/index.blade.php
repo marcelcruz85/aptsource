@@ -102,7 +102,7 @@
                 <div class="info-box__item">
                     <i class="zmdi zmdi-globe info-box__icon"></i>
     
-                    <h3>Integer posuere erat</h3>
+                    <h3>Professional</h3>
                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui. Vivamus sagittis lacus vel
                         augue laoreet rutrum faucibus dolor auctor.</p>
                 </div>

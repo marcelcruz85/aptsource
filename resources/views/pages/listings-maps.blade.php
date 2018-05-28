@@ -64,6 +64,12 @@
                         <small>If you have a question, do not hesitate to contact us</small>
                         <form  method="post" action="/email">
                             {{ csrf_field() }}
+
+
+                            <div class="email-success">{{ $success or '' }}</div>
+
+                            <input name="form" type="hidden" value="map">
+
                             <div class="form-group form-group--light form-group--float">
                                 <input type="text" name="name" class="form-control">
                                 <label>Name</label>

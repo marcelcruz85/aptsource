@@ -182,17 +182,17 @@
                                 <i class="form-group__bar"></i>
                             </div>
                             <div class="form-group form-group--float">
-                                <input type="text" class="form-control">
+                                <input type="text" name="email"  class="form-control">
                                 <label>Email Address</label>
                                 <i class="form-group__bar"></i>
                             </div>
                             <div class="form-group form-group--float">
-                                <input type="text" class="form-control">
+                                <input type="text" name="phone" class="form-control">
                                 <label>Contact Number</label>
                                 <i class="form-group__bar"></i>
                             </div>
                             <div class="form-group form-group--float">
-                                <textarea class="form-control textarea-autoheight"></textarea>
+                                <textarea name="text" class="form-control textarea-autoheight"></textarea>
                                 <label>Message</label>
                                 <i class="form-group__bar"></i>
                             </div>

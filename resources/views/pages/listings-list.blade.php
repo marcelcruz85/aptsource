@@ -14,7 +14,7 @@
     <div class="container">
         <div class="action-header__item action-header__item--search">
             <form>
-                <input class="hidden-xs top-search autocomplete" type="text" name="location" value="{{ $location }}" placeholder="Search by neighborhood, city, zip or address...">
+                <input class="hidden-xs top-search autocomplete" type="text" name="location" value="{{ $location or "" }}" placeholder="Search by neighborhood, city, zip or address...">
                 <!-- For desktop -->
                 <input class="visible-xs autocomplete" type="text" placeholder="Search...">
                 <!-- For mobile -->
@@ -129,6 +129,12 @@
                         <small>If you have a question, do not hesitate to contact us</small>
                         <form  method="post" action="/email">
                             {{ csrf_field() }}
+
+
+                            <div class="email-success">{{ $success or '' }}</div>
+
+                            <input name="form" type="hidden" value="list">
+
                             <div class="form-group form-group--light form-group--float">
                                 <input type="text" name="name" class="form-control">
                                 <label>Name</label>
@@ -164,7 +170,7 @@
                             <small class="mdc-text-white-darker">By sending us your information, you agree to Apartment Source Terms of Use & Privacy Policy.</small>
 
                             <div class="m-t-30">
-                                <button type="submit" class="btn brn-sm btn-default btn-static">Send</button>
+                                <button type="submit"  value="email" class="btn brn-sm btn-default btn-static">Send</button>
                             </div>
                         </form>
                     </div>

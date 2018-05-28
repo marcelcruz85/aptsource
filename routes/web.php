@@ -33,6 +33,7 @@ Route::get('/contact', function () {
     return view('pages.contact');
 });
 
+
 Route::get('/rentals/{view}/{sort}/{parameters}', 'ListingController@search');
 
 Route::get('/rental/details/{listing_id}', 'ListingController@details');
@@ -50,5 +51,5 @@ Route::get('/dev', function () {
 
 Route::post('email', 'EmailController@send');
 
-Route::get('/contact', 'RecaptchaController@create');
-Route::post('/store', 'RecaptchaController@store');
+//Route::get('/contact', 'RecaptchaController@create');
+//Route::post('/store', 'RecaptchaController@store');

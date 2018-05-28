@@ -11,18 +11,14 @@ class EmailController extends Controller
     //
     public function send(Request $request){
 
-        $request->validate([
-            'g-recaptcha-response' => 'required|captcha'
-        ]);
-
-
+        $form = $request->input('form');
         $name = $request->input('name');
         $email = $request->input('email');
         $phone = $request->input('phone');
         $text = $request->input('text');
-
+        
         $data = [
-            'key'     => 'value',
+            'key' => 'value',
             'name' => $name,
             'email' => $email,
             'phone' => $phone,
@@ -30,11 +26,22 @@ class EmailController extends Controller
         ];
     
         Mail::send('emails.contactemail', $data, function ($message) {
-            $message->from('support@dotgital.com', 'Dotgital Technology Solutions for Business');
-            $message->subject('Hello my name is Marcel');
+            $message->from('support@dotgital.com', 'Apartment Source Chicago');
+            $message->subject('You received a message from the website.');
             $message->to('support@dotgital.com');
         });
+
+        // return view($view, [
+        //     'success' => $success,
+        // ]);
+
+        $response = array(
+            'status' => 'success',
+            'msg' => 'Setting created successfully',
+        );
+        //return \Response::json($response);
+
+        return 'success';
     
-        dd(Mail::failures());
     }
 }
