@@ -292,7 +292,7 @@ $(document).ready(function () {
     ---------------------------------------------*/
     if($('.form-group--float')[0]) {
         $('.form-group--float').each(function () {
-            var p = $(this).find('.form-control').val()
+            var p = $(this).find('.form-control').val();
 
             if(!p.length == 0) {
                 $(this).addClass('form-group--active');

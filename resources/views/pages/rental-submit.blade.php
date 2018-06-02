@@ -14,7 +14,7 @@
 <div class="container">
         <header class="section__title">
             <h2>Submit your property</h2>
-            <small>Post your property to the web, potential tenants could find your property easier.</small>
+            <!-- <small>Post your property to the web, potential tenants could find your property easier.</small> -->
         </header>
 
         <div class="submit-property">
@@ -33,46 +33,26 @@
                     <div class="card">
                         <div class="card__header">
                             <h2>Property Location</h2>
-                            {{-- <small>Aenean lacinia bibendum nulla sed consectetur</small> --}}
                         </div>
 
                         <form class="card__body">
-                            <div class="form-group form-group--float m-b-5">
-                                <input type="text" class="form-control">
-                                <i class="form-group__bar"></i>
-                                <label>Address</label>
-                            </div>
+                        <form class="card__body">
+                                    <div class="form-group form-group--float">
+                                        <input type="text" class="form-control">
+                                        <i class="form-group__bar"></i>
+                                        <label>Address</label>
+                                    </div>
 
-                            <div class="form-group">
-                                {{-- <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox">
-                                        <i class="input-helper"></i>
-                                        Hide Street number on listing
-                                    </label>
-                                </div> --}}
-                            </div>
+                                    <div class="form-group form-group--float">
+                                        <input type="text" class="form-control text-center">
+                                        <i class="form-group__bar"></i>
+                                        <label>Unit/Floor/Block</label>
+                                    </div>
 
-                            <div class="form-group form-group--float m-b-5">
-                                <input type="text" class="form-control text-center">
-                                <i class="form-group__bar"></i>
-                                <label>Unit/Floor/Block</label>
-                            </div>
-
-                            <div class="form-group">
-                                {{-- <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox">
-                                        <i class="input-helper"></i>
-                                        Hide U/Floor/Block on listing
-                                    </label>
-                                </div> --}}
-                            </div>
-
-                            <a href="#submit-property-2" data-toggle="tab" class="btn btn--circle btn-primary submit-property__button">
-                                <i class="zmdi zmdi-long-arrow-right"></i>
-                            </a>
-                        </form>
+                                    <a href="#submit-property-2" data-toggle="tab" class="btn btn--circle btn-primary submit-property__button">
+                                        <i class="zmdi zmdi-long-arrow-right"></i>
+                                    </a>
+                                </form>
                     </div>
                 </div>
 
@@ -91,25 +71,9 @@
                             </div>
 
                             <div class="form-group form-group--float form-group--float-center">
-                                {{-- <input type="text" class="form-control text-center">
-                                <i class="form-group__bar"></i>
-                                <label>Organization Name (Opt.)</label> --}}
-                            </div>
-
-                            <div class="form-group form-group--float form-group--float-center m-b-5">
                                 <input type="text" class="form-control text-center">
                                 <i class="form-group__bar"></i>
                                 <label>Email Address</label>
-                            </div>
-
-                            <div class="form-group">
-                                {{-- <div class="checkbox">
-                                    <label>
-                                        <input type="checkbox">
-                                        <i class="input-helper"></i>
-                                        Hide Email Address on listing
-                                    </label>
-                                </div> --}}
                             </div>
 
                             <div class="form-group form-group--float form-group--float-center">
@@ -176,17 +140,9 @@
 
                         <form class="card__body" method="post" action="/email">
                             {{ csrf_field() }}
-                            <div class="form-group">
-                                {{-- <label>Property Type</label>
 
-                                <select class="select2">
-                                    <option value="">Single Family Home</option>
-                                    <option value="">Condo</option>
-                                    <option value="">Townhome</option>
-                                    <option value="">Apartment Community</option>
-                                    <option value="">Room</option>
-                                </select> --}}
-                            </div>
+
+                                    </br>
 
                             <div class="form-group form-group--float form-group--float-center">
                                 <input type="text" class="form-control text-center">
@@ -209,20 +165,7 @@
                                     </div>
                                 </div>
 
-                                <!-- <div class="col-sm-6">
-                                    <div class="form-group form-group--float form-group--float-center">
-                                        <input type="text" class="form-control text-center">
-                                        <i class="form-group__bar"></i>
-                                        <label>Lot Size</label>
-                                    </div>
-                                </div> -->
                             </div>
-
-                            <!-- <div class="form-group form-group--float form-group--float-center">
-                                <input type="text" class="form-control text-center">
-                                <i class="form-group__bar"></i>
-                                <label>Year Built</label>
-                            </div> -->
 
                             <div class="form-group">
                                 <label>Bedrooms</label>
@@ -317,7 +260,7 @@
                                         {!! NoCaptcha::display() !!}
                                     </div>
                             </div>
-
+                            <!-- <input data-provide="datepicker"> -->
                             <a href="#submit-property-5" data-toggle="tab" class="btn btn--circle btn-primary submit-property__button">
                                 <i class="zmdi zmdi-check"></i>
                             </a>
@@ -340,8 +283,15 @@
     </div>
 @endsection
 
-
+<!-- <script>
+(function(){
+    console.log('estamoready');
+    $('.datepicker').datepicker();
+});
+</script> -->
 @section('script')
+<!-- Slick Carousel - Custom Alerts -->
+<script src="/vendors/bower_components/slick-carousel/slick/slick.min.js"></script>
     
 <!-- Jquery Light Gallery -->    
 <script src="/vendors/bower_components/lightgallery/dist/js/lightgallery-all.min.js"></script>
