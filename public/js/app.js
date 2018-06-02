@@ -311,8 +311,14 @@ $(document).ready(function () {
             }
         });
     }
-
-
+    // $('.submit-property__button').on('click', function(){
+    //     var page = $(this).attr('href');
+    //     console.log(page);
+    //     $('.submit-property__steps > li').each(function(){
+    //         $(this).removeClass('active');
+    //     });
+    //     $('.submit-property__steps > li > a[href="page"]').parent().addClass('active');
+    // });   
     /*--------------------------------------------
         Light Gallery - Lightbox
     ---------------------------------------------*/

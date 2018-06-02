@@ -18,15 +18,15 @@
         </header>
 
         <div class="submit-property">
-            <ul class="submit-property__steps">
-                <li class="active"><a href="#submit-property-1"  data-toggle="tab">1</a></li>
-                <li><a href="#submit-property-2" data-toggle="tab">2</a></li>
-                <li><a href="#submit-property-3" data-toggle="tab">3</a></li>
-                <li><a href="#submit-property-4" data-toggle="tab">4</a></li>
-                <li><a href="#submit-property-5" data-toggle="tab">5</a></li>
+                    <ul class="submit-property__steps">
+                        <li class="active"><a href="#submit-property-1"  data-toggle="tab">1</a></li>
+                        <li><a href="#submit-property-2" data-toggle="tab">2</a></li>
+                        <li><a href="#submit-property-3" data-toggle="tab">3</a></li>
+                        <li><a href="#submit-property-4" data-toggle="tab">4</a></li>
+                        <li><a href="#submit-property-5" data-toggle="tab">5</a></li>
 
-                <li class="submit-property__caret"></li>
-            </ul>
+                        <li class="submit-property__caret"></li>
+                    </ul>
 
             <div class="tab-content submit-property__content">
                 <div class="tab-pane fade in active" id="submit-property-1">
@@ -34,8 +34,6 @@
                         <div class="card__header">
                             <h2>Property Location</h2>
                         </div>
-
-                        <form class="card__body">
                         <form class="card__body">
                                     <div class="form-group form-group--float">
                                         <input type="text" class="form-control">
@@ -82,6 +80,21 @@
                                 <label>Contact Number</label>
                             </div>
 
+                            <div class="form-group">
+                                <label>Owner Information</label>
+                                <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                    <label class="btn active">
+                                        <input type="radio" name="advanced-search-beds" checked>Agent
+                                    </label>
+                                    <label class="btn">
+                                        <input type="radio" name="advanced-search-beds">Owner
+                                    </label>
+                                    <label class="btn">
+                                        <input type="radio" name="advanced-search-beds">Other
+                                    </label>
+                                </div>
+                            </div>
+                            
                             <a href="#submit-property-3" data-toggle="tab" class="btn btn--circle btn-primary submit-property__button">
                                 <i class="zmdi zmdi-long-arrow-right"></i>
                             </a>
@@ -103,25 +116,10 @@
                                 <label>Askin Price</label>
                             </div>
 
-                            <div class="form-group form-group--float form-group--float-center">
-                                <input type="text" class="form-control text-center">
-                                <i class="form-group__bar"></i>
-                                <label>Maintenance amount per month</label>
-                            </div>
-
                             <div class="form-group">
-                                <label>Owner Information</label>
-                                <div class="btn-group btn-group-justified" data-toggle="buttons">
-                                    <label class="btn active">
-                                        <input type="radio" name="advanced-search-beds" checked>Agent
-                                    </label>
-                                    <label class="btn">
-                                        <input type="radio" name="advanced-search-beds">Owner
-                                    </label>
-                                    <label class="btn">
-                                        <input type="radio" name="advanced-search-beds">Other
-                                    </label>
-                                </div>
+                                <label>Available from</label>
+                                <input id="date" class="form-control text-center" type="date">
+                                <i class="form-group__bar"></i>
                             </div>
 
                             <a href="#submit-property-4" data-toggle="tab" class="btn btn--circle btn-primary submit-property__button">
@@ -234,7 +232,10 @@
                                 <label>Parking Space</label>
                                 <div class="btn-group btn-group-justified" data-toggle="buttons">
                                     <label class="btn active">
-                                        <input type="radio" name="inner-search-beds" checked>1
+                                        <input type="radio" name="inner-search-beds" checked>None
+                                    </label>
+                                    <label class="btn">
+                                        <input type="radio" name="inner-search-beds">1
                                     </label>
                                     <label class="btn">
                                         <input type="radio" name="inner-search-beds">2
@@ -247,7 +248,6 @@
                                     </label>
                                 </div>
                             </div>
-
 
                             @if ($errors->any())
                                 <small class="errors">Please, verify that you are a human!</small>

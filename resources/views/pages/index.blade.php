@@ -77,7 +77,7 @@
 </section>
 
 
-<section class="section info-box">
+{{-- <section class="section info-box">
 <div class="container">
         <div class="row">
             <div class="col-sm-4">
@@ -108,7 +108,7 @@
                 </div>
             </div>
     
-            {{-- <div class="col-sm-4">
+            <div class="col-sm-4">
                 <div class="info-box__item">
                     <i class="zmdi zmdi-flower info-box__icon"></i>
     
@@ -136,8 +136,8 @@
                     <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec sed odio dui. Vivamus sagittis lacus vel
                         augue laoreet rutrum faucibus dolor auctor.</p>
                 </div>
-            </div> --}}
+            </div> 
         </div>
     </div>
-</section>
+</section>--}}
 @endsection
