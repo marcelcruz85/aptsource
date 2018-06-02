@@ -248,7 +248,50 @@
                                     </label>
                                 </div>
                             </div>
+                            <div class="form-group">
+                                <label>Parking Price</label>
+                                <div class="row">
 
+                                    <div class="col-sm-5">
+                                        <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                            <label class="btn">
+                                                <input type="checkbox" name="inner-search-beds">Included
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-2">
+                                        <small>OR</small>
+                                    </div>
+                                    <div class="col-sm-5">
+                                        <div class="form-group form-group--float form-group--float-center">
+                                            <input type="text" class="form-control text-center">
+                                            <i class="form-group__bar"></i>
+                                            <label>Monthly Payment</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Pets</label>
+                                <div class="row">
+
+                                    <div class="col-sm-6">
+                                        <div class="btn-group btn-group-justified" data-toggle="buttons">
+                                            <label class="btn">
+                                                <input type="checkbox" name="inner-search-beds">Allowed
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <div class="form-group form-group--float form-group--float-center">
+                                            <input type="text" class="form-control text-center">
+                                            <i class="form-group__bar"></i>
+                                            <label>Price</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             @if ($errors->any())
                                 <small class="errors">Please, verify that you are a human!</small>
                             @endif
