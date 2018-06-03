@@ -439,10 +439,10 @@
                                         {!! NoCaptcha::display() !!}
                                     </div>
                             </div>
-                            <!-- <input data-provide="datepicker"> -->
-                            <a href="#submit-property-5" data-toggle="tab" class="btn btn--circle btn-primary submit-property__button">
+                            <input name="submit" type="submit" value="Sign In" />
+                            <!-- <a href="#submit-property-5" data-toggle="tab" class="btn btn--circle btn-primary submit-property__button">
                                 <i class="zmdi zmdi-check"></i>
-                            </a>
+                            </a> -->
                         </form>
                     </div>
                 </div>
