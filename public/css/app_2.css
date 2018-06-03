@@ -241,7 +241,7 @@
   }
 
   .navigation__dropdown:hover > a {
-    background-color: #303F9F;
+    background-color: #004990;
     border-radius: 2px 2px 0 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding-right: 20px;
@@ -257,7 +257,7 @@
 @media (min-width: 992px) {
   .navigation__drop-menu {
     position: absolute;
-    background-color: #303F9F;
+    background-color: #004990;
     z-index: 11;
     left: 0;
     border-radius: 0 2px 2px 2px;
@@ -1482,7 +1482,7 @@
 /* Footer */
 
 #footer {
-  background-color: #3949AB;
+  background-color: #035cb3;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   color: rgba(255, 255, 255, 0.8);
 }
@@ -5873,4 +5873,11 @@ html:not(.ie9) .page-loader__spinner {
   padding: 0px;
   margin: 0px;
   font-size: 18px
+}
+
+.select2-selection__choice__remove,
+.select2-selection__choice{
+  background-color: #29b6f6 !important;
+  color: #fff !important;
+  font-family: roboto;
 }

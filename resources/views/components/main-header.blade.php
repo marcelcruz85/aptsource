@@ -2,7 +2,7 @@
 <div class="header__main">
     <div class="container">
         <a class="logo" href="/">
-            <img src="/img/logoapt.png" alt="">
+            <img src="/img/logowhite.png" style="width:280px;" alt="">
             <!-- <div class="logo__text">
                 <span>The Apartment</span>
                 <span>Source</span>
@@ -25,14 +25,14 @@
             </li>
 
             <li class="navigation__dropdown">
-                <a href="/rentals/grid/1/search?location" {{-- class="prevent-default" --}}>Listings</a>
+                <a href="/rentals/grid/updateDate-desc/search?location" {{-- class="prevent-default" --}}>Listings</a>
 
 {{--                 <ul class="navigation__drop-menu">
                     <li>
-                        <a href="/rentals/grid/1/search">Grid view</a>
+                        <a href="/rentals/grid/updateDate-desc/search">Grid view</a>
                     </li>
                     <li>
-                        <a href="/rentals/list/1/search">List view</a>
+                        <a href="/rentals/list/updateDate-desc/search">List view</a>
                     </li>
                 </ul> --}}
             </li>

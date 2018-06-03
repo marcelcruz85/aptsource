@@ -292,6 +292,142 @@
                                     </div>
                                 </div>
                             </div>
+
+                                <div class="form-group">
+                                <label>Features</label>
+                                <select multiple id="e1" style="width:400px">
+                                    <optgroup label="Apartment Features">
+                                        <option value="A/C">A/C</option>
+                                        <option value="Central Air">Central Air</option>
+                                        <option value="Exposed Brick">Exposed Brick</option>
+                                        <option value="Hardwood Floors">Hardwood Floors</option>
+                                        <option value="Roof Deck">Roof Deck</option>
+                                        <option value="Alcove">Alcove</option>
+                                        <option value="Deck">Deck</option>
+                                        <option value="Fireplace">Fireplace</option>
+                                        <option value="Hight Ceiling">Hight Ceiling</option>
+                                        <option value="Storage">Storage</option>
+                                        <option value="Balcony">Balcony</option>
+                                        <option value="Dinig Room">Dinig Room</option>
+                                        <option value="Fireplace (Decorative)">Fireplace (Decorative)</option>
+                                        <option value="Loft">Loft</option>
+                                        <option value="Walk-in Closet">Walk-in Closet</option>
+                                        <option value="Carpet">Carpet</option>
+                                        <option value="Duplex">Duplex</option>
+                                        <option value="Furnished">Furnished</option>
+                                        <option value="Porch">Porch</option>
+                                        <option value="Laundry in Unit">Laundry in Unit</option>
+                                    </optgroup>
+                                    <optgroup label="Kitchen Features">
+                                        <option value="Dishwasher">Dishwasher</option>
+                                        <option value="Microwave">Microwave</option>
+                                        <option value="Pantry">Pantry</option>
+                                        <option value="Disposal">Disposal</option>
+                                        <option value="Modern Kitchen">Modern Kitchen</option>
+                                        <option value="Separate Kitchen">Separate Kitchen</option>
+                                        <option value="Eat-in Kitchen">Eat-in Kitchen</option>
+                                        <option value="New Appliances">New Appliances</option>
+                                        <option value="Stainless Steal Appliances">Stainless Steal Appliances</option>
+                                        <option value="Granite Counter Top">Granite Counter Top</option>
+                                        <option value="New/Renovated Kitchen">New/Renovated Kitchen</option>
+                                    </optgroup>
+                                    <optgroup label="Bathroom Features">
+                                        <option value="Ceramic Tiles">Ceramic Tiles</option>
+                                        <option value="Marble Bath">Marble Bath</option>
+                                        <option value="Modern Bath">Modern Bath</option>
+                                        <option value="New/Renovated Bath">New/Renovated Bath</option>
+                                    </optgroup>
+                                    <optgroup label="Additional Features">
+                                        <option value="Concierge">Concierge</option>
+                                        <option value="Laundry in Building">Laundry in Building</option>
+                                        <option value="Tennis Court">Tennis Court</option>
+                                        <option value="Elevator">Elevator</option>
+                                        <option value="On-Ste Super">On-Ste Super</option>
+                                        <option value="Yard">Yard</option>
+                                        <option value="Fitness center">Fitness center</option>
+                                        <option value="Security System">Security System</option>
+                                        <option value="Internet">Internet</option>
+                                        <option value="Swimming Pool">Swimming Pool</option>
+                                    </optgroup>
+                                    <optgroup label="Custom Features">
+                                        <option value="Air Conditioning">Air Conditioning</option>
+                                        <option value="Alarm">Alarm</option>
+                                        <option value="Avail Furnished">Avail Furnished</option>
+                                        <option value="Bike Room/Bike Trails">Bike Room/Bike Trails</option>
+                                        <option value="Cable or Satelite included">Cable or Satelite included</option>
+                                        <option value="Cable TV Included">Cable TV Included</option>
+                                        <option value="Cafe">Cafe</option>
+                                        <option value="Cats Okay"></option><option value="Cats Okay">Cats Okay</option>
+                                        <option value="Ceiling Fans">Ceiling Fans</option>
+                                        <option value="Central Air Conditioning">Central Air Conditioning</option>
+                                        <option value="Central Heat">Central Heat</option>
+                                        <option value="City View">City View</option>
+                                        <option value="Dishwasher Portable">Dishwasher Portable</option>
+                                        <option value="Dogs Negotiable">Dogs Negotiable</option>
+                                        <option value="Dogs Okay">Dogs Okay</option>
+                                        <option value="Doorman">Doorman</option>
+                                        <option value="Enclosed Porch">Enclosed Porch</option>
+                                        <option value="Exercise Room">Exercise Room</option>
+                                        <option value="Family Room">Family Room</option>
+                                        <option value="First Month Rent Required">First Month Rent Required</option>
+                                        <option value="First Month">First Month</option>
+                                        <option value="Free Laundry">Free Laundry</option>
+                                        <option value="Garage">Garage</option>
+                                        <option value="Gated Community">Gated Community</option>
+                                        <option value="Gym/Athletic Facilities">Gym/Athletic Facilities</option>
+                                        <option value="Health Club">Health Club</option>
+                                        <option value="High-Speed Internet">High-Speed Internet</option>
+                                        <option value="Humidifier">Humidifier</option>
+                                        <option value="Intercom">Intercom</option>
+                                        <option value="Internet Included">Internet Included</option>
+                                        <option value="Jacuzzi Tub">Jacuzzi Tub</option>
+                                        <option value="Maple Cabinet">Maple Cabinet</option>
+                                        <option value="No Smoking">No Smoking</option>
+                                        <option value="On Site Laundry">On Site Laundry</option>
+                                        <option value="On site Manager/Engineer">On site Manager/Engineer</option>
+                                        <option value="Oven/Range">Oven/Range</option>
+                                        <option value="Panthouse">Panthouse</option>
+                                        <option value="Parking Available">Parking Available</option>
+                                        <option value="Party Room">Party Room</option>
+                                        <option value="Patio Deck">Patio Deck</option>
+                                        <option value="Pets Negotiable">Pets Negotiable</option>
+                                        <option value="Pool">Pool</option>
+                                        <option value="Receiving Room">Receiving Room</option>
+                                        <option value="Renovated">Renovated</option>
+                                        <option value="Security Deposit Required">Security Deposit Required</option>
+                                        <option value="Security Door Locks">Security Door Locks</option>
+                                        <option value="Short Term Ok">Short Term Ok</option>
+                                        <option value="Skylights">Skylights</option>
+                                        <option value="Stainless Steel Appliances">Stainless Steel Appliances</option>
+                                        <option value="Steam Shower">Steam Shower</option>
+                                        <option value="Storage Unit">Storage Unit</option>
+                                        <option value="Stove">Stove</option>
+                                        <option value="Suana">Suana</option>
+                                        <option value="Sun Deck">Sun Deck</option>
+                                        <option value="Sundeck">Sundeck</option>
+                                        <option value="Surround Sound Wired">Surround Sound Wired</option>
+                                        <option value="Track Lighting">Track Lighting</option>
+                                        <option value="Triplex">Triplex</option>
+                                        <option value="Updated Kitchen">Updated Kitchen</option>
+                                        <option value="Water Front">Water Front</option>
+                                        <option value="Whirlpool">Whirlpool</option>
+                                        <option value="Wine Cooler/Refrigerator">Wine Cooler/Refrigerator</option>
+                                        <option value="Work Out /facility">Work Out /facility</option>
+                                    </optgroup>
+                                </select>
+                                <i class="form-group__bar"></i>
+                            </div>
+
+                            <div class="form-group form-group--float form-group--float-center">
+                                <textarea class="form-control text-center textarea-autoheight"></textarea>
+                                <i class="form-group__bar"></i>
+                                <label>How to Show the property</label>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="checkbox" name="acept"> Acept Term and Condition
+                            </div>
+
                             @if ($errors->any())
                                 <small class="errors">Please, verify that you are a human!</small>
                             @endif
