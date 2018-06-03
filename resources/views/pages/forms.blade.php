@@ -20,28 +20,28 @@
 
 
                     <div class="col-sm-6">
-                        <a href="" class="neighb-guide__item">
+                        <a target="_blank" href="/downloads/tas_co-signer_form.pdf" class="neighb-guide__item">
                             <img src="/img/tas_co_signer_form.jpg" alt="">
                             <div class="neighb-guide__label">TAS Co-signer form</div>
                         </a>
                     </div>
 
                     <div class="col-sm-6">
-                        <a href="" class="neighb-guide__item">
+                        <a target="_blank" href="/downloads/non_exclusive_listing_agreement_tas.pdf" class="neighb-guide__item">
                             <img src="/img/non_exclusive_listing_agreement_tas.jpg" alt="">
                             <div class="neighb-guide__label">Non-exclusive Listing Agreement TAS</div>
                         </a>
                     </div>
 
                     <div class="col-sm-6">
-                        <a href="" class="neighb-guide__item">
+                        <a target="_blank" href="/downloads/credit_card_authorization.pdf" class="neighb-guide__item">
                             <img src="/img/credit_card_authorization.jpg" alt="">
                             <div class="neighb-guide__label"><span>Credit Card Authorization</span></div>
                         </a>
                     </div>
 
                     <div class="col-sm-6">
-                        <a href="" class="neighb-guide__item">
+                        <a target="_blank" href="/downloads/tas_rental_application_2017.pdf" class="neighb-guide__item">
                             <img src="/img/tas_rental_application.jpg" alt="">
                             <div class="neighb-guide__label"><span>TAS Rental Application</span></div>
                         </a>

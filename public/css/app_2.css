@@ -2079,7 +2079,8 @@
   text-align: center;
   text-transform: uppercase;
   color: #fff;
-  font-size: 28px;
+  font-size: 15px;
+  padding-top: 10px;
   height: 40px;
   overflow: hidden;
   text-overflow: ellipsis;
