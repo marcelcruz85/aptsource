@@ -25,6 +25,10 @@ Route::get('/submit', function () {
     return view('pages.rental-submit');
 });
 
+Route::get('/forms', function () {
+    return view('pages.forms');
+});
+
 Route::get('/faq', function () {
     return view('pages.faq');
 });

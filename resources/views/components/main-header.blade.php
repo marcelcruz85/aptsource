@@ -43,6 +43,10 @@
             </li>
             
             <li class="navigation__dropdown">
+                <a href="/forms">Forms</a>
+            </li>
+            
+            <li class="navigation__dropdown">
                 <a href="/faq">FAQ</a>
             </li>
 
