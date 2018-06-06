@@ -16,17 +16,17 @@
                 <h2>{{ $listing['Title']  ?? "" }}</h2>
                 <small class="address">{{ $listing['StreetNumber']  ?? "" }} {{ $listing['StreetName']  ?? "" }} {{ $listing['City']  ?? "" }}, {{ $listing['State']  ?? "" }} {{ $listing['Zip']  ?? "" }}</small>
 
-                <!-- <div class="actions actions--section">
-                    <div class="actions__toggle">
+                <div class="actions actions--section">
+                    <!-- <div class="actions__toggle">
                         <input type="checkbox">
                         <i class="zmdi zmdi-favorite-outline"></i>
                         <i class="zmdi zmdi-favorite"></i>
-                    </div>
+                    </div> -->
 
 
                     
                     <a href="" data-rmd-action="print"><i class="zmdi zmdi-print"></i></a>
-                    <div class="dropdown actions__email">
+                    <!-- <div class="dropdown actions__email">
                         <a href="" data-toggle="dropdown"><i class="zmdi zmdi-email"></i></a>
 
                         <div class="dropdown-menu stop-propagate">
@@ -54,7 +54,7 @@
                                 </div>
                             </form>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="dropdown">
                         <a href="" data-toggle="dropdown"><i class="zmdi zmdi-share"></i></a>
 
@@ -62,7 +62,7 @@
                             <div></div>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </header>
 
             <div class="row">
