@@ -20,6 +20,13 @@
 
 
                     <div class="col-sm-6">
+                        <a target="_blank" href="/downloads/tas_rental_application_2017.pdf" class="neighb-guide__item">
+                            <img src="/img/tas_rental_application.jpg" alt="">
+                            <div class="neighb-guide__label"><span>TAS Rental Application</span></div>
+                        </a>
+                    </div>
+                    
+                    <div class="col-sm-6">
                         <a target="_blank" href="/downloads/tas_co-signer_form.pdf" class="neighb-guide__item">
                             <img src="/img/tas_co_signer_form.jpg" alt="">
                             <div class="neighb-guide__label">TAS Co-signer form</div>
@@ -40,12 +47,6 @@
                         </a>
                     </div>
 
-                    <div class="col-sm-6">
-                        <a target="_blank" href="/downloads/tas_rental_application_2017.pdf" class="neighb-guide__item">
-                            <img src="/img/tas_rental_application.jpg" alt="">
-                            <div class="neighb-guide__label"><span>TAS Rental Application</span></div>
-                        </a>
-                    </div>
 
                     </div>
                 <div class="col-md-4 rmd-sidebar-mobile" id="write-to-us">

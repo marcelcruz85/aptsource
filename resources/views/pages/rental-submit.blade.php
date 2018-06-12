@@ -34,15 +34,17 @@
                         <div class="card__header">
                             <h2>Property Location</h2>
                         </div>
-                        <form class="card__body">
+                        <form class="card__body" method="get" action="/email">
+                            {{ csrf_field() }}
+                        <div class="card__body">
                                     <div class="form-group form-group--float">
-                                        <input type="text" class="form-control">
+                                        <input type="text" name="submit_address" class="form-control">
                                         <i class="form-group__bar"></i>
                                         <label>Address</label>
                                     </div>
 
                                     <div class="form-group form-group--float">
-                                        <input type="text" class="form-control text-center">
+                                        <input type="text" name="submit_address_unit" class="form-control text-center">
                                         <i class="form-group__bar"></i>
                                         <label>Unit/Floor/Block</label>
                                     </div>
@@ -50,7 +52,7 @@
                                     <a href="#submit-property-2" data-toggle="tab" class="btn btn--circle btn-primary submit-property__button">
                                         <i class="zmdi zmdi-long-arrow-right"></i>
                                     </a>
-                                </form>
+</div>
                     </div>
                 </div>
 
@@ -61,21 +63,21 @@
                             {{-- <small>Curabitur blandit tempus porttitor ligula malesuada</small> --}}
                         </div>
 
-                        <form class="card__body">
+                        <div class="card__body">
                             <div class="form-group form-group--float form-group--float-center">
-                                <input type="text" class="form-control text-center">
+                                <input type="text" name="submit_name" class="form-control text-center">
                                 <i class="form-group__bar"></i>
                                 <label>Full Name</label>
                             </div>
 
                             <div class="form-group form-group--float form-group--float-center">
-                                <input type="text" class="form-control text-center">
+                                <input type="text" name="submit_email" class="form-control text-center">
                                 <i class="form-group__bar"></i>
                                 <label>Email Address</label>
                             </div>
 
                             <div class="form-group form-group--float form-group--float-center">
-                                <input type="text" class="form-control text-center">
+                                <input type="text" name="submit_phone" class="form-control text-center">
                                 <i class="form-group__bar"></i>
                                 <label>Contact Number</label>
                             </div>
@@ -84,13 +86,13 @@
                                 <label>Owner Information</label>
                                 <div class="btn-group btn-group-justified" data-toggle="buttons">
                                     <label class="btn active">
-                                        <input type="radio" name="advanced-search-beds" checked>Agent
+                                        <input type="radio" name="owner-info" value="Agent" checked>Agent
                                     </label>
                                     <label class="btn">
-                                        <input type="radio" name="advanced-search-beds">Owner
+                                        <input type="radio" name="owner-info" value="Owner">Owner
                                     </label>
                                     <label class="btn">
-                                        <input type="radio" name="advanced-search-beds">Other
+                                        <input type="radio" name="owner-info" value="Other">Other
                                     </label>
                                 </div>
                             </div>
@@ -98,7 +100,7 @@
                             <a href="#submit-property-3" data-toggle="tab" class="btn btn--circle btn-primary submit-property__button">
                                 <i class="zmdi zmdi-long-arrow-right"></i>
                             </a>
-                        </form>
+</div>
                     </div>
                 </div>
 
@@ -109,23 +111,23 @@
                             {{-- <small>Nullam iddolor dnibh ultricies vehicula utielit</small> --}}
                         </div>
 
-                        <form class="card__body">
+                        <div class="card__body">
                             <div class="form-group form-group--float form-group--float-center">
-                                <input type="text" class="form-control text-center">
+                                <input type="text" name="submit_price" class="form-control text-center">
                                 <i class="form-group__bar"></i>
                                 <label>Askin Price</label>
                             </div>
 
                             <div class="form-group">
                                 <label>Available from</label>
-                                <input id="date" class="form-control text-center" type="date">
+                                <input id="date" name="submit_available" class="form-control text-center" type="date">
                                 <i class="form-group__bar"></i>
                             </div>
 
                             <a href="#submit-property-4" data-toggle="tab" class="btn btn--circle btn-primary submit-property__button">
                                 <i class="zmdi zmdi-long-arrow-right"></i>
                             </a>
-                        </form>
+</div>
                     </div>
                 </div>
 
@@ -136,20 +138,19 @@
                             {{-- <small>Sed posuere consectetur estat lobortis ultricies</small> --}}
                         </div>
 
-                        <form class="card__body" method="post" action="/email">
-                            {{ csrf_field() }}
+                        <div class="card__body">
 
 
                                     </br>
 
                             <div class="form-group form-group--float form-group--float-center">
-                                <input type="text" class="form-control text-center">
+                                <input type="text" name="submit_title" class="form-control text-center">
                                 <i class="form-group__bar"></i>
                                 <label>Property title</label>
                             </div>
 
                             <div class="form-group form-group--float form-group--float-center">
-                                <textarea class="form-control text-center textarea-autoheight"></textarea>
+                                <textarea name="submit_description" class="form-control text-center textarea-autoheight"></textarea>
                                 <i class="form-group__bar"></i>
                                 <label>Description</label>
                             </div>
@@ -157,7 +158,7 @@
                             <div class="row">
                                 <div class="col-sm-12">
                                     <div class="form-group form-group--float form-group--float-center">
-                                        <input type="text" class="form-control text-center">
+                                        <input type="text" name="submit_size" class="form-control text-center">
                                         <i class="form-group__bar"></i>
                                         <label>Square Feet</label>
                                     </div>
@@ -169,19 +170,19 @@
                                 <label>Bedrooms</label>
                                 <div class="btn-group btn-group-justified" data-toggle="buttons">
                                     <label class="btn active">
-                                        <input type="radio" name="inner-search-beds" checked>1
+                                        <input type="radio" name="submit_beds" value="1" checked>1
                                     </label>
                                     <label class="btn">
-                                        <input type="radio" name="inner-search-beds">2
+                                        <input type="radio" name="submit_beds" value="2">2
                                     </label>
                                     <label class="btn">
-                                        <input type="radio" name="inner-search-beds">3
+                                        <input type="radio" name="submit_beds" value="3">3
                                     </label>
                                     <label class="btn">
-                                        <input type="radio" name="inner-search-beds">4
+                                        <input type="radio" name="submit_beds" value="4">4
                                     </label>
                                     <label class="btn">
-                                        <input type="radio" name="inner-search-beds">4+
+                                        <input type="radio" name="submit_beds" value="4+">4+
                                     </label>
                                 </div>
                             </div>
@@ -190,19 +191,19 @@
                                 <label>Bathrooms</label>
                                 <div class="btn-group btn-group-justified" data-toggle="buttons">
                                     <label class="btn active">
-                                        <input type="radio" name="inner-search-beds"  checked>1
+                                        <input type="radio" name="submit_bath" value="1" checked>1
                                     </label>
                                     <label class="btn">
-                                        <input type="radio" name="inner-search-beds">2
+                                        <input type="radio" name="submit_bath" value="2">2
                                     </label>
                                     <label class="btn">
-                                        <input type="radio" name="inner-search-beds">3
+                                        <input type="radio" name="submit_bath" value="3">3
                                     </label>
                                     <label class="btn">
-                                        <input type="radio" name="inner-search-beds">4
+                                        <input type="radio" name="submit_bath" value="4">4
                                     </label>
                                     <label class="btn">
-                                        <input type="radio" name="inner-search-beds">4+
+                                        <input type="radio" name="submit_bath" value="4+">4+
                                     </label>
                                 </div>
                             </div>
@@ -211,19 +212,19 @@
                                 <label>No. of Floors</label>
                                 <div class="btn-group btn-group-justified" data-toggle="buttons">
                                     <label class="btn active">
-                                        <input type="radio" name="inner-search-beds"  checked>1
+                                        <input type="radio" name="submit_floor" value="1"  checked>1
                                     </label>
                                     <label class="btn">
-                                        <input type="radio" name="inner-search-beds">2
+                                        <input type="radio" name="submit_floor" value="2">2
                                     </label>
                                     <label class="btn">
-                                        <input type="radio" name="inner-search-beds">3
+                                        <input type="radio" name="submit_floor" value="3">3
                                     </label>
                                     <label class="btn">
-                                        <input type="radio" name="inner-search-beds">4
+                                        <input type="radio" name="submit_floor" value="4">4
                                     </label>
                                     <label class="btn">
-                                        <input type="radio" name="inner-search-beds">4+
+                                        <input type="radio" name="submit_floor" value="4+">4+
                                     </label>
                                 </div>
                             </div>
@@ -232,19 +233,19 @@
                                 <label>Parking Space</label>
                                 <div class="btn-group btn-group-justified" data-toggle="buttons">
                                     <label class="btn active">
-                                        <input type="radio" name="inner-search-beds" checked>None
+                                        <input type="radio" name="submit_parking" value="none" checked>None
                                     </label>
                                     <label class="btn">
-                                        <input type="radio" name="inner-search-beds">1
+                                        <input type="radio" name="submit_parking" value="1">1
                                     </label>
                                     <label class="btn">
-                                        <input type="radio" name="inner-search-beds">2
+                                        <input type="radio" name="submit_parking" value="2">2
                                     </label>
                                     <label class="btn">
-                                        <input type="radio" name="inner-search-beds">3
+                                        <input type="radio" name="submit_parking" value="3">3
                                     </label>
                                     <label class="btn">
-                                        <input type="radio" name="inner-search-beds">3+
+                                        <input type="radio" name="submit_parking" value="3+">3+
                                     </label>
                                 </div>
                             </div>
@@ -255,7 +256,7 @@
                                     <div class="col-sm-5">
                                         <div class="btn-group btn-group-justified" data-toggle="buttons">
                                             <label class="btn">
-                                                <input type="checkbox" name="inner-search-beds">Included
+                                                <input type="checkbox" name="submit_parking_include" value="Included">Included
                                             </label>
                                         </div>
                                     </div>
@@ -264,7 +265,7 @@
                                     </div>
                                     <div class="col-sm-5">
                                         <div class="form-group form-group--float form-group--float-center">
-                                            <input type="text" class="form-control text-center">
+                                            <input type="text" name="submit_parking_price" class="form-control text-center">
                                             <i class="form-group__bar"></i>
                                             <label>Monthly Payment</label>
                                         </div>
@@ -279,13 +280,13 @@
                                     <div class="col-sm-6">
                                         <div class="btn-group btn-group-justified" data-toggle="buttons">
                                             <label class="btn">
-                                                <input type="checkbox" name="inner-search-beds">Allowed
+                                                <input type="checkbox" name="submit_pets" value="Allowed">Allowed
                                             </label>
                                         </div>
                                     </div>
                                     <div class="col-sm-6">
                                         <div class="form-group form-group--float form-group--float-center">
-                                            <input type="text" class="form-control text-center">
+                                            <input type="text" name="submit_pets_price" class="form-control text-center">
                                             <i class="form-group__bar"></i>
                                             <label>Price</label>
                                         </div>
@@ -419,13 +420,13 @@
                             </div>
 
                             <div class="form-group form-group--float form-group--float-center">
-                                <textarea class="form-control text-center textarea-autoheight"></textarea>
+                                <textarea name="submit_show" class="form-control text-center textarea-autoheight"></textarea>
                                 <i class="form-group__bar"></i>
                                 <label>How to Show the property</label>
                             </div>
 
                             <div class="form-group">
-                                <input type="checkbox" name="acept"> Acept Term and Condition
+                                <input name="submit_accept" type="checkbox" name="accept"> Accept Term and Condition
                             </div>
 
                             @if ($errors->any())
@@ -439,10 +440,14 @@
                                         {!! NoCaptcha::display() !!}
                                     </div>
                             </div>
-                            <input name="submit" type="submit" value="Sign In" />
+                            <button type="submit" class="btn btn--circle btn-primary submit-property__button">
+                                <i class="zmdi zmdi-check"></i>
+                            </button>
+                            <!-- <input class=" btn btn--circle btn-primary submit-property__button" name="submit" type="submit" value="Submit"><i class="zmdi zmdi-check"></i></input> -->
                             <!-- <a href="#submit-property-5" data-toggle="tab" class="btn btn--circle btn-primary submit-property__button">
                                 <i class="zmdi zmdi-check"></i>
                             </a> -->
+</div>
                         </form>
                     </div>
                 </div>

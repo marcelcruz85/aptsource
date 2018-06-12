@@ -122,7 +122,7 @@ class ListingController extends Controller
         }
 
         //building the url for the API request
-        $searchParameters = 'include_mls=1&detail_level=2' . $page . $pageCount . $availableBefore . $availableAfter . $rentLocation . $minRent . $maxRent . $minSize . $maxSize . $beds . $baths . $parking . $sortName . $sortDir;
+        $searchParameters = 'detail_level=2' . $page . $pageCount . $availableBefore . $availableAfter . $rentLocation . $minRent . $maxRent . $minSize . $maxSize . $beds . $baths . $parking . $sortName . $sortDir;
         $response = $this->apiRequest($searchParameters);
 
         if($response['Total'] > 0){
