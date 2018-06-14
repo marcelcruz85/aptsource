@@ -12902,6 +12902,7 @@ a {
 #header {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   background-color: #035cb3;
+  height: 100%;
 }
 
 #header.affix {
@@ -12912,8 +12913,8 @@ a {
 
 .header--minimal__index {
   /* background: #035cb3 url(../img/apto.jpg) no-repeat top 0px left; */
-  background: #035cb3 url(../img/apto1.jpg) no-repeat top 0px left;
-  background-size: 105% auto;
+  background: #035cb3 url(../img/apto2.jpg) no-repeat top -150px left;
+  background-size: 100%;
   padding-bottom: 220px;
 }
 
