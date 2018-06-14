@@ -3,6 +3,7 @@
 @section ('head-scripts')
 
   <!-- ... -->
+  <script src="https://code.jquery.com/color/jquery.color-2.1.2.min.js" integrity="sha256-H28SdxWrZ387Ldn0qogCzFiUDDxfPiNIyJX7BECQkDE=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="/vendors/bower_components/moment/min/moment.min.js"></script>
 @endsection
 
@@ -10,7 +11,7 @@
 
 <header id="header" class="header--minimal__index">
         @include ('components.top-header') 
-        @include ('components.main-header') 
+        @include ('components.main-header-front') 
         @include ('components.search-header') 
 </header>
 
@@ -77,6 +78,7 @@
 </section>
 
 
+
 {{-- <section class="section info-box">
 <div class="container">
         <div class="row">
@@ -140,4 +142,51 @@
         </div>
     </div>
 </section>--}}
+
+<script>
+$(document).ready(function() {
+    $(document).scrollTop(0);
+});
+    $(function(){
+  $('#header_nav').data('size','big');
+});
+
+$(window).scroll(function(){
+  if($(document).scrollTop() > 0)
+{
+    if($('#header_nav').data('size') == 'big')
+    {
+        $('#header_nav').data('size','small');
+        $('#header_nav').stop().animate({
+            height:'100px',
+            top: '0px',
+            backgroundColor: '#fff'
+        },200);
+        $('.logo-front img').stop().animate({
+            width: '150px',
+            marginTop: '-20px',
+            marginLeft: '110px'
+        },200);
+    }
+}
+else
+  {
+    if($('#header_nav').data('size') == 'small')
+      {
+        $('#header_nav').data('size','big');
+        $('#header_nav').stop().animate({
+            height:'100px',
+            top: '35px',
+            backgroundColor: 'transparent'
+        },200);
+
+        $('.logo-front img').stop().animate({
+            width: '320px',
+            marginTop: '60px',
+            marginLeft: '10px'
+        },200);
+      }  
+  }
+});
+</script>
 @endsection

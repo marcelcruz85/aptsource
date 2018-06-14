@@ -12911,13 +12911,15 @@ a {
 
 
 .header--minimal__index {
-  background: #035cb3 url(../img/apto.jpg) no-repeat top 0px left;
+  /* background: #035cb3 url(../img/apto.jpg) no-repeat top 0px left; */
+  background: #035cb3 url(../img/apto1.jpg) no-repeat top 0px left;
   background-size: 105% auto;
   padding-bottom: 220px;
 }
 
 .header--minimal__index .header__main {
-  padding: 25px 0 140px;
+  /* padding: 25px 0 140px; */
+  padding: 25px 0 20px;
 }
 
 .header--minimal {
