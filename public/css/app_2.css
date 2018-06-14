@@ -5890,7 +5890,7 @@ html:not(.ie9) .page-loader__spinner {
   font-family: roboto;
 }
 
-#header_nav {
+#header_nav{
   width:100%;
   height:100px;
   position:fixed;
@@ -5900,10 +5900,9 @@ html:not(.ie9) .page-loader__spinner {
 }
 
 #header_nav li > a {
-  color: #004990 !important
+  color: #424242 !important
 }
 
 #header_nav li > a:hover {
-  background: none !important;
-  box-shadow: none !important;
+  color: #fff !important;
 }

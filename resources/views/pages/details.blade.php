@@ -182,7 +182,7 @@
 
                         <div class="card__footer">
                             <button type="submit" class="email-form btn btn-primary">SUBMIT</button>
-                            <button class="btn btn-link hidden-lg hidden-md" data-rmd-action="block-close" data-rmd-target="#inquire">Cancel</button>
+                            <!-- <button class="btn btn-link hidden-lg hidden-md" data-rmd-action="block-close" data-rmd-target="#inquire">Cancel</button> -->
                             <div class="email-success"></div>
                         </div>
                     </form>
