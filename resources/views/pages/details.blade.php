@@ -26,35 +26,11 @@
 
                     
                     <a href="" data-rmd-action="print"><i class="zmdi zmdi-print"></i></a>
-                    <!-- <div class="dropdown actions__email">
-                        <a href="" data-toggle="dropdown"><i class="zmdi zmdi-email"></i></a>
+                    <div class="dropdown actions__email">
+                        <a href="mailto:?subject=Property Details&body=http://www.apartmentsourcechicago.com/rental/details/{{ $listing['ID'] }}"><i class="zmdi zmdi-email"></i></a>
 
-                        <div class="dropdown-menu stop-propagate">
-                            <form>
-                                <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong></p>
-
-                                <div class="clearfix"></div>
-
-                                <div class="form-group form-group--float m-t-10">
-                                    <input type="text" class="form-control">
-                                    <label>Recipient Email Address</label>
-                                    <i class="form-group__bar"></i>
-                                </div>
-                                <div class="form-group form-group--float">
-                                    <textarea class="form-control textarea-autoheight">I came across this listing from Roost and thought of sharing with you.</textarea>
-                                    <label>Message (optional)</label>
-                                    <i class="form-group__bar"></i>
-                                </div>
-
-                                <div class="clearfix"></div>
-
-                                <div class="m-t-15">
-                                    <button class="btn btn-primary">Send</button>
-                                    <a href="email/listing-mail.html" target="_blank" class="btn btn-link">View Email</a>
-                                </div>
-                            </form>
-                        </div>
-                    </div> -->
+                        
+                    </div>
                     <div class="dropdown">
                         <a href="" data-toggle="dropdown"><i class="zmdi zmdi-share"></i></a>
 
@@ -108,9 +84,10 @@
                         <div class="detail-info">
                             <div class="detail-info__header clearfix">
                                 <strong class="price-details">{{ $listing['Price']  ?? "" }}</strong>
-                                <!-- <small>Est. Mortgage: $5,328/month</small> -->
 
-                                <span>{{ $listing['Status']}}</span> 
+                                <small>{{ $listing['Status']}}</small> 
+
+                                <span>YGL ID: {{ $listing['ID'] }}</span>
                             </div>
 
                             <ul class="detail-info__list clearfix">

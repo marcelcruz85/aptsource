@@ -30,7 +30,7 @@
                                 <li class="rmd-contact-list__title"><i class="zmdi zmdi-home"></i>Apartment Source Chicago</li>
                                 <li><i class="zmdi zmdi-pin"></i>2638 N. Halsted Street Chicago, <br>IL 60614</li>
                                 <li><i class="zmdi zmdi-phone"></i>773-404-9900</li>
-                                <li><i class="zmdi zmdi-email"></i>info@apartmentsourcechicago.com</li>
+                                <li><i class="zmdi zmdi-email"></i><a href="mailto:info@apartmentsourcechicago.com" target="_top">info@apartmentsourcechicago.com</a></li>
                             </ul>
                             <div class="contact__social">
                                 <div class="fa-2x">

@@ -5896,7 +5896,7 @@ html:not(.ie9) .page-loader__spinner {
   position:fixed;
   left:0;
   z-index: 11;
-  opacity: 0.93;
+  opacity: 0.98;
 }
 
 #header_nav li > a {
