@@ -7,7 +7,7 @@
                 <span>The Apartment</span>
                 <span>Source</span>
             </div> -->
-            <img class="visible-sm visible-xs" src="/img/logoabove.png" style="width:320px; margin-top: 60px;" alt="">
+            <img class="visible-sm visible-xs" src="/img/logowhite.png" style="width:320px; margin-top: 60px;" alt="">
             <!-- <div class="logo__text">
                 <span>The Apartment</span>
                 <span>Source</span>
