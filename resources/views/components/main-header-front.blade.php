@@ -2,7 +2,7 @@
 <div class="header__main" id="header_nav">
     <div class="container">
         <a class="logo logo-front" href="/">
-            <img class="hidden-xs" src="/img/logoabove.png" style="width:320px; margin-top: 60px;" alt="">
+            <img class="hidden-xs img-animate" src="/img/logoabove.png" style="width:320px; margin-top: 60px;" alt="">
             <!-- <div class="logo__text">
                 <span>The Apartment</span>
                 <span>Source</span>

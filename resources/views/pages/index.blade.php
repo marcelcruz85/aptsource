@@ -162,7 +162,7 @@ $(window).scroll(function(){
             top: '0px',
             backgroundColor: '#fff'
         },200);
-        $('.logo-front img').stop().animate({
+        $('.logo-front .img-animate').stop().animate({
             width: '150px',
             marginTop: '-20px',
             marginLeft: '110px'
@@ -180,7 +180,7 @@ else
             backgroundColor: 'transparent'
         },200);
 
-        $('.logo-front img').stop().animate({
+        $('.logo-front .img-animate').stop().animate({
             width: '320px',
             marginTop: '60px',
             marginLeft: '10px'
