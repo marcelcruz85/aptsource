@@ -2,7 +2,7 @@
 <div class="header__main">
     <div class="container">
         <a class="logo" href="/">
-            <img src="/img/logowhite.png" style="width:280px;" alt="">
+            <img src="/img/logoabovewhite.png" style="width:180px;" alt="">
             <!-- <div class="logo__text">
                 <span>The Apartment</span>
                 <span>Source</span>

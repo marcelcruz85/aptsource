@@ -15,7 +15,7 @@
         <div class="container">
             <header class="section__title">
                 <h2>Frequently Asked Questions</h2>
-                <small>Duis mollis estnon commodo luctus nisierat porttitor ligula eget lacinia odio semnec</small>
+                <!-- <small>Duis mollis estnon commodo luctus nisierat porttitor ligula eget lacinia odio semnec</small> -->
             </header>
 
             <div class="row">

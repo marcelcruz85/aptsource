@@ -42,7 +42,7 @@
 <div class="header__main visible-sm visible-xs" id="header_nav">
     <div class="container">
         <a class="logo logo-front" href="/">
-            <img  class="hidden-sm visible-xs" src="/img/logowhite.png" style="width:320px; margin-top: 60px;" alt="">
+            <img  class="hidden-sm visible-xs" src="/img/logoabovewhite.png" style="width:320px; margin-top: 60px;" alt="">
             <img  class="hidden-xs visible-sm" src="/img/logoabove.png" style="width:320px; margin-top: 60px;" alt="">
         </a>
 
