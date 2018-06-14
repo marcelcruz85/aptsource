@@ -356,7 +356,7 @@
 }
 
 .search__type > a {
-  background-color: #FFEB3B;
+  background-color: #115597;
   height: 100%;
   padding: 17px 0 0 11px;
   text-transform: uppercase;
@@ -369,7 +369,7 @@
   transition-duration: 300ms;
   display: block;
   width: 72px;
-  color: #3e3e3e;
+  color: #fff;
   font-size: 13px;
 }
 .search__type > .not-show {
