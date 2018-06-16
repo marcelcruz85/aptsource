@@ -25,24 +25,7 @@
                 </div>
             </div>
         </div>
-        {{--  <div class="col-sm-4">
-            <div class="footer__block footer__block--blog">
-                <div class="footer__title">Latest from our blog</div>
 
-                <a href="">
-                    Aenean lacinia bibendum nulla sed
-                    <small>On 2016/06/20 at 6:00 PM</small>
-                </a>
-                <a href="">
-                    Vestibulum id ligula porta felis euismod semper
-                    <small>On 2016/06/18 at 7:12 PM</small>
-                </a>
-                <a href="">
-                    Etiam porta sem malesuada magna mollis euismod
-                    <small>On 2016/06/10 at 12:59 PM</small>
-                </a>
-            </div>
-        </div>  --}}
         <div class="col-sm-4">
             <div class="footer__block">
                 <div class="footer__title">About us</div>
@@ -50,6 +33,11 @@
                 <div>The Apartment Source, located in the heart of Lincoln Park, has successfully been serving Chicagoans for 20 years.  With a full staff of dedicated, friendly and professional Leasing Agents, it is our goal to seek out and find our clients the perfect apartment. We have established great working relationships with many management companies in Chicago, as well as private owners.</div>
             </div>
         </div>
+        <div class="col-sm-4">
+            <div class="footer__block footer__block--blog">
+                <img src="/img/equalhouse.png" style="width:80px; margin-top: 80px; margin-left: 25%;" alt="">
+            </div>
+        </div> 
     </div>
 </div>
 

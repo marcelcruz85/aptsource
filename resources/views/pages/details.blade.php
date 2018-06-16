@@ -136,6 +136,22 @@
                             {{ $listing['UnitDescription'] ?? "" }}
                         </div>
                     </div>
+                    
+                    <div class="card">
+                        <div class="card__header">
+                            <h2>Disclaimer</h2>
+                        </div>
+                        <div class="card__body">
+                            Pricing, availability and specials are subject to change
+                            at any time and without notice. Photos may be of various model units
+                            and apartment availability and lease terms may vary. Information is
+                            believed to be accurate, however is subject to errors and omissions.
+                            The accuracy of all information, regardless of source, including but
+                            not limited to square footages and lot sizes, is deemed reliable but
+                            not guaranteed and should be personally verified through personal
+                            inspection by and/or with the appropriate professionals.
+                        </div>
+                    </div>
                 </div>
 
                 <div id="inquire" class="col-md-4">

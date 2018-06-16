@@ -13,7 +13,7 @@
             <i class="zmdi zmdi-menu"></i>
         </div>
 
-        <ul class="navigation">
+        <ul class="navigation no-front">
             <li class="visible-xs visible-sm">
                 <a class="navigation__close" data-rmd-action="navigation-close" href="">
                     <i class="zmdi zmdi-long-arrow-right"></i>
