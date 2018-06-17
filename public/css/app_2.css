@@ -5924,3 +5924,6 @@ html:not(.ie9) .page-loader__spinner {
 .submit_capcha{
   padding-left: 7%;
 }
+.required{
+  color: red;
+}

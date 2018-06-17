@@ -511,8 +511,6 @@ $(document).ready(function () {
             $(this).number(listAttr, 0).prepend('<i class="' + iconClass +'"></i> ');
         });
 
-
-
         /*--------------------------------------------
             DATE AVAILABLE
         --------------------------------------------*/
@@ -524,6 +522,25 @@ $(document).ready(function () {
         if (dateToday >= dateAvailable) {
             $(this).find(".availableDate").text('now');
         }
+    });
+
+    /*-------------------------------------------
+        REQUIRED SUBMIT
+    ---------------------------------------------*/
+    $('.required-text').hide();
+    $('.submit-property__button').on('click', function(e){
+        var cardId = $(this).attr('id');
+        console.log(cardId);
+        $('.'+cardId).find('.field-required').each(function(){
+            if( !$(this).val() ) {
+                $('.required-text').show();
+                console.log("empty");
+                e.stopPropagation();
+            }else{
+                $('.required-text').hide();
+            }
+        });
+
     });
 
     var listingPrice = $('.price-details').text();
