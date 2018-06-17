@@ -530,11 +530,9 @@ $(document).ready(function () {
     $('.required-text').hide();
     $('.submit-property__button').on('click', function(e){
         var cardId = $(this).attr('id');
-        console.log(cardId);
         $('.'+cardId).find('.field-required').each(function(){
             if( !$(this).val() ) {
                 $('.required-text').show();
-                console.log("empty");
                 e.stopPropagation();
             }else{
                 $('.required-text').hide();

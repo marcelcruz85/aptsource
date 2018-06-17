@@ -94,9 +94,9 @@
 
                         <div class="card__body m-t-10">
                             <div class="form-group form-group--float">
-                                <input type="text" name="name" class="form-control">
+                                <input type="text" name="name" class="field-required form-control">
                                 <i class="form-group__bar"></i>
-                                <label>Name</label>
+                                <label>Name<small class="required">*</small></label>
                             </div>
                             <div class="form-group form-group--float">
                                 <input type="text" name="email" class="form-control">
@@ -104,9 +104,9 @@
                                 <label>Email Address</label>
                             </div>
                             <div class="form-group form-group--float">
-                                <input type="text" name="phone" class="form-control">
+                                <input type="text" name="phone" class="field-required form-control">
                                 <i class="form-group__bar"></i>
-                                <label>Contact Number</label>
+                                <label>Contact Number<small class="required">*</small></label>
                             </div>
                             <div class="form-group form-group--float">
                                 <textarea name="text" class="form-control textarea-autoheight"></textarea>
@@ -125,9 +125,8 @@
                             </div> -->
 
                             <small class="text-muted">By sending us your information, you agree to Apartment Source Terms of Use & Privacy Policy.</small>
-
-                        </div>
-                        
+                            <small class="required required-text">Please fill in all required fields</small>
+                        </div>                        
                         <div class="card__footer">
                             <button class="btn btn-primary email-form">Submit</button>
                             <button class="btn btn-link visible-sm-inline visible-xs-inline" data-rmd-action="block-close" data-rmd-target="#write-to-us">Cancel</button>

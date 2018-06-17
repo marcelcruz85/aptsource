@@ -34,7 +34,7 @@
                         <div class="card__header">
                             <h2>Property Location</h2>
                         </div>
-                        <form class="card__body contact-email" method="post" action="/email">
+                        <form class="card__body contact-email" method="get" action="/email">
                             {{ csrf_field() }}
                         <div class="card__body card_one">
                                     <div class="form-group form-group--float">
@@ -146,7 +146,7 @@
                                     </br>
 
                             <div class="form-group form-group--float form-group--float-center">
-                                <input type="text" name="submit_title" class="form-control text-center field-required">
+                                <input type="text" name="submit_title" class="form-control text-center field-required" required>
                                 <i class="form-group__bar"></i>
                                 <label>Property title<small class="required">*</small></label>
                             </div>
@@ -466,7 +466,7 @@
                             </div>
 
                             <div class="form-group">
-                                <input name="submit_accept" type="checkbox" name="accept" class="field-required"> Accept Term and Condition
+                                <input name="submit_accept" type="checkbox" class="submit_accept"> Accept Term and Condition
                             </div>
                             <div class="form-group">
                                 <small class="errors"></small>
@@ -476,8 +476,10 @@
                                             {!! NoCaptcha::display() !!}
                                     </div>
                             </div>
+                            <div class="form-group">
                             <small class="required required-text">Please fill in all required fields</small>
-                            <button id="card_four" type="submit" class="email-form btn btn-primary submit-property__button last">
+                            </div>
+                            <button id="card_four" type="submit" class="email-form btn btn-primary last">
                                 <!-- <i class="zmdi zmdi-check"> Submit</i> -->
                                 Submit
                             </button>
@@ -489,17 +491,6 @@
                         </form>
                     </div>
                 </div>
-
-                <!-- <div class="tab-pane fade" id="submit-property-5">
-                    <div class="card">
-                        <div class="submit-property__success">
-                            <i class="zmdi zmdi-check"></i>
-
-                            <h2>Successful!</h2>
-                            <p>Thank you for listing your unit with us, we appreciate you business.</p>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </div>
     </div>

@@ -170,8 +170,8 @@
                             </div>
 
                             <div class="form-group form-group--float">
-                                <input type="text" class="form-control" name="name">
-                                <label>Name</label>
+                                <input type="text" class="field-required form-control" name="name">
+                                <label>Name<small class="required">*</small></label>
                                 <i class="form-group__bar"></i>
                             </div>
                             <div class="form-group form-group--float">
@@ -180,8 +180,8 @@
                                 <i class="form-group__bar"></i>
                             </div>
                             <div class="form-group form-group--float">
-                                <input type="text" name="phone" class="form-control">
-                                <label>Contact Number</label>
+                                <input type="text" name="phone" class="field-required form-control">
+                                <label>Contact Number<small class="required">*</small></label>
                                 <i class="form-group__bar"></i>
                             </div>
                             <div class="form-group form-group--float">
@@ -194,6 +194,8 @@
                             <div class="g-recaptcha" data-sitekey="{{ env('NOCAPTCHA_SITEKEY') }}"></div>
 
                             <small class="text-muted">By sending us your information, you agree to Apartment Source Terms of Use & Privacy Policy.</small>
+                            <small class="required required-text">Please fill in all required fields</small>
+
                         </div>
 
                         <div class="card__footer">

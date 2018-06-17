@@ -144,32 +144,59 @@
     <!-- Javascript -->
 <script>
     $(function() {        
-        $( '.email-form' ).click( function(e) {
+        $( '.email-form' ).click( function(e) {  
+            var event = e;  
+            var requiredField = "";    
             e.preventDefault();
-
             //validating recaptcha
             var response = grecaptcha.getResponse();
 
+                $('.field-required').each(function(){
+                    if( $.trim($(this).val()) == "") {
+                        requiredField = "empty";
+                        return false;
+                    }else{
+                        $('.required-text').hide();
+                        requiredField = "filled";
+                    }
+                
+                });  
+
+                if ($('.submit_accept').length){
+                    console.log('Exist');
+                    if($('.submit_accept').is(":checked")){
+                        console.log('is checked');
+                    }else{
+                        console.log('is not checked');
+                        requiredField = "empty";
+                    }
+                }
+            
+            console.log(requiredField);
+
             if(response.length == 0){
-                $( ".errors" ).html( "<p>Please, verify that you are a human!</p>" );             
+                $( ".errors" ).html( "<p>Please, verify that you are a human!</p>" );
+            }else if(requiredField == "empty" && response.length != 0){
+                $( ".errors" ).html( "" );
+                $('.required-text').show();           
             }else{
-                console.log('valida');
+
                 $.ajaxSetup({
-                    headers: {
-                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-                    }
-                });
-                $.ajax({
-                    type: "POST",
-                    url: '/email',
-                    data: $('.contact-email').serialize(),
-                    success: function(msg) {
-                        grecaptcha.reset();
-                        $('.email-success-modal').modal('show')  
-                        $( ".errors" ).html( "<p></p>" );   $('.contact-email').find("input[type=text], textarea").val("");
-                        console.log(msg);
-                    }
-                });
+                            headers: {
+                                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                            }
+                        });
+                        $.ajax({
+                            type: "POST",
+                            url: '/email',
+                            data: $('.contact-email').serialize(),
+                            success: function(msg) {
+                                grecaptcha.reset();
+                                $('.email-success-modal').modal('show')  
+                                $( ".errors" ).html( "<p></p>" );   $('.contact-email').find("input[type=text], textarea").val("");
+                                console.log(msg);
+                            }
+                        });              
             }
         });
     });

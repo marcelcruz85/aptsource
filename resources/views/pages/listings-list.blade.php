@@ -131,8 +131,8 @@
                             {{ csrf_field() }}
 
                             <div class="form-group form-group--light form-group--float">
-                                <input type="text" name="name" class="form-control">
-                                <label>Name</label>
+                                <input type="text" name="name" class="field-required form-control">
+                                <label>Name *</label>
                                 <i class="form-group__bar"></i>
                             </div>
                             <div class="form-group form-group--light form-group--float">
@@ -141,8 +141,8 @@
                                 <i class="form-group__bar"></i>
                             </div>
                             <div class="form-group form-group--light form-group--float">
-                                <input type="text" name="phone" class="form-control">
-                                <label>Contact Number</label>
+                                <input type="text" name="phone" class="field-required form-control">
+                                <label>Contact Number *</label>
                                 <i class="form-group__bar"></i>
                             </div>
                             <div class="form-group form-group--light form-group--float">
@@ -156,6 +156,7 @@
 
 
                             <small class="mdc-text-white-darker">By sending us your information, you agree to Apartment Source Terms of Use & Privacy Policy.</small>
+                            <small class="required required-text">Please fill in all required fields</small>
 
                             <div class="m-t-30">
                                 <button type="submit"  value="email" class="email-form btn brn-sm btn-default btn-static">Send</button>
