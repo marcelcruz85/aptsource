@@ -541,6 +541,17 @@ $(document).ready(function () {
 
     });
 
+    /*-------------------------------------------
+        SELECT MULTIPLE TO COMMA SEPARATED
+    ---------------------------------------------*/
+    $(".submit_features_select").change(function(){
+        var selMulti = $.map($(".submit_features_select option:selected"), function (el, i) {
+            return $(el).text();
+        });
+        $(".submit_features_values").val(selMulti.join(", "));
+   });
+
+
     var listingPrice = $('.price-details').text();
     $('.price-details').number(listingPrice).prepend('$');
 

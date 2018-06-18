@@ -87,8 +87,8 @@
             <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;" >
                 <tr>
                     <td align="center" valign="top" style="padding: 40px 10px 40px 10px;">
-                        <a href="http://dev-aptsource.dotgital.com" target="_blank">
-                            <img alt="Logo" src="http://dev-aptsource.dotgital.com/img/logoapt.png" width="120" height="120" style="display: block; width: 120px; max-width: 120px; min-width: 120px; font-family: 'Lato', Helvetica, Arial, sans-serif; color: #ffffff; font-size: 18px;" border="0">
+                        <a href="http://aptsource.dotgital.com" target="_blank">
+                            <img alt="Logo" src="http://aptsource.dotgital.com/img/logoabovewhite.png" width="120" height="120" style="display: block; width: 120px; max-width: 120px; min-width: 120px; font-family: 'Lato', Helvetica, Arial, sans-serif; color: #ffffff; font-size: 18px;" border="0">
                         </a>
                     </td>
                 </tr>
@@ -132,6 +132,8 @@
               </tr>
               <!-- VIDEO -->
               <!-- COPY -->
+
+              @if ($form_name != "submit")
               <tr>
                 <td bgcolor="#ffffff" align="left" style="padding: 20px 30px 20px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;" >
                   <p style="margin: 0;">Name: {{ $name }}</p>
@@ -152,9 +154,62 @@
               <tr>
                 <td bgcolor="#ffffff" align="left" style="padding: 20px 30px 20px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;" >
                   <p style="margin: 0;">Message: {{ $text }}</p>
+
+                  <p style="margin: 0;">Form: {{ $form_name}}</p>
                 </td>
               </tr>
-              
+              @endif
+              @if ($form_name == "submit")
+              <tr>
+                <td bgcolor="#ffffff" align="left" style="padding: 20px 30px 20px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;" >
+                  <h5>Property Location</h5>
+                  <p style="margin: 0;">Address: {{ $submit_address }}</p>
+                  <p style="margin: 0;">Unit/Floor/Block: {{ $submit_address_unit }}</p>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#ffffff" align="left" style="padding: 20px 30px 20px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;" >
+                  <h5>Contact Information</h5>
+                  <p style="margin: 0;">Name: {{ $submit_name }} </p>
+                  <p style="margin: 0;">Email: {{ $submit_email }} </p>
+                  <p style="margin: 0;">Phone: {{ $submit_phone }} </p>
+                  <p style="margin: 0;">Owner|Agent|Other: {{ $submit_owner_info }}</p>
+                </td>
+              </tr>
+              <tr>
+                <td bgcolor="#ffffff" align="left" style="padding: 20px 30px 20px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;" >
+                  <h5>Rental Price</h5>
+                  <p style="margin: 0;">Price: {{ $submit_price }} </p>
+                  <p style="margin: 0;">Available From: {{ $submit_available }} </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td bgcolor="#ffffff" align="left" style="padding: 20px 30px 20px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;" >
+                  <h5>Property Information</h5>
+                  <p style="margin: 0;">Property Title: {{ $submit_title }} </p>
+                  <p style="margin: 0;">Description: {{ $submit_description }} </p>
+                  <p style="margin: 0;">Square Feet: {{ $submit_size }} </p>
+                  <p style="margin: 0;">Beds: {{ $submit_beds }} </p>
+                  <p style="margin: 0;">Baths: {{ $submit_bath }} </p>
+                  <p style="margin: 0;">Floor(s): {{ $submit_floor }} </p>
+                  <p style="margin: 0;">Parking Spaces: {{ $submit_parking }} </p>
+                  <p style="margin: 0;">Parking include: {{ $submit_parking_include }} </p>
+                  <p style="margin: 0;">Parking Price: {{ $submit_parking_price }} </p>
+                  <p style="margin: 0;">Parking Type: {{ $submit_parking_type }} </p>
+                  <p style="margin: 0;">Pets: {{ $submit_pets_no_pets }} </p>
+                  <p style="margin: 0;">Dogs: {{ $submit_pets_dogs }} </p>
+                  <p style="margin: 0;">Cats: {{ $submit_pets_cats }} </p>
+                  <p style="margin: 0;">Fee: {{ $submit_pets_fee }} </p>
+                  <p style="margin: 0;">Deposit: {{ $submit_pets_deposit }} </p>
+                  <p style="margin: 0;">Pets Fee: {{ $submit_pets_price }} </p>
+                  <p style="margin: 0;">Features: {{ $submit_features }} </p>
+                  <p style="margin: 0;">How to Show the Property: {{ $submit_show }} </p>
+                  <p style="margin: 0;">Property Status: {{ $submit_property_status}} </p>
+                  <p style="margin: 0;">Tenant Information: {{ $submit_tenant_information }} </p>
+                </td>
+              </tr>
+              @endif
             </table>
             <!--[if (gte mso 9)|(IE)]>
             </td>
@@ -176,7 +231,7 @@
                 <tr>
                   <td bgcolor="#B3E5FC" align="center" style="padding: 30px 30px 30px 30px; border-radius: 4px 4px 4px 4px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;" >
                     <h2 style="font-size: 20px; font-weight: 400; color: #111111; margin: 0;"></h2>
-                    <p style="margin: 0;"><a href="http://litmus.com" target="_blank" style="color: #539be2;">Apartment Source Chicago</a></p>
+                    <p style="margin: 0;"><a href="http://www.apartmentsourcechicago.com/" target="_blank" style="color: #539be2;">Apartment Source Chicago</a></p>
                   </td>
                 </tr>
             </table>

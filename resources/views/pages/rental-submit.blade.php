@@ -36,6 +36,8 @@
                         </div>
                         <form class="card__body contact-email" method="get" action="/email">
                             {{ csrf_field() }}
+
+                        <input type="hidden" name="form_name" value="submit">
                         <div class="card__body card_one">
                                     <div class="form-group form-group--float">
                                         <input type="text" name="submit_address" class="form-control field-required" required>
@@ -86,13 +88,13 @@
                                 <label>Owner Information<small class="required">*</small></label>
                                 <div class="btn-group btn-group-justified" data-toggle="buttons">
                                     <label class="btn  active">
-                                        <input type="radio" name="owner-info" value="Owner" checked>Owner
+                                        <input type="radio" name="submit_owner_info" value="Owner" checked>Owner
                                     </label>
                                     <label class="btn">
-                                        <input type="radio" name="owner-info" value="Agent">Agent
+                                        <input type="radio" name="submit_owner_info" value="Agent">Agent
                                     </label>
                                     <label class="btn">
-                                        <input type="radio" name="owner-info" value="Other">Other
+                                        <input type="radio" name="submit_owner_info" value="Other">Other
                                     </label>
                                 </div>
                             </div>
@@ -291,21 +293,22 @@
 
                             <div class="form-group">
                                 <label>Pets<small class="required">*</small></label>
+
                                 <div class="btn-group btn-group-justified" data-toggle="buttons">
-                                    <label class="btn active">
-                                        <input type="checkbox" name="pets_type" value="Dogs" checked>Dogs
+                                    <label class="btn">
+                                        <input type="checkbox" name="submit_pets_dogs" value="Ok">Dogs
                                     </label>
                                     <label class="btn">
-                                        <input type="checkbox" name="pets_type" value="Cats">Cats
+                                        <input type="checkbox" name="submit_pets_cats" value="Ok">Cats
                                     </label>
                                     <label class="btn">
-                                        <input type="checkbox" name="pets_type" value="No Pets">No Pets
+                                        <input type="checkbox" name="submit_pets_no_pets" value="No Pets">No Pets
                                     </label>
                                     <label class="btn">
-                                        <input type="checkbox" name="pets_type" value="Fee">Fee
+                                        <input type="checkbox" name="submit_pets_fee" value="Yes">Fee
                                     </label>
                                     <label class="btn">
-                                        <input type="checkbox" name="pets_type" value="Deposit">Deposit
+                                        <input type="checkbox" name="submit_pets_deposit" value="Yes">Deposit
                                     </label>
                                 </div>
                             </div>
@@ -319,8 +322,9 @@
                             </div>
 
                                 <div class="form-group">
+                                <input type="hidden" name="submit_features" class="submit_features_values" value="">
                                 <label>Features<small class="required">*</small></label>
-                                <select multiple id="e1" style="width:400px" class="field-required">
+                                <select multiple id="e1" style="width:400px" class="submit_features_select field-required">
                                     <optgroup label="Apartment Features">
                                         <option value="A/C">A/C</option>
                                         <option value="Central Air">Central Air</option>
@@ -452,15 +456,15 @@
                             <div class="form-group">
                                 <div class="btn-group btn-group-justified" data-toggle="buttons">
                                     <label class="btn active">
-                                        <input type="radio" name="property_status" value="Occupied" checked>Occupied
+                                        <input type="radio" name="submit_property_status" value="Occupied" checked>Occupied
                                     </label>
                                     <label class="btn">
-                                        <input type="radio" name="property_status" value="Vacant">Vacant
+                                        <input type="radio" name="submit_property_status" value="Vacant">Vacant
                                     </label>
                                 </div>
                             </div>
                             <div class="form-group form-group--float form-group--float-center">
-                                <textarea name="tenant_information" class="form-control text-center textarea-autoheight field-required"></textarea>
+                                <textarea name="submit_tenant_information" class="form-control text-center textarea-autoheight field-required"></textarea>
                                 <i class="form-group__bar"></i>
                                 <label>Tenant Information<small class="required">*</small></label>
                             </div>

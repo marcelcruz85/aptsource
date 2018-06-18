@@ -89,7 +89,6 @@
                             <h2>Write to us</h2>
                             <!-- <small>Aeneanquam ellentesque ornare lacinia</small> -->
                         </div>
-
                         
 
                         <div class="card__body m-t-10">
