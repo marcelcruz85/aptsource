@@ -34,7 +34,7 @@
                         <div class="card__header">
                             <h2>Property Location</h2>
                         </div>
-                        <form class="card__body contact-email" method="get" action="/email">
+                        <form class="card__body submit_property_form contact-email" method="get" action="/email">
                             {{ csrf_field() }}
 
                         <input type="hidden" name="form_name" value="submit">
@@ -500,12 +500,6 @@
     </div>
 @endsection
 
-<!-- <script>
-(function(){
-    console.log('estamoready');
-    $('.datepicker').datepicker();
-});
-</script> -->
 @section('script')
 <!-- Slick Carousel - Custom Alerts -->
 <script src="/vendors/bower_components/slick-carousel/slick/slick.min.js"></script>

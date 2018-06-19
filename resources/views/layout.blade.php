@@ -87,7 +87,7 @@
                 <p>Your message has been successfully sent.</p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="modal-close btn btn-secondary" data-dismiss="modal">Close</button>
             </div>
             </div>
         </div>
@@ -143,7 +143,15 @@
 
     <!-- Javascript -->
 <script>
-    $(function() {        
+    $(function() { 
+        console.log('estamoready');
+        $('.modal-close').click(function(){
+            console.log('se cerro la ventana');
+            if($("form").hasClass("submit_property_form")){
+                window.location.replace("/");
+            }
+        });   
+
         $( '.email-form' ).click( function(e) {  
             var event = e;  
             var requiredField = "";    

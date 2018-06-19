@@ -619,7 +619,7 @@ $(document).ready(function () {
 /*---------------------------------------------
     SEARCH SUBMIT
 ---------------------------------------------*/
-    $("#e1").select2({closeOnSelect:false});
+    $("#e1").select2({closeOnSelect:true});
         $("#checkbox").click(function(){
             if($("#checkbox").is(':checked') ){
                 $("#e1 > option").prop("selected","selected");
