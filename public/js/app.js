@@ -619,9 +619,22 @@ $(document).ready(function () {
 /*---------------------------------------------
     SEARCH SUBMIT
 ---------------------------------------------*/
+    $('.submit_features_modal').click(function(){
+        $('.features-modal').modal('show')
+    });
+    $('.features-accept').click(function(){
+        $('.features-box ul').html('');
+        $('.form-checkbox input:checked').each(function(){ 
+            var feature = $(this).val();
+            $('.submit_features_values').val($('.submit_features_values').val() + feature + ",");
+            $('.features-box ul').append('<li>' + feature + '</li>');
+            console.log(feature);
+        });
+    });
+
     $("#e1").select2({closeOnSelect:true});
-        $("#checkbox").click(function(){
-            if($("#checkbox").is(':checked') ){
+        $(".form-checkbox input").click(function(){
+            if($(".form-checkbox input").is(':checked') ){
                 $("#e1 > option").prop("selected","selected");
                 $("#e1").trigger("change");
             }else{

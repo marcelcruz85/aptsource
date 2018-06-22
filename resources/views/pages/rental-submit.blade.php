@@ -324,8 +324,11 @@
                                 <div class="form-group">
                                 <input type="hidden" name="submit_features" class="submit_features_values" value="">
                                 <label>Features<small class="required">*</small></label>
-                                <select multiple id="e1" style="width:400px" class="submit_features_select field-required">
-                                    <optgroup label="Apartment Features">
+                                <div class="features-box form-control text-center submit_features_modal"><ul></ul></div>
+
+                                <!-- <input name="submit_features_modal" class="form-control text-center submit_features_modal" value=""> -->
+                                <!-- <select multiple id="e1" style="width:400px" class="submit_features_select field-required">
+                                        <optgroup label="Apartment Features">
                                         <option value="A/C">A/C</option>
                                         <option value="Central Air">Central Air</option>
                                         <option value="Exposed Brick">Exposed Brick</option>
@@ -443,7 +446,7 @@
                                         <option value="Wine Cooler/Refrigerator">Wine Cooler/Refrigerator</option>
                                         <option value="Work Out /facility">Work Out /facility</option>
                                     </optgroup>
-                                </select>
+                                </select>  -->
                                 <i class="form-group__bar"></i>
                             </div>
 
@@ -494,6 +497,141 @@
 </div>
                         </form>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="features-modal modal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="exampleModalLabel">Property Features</h4>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <span>Apartment Features</span>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="A/C"/><label>A/C</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Central Air"/><label>Central Air</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Exposed Brick"/><label>Exposed Brick</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Hardwood Floors"/><label>Hardwood Floors</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Roof Deck"/><label>Roof Deck</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Alcove"/><label>Alcove</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Deck"/><label>Deck</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Fireplace"/><label>Fireplace</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Hight Ceiling"/><label>Hight Ceiling</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Storage"/><label>Storage</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Balcony"/><label>Balcony</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Dinig Room"/><label>Dinig Room</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Fireplace (Decorative)"/><label>Fireplace (Decorative)</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Loft"/><label>Loft</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Walk-in Closet"/><label>Walk-in Closet</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Carpet"/><label>Carpet</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Duplex"/><label>Duplex</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Furnished"/><label>Furnished</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Porch"/><label>Porch</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Laundry in Unit"/><label>Laundry in Unit</label></div>
+                
+                    <span>Kitchen Features</span>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Dishwasher"/><label>Dishwasher</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Microwave"/><label>Microwave</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Pantry"/><label>Pantry</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Disposal"/><label>Disposal</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Modern Kitchen"/><label>Modern Kitchen</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Separate Kitchen"/><label>Separate Kitchen</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Eat-in Kitchen"/><label>Eat-in Kitchen</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="New Appliances"/><label>New Appliances</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Stainless Steal Appliances"/><label>Stainless Steal Appliances</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Granite Counter Top"/><label>Granite Counter Top</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="New/Renovated Kitchen"/><label>New/Renovated Kitchen</label></div>
+
+                    <span>Bathroom Features</span>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Ceramic Tiles"/><label>Ceramic Tiles</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Marble Bath"/><label>Marble Bath</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Modern Bath"/><label>Modern Bath</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="New/Renovated Bath"/><label>New/Renovated Bath</label></div>
+
+                    <span>Additional Features</span>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Concierge"/><label>Concierge</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Laundry in Building"/><label>Laundry in Building</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Tennis Court"/><label>Tennis Court</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Elevator"/><label>Elevator</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="On-Ste Super"/><label>On-Ste Super</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Yard"/><label>Yard</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Fitness center"/><label>Fitness center</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Security System"/><label>Security System</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Internet"/><label>Internet</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Swimming Pool"/><label>Swimming Pool</label></div>
+
+                    <span>Custom Features</span>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Air Conditioning"/><label>Air Conditioning</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Alarm"/><label>Alarm</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Avail Furnished"/><label>Avail Furnished</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Bike Room/Bike Trails"/><label>Bike Room/Bike Trails</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Cable or Satelite included"/><label>Cable or Satelite included</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Cable TV Included"/><label>Cable TV Included</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Cafe"/><label>Cafe</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Cats Okay"/><label>Cats Okay</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Ceiling Fans"/><label>Ceiling Fans</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Central Air Conditioning"/><label>Central Air Conditioning</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Central Heat"/><label>Central Heat</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="City View"/><label>City View</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Dishwasher Portable"/><label>Dishwasher Portable</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Dogs Negotiable"/><label>Dogs Negotiable</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Dogs Okay"/><label>Dogs Okay</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Doorman"/><label>Doorman</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Enclosed Porch"/><label>Enclosed Porch</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Exercise Room"/><label>Exercise Room</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Family Room"/><label>Family Room</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="First Month Rent Required"/><label>First Month Rent Required</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="First Month"/><label>First Month</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Free Laundry"/><label>Free Laundry</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Garage"/><label>Garage</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Gated Community"/><label>Gated Community</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Gym/Athletic Facilities"/><label>Gym/Athletic Facilities</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Health Club"/><label>Health Club</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="High-Speed Internet"/><label>High-Speed Internet</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Humidifier"/><label>Humidifier</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Intercom"/><label>Intercom</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Internet Included"/><label>Internet Included</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Jacuzzi Tub"/><label>Jacuzzi Tub</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Maple Cabinet"/><label>Maple Cabinet</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="No Smoking"/><label>No Smoking</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="On Site Laundry"/><label>On Site Laundry</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="On site Manager/Engineer"/><label>On site Manager/Engineer</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Oven/Range"/><label>Oven/Range</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Panthouse"/><label>Panthouse</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Parking Available"/><label>Parking Available</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Party Room"/><label>Party Room</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Patio Deck"/><label>Patio Deck</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Pets Negotiable"/><label>Pets Negotiable</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Pool"/><label>Pool</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Receiving Room"/><label>Receiving Room</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Renovated"/><label>Renovated</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Security Deposit Required"/><label>Security Deposit Required</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Security Door Locks"/><label>Security Door Locks</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Short Term Ok"/><label>Short Term Ok</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Skylights"/><label>Skylights</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Stainless Steel Appliances"/><label>Stainless Steel Appliances</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Steam Shower"/><label>Steam Shower</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Storage Unit"/><label>Storage Unit</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Stove"/><label>Stove</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Suana"/><label>Suana</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Sun Deck"/><label>Sun Deck</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Sundeck"/><label>Sundeck</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Surround Sound Wired"/><label>Surround Sound Wired</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Track Lighting"/><label>Track Lighting</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Triplex"/><label>Triplex</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Updated Kitchen"/><label>Updated Kitchen</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Water Front"/><label>Water Front</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Whirlpool"/><label>Whirlpool</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Wine Cooler/Refrigerator"/><label>Wine Cooler/Refrigerator</label></div>
+                    <div class="form-checkbox"><input type="checkbox" class="feature-checkbox" value="Work Out /facility"/><label>Work Out /facility</label></div>
+
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                    <button type="button" class="btn btn-primary features-accept" data-dismiss="modal">Accept</button>
                 </div>
             </div>
         </div>

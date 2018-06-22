@@ -5927,3 +5927,44 @@ html:not(.ie9) .page-loader__spinner {
 .required{
   color: red;
 }
+
+.form-checkbox{
+  float: left;
+  width: 230px;
+  text-align: left
+}
+
+.form-checkbox label{
+  margin-left: 5px;
+}
+
+.features-modal .modal-body span{
+  width: 100%;
+  float: left;
+  margin: 15px 0px;
+  font-size: 14px;
+  color: #000;
+}
+
+.features-modal .modal-content .modal-body{
+  float: left !important;
+}
+
+.modal-xl{
+  width: 90%;
+}
+
+.features-box{
+  overflow: hidden; 
+  height: auto;
+  margin-bottom: 25px;
+}
+.features-box ul li{
+  float: left;
+  list-style: none;
+  padding: 7px;
+  background: #29b6f6;
+  color: #fff;
+  margin: 1px;
+  border-radius: 3px;
+}
