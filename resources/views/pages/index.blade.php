@@ -33,8 +33,13 @@
                         <a href="/rental/details/{{ $listing['ID'] }}">
                         <div class="listings-grid__main grid">
                             @if (is_array($listing) and array_key_exists('Photos', $listing) )
-                                <img src="{{ $listing['Photos']['Photo']['0']}}" alt=""> 
-                            @else
+                                
+                                @if (is_array($listing['Photos']['Photo']))
+                                        <img src="{{ $listing['Photos']['Photo']['0']}}" alt=""> 
+                                    @else                                    
+                                        <img src="{{ $listing['Photos']['Photo']}}" alt=""> 
+                                    @endif
+                                @else
                                 <img src="/img/nophoto.png" alt=""> 
                             @endif
 

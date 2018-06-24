@@ -120,9 +120,13 @@
 
                             <div class="card__body">
                                 <ul class="detail-amenities__list">
-                                    @foreach($listing['Features']['Feature'] as $feature)                                          
-                                        <li class="mdc-bg-light-blue-500">{{$feature}}</li>
-                                    @endforeach      
+                                    @if (is_array($listing['Features']['Feature']))                                        
+                                        @foreach($listing['Features']['Feature'] as $feature)                                          
+                                            <li class="mdc-bg-light-blue-500">{{$feature}}</li>
+                                        @endforeach      
+                                    @else                                           
+                                        <li class="mdc-bg-light-blue-500">{{ $listing['Features']['Feature'] }}</li>
+                                    @endif
                                 </ul>
                             </div>
                         </div>                                                    
@@ -218,7 +222,11 @@
                             <a href="/rental/details/{{ $listing['ID'] }}" class="list-group-item media">
                                 <div class="pull-left">
                                     @if (is_array($listing) and array_key_exists('Photos', $listing) )
-                                        <img src="{{ $listing['Photos']['Photo']['0']}}"  alt="" class="list-group__img" width="65"> 
+                                        @if (is_array($listing['Photos']['Photo']))
+                                                <img src="{{ $listing['Photos']['Photo']['0']}}"  alt="" class="list-group__img" width="65"> 
+                                        @else                                    
+                                                <img src="{{ $listing['Photos']['Photo']}}"  alt="" class="list-group__img" width="65"> 
+                                         @endif
                                     @else
                                         <img src="/img/nophoto.png"  alt="" class="list-group__img" width="65"> 
                                     @endif  
