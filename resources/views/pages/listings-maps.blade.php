@@ -136,7 +136,7 @@
 
         $.ajax({
             type: "GET",
-            url: 'http://aptsource.dotgital.com/rentals/api/1/search',
+            url: 'http://www.apartmentsourcechicago.com/rentals/api/1/search',
             data: {
                 "location": $('.search-location').val(),
                 "min-rent": minRent,
