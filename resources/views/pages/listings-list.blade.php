@@ -36,12 +36,12 @@
             <select class="select2 sort__by">
                 <option></option>
                 <option value="updateDate-desc">Last Updated</option>
-                <option value="rent-desc">Price hight to low</option>
+                <option value="rent-desc">Price high to low</option>
                 <option value="rent-asc">Price low to high</option>
-                <option value="beds-asc">Beds Asc</option>
-                <option value="beds-desc">Beds Desc</option>
-                <option value="baths-asc">Baths Asc</option>
-                <option value="baths-desc">Baths Desc</option>
+                <option value="beds-asc">Beds Ascending</option>
+                <option value="beds-desc">Beds Descending</option>
+                <option value="baths-asc">Baths Ascending</option>
+                <option value="baths-desc">Baths Descending</option>
             </select>
         </div>
     </div>
