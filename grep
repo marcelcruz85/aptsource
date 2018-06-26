@@ -1,0 +1,1009 @@
+p   antlr3-gunit-maven-plugin       - Maven plugin for gUnit, a unit test framew
+p   antlr3.2-gunit-maven-plugin     - Maven plugin for gUnit, a unit test framew
+p   banshee-community-extensions    - set of community contributed extensions fo
+p   cakephp                         - rapid application development framework fo
+p   cakephp-scripts                 - rapid application development framework fo
+p   cl-xlunit                       - Common Lisp eXtreme Lisp Unit Testing Pack
+p   community-themes                - desktop artwork by the Ubuntu community   
+p   dh-php                          - debhelper add-on to handle PHP PECL extens
+p   dynalogin-client-php            - two-factor HOTP/TOTP authentication - PHP 
+p   edgy-community-wallpapers       - Edgy Community Wallpapers                 
+p   erlang-eunit                    - Erlang/OTP module for unit testing        
+p   fp-units-base                   - Free Pascal - base units dependency packag
+p   fp-units-base-3.0.0             - Free Pascal - base units                  
+p   fp-units-castle-game-engine     - Castle Game Engine - 3D game engine for Fr
+p   fp-units-db                     - Free Pascal - database-library units depen
+p   fp-units-db-3.0.0               - Free Pascal - database-library units      
+p   fp-units-fcl                    - Free Pascal - Free Component Library depen
+p   fp-units-fcl-3.0.0              - Free Pascal - Free Component Library      
+p   fp-units-fv                     - Free Pascal - Free Vision units dependency
+p   fp-units-fv-3.0.0               - Free Pascal - Free Vision units           
+p   fp-units-gfx                    - Free Pascal - graphics-library units depen
+p   fp-units-gfx-3.0.0              - Free Pascal - graphics-library units      
+p   fp-units-gtk2                   - Free Pascal - GTK+ 2.x units dependency pa
+p   fp-units-gtk2-3.0.0             - Free Pascal - GTK+ 2.x units              
+p   fp-units-math                   - Free Pascal - math units dependency packag
+p   fp-units-math-3.0.0             - Free Pascal - math units                  
+p   fp-units-misc                   - Free Pascal - miscellaneous units dependen
+p   fp-units-misc-3.0.0             - Free Pascal - miscellaneous units         
+p   fp-units-multimedia             - Free Pascal - multimedia units dependency 
+p   fp-units-multimedia-3.0.0       - Free Pascal - multimedia units            
+p   fp-units-net                    - Free Pascal - networking units dependency 
+p   fp-units-net-3.0.0              - Free Pascal - networking units            
+p   fp-units-rtl                    - Free Pascal - runtime libraries dependency
+p   fp-units-rtl-3.0.0              - Free Pascal - runtime libraries           
+p   gir1.2-unity-5.0                - GObject introspection data for the Unity l
+p   gir1.2-unity-webapps-0.2        - GObject introspection data for the UnityWe
+v   gnome-control-center-unity      -                                           
+p   golang-github-docker-go-units-d - parse and print size and time units in hum
+p   gosa-plugin-phpgw               - phpgw plugin for GOsa²                    
+p   gosa-plugin-phpgw-schema        - LDAP schema for GOsa² phpgw plugin        
+p   gosa-plugin-phpscheduleit       - phpscheduleit plugin for GOsa²            
+p   gosa-plugin-phpscheduleit-schem - LDAP schema for GOsa² phpscheduleit plugin
+p   gphpedit                        - development environment for PHP/HTML/CSS  
+p   gtester2xunit                   - Helper for converting gtester xml output t
+p   htcheck-php                     - Simple php interface to database generated
+p   jmeter-junit                    - Load testing and performance measurement a
+p   junit                           - Automated testing framework for Java      
+p   junit-doc                       - Document for JUnit                        
+p   junit4                          - JUnit regression test framework for Java  
+p   junit4-doc                      - JUnit regression test framework for Java -
+p   kdevelop-php                    - PHP plugin for KDevelop                   
+p   kdevelop-php-dbg                - debugging symbols for the KDevelop PHP plu
+p   kdevelop-php-docs               - PHP documentation plugin for KDevelop     
+p   kdevelop-php-docs-l10n          - localization files for KDevelop PHP docume
+p   kdevelop-php-l10n               - localization files for KDevelop PHP plugin
+p   lcl-units                       - Lazarus Components Library - backend indep
+p   lcl-units-1.6                   - Lazarus Components Library - backend indep
+p   libantlr3-gunit-java            - Unit Test framework for ANTLR grammars    
+p   libantlr3-gunit-java-doc        - API documentation for gUnit               
+p   libantlr3.2-gunit-java          - Unit Test framework for ANTLR grammars    
+i   libapache2-mod-php              - server-side, HTML-embedded scripting langu
+i   libapache2-mod-php7.0           - server-side, HTML-embedded scripting langu
+p   libarc-php                      - Flexible RDF system for semantic web and P
+p   libaunit-dbg                    - AUnit, a unit testing framework for Ada: d
+p   libaunit-doc                    - AUnit, a unit testing framework for Ada: d
+p   libaunit3.7.1                   - AUnit, a unit testing framework for Ada: s
+p   libaunit3.7.1-dev               - AUnit, a unit testing framework for Ada: d
+p   libautounit-dev                 - Development files for C unit testing frame
+p   libautounit2                    - C unit testing framework interfacing well 
+p   libawl-php                      - Andrew's Web Libraries - PHP Utility Libra
+p   libcauchyxunit0.0v5             - library for transforming Matlab/Octave fil
+p   libconvert-units-perl           - Perl module for performing unit conversion
+p   libcppunit-1.13-0v5             - Unit Testing Library for C++              
+p   libcppunit-dev                  - Unit Testing Library for C++              
+p   libcppunit-doc                  - Unit Testing Library for C++              
+p   libcppunit-subunit-dev          - SubunitTestProgressListener for CPPUnit - 
+p   libcppunit-subunit0             - SubunitTestProgressListener for CPPUnit - 
+p   libcunit1                       - Unit Testing Library for C                
+p   libcunit1-dev                   - Unit Testing Library for C -- development 
+p   libcunit1-doc                   - Unit Testing Library for C -- documentatio
+p   libcunit1-ncurses               - Unit Testing Library for C (ncurses)      
+p   libcunit1-ncurses-dev           - Unit Testing Library for C (ncurses) -- de
+p   libfpdf-tpl-php                 - PHP library to use PDF templates with FPDF
+p   libfpdi-php                     - PHP library for importing existing PDF doc
+p   libghc-hunit-dev                - Haskell unit testing framework for GHC    
+v   libghc-hunit-dev-1.3.0.0-90410  -                                           
+p   libghc-hunit-doc                - Haskell unit testing framework for GHC; do
+p   libghc-hunit-prof               - Haskell unit testing framework for GHC; pr
+v   libghc-hunit-prof-1.3.0.0-90410 -                                           
+p   libghc-tasty-hunit-dev          - Haskell testing framework, HUnit support  
+v   libghc-tasty-hunit-dev-0.9.2-5c -                                           
+p   libghc-tasty-hunit-doc          - Haskell testing framework, HUnit support; 
+p   libghc-tasty-hunit-prof         - Haskell testing framework, HUnit support; 
+v   libghc-tasty-hunit-prof-0.9.2-5 -                                           
+p   libghc-test-framework-hunit-dev - HUnit support for the test-framework packa
+v   libghc-test-framework-hunit-dev -                                           
+p   libghc-test-framework-hunit-doc - HUnit support for the test-framework packa
+p   libghc-test-framework-hunit-pro - HUnit support for the test-framework packa
+v   libghc-test-framework-hunit-pro -                                           
+p   libgraphite-php                 - PHP Linked Data Library                   
+p   libhtml-wikiconverter-phpwiki-p - HTML to wiki markup converter - PhpWiki di
+p   libhtmlunit-core-js-java        - GUI-Less browser for Java programs - JavaS
+p   libhtmlunit-java                - GUI-Less browser for Java programs        
+p   libhttpunit-java                - automated web site testing toolkit        
+p   libhttpunit-java-doc            - documentation for libhttpunit-java        
+v   libhugs-hunit                   -                                           
+p   libhugs-hunit-bundled           - A unit testing framework for Haskell      
+p   libjenkins-htmlunit-core-js-jav - Jenkins branch of the HtmlUnit Core JS Int
+p   libjenkins-htmlunit-java        - Jenkins branch of HtmlUnit browser testing
+p   libjs-qunit                     - JavaScript Unit Testing framework         
+p   libjunitperf-java               - JUnit extensions for performance and scala
+p   libjunitperf-java-doc           - Documentation for libjunitperf-java       
+p   libkf5unitconversion-data       - Support for unit conversion.              
+p   libkf5unitconversion-dev        - development files for kunitconversion     
+p   libkf5unitconversion5           - Support for unit conversion.              
+p   libkf5unitconversion5-dbg       - debug symbols for kunitconversion         
+p   libkunitconversion4             - Unit Conversion library for the KDE Platfo
+p   libmarkdown-php                 - PHP library for rendering Markdown data   
+p   libmath-calc-units-perl         - Human-readable unit-aware calculator      
+p   libnunit-cil-dev                - Unit test framework for CLI - Development 
+p   libnunit-console-runner2.6.3-ci - Unit test framework for CLI - Assemblies  
+p   libnunit-core-interfaces2.6.3-c - Unit test framework for CLI - Assemblies  
+p   libnunit-core2.6.3-cil          - Unit test framework for CLI - Assemblies  
+p   libnunit-doc                    - Unit test framework for CLI - Documentatio
+p   libnunit-framework2.6.3-cil     - Unit test framework for CLI - Assemblies  
+p   libnunit-mocks2.6.3-cil         - Unit test framework for CLI - Assemblies  
+p   libnunit-util2.6.3-cil          - Unit test framework for CLI - Assemblies  
+p   libnusoap-php                   - SOAP toolkit for PHP                      
+p   libounit-ocaml-dev              - Unit testing framework for OCaml          
+v   libounit-ocaml-dev-dc2u4        -                                           
+p   libpa-ounit-camlp4-dev          - OCaml Syntax extension for writing inline 
+v   libpa-ounit-camlp4-dev-97nl4    -                                           
+v   libpa-ounit-ocaml-dev           -                                           
+p   libphp-adodb                    - ADOdb is a PHP database abstraction layer 
+p   libphp-embed                    - HTML-embedded scripting language (Embedded
+p   libphp-jabber                   - Object-oriented PHP interface for the Jabb
+p   libphp-magpierss                - provides an XML-based RSS parser in PHP   
+p   libphp-pclzip                   - transitional dummy package                
+p   libphp-phpmailer                - full featured email transfer class for PHP
+p   libphp-predis                   - Flexible and feature-complete PHP client l
+p   libphp-serialization-perl       - Perl module to manipulate serialized PHP d
+p   libphp-simplepie                - RSS and Atom feed parsing in PHP          
+p   libphp-snoopy                   - Snoopy is a PHP class that simulates a web
+p   libphp-swiftmailer              - transitional dummy package                
+p   libphp7.0-embed                 - HTML-embedded scripting language (Embedded
+p   libqxcppunit-dev                - Qt4-based GUI for running tests with CppUn
+p   libqxcppunitd1                  - Qt4-based GUI for running tests with CppUn
+p   libsparkline-php                - sparkline graphing library for php        
+p   libsubunit-dev                  - Unit testing protocol - Development header
+v   libsubunit-diff-perl            -                                           
+p   libsubunit-perl                 - perl parser and diff for Subunit streams  
+p   libsubunit0                     - Unit testing protocol - C/C++ shared libra
+p   libtap-formatter-junit-perl     - Perl module for converting TAP output to J
+p   libtest-unit-perl               - unit testing framework for Perl           
+p   libudunits2-0                   - Library for handling of units of physical 
+p   libudunits2-dev                 - Development files for the libunits physica
+p   libunittest++-dev               - unit testing framework for c++, static lib
+p   libunity-action-qt1             - Unity Action Qt API                       
+p   libunity-action-qt1-dev         - Unity Action Qt API - development files   
+p   libunity-api-dev                - Header files for Unity API                
+p   libunity-api-doc                - Documentation for Unity API               
+p   libunity-api0                   - API for Unity shell integration           
+v   libunity-common                 -                                           
+p   libunity-control-center-dev     - utilities to configure the GNOME desktop  
+p   libunity-control-center1        - utilities to configure the GNOME desktop  
+p   libunity-core-6.0-9             - core library for the Unity interface      
+p   libunity-core-6.0-dev           - Core library for the Unity interface - dev
+p   libunity-dev                    - binding to get places into the launcher - 
+p   libunity-gtk-parser-dev-common  - Common files for GtkMenuShell to GMenuMode
+p   libunity-gtk2-parser-dev        - GtkMenuShell to GMenuModel parser         
+p   libunity-gtk2-parser0           - GtkMenuShell to GMenuModel parser         
+p   libunity-gtk3-parser-dev        - GtkMenuShell to GMenuModel parser         
+p   libunity-gtk3-parser0           - GtkMenuShell to GMenuModel parser         
+p   libunity-misc-dev               - Miscellaneous functions for Unity - develo
+p   libunity-misc-doc               - Miscellaneous functions for Unity - docume
+p   libunity-misc4                  - Miscellaneous functions for Unity - shared
+p   libunity-protocol-private0      - binding to get places into the launcher - 
+p   libunity-scopes-cli             - Client utility for Unity scopes API       
+p   libunity-scopes-dev             - Header files for Unity scopes API         
+p   libunity-scopes-doc             - Documentation for Unity scopes API        
+p   libunity-scopes-json-def-deskto - binding to get places into the launcher - 
+p   libunity-scopes-json-def-phone  - binding to get scopes into the launcher - 
+p   libunity-scopes-qt-dev          - Header files for Qt library for Unity scop
+p   libunity-scopes-qt-doc          - Documentation for Unity Qt library        
+p   libunity-scopes-qt0.2           - Qt library for Unity scopes API           
+p   libunity-scopes1.0              - API for Unity scopes integration          
+p   libunity-settings-daemon-dev    - Helper library for accessing settings (dev
+p   libunity-settings-daemon1       - Helper library for accessing settings     
+p   libunity-tools                  - binding to get places into the launcher - 
+p   libunity-webapps-dev            - Web Apps integration with Unity - developm
+p   libunity-webapps-doc            - Web Apps integration with Unity - document
+p   libunity-webapps0               - Web Apps integration with the Unity deskto
+p   libunity9                       - binding to get places into the launcher - 
+p   libxmlunit-java                 - Unit testing for XML documents            
+p   libxmlunit-java-doc             - Documentation for XMLUnit                 
+p   libzend-framework-php           - a simple, straightforward, open-source sof
+p   libzend-framework-zendx-php     - a simple, straightforward, open-source sof
+p   lua-unit                        - Lua unit testing framework                
+v   lua5.1-unit                     -                                           
+v   lua5.2-unit                     -                                           
+p   mlmmj-php-web                   - web interface for mlmmj, written in php   
+p   mlmmj-php-web-admin             - administrative web interface for mlmmj, wr
+p   monodevelop-nunit               - NUnit plugin for MonoDevelop              
+p   monodoc-nunit-manual            - compiled XML documentation for NUnit - mon
+p   nunit                           - Unit test framework for CLI               
+p   nunit-console                   - Unit test framework for CLI - Console test
+p   nunit-gui                       - Unit test framework for CLI - GUI test run
+p   nupkg-nunit.2.6.4               - Unit test framework for CLI - NuGet packag
+p   nupkg-nunit.mocks.2.6.4         - Unit test framework for CLI - NuGet packag
+p   nupkg-nunit.runners.2.6.4       - Unit test framework for CLI - NuGet packag
+v   pear-phpunit-channel            -                                           
+p   php                             - server-side, HTML-embedded scripting langu
+p   php-all-dev                     - package depending on all supported PHP dev
+p   php-amqp                        - AMQP extension for PHP                    
+p   php-amqplib                     - pure PHP implementation of the AMQP protoc
+p   php-analog                      - PHP micro logging package                 
+p   php-apcu                        - APC User Cache for PHP                    
+p   php-apigen                      - PHP source code API generator             
+p   php-apigen-theme-bootstrap      - Twitter Bootstrap theme for ApiGen        
+p   php-apigen-theme-default        - Default theme for ApiGen                  
+p   php-assetic                     - Asset Management for PHP                  
+p   php-ast                         - AST extension for PHP 7                   
+p   php-auth                        - Creating an authentication system         
+p   php-auth-http                   - HTTP authentication                       
+p   php-auth-sasl                   - Abstraction of various SASL mechanism resp
+v   php-autoload                    -                                           
+p   php-aws-sdk                     - software development kit to build solution
+p   php-bcmath                      - Bcmath module for PHP [default]           
+p   php-bz2                         - bzip2 module for PHP [default]            
+p   php-cache                       - framework for caching of arbitrary data   
+p   php-cache-lite                  - Fast and Safe little cache system         
+v   php-calendar                    -                                           
+p   php-cas                         - Central Authentication Service client libr
+p   php-cgi                         - server-side, HTML-embedded scripting langu
+p   php-cli                         - command-line interpreter for the PHP scrip
+p   php-cli-prompt                  - tiny helper prompting for user input      
+p   php-codecoverage                - collection, processing, and rendering for 
+p   php-codesniffer                 - PHP, CSS and JavaScript coding standard an
+i   php-common                      - Common files for PHP packages             
+p   php-compat                      - Provides components to achieve PHP version
+p   php-composer-semver             - Semver library that offers utilities, vers
+p   php-composer-spdx-licenses      - SPDX licenses list and validation library 
+p   php-console-commandline         - A full featured command line options and a
+v   php-console-getopt              -                                           
+p   php-console-table               - Library that makes it easy to build consol
+v   php-cpd                         -                                           
+p   php-crypt-blowfish              - Allows for quick two-way blowfish encrypti
+p   php-crypt-cbc                   - PEAR class to emulate Perl's Crypt::CBC mo
+p   php-crypt-chap                  - Generating CHAP packets                   
+p   php-crypt-gpg                   - PHP PEAR module for encrypting and decrypt
+p   php-cssmin                      - CSS minification class                    
+v   php-ctype                       -                                           
+p   php-curl                        - CURL module for PHP [default]             
+p   php-date                        - Generic date/time handling class for PEAR 
+p   php-db                          - PHP PEAR Database Abstraction Layer       
+v   php-dba                         -                                           
+p   php-deepcopy                    - create deep copies (clones) of objects    
+v   php-depend                      -                                           
+p   php-dev                         - Files for PHP module development (default)
+p   php-directory-scanner           - recursive directory scanner and filter    
+p   php-doc                         - Documentation for PHP5                    
+p   php-doctrine-annotations        - Docblock Annotations Parser - Doctrine com
+p   php-doctrine-bundle             - bundle library - Doctrine component       
+p   php-doctrine-cache              - cache library - Doctrine component        
+p   php-doctrine-cache-bundle       - cache bundle library - Doctrine component 
+p   php-doctrine-collections        - Collections Abstraction library - Doctrine
+p   php-doctrine-common             - common extensions for Doctrine            
+p   php-doctrine-data-fixtures      - Data Fixtures for all Doctrine Object Mana
+p   php-doctrine-dbal               - database abstraction layer for Doctrine   
+p   php-doctrine-inflector          - string manipulations library - Doctrine co
+p   php-doctrine-instantiator       - lightweight utility to instantiate objects
+p   php-doctrine-lexer              - base lexer library - Doctrine component   
+p   php-doctrine-orm                - tool for object-relational mapping        
+v   php-dom                         -                                           
+p   php-dompdf                      - HTML to PDF converter                     
+p   php-dropbox                     - Dropbox API library                       
+p   php-elisp                       - Emacs support for php files               
+p   php-email-validator             - A library for validating emails           
+p   php-enchant                     - Enchant module for PHP [default]          
+v   php-exif                        -                                           
+p   php-fdomdocument                - extension to PHP's standard DOM           
+p   php-file-iterator               - FilterIterator implementation for PHP     
+v   php-fileinfo                    -                                           
+p   php-finder-facade               - convenience wrapper for Symfony's Finder c
+p   php-finder-facade-doc           - convenience wrapper for Symfony's Finder c
+p   php-font-lib                    - read, parse, export and make subsets of di
+p   php-fpdf                        - PHP class to generate PDF files           
+p   php-fpm                         - server-side, HTML-embedded scripting langu
+p   php-fshl                        - Fast Syntax HighLighter                   
+v   php-ftp                         -                                           
+p   php-fxsl                        - XSL wrapper and extension to XSLTProcessor
+p   php-gd                          - GD module for PHP [default]               
+p   php-geoip                       - GeoIP module for PHP                      
+p   php-geshi                       - Generic Syntax Highlighter                
+p   php-getid3                      - scripts to extract information from multim
+p   php-gettext                     - read gettext MO files directly, without re
+p   php-gmp                         - GMP module for PHP [default]              
+p   php-gnupg                       - wrapper around the gpgme library          
+p   php-google-api-php-client       - Google APIs client library for PHP        
+p   php-google-auth                 - Google Auth Library for PHP               
+p   php-guzzle-stream               - implementation of the proposed PSR-7 strea
+p   php-guzzlehttp                  - object-oriented PHP HTTP client           
+p   php-guzzlehttp-promises         - Guzzle promises library                   
+p   php-guzzlehttp-psr7             - PSR-7 message implementation              
+p   php-guzzlehttp-ringphp          - Ring adapter and handler system for Guzzle
+p   php-guzzlehttp-ringphp-doc      - Ring adapter and handler system for Guzzle
+p   php-hamcrest                    - This is the PHP port of Hamcrest Matchers 
+p   php-horde                       - Horde Application Framework               
+p   php-horde-activesync            - Horde ActiveSync Server Library           
+p   php-horde-alarm                 - Horde Alarm Libraries                     
+p   php-horde-ansel                 - Photo management application              
+p   php-horde-argv                  - Horde command-line argument parsing packag
+p   php-horde-auth                  - Horde Authentication API                  
+p   php-horde-autoloader            - Horde Autoloader                          
+p   php-horde-browser               - Horde Browser API                         
+p   php-horde-cache                 - Horde Caching API                         
+p   php-horde-cli                   - Horde Command Line Interface API          
+p   php-horde-compress              - Horde Compression API                     
+p   php-horde-compress-fast         - Fast Compression Library                  
+p   php-horde-constraint            - Horde Constraint library                  
+p   php-horde-content               - Tagging application                       
+p   php-horde-controller            - Horde Controller libraries                
+p   php-horde-core                  - Horde Core Framework libraries            
+p   php-horde-crypt                 - Horde Cryptography API                    
+p   php-horde-crypt-blowfish        - Blowfish Encryption Library               
+p   php-horde-css-parser            - Horde CSS Parser                          
+p   php-horde-cssminify             - CSS Minification                          
+p   php-horde-data                  - Horde Data API                            
+p   php-horde-date                  - Horde Date package                        
+p   php-horde-date-parser           - Horde Date Parser                         
+p   php-horde-dav                   - Horde library for WebDAV, CalDAV, CardDAV 
+p   php-horde-db                    - Horde Database Libraries                  
+p   php-horde-editor                - Horde Editor API                          
+p   php-horde-elasticsearch         - Horde ElasticSearch client                
+p   php-horde-exception             - Horde Exception Handler                   
+p   php-horde-feed                  - Horde Feed libraries                      
+p   php-horde-form                  - Horde Form API                            
+p   php-horde-gollem                - Web-based file manager                    
+p   php-horde-group                 - Horde User Groups System                  
+p   php-horde-groupware             - Horde Groupware                           
+p   php-horde-hashtable             - Horde Hash Table Interface                
+p   php-horde-history               - API for tracking the history of an object 
+p   php-horde-http                  - Horde HTTP libraries                      
+p   php-horde-icalendar             - iCalendar API                             
+p   php-horde-idna                  - IDNA backend normalization package        
+p   php-horde-image                 - Horde Image API                           
+p   php-horde-imap-client           - Horde IMAP Client                         
+p   php-horde-imp                   - A web based webmail system                
+p   php-horde-imsp                  - IMSP API                                  
+p   php-horde-ingo                  - An email filter rules manager             
+p   php-horde-injector              - Horde dependency injection container      
+p   php-horde-itip                  - iTip invitation response handling         
+p   php-horde-javascriptminify      - Javascript Minification                   
+p   php-horde-javascriptminify-jsmi - Horde Javascript Minifier - Jsmin PHP Driv
+p   php-horde-kolab-format          - A package for reading/writing Kolab data f
+p   php-horde-kolab-server          - A package for manipulating the Kolab user 
+p   php-horde-kolab-session         - A package managing an active Kolab session
+p   php-horde-kolab-storage         - A package for handling Kolab data stored o
+p   php-horde-kronolith             - A web based calendar                      
+p   php-horde-ldap                  - Horde LDAP libraries                      
+p   php-horde-listheaders           - Horde List Headers Parsing Library        
+p   php-horde-lock                  - Horde Resource Locking System             
+p   php-horde-log                   - Horde Logging library                     
+p   php-horde-logintasks            - Horde Login Tasks System                  
+p   php-horde-lz4                   - Horde LZ4 Compression Extension           
+p   php-horde-mail                  - Horde Mail Library                        
+p   php-horde-mail-autoconfig       - Horde Mail Autoconfiguration              
+p   php-horde-mapi                  - MAPI utility library                      
+p   php-horde-memcache              - Horde Memcache API                        
+p   php-horde-mime                  - Horde MIME Library                        
+p   php-horde-mime-viewer           - Horde MIME Viewer Library                 
+p   php-horde-mnemo                 - A web based notes manager                 
+p   php-horde-nag                   - A web based task list manager             
+p   php-horde-nls                   - Native Language Support (NLS)             
+p   php-horde-notification          - Horde Notification System                 
+p   php-horde-oauth                 - Horde OAuth client/server                 
+p   php-horde-openxchange           - Open-Xchange Connector                    
+p   php-horde-pack                  - Horde Pack Utility                        
+p   php-horde-passwd                - Horde password changing application       
+p   php-horde-pdf                   - Horde PDF library                         
+p   php-horde-perms                 - Horde Permissions System                  
+p   php-horde-prefs                 - Horde Preferences API                     
+p   php-horde-queue                 - Horde Queue                               
+p   php-horde-rdo                   - Rampage Data Objects                      
+p   php-horde-role                  - PEAR installer role used to install Horde 
+p   php-horde-routes                - Horde Routes URL mapping system           
+p   php-horde-rpc                   - Horde RPC API                             
+p   php-horde-scheduler             - Horde Scheduler System                    
+p   php-horde-scribe                - Scribe                                    
+p   php-horde-secret                - Secret Encryption API                     
+p   php-horde-serialize             - Data Encapulation API                     
+p   php-horde-service-facebook      - Horde Facebook client                     
+p   php-horde-service-gravatar      - API accessor for gravatar.com             
+p   php-horde-service-twitter       - Horde Twitter client                      
+p   php-horde-service-urlshortener  - Horde_Service_UrlShortener Class          
+p   php-horde-service-weather       - Horde Weather Provider                    
+p   php-horde-sesha                 - A simple Inventory App for Horde          
+p   php-horde-sessionhandler        - Horde Session Handler API                 
+p   php-horde-share                 - Horde Shared Permissions System           
+p   php-horde-smtp                  - Horde SMTP Client                         
+p   php-horde-socket-client         - Horde Socket Client                       
+p   php-horde-spellchecker          - Spellcheck API                            
+p   php-horde-stream                - Horde stream handler                      
+p   php-horde-stream-filter         - Horde Stream filters                      
+p   php-horde-stream-wrapper        - Horde Stream wrappers                     
+p   php-horde-support               - Horde support package                     
+p   php-horde-syncml                - Horde_SyncMl provides an API for processin
+p   php-horde-template              - Horde Template System                     
+p   php-horde-test                  - Horde testing base classes                
+p   php-horde-text-diff             - Engine for performing and rendering text d
+p   php-horde-text-filter           - Horde Text Filter API                     
+p   php-horde-text-filter-jsmin     - Horde Text Filter - Jsmin PHP Driver      
+p   php-horde-text-flowed           - Horde API for flowed text as per RFC 3676 
+p   php-horde-thrift                - Thrift                                    
+p   php-horde-timeobjects           - Horde timeobjects application             
+p   php-horde-timezone              - Timezone library                          
+p   php-horde-token                 - Horde Token API                           
+p   php-horde-translation           - Horde translation library                 
+p   php-horde-trean                 - Web-based bookmarks application           
+p   php-horde-tree                  - Horde Tree API                            
+p   php-horde-turba                 - A web based address book                  
+p   php-horde-url                   - Horde Url class                           
+p   php-horde-util                  - Horde Utility Libraries                   
+p   php-horde-vfs                   - Virtual File System API                   
+p   php-horde-view                  - Horde View API                            
+p   php-horde-webmail               - Horde Groupware Webmail Edition           
+p   php-horde-whups                 - Ticket-tracking application               
+p   php-horde-wicked                - Wiki application                          
+p   php-horde-xml-element           - Horde Xml Element object                  
+p   php-horde-xml-wbxml             - Horde_Xml_Wbxml provides an API for encodi
+p   php-html-safe                   - strip down all potentially dangerous conte
+p   php-htmlawed                    - htmLawed PHP code to purify & filter HTML 
+p   php-htmlpurifier                - Standards-compliant HTML filter           
+p   php-http                        - PHP PEAR module for HTTP related stuff    
+p   php-http-request                - PEAR class to provide an easy way to perfo
+p   php-http-request2               - Provides an easy way to perform HTTP reque
+p   php-http-webdav-server          - WebDAV Server Baseclass                   
+p   php-icinga                      - PHP library to communicate with and use Ic
+v   php-iconv                       -                                           
+p   php-igbinary                    - igbinary PHP serializer                   
+p   php-image-text                  - Image_Text - Advanced text maipulations in
+p   php-imagick                     - Provides a wrapper to the ImageMagick libr
+p   php-imap                        - IMAP module for PHP [default]             
+p   php-interbase                   - Interbase module for PHP [default]        
+p   php-intl                        - Internationalisation module for PHP [defau
+p   php-invoker                     - Utility class for invoking callables with 
+p   php-irods-prods                 - PHP client API for iRODS                  
+p   php-jmespath                    - Declaratively specify how to extract eleme
+p   php-json                        - JSON module for PHP [default]             
+p   php-json-patch                  - Produce and apply json-patch objects      
+p   php-json-schema                 - implementation of JSON schema             
+p   php-jwt                         - encode and decode JSON Web Tokens (JWT)   
+p   php-kdyby-events                - Events for Nette Framework                
+p   php-kit-pathjoin                - Cross-platform library for normalizing and
+p   php-ldap                        - LDAP module for PHP [default]             
+p   php-league-flysystem            - filesystem abstraction offering one API to
+p   php-letodms-core                - Document management system - Core files   
+p   php-letodms-lucene              - Document management system - Fulltext sear
+v   php-libsmbclient                -                                           
+p   php-libvirt-php                 - libvirt bindings for PHP                  
+v   php-loc                         -                                           
+p   php-log                         - Logging Framework                         
+p   php-mail                        - Class that provides multiple interfaces fo
+p   php-mail-mbox                   - Read and modify Unix MBOXes               
+p   php-mail-mime                   - PHP PEAR module for creating MIME messages
+p   php-mail-mimedecode             - Provides a class to decode mime messages  
+p   php-markdown                    - PHP library for rendering Markdown data   
+v   php-math-biginteger             -                                           
+p   php-mbstring                    - MBSTRING module for PHP [default]         
+p   php-mcrypt                      - libmcrypt module for PHP [default]        
+p   php-mdb2                        - merge of the PEAR DB and Metabase php data
+p   php-mdb2-driver-mysql           - PHP PEAR module to provide a MySQL driver 
+p   php-mdb2-driver-pgsql           - PHP PEAR module to provide a PostgreSQL dr
+p   php-memcache                    - memcache extension module for PHP5        
+p   php-memcached                   - memcached extension module for PHP5, uses 
+p   php-mf2                         - Microformats2 is the simplest way to marku
+p   php-mime-type                   - Utility class for dealing with MIME types 
+p   php-mockery                     - mock object framework for PHPUnit and othe
+p   php-mockery-doc                 - mock object framework for PHPUnit - docume
+p   php-mongodb                     - MongoDB driver for PHP                    
+p   php-monolog                     - send logs to various destination and web s
+p   php-msgpack                     - PHP extension for interfacing with Message
+v   php-myclabs-deep-copy           -                                           
+i   php-mysql                       - MySQL module for PHP [default]            
+v   php-mysqli                      -                                           
+v   php-mysqlnd                     -                                           
+p   php-mythtv                      - PHP Bindings for MythTV                   
+p   php-net-dime                    - class that implements DIME encoding       
+p   php-net-dns2                    - PHP5 Resolver library used to communicate 
+p   php-net-ftp                     - provides an OO interface to the PHP FTP fu
+p   php-net-imap                    - Provides an implementation of the IMAP pro
+p   php-net-ipv4                    - IPv4 network calculations and validation  
+p   php-net-ipv6                    - Check and validate IPv6 addresses         
+p   php-net-ldap                    - OO interface for searching and manipulatin
+p   php-net-ldap2                   - Object oriented interface for searching an
+p   php-net-ldap3                   - Object oriented interface for searching an
+p   php-net-nntp                    - PHP Pear module for NNTP                  
+p   php-net-publicsuffix            - PHP module for detecting registered domain
+p   php-net-sieve                   - Handles talking to a sieve server         
+p   php-net-smartirc                - provides an OO interface to the PHP IRC fu
+p   php-net-smtp                    - PHP PEAR module implementing SMTP protocol
+p   php-net-socket                  - PHP PEAR Network Socket Interface module  
+p   php-net-url                     - easy parsing of Urls                      
+p   php-net-url2                    - Class for parsing and handling URL        
+p   php-net-whois                   - PHP PEAR module for querying whois service
+p   php-nette                       - Nette Framework                           
+p   php-nrk-predis                  - Flexible and feature-complete PHP client l
+p   php-numbers-words               - PEAR module providing methods for spelling
+p   php-oauth                       - OAuth 1.0 consumer and provider extension 
+v   php-ocramius-proxy-manager      -                                           
+p   php-odbc                        - ODBC module for PHP [default]             
+v   php-opcache                     -                                           
+p   php-openid                      - PHP OpenID library                        
+p   php-pager                       - Pages an array of data, creating links to 
+p   php-parser                      - convert PHP code into abstract syntax tree
+p   php-patchwork-utf8              - UTF-8 strings handling for PHP            
+p   php-pclzip                      - ZIP archive manager class for PHP         
+v   php-pdepend                     -                                           
+p   php-pdfparser                   - PHP library to parse PDF files and extract
+v   php-pdo                         -                                           
+v   php-pdo-dblib                   -                                           
+v   php-pdo-firebird                -                                           
+v   php-pdo-mysql                   -                                           
+v   php-pdo-odbc                    -                                           
+v   php-pdo-pgsql                   -                                           
+v   php-pdo-sqlite                  -                                           
+p   php-pear                        - PEAR Base System                          
+p   php-pecl-http                   - pecl_http module for PHP 5 Extended HTTP S
+p   php-pecl-http-dev               - pecl_http module for PHP 5 Extended HTTP S
+p   php-pgsql                       - PostgreSQL module for PHP [default]       
+v   php-phar                        -                                           
+p   php-phpdbg                      - server-side, HTML-embedded scripting langu
+p   php-phpdocumentor-reflection    - Reflection library to do Static Analysis f
+p   php-phpdocumentor-reflection-co - Common reflection classes - phpDocumentor 
+p   php-phpdocumentor-reflection-do - DocBlock parser - phpDocumentor component 
+p   php-phpdocumentor-type-resolver - TypeResolver and FqsenResolver - phpDocume
+p   php-phpseclib                   - implementations of an arbitrary-precision 
+v   php-phpseclib-crypt-aes         -                                           
+v   php-phpseclib-crypt-base        -                                           
+v   php-phpseclib-crypt-blowfish    -                                           
+v   php-phpseclib-crypt-des         -                                           
+v   php-phpseclib-crypt-hash        -                                           
+v   php-phpseclib-crypt-random      -                                           
+v   php-phpseclib-crypt-rc4         -                                           
+v   php-phpseclib-crypt-rijndael    -                                           
+v   php-phpseclib-crypt-rsa         -                                           
+v   php-phpseclib-crypt-tripledes   -                                           
+v   php-phpseclib-crypt-twofish     -                                           
+v   php-phpseclib-file-ansi         -                                           
+v   php-phpseclib-file-asn1         -                                           
+v   php-phpseclib-file-x509         -                                           
+v   php-phpseclib-math-biginteger   -                                           
+v   php-phpseclib-net-sftp          -                                           
+v   php-phpseclib-net-ssh1          -                                           
+v   php-phpseclib-net-ssh2          -                                           
+v   php-phpseclib-system-ssh-agent  -                                           
+p   php-phpspec-prophecy            - object mocking framework - phpspec compone
+p   php-picofeed                    - Modern library to handle RSS/Atom feeds   
+p   php-pimple                      - simple dependency injection container     
+v   php-pmd                         -                                           
+v   php-posix                       -                                           
+p   php-propro                      - propro module for PHP                     
+p   php-propro-dev                  - propro module for PHP development headers 
+p   php-proxy-manager               - library providing utilities to operate wit
+p   php-pspell                      - pspell module for PHP [default]           
+p   php-psr-cache                   - Common interface for caching libraries    
+p   php-psr-http-message            - Common interface for HTTP messages        
+v   php-psr-http-message-implementa -                                           
+p   php-psr-log                     - common interface for logging libraries    
+v   php-psr-log-implementation      -                                           
+p   php-punic                       - PHP-Unicode CLDR toolkit                  
+p   php-radius                      - Radius client library                     
+p   php-random-compat               - PHP 5.x polyfill for random_bytes() and ra
+p   php-raphf                       - raphf module for PHP                      
+p   php-raphf-dev                   - raphf module for PHP development headers  
+p   php-react-promise               - lightweight implementation of CommonJS Pro
+p   php-readline                    - readline module for PHP [default]         
+p   php-recode                      - recode module for PHP [default]           
+p   php-redis                       - PHP extension for interfacing with Redis  
+p   php-rrd                         - PHP bindings to rrd tool system           
+p   php-sabre-dav                   - WebDAV Framework for PHP                  
+p   php-sabre-dav-2.1               - WebDAV Framework for PHP                  
+p   php-sabre-event                 - lightweight library for event-based develo
+p   php-sabre-http                  - library to ease the work with HTTP protoco
+p   php-sabre-http-3                - library to ease the work with HTTP protoco
+p   php-sabre-uri                   - several functions for working with URIs   
+p   php-sabre-vobject               - library to parse and manipulate iCalendar 
+p   php-sabre-vobject-3             - library to parse and manipulate iCalendar 
+p   php-sabre-xml                   - specialized XML reader and writer         
+v   php-sebastian-resource-operatio -                                           
+p   php-seclib                      - implementations of an arbitrary-precision 
+p   php-securitylib                 - base set of security libraries            
+p   php-sepa-direct-debit           - Create Sepa Direct Debit XML Files in PHP 
+p   php-services-json               - PHP implementaion of json_encode/decode   
+p   php-services-weather            - This class acts as an interface to various
+v   php-shmop                       -                                           
+v   php-simplexml                   -                                           
+p   php-smb                         - php wrapper for smbclient and libsmbclient
+p   php-smbclient                   - PHP wrapper for libsmbclient              
+p   php-snmp                        - SNMP module for PHP [default]             
+p   php-soap                        - SOAP module for PHP [default]             
+v   php-sockets                     -                                           
+p   php-solr                        - PHP extension for communicating with Apach
+p   php-sql-formatter               - a PHP SQL highlighting library            
+p   php-sqlite3                     - SQLite3 module for PHP [default]          
+p   php-ssh2                        - Bindings for the libssh2 library          
+p   php-stomp                       - Streaming Text Oriented Messaging Protocol
+p   php-streams                     - A set of generic stream wrappers          
+v   php-structures-graph            -                                           
+p   php-superclosure                - Serialize Closure objects, including their
+p   php-swiftmailer                 - Swiftmailer, free feature-rich PHP mailer 
+p   php-sybase                      - Sybase module for PHP [default]           
+p   php-symfony-asset               - manage asset URLs                         
+p   php-symfony-browser-kit         - simulate the behavior of a web browser    
+p   php-symfony-class-loader        - load PHP classes automatically            
+p   php-symfony-config              - load configurations from different data so
+p   php-symfony-console             - run tasks from the command line           
+p   php-symfony-css-selector        - convert CSS selectors to XPath expressions
+p   php-symfony-debug               - tools to make debugging of PHP code easier
+p   php-symfony-debug-bundle        - debugging tools for the Symfony framework 
+p   php-symfony-dependency-injectio - standardize and centralize construction of
+p   php-symfony-doctrine-bridge     - integration for Doctrine with Symfony Comp
+p   php-symfony-dom-crawler         - ease DOM navigation for HTML and XML docum
+p   php-symfony-event-dispatcher    - dispatch events and listen to them        
+p   php-symfony-expression-language - compile and evaluate expressions          
+p   php-symfony-filesystem          - basic filesystem utilities                
+p   php-symfony-finder              - find files and directories                
+p   php-symfony-form                - create HTML forms and process request data
+p   php-symfony-framework-bundle    - basic, robust and flexible MVC framework  
+p   php-symfony-http-foundation     - object-oriented layer for the HTTP specifi
+p   php-symfony-http-kernel         - building blocks for flexible and fast HTTP
+p   php-symfony-intl                - limited replacement layer for the PHP exte
+p   php-symfony-locale              - deprecated replacement layer for the PHP e
+p   php-symfony-monolog-bridge      - integration for Monolog with Symfony Compo
+p   php-symfony-options-resolver    - configure objects with option arrays      
+p   php-symfony-phpunit-bridge      - integration for PHPUnit with Symfony Compo
+p   php-symfony-process             - execute commands in sub-processes         
+p   php-symfony-property-access     - read from and write to an object or array 
+p   php-symfony-proxy-manager-bridg - integration for ProxyManager with Symfony 
+p   php-symfony-routing             - associate a request with code that generat
+p   php-symfony-security            - infrastructure for sophisticated authoriza
+p   php-symfony-security-bundle     - configurable security system for the Symfo
+p   php-symfony-serializer          - convert PHP objects into specific formats 
+p   php-symfony-stopwatch           - profile PHP code                          
+p   php-symfony-swiftmailer-bridge  - integration for Swift Mailer with Symfony 
+p   php-symfony-templating          - tools needed to build a template system   
+p   php-symfony-translation         - tools to internationalize an application  
+p   php-symfony-twig-bridge         - integration for Twig with Symfony Componen
+p   php-symfony-twig-bundle         - configurable integration of Twig with the 
+p   php-symfony-validator           - tools to validate classes                 
+p   php-symfony-var-dumper          - Symfony mechanism for exploring and dumpin
+p   php-symfony-web-profiler-bundle - collect requests information for analysis 
+p   php-symfony-yaml                - convert YAML to PHP arrays and the other w
+v   php-sysvmsg                     -                                           
+v   php-sysvsem                     -                                           
+v   php-sysvshm                     -                                           
+p   php-tcpdf                       - PHP class for generating PDF files on-the-
+p   php-text-captcha                - Generation of CAPTCHAs                    
+p   php-text-figlet                 - PEAR module for rendering text using FIGle
+p   php-text-languagedetect         - Language detection class                  
+p   php-text-password               - Creating passwords with PHP               
+p   php-text-template               - Simple template engine                    
+p   php-text-wiki                   - transform Wiki and BBCode markup into XHTM
+p   php-tidy                        - tidy module for PHP [default]             
+p   php-timer                       - Utility class for timing                  
+p   php-token-stream                - Wrapper around PHP's tokenizer extension  
+v   php-tokenizer                   -                                           
+p   php-tokenreflection             - PHP reflection replacement                
+p   php-twig                        - Flexible, fast, and secure template engine
+p   php-twig-doc                    - Twig template engine documentation        
+v   php-user-cache                  -                                           
+p   php-uuid                        - PHP UUID extension                        
+p   php-validate                    - validation class                          
+v   php-wddx                        -                                           
+p   php-webmozart-assert            - Assertions to validate method input/output
+p   php-wikidiff2                   - external diff engine for mediawiki        
+p   php-xajax                       - A library to develop Ajax applications    
+p   php-xdebug                      - Xdebug Module for PHP                     
+p   php-xml                         - DOM, SimpleXML, WDDX, XML, and XSL module 
+p   php-xml-htmlsax3                - SAX parser for HTML and other badly formed
+p   php-xml-parser                  - XML parsing class based on PHP's bundled e
+p   php-xml-rpc2                    - PHP XML-RPC client/server library         
+p   php-xml-serializer              - swiss-army knife for reading and writing X
+p   php-xml-svg                     - XML_SVG API                               
+v   php-xml-util                    -                                           
+v   php-xmlreader                   -                                           
+p   php-xmlrpc                      - XMLRPC-EPI module for PHP [default]       
+v   php-xmlwriter                   -                                           
+v   php-xsl                         -                                           
+p   php-yac                         - YAC (Yet Another Cache) for PHP           
+p   php-zend-code                   - Zend Framework - Code component           
+p   php-zend-db                     - Zend Framework - Db component             
+p   php-zend-eventmanager           - Zend Framework - EventManager component   
+p   php-zend-hydrator               - Zend Framework - Hydrator component       
+p   php-zend-search                 - Zend Framework - ZendSearch component     
+p   php-zend-stdlib                 - Zend Framework - Stdlib component         
+p   php-zend-xml                    - Zend Framework - Xml component            
+v   php-zendframework-zend-code     -                                           
+v   php-zendframework-zend-db       -                                           
+v   php-zendframework-zend-eventman -                                           
+v   php-zendframework-zend-hydrator -                                           
+v   php-zendframework-zend-stdlib   -                                           
+v   php-zendframework-zendxml       -                                           
+p   php-zeta-base                   - Zeta Components - Base package            
+p   php-zeta-console-tools          - Zeta Components - ConsoleTools package    
+p   php-zeta-unit-test              - Zeta Components - UnitTest package        
+p   php-zip                         - Zip module for PHP [default]              
+p   php-zipstreamer                 - Stream zip files without i/o overhead     
+p   php-zmq                         - ZeroMQ messaging bindings for PHP         
+p   php7.0                          - server-side, HTML-embedded scripting langu
+p   php7.0-bcmath                   - Bcmath module for PHP                     
+p   php7.0-bz2                      - bzip2 module for PHP                      
+v   php7.0-calendar                 -                                           
+p   php7.0-cgi                      - server-side, HTML-embedded scripting langu
+i   php7.0-cli                      - command-line interpreter for the PHP scrip
+i   php7.0-common                   - documentation, examples and common module 
+v   php7.0-ctype                    -                                           
+p   php7.0-curl                     - CURL module for PHP                       
+p   php7.0-dba                      - DBA module for PHP                        
+p   php7.0-dev                      - Files for PHP7.0 module development       
+v   php7.0-dom                      -                                           
+p   php7.0-enchant                  - Enchant module for PHP                    
+v   php7.0-exif                     -                                           
+v   php7.0-fileinfo                 -                                           
+p   php7.0-fpm                      - server-side, HTML-embedded scripting langu
+v   php7.0-ftp                      -                                           
+p   php7.0-gd                       - GD module for PHP                         
+v   php7.0-gettext                  -                                           
+p   php7.0-gmp                      - GMP module for PHP                        
+v   php7.0-iconv                    -                                           
+p   php7.0-imap                     - IMAP module for PHP                       
+p   php7.0-interbase                - Interbase module for PHP                  
+p   php7.0-intl                     - Internationalisation module for PHP       
+i   php7.0-json                     - JSON module for PHP                       
+p   php7.0-ldap                     - LDAP module for PHP                       
+p   php7.0-mbstring                 - MBSTRING module for PHP                   
+p   php7.0-mcrypt                   - libmcrypt module for PHP                  
+i   php7.0-mysql                    - MySQL module for PHP                      
+v   php7.0-mysqli                   -                                           
+v   php7.0-mysqlnd                  -                                           
+p   php7.0-odbc                     - ODBC module for PHP                       
+i   php7.0-opcache                  - Zend OpCache module for PHP               
+v   php7.0-pdo                      -                                           
+v   php7.0-pdo-dblib                -                                           
+v   php7.0-pdo-firebird             -                                           
+v   php7.0-pdo-mysql                -                                           
+v   php7.0-pdo-odbc                 -                                           
+v   php7.0-pdo-pgsql                -                                           
+v   php7.0-pdo-sqlite               -                                           
+p   php7.0-pgsql                    - PostgreSQL module for PHP                 
+v   php7.0-phar                     -                                           
+p   php7.0-phpdbg                   - server-side, HTML-embedded scripting langu
+v   php7.0-posix                    -                                           
+p   php7.0-pspell                   - pspell module for PHP                     
+i   php7.0-readline                 - readline module for PHP                   
+p   php7.0-recode                   - recode module for PHP                     
+v   php7.0-shmop                    -                                           
+v   php7.0-simplexml                -                                           
+p   php7.0-snmp                     - SNMP module for PHP                       
+p   php7.0-soap                     - SOAP module for PHP                       
+v   php7.0-sockets                  -                                           
+p   php7.0-sqlite3                  - SQLite3 module for PHP                    
+p   php7.0-sybase                   - Sybase module for PHP                     
+v   php7.0-sysvmsg                  -                                           
+v   php7.0-sysvsem                  -                                           
+v   php7.0-sysvshm                  -                                           
+p   php7.0-tidy                     - tidy module for PHP                       
+v   php7.0-tokenizer                -                                           
+v   php7.0-wddx                     -                                           
+p   php7.0-xml                      - DOM, SimpleXML, WDDX, XML, and XSL module 
+v   php7.0-xmlreader                -                                           
+p   php7.0-xmlrpc                   - XMLRPC-EPI module for PHP                 
+v   php7.0-xmlwriter                -                                           
+p   php7.0-xsl                      - XSL module for PHP (dummy)                
+p   php7.0-zip                      - Zip module for PHP                        
+p   phpab                           - lightweight PHP namespace aware autoload g
+v   phpapi-20151012                 -                                           
+p   phpbb3                          - full-featured, skinnable non-threaded web 
+p   phpbb3-l10n                     - additional language files for phpBB       
+p   phpcpd                          - copy and paste detector (CPD) for PHP code
+p   phpdox                          - documentation generation framework and too
+p   phpgacl                         - PHP Generic Access Control Lists          
+p   phpldapadmin                    - web based interface for administering LDAP
+p   phploc                          - tool for quickly measuring the size of a P
+p   phpmd                           - PHP Mess Detector                         
+p   phpmyadmin                      - MySQL web administration tool             
+p   phppgadmin                      - web-based administration tool for PostgreS
+p   phpqrcode                       - PHP library for generating two-dimensional
+p   phpreports                      - XML-based report generator for PHP        
+p   phpsysinfo                      - PHP based host information                
+p   phpunit                         - Unit testing suite for PHP5               
+p   phpunit-code-unit-reverse-looku - look up what a line of code belongs to - P
+p   phpunit-comparator              - functionality to compare PHP values for eq
+p   phpunit-dbunit                  - DbUnit port for PHP/PHPUnit to support dat
+p   phpunit-diff                    - diff implementation - stand-alone componen
+p   phpunit-environment             - functionality to handle HHVM/PHP environme
+p   phpunit-exporter                - export variables for visualization - PHPUn
+p   phpunit-git                     - Simple wrapper for Git                    
+p   phpunit-global-state            - snapshotting of global state - PHPUnit com
+p   phpunit-mock-object             - Mock Object library for PHPUnit           
+p   phpunit-object-enumerator       - enumerate all referenced objects - PHPUnit
+p   phpunit-recursion-context       - recursively process PHP variables - PHPUni
+p   phpunit-resource-operations     - provide a list of PHP built-in functions t
+p   phpunit-version                 - Library that helps with managing the versi
+p   phpwebcounter                   - simple and light web hit counter          
+p   phpwebcounter-extra             - extra graphical numbers to PHP Web Counter
+p   pkg-php-tools                   - various packaging tools and scripts for PH
+p   puppet-module-puppet-community- - Puppet module for mcollective to handle an
+p   python-junit.xml                - creates JUnit XML test result docs readabl
+p   python-junitxml                 - PyUnit extension for reporting in JUnit co
+p   python-phply                    - PHP parser written in Python using PLY    
+p   python-phpserialize             - Python port of PHP serialize and unseriali
+p   python-rosunit                  - Unit-testing package for ROS              
+v   python-rosunit:any              -                                           
+p   python-sphinxcontrib.phpdomain  - Sphinx "phpdomain" extension              
+p   python-subunit                  - unit testing protocol - Python bindings to
+p   python-unittest2                - backport of the enhanced unittest testing 
+p   python-webunit                  - Unit testing for web apps with code that a
+p   python-xstatic-qunit            - QUnit XStatic support - Python 2.x        
+v   python2.7-rosunit               -                                           
+v   python2.7-rosunit:any           -                                           
+p   python3-junit.xml               - creates JUnit XML test result docs readabl
+p   python3-junitxml                - PyUnit extension for reporting in JUnit co
+p   python3-phply                   - PHP parser written in Python 3 using PLY  
+p   python3-phpserialize            - Python port of PHP serialize and unseriali
+p   python3-subunit                 - unit testing protocol - Python3 bindings t
+p   python3-unittest2               - backport of the enhanced unittest testing 
+p   python3-xstatic-qunit           - QUnit XStatic support - Python 3.x        
+p   qtdeclarative5-unity-action-plu - Unity Action QML Components               
+p   qtdeclarative5-unity-notificati - Unity Notifications - shared library      
+p   r-cran-funitroots               - GNU R package for financial engineering --
+p   r-cran-runit                    - GNU R package providing unit testing frame
+p   ruby-numru-units                - Ruby class library to handle units of phys
+p   ruby-test-unit                  - unit testing framework for Ruby           
+p   ruby-test-unit-context          - context for the Test::Unit Ruby testing fr
+p   ruby-test-unit-rr               - RR adapter for Ruby Test::Unit            
+p   runit                           - system-wide service supervision           
+p   sbnc-php-dev                    - IRC proxy for multiple users (PHP classes)
+p   shunit2                         - unit test framework for Bourne based shell
+p   simplesamlphp                   - Authentication and federation application 
+p   slbackup-php                    - Web-based administration tool for slbackup
+p   strongswan-plugin-unity         - strongSwan plugin for IKEv1 Cisco Unity Ex
+p   subunit                         - command line tools for processing Subunit 
+p   tryton-modules-sale-opportunity - Tryton Application Platform (Sale Opportun
+p   ubuntu-core-snapd-units         - transitional dummy package                
+p   udunits-bin                     - Utility for handling units of physical qua
+p   units                           - converts between different systems of unit
+p   units-filter                    - Parser for expressions concerning physical
+p   unity                           - Interface designed for efficiency of space
+p   unity-accessibility-profiles    - Accessibility Profile Manager - Unity prof
+p   unity-action-doc                - Unity Action API - documentation          
+v   unity-application-impl          -                                           
+v   unity-application-impl-14       -                                           
+p   unity-asset-pool                - Unity Assets Pool                         
+p   unity-autopilot                 - Autopiloted tests for Unity               
+p   unity-china-music-scope         - China Music Online.                       
+p   unity-china-photo-scope         - China Photo Online.                       
+p   unity-china-video-scope         - China video scope for Unity               
+p   unity-chromium-extension        - Unity WebApp extension for the chromium br
+v   unity-common                    -                                           
+v   unity-common-7.0                -                                           
+p   unity-control-center            - utilities to configure the GNOME desktop  
+v   unity-control-center-datetime   -                                           
+p   unity-control-center-dev        - utilities to configure the GNOME desktop  
+p   unity-control-center-faces      - utilities to configure the GNOME desktop -
+p   unity-control-center-signon     - Unity Control Center extension for single 
+p   unity-control-center-signon-aut - Test package for Ubuntu Online Accounts - 
+p   unity-greeter                   - Unity Greeter                             
+p   unity-greeter-badges            - Additional badges for Unity Greeter       
+p   unity-greeter-session-broadcast - Service to allow the greeter to communicat
+p   unity-gtk-module-autopilot      - GtkMenuShell D-Bus Autopilot tests        
+p   unity-gtk-module-common         - Common files for GtkMenuShell D-Bus export
+p   unity-gtk2-module               - GtkMenuShell D-Bus exporter               
+p   unity-gtk3-module               - GtkMenuShell D-Bus exporter               
+v   unity-icon-theme                -                                           
+v   unity-launcher-impl             -                                           
+v   unity-launcher-impl-7           -                                           
+p   unity-lens-applications         - Application lens for unity                
+p   unity-lens-files                - File lens for unity                       
+v   unity-lens-help                 -                                           
+p   unity-lens-music                - Music lens for unity                      
+p   unity-lens-photos               - Photos lens for Unity                     
+v   unity-lens-shopping             -                                           
+v   unity-lens-sshsearch            -                                           
+p   unity-lens-video                - Unity Video lens                          
+v   unity-lens-vm                   -                                           
+v   unity-notifications-impl        -                                           
+v   unity-notifications-impl-3      -                                           
+p   unity-plugin-scopes             - QML plugin for Scopes                     
+p   unity-schemas                   - Interface designed for efficiency of space
+v   unity-scope-asklibreoffice      -                                           
+v   unity-scope-askubuntu           -                                           
+p   unity-scope-audacious           - Audacious scope for Unity                 
+p   unity-scope-calculator          - Calculator scope for Unity                
+p   unity-scope-chromiumbookmarks   - Chromium bookmarks scope for Unity        
+p   unity-scope-clementine          - Clementine scope for Unity                
+p   unity-scope-click               - Click Packages Scope for Unity            
+p   unity-scope-click-autopilot     - Click Packages Scope for Unity            
+p   unity-scope-click-departmentsdb - Click Scope Departments Database          
+p   unity-scope-click-init-departme - Click Scope Utility for Initialization of 
+p   unity-scope-colourlovers        - COLOURlovers scope for Unity              
+p   unity-scope-devhelp             - devhelp scope for Unity                   
+p   unity-scope-deviantart          - deviantART scope for Unity                
+p   unity-scope-diodon              - GTK+ Clipboard manager (Unity Scope)      
+p   unity-scope-firefoxbookmarks    - Firefox bookmarks scope for Unity         
+p   unity-scope-gallica             - gallica scope for Unity                   
+p   unity-scope-gdocs               - obsolete transitional package             
+p   unity-scope-gdrive              - Google Drive scope for Unity              
+p   unity-scope-github              - GitHub scope for Unity                    
+p   unity-scope-gmusicbrowser       - gmusicbrowser scope for Unity             
+p   unity-scope-googlenews          - Google News scope for Unity               
+p   unity-scope-gourmet             - Gourmet Recipe Manager scope for Unity    
+p   unity-scope-home                - Home scope that aggregates results from mu
+p   unity-scope-launchpad           - Launchpad scope for Unity                 
+p   unity-scope-manpages            - Manual pages scope for Unity              
+p   unity-scope-mediascanner2       - Media scanner scope for Unity             
+v   unity-scope-musicstores         -                                           
+p   unity-scope-musique             - Musique scope for Unity                   
+p   unity-scope-onlinemusic         - Unity Scope that provides online music to 
+p   unity-scope-openclipart         - OpenClipArt scope for Unity               
+p   unity-scope-openweathermap      - Openweathermap scope for Unity            
+p   unity-scope-scopes              - A scope for browsing Unity scopes         
+p   unity-scope-soundcloud          - SoundCloud scope for Unity                
+p   unity-scope-sshsearch           - SSH search scope for Unity                
+v   unity-scope-sumo                -                                           
+p   unity-scope-texdoc              - Texdoc scope for Unity                    
+p   unity-scope-tomboy              - Tomboy scope for Unity                    
+p   unity-scope-tool                - Development tool for Unity scopes         
+p   unity-scope-video-remote        - Remote videos engine                      
+p   unity-scope-virtualbox          - VirtualBox scope for Unity                
+p   unity-scope-yahoostock          - Yahoo! Finance scope for Unity            
+p   unity-scope-yelp                - Help scope for Unity                      
+p   unity-scope-zotero              - Zotero scope for Unity                    
+v   unity-scopes-impl               -                                           
+v   unity-scopes-impl-0             -                                           
+v   unity-scopes-impl-1             -                                           
+v   unity-scopes-impl-10            -                                           
+v   unity-scopes-impl-11            -                                           
+v   unity-scopes-impl-4             -                                           
+v   unity-scopes-impl-6             -                                           
+v   unity-scopes-impl-7             -                                           
+v   unity-scopes-impl-8             -                                           
+v   unity-scopes-impl-9             -                                           
+v   unity-scopes-json-def           -                                           
+v   unity-scopes-master             -                                           
+p   unity-scopes-master-default     - Home scope that aggregates results from mu
+p   unity-scopes-runner             - desktop runner for misceallenous scopes   
+p   unity-services                  - Services for the Unity interface          
+p   unity-settings-daemon           - daemon handling the Unity session settings
+p   unity-settings-daemon-dev       - Headers for building applications communic
+p   unity-system-compositor         - System compositor for Ubuntu              
+p   unity-system-compositor-autopil - Test package for Unity System Compositor  
+p   unity-tweak-tool                - configuration tool for the Unity desktop e
+p   unity-webapps-amazoncloudreader - Unity Webapp for AmazonCloudReader        
+p   unity-webapps-bbcnews           - Unity Webapp for BBCNews                  
+p   unity-webapps-cnn-news          - Unity Webapp for CNN News                 
+p   unity-webapps-common            - Unity WebApp integration scripts          
+p   unity-webapps-deezer            - Unity Webapp for Deezer                   
+p   unity-webapps-dev               - Tools for developing Unity WebApp integrat
+p   unity-webapps-deviantart        - Unity Webapp for DeviantArt               
+p   unity-webapps-facebookmessenger - Unity Webapp for FacebookMessenger        
+p   unity-webapps-gmail             - Unity Webapp for Gmail                    
+p   unity-webapps-googlecalendar    - Unity Webapp for GoogleCalendar           
+p   unity-webapps-googledocs        - Unity Webapp for GoogleDocs               
+p   unity-webapps-googlenews        - Unity Webapp for GoogleNews               
+p   unity-webapps-googleplus        - Unity Webapp for GooglePlus               
+p   unity-webapps-googleplusgames   - Unity Webapp for GooglePlusGames          
+p   unity-webapps-grooveshark       - Unity Webapp for grooveshark              
+p   unity-webapps-hulu-player       - Unity Webapp for hulu-player              
+p   unity-webapps-lastfm-radio      - Unity Webapp for lastfm-radio             
+p   unity-webapps-launchpad         - Unity Webapp for Launchpad                
+p   unity-webapps-librefm           - Unity Webapp for LibreFm                  
+p   unity-webapps-linkedin          - Unity Webapp for LinkedIn                 
+p   unity-webapps-livemail          - Unity Webapp for LiveMail                 
+p   unity-webapps-mail-ru           - Unity Webapp for mail-ru                  
+p   unity-webapps-newsblur          - Unity Webapp for Newsblur                 
+p   unity-webapps-pandora           - Unity Webapp for pandora                  
+p   unity-webapps-qml               - Unity Webapps QML component               
+p   unity-webapps-qml-autopilot     - Autopilot tests for the Unity Webapps QML 
+p   unity-webapps-qml-doc           - Documentation for Unity Webapps QML - docu
+p   unity-webapps-qml-examples      - Example usage of Unity Webapps QML compone
+p   unity-webapps-qq-mail           - Unity Webapp for qq-mail                  
+p   unity-webapps-reddit            - Unity Webapp for Reddit                   
+p   unity-webapps-service           - Service for Web Apps integration with the 
+p   unity-webapps-tumblr            - Unity Webapp for Tumblr                   
+p   unity-webapps-twitter           - Unity Webapp for Twitter                  
+p   unity-webapps-vkcom             - Unity Webapp for Vkcom                    
+p   unity-webapps-wordpress         - Unity Webapp for wordpress                
+p   unity-webapps-wordpress-com     - Unity Webapp for wordpress-com            
+p   unity-webapps-yahoomail         - Unity Webapp for YahooMail                
+p   unity-webapps-yahoonews         - Unity Webapp for YahooNews                
+p   unity-webapps-yandex-music      - Unity Webapp for yandex-music             
+p   unity-webapps-yandexmail        - Unity Webapp for Yandex Mail              
+p   unity-webapps-yandexmusic       - Unity Webapp for yandexmusic              
+p   unity-webapps-yandexnews        - Unity Webapp for YandexNews               
+p   unity-webapps-youtube           - Unity Webapp for YouTube                  
+p   unity8                          - Unity 8 shell                             
+p   unity8-autopilot                - Test package for Unity 8 shell            
+p   unity8-common                   - Unity 8 shell (common files)              
+p   unity8-desktop-session-mir      - Unity8 desktop session for Mir            
+p   unity8-doc                      - Documentation for Unity8                  
+p   unity8-fake-env                 - Fake environment for running Unity 8 shell
+p   unity8-private                  - Unity 8 private libs                      
+p   uphpmvault                      - upload recovery images to HP MediaVault2 v
+p   uwsgi-plugin-php                - PHP plugin for uWSGI                      
+p   xubuntu-community-wallpapers    - Xubuntu community wallpapers              
+p   xubuntu-community-wallpapers-tr - Xubuntu community wallpapers (Trusty)     
+p   xubuntu-community-wallpapers-xe - Xubuntu community wallpapers (Xenial)     
+p   zabbix-frontend-php             - network monitoring solution - PHP front-en
