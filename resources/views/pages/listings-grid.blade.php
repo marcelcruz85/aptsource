@@ -59,7 +59,7 @@
                 <!-- <small>Vestibulum id ligula porta felis euismod semper</small> -->
             </header>
         </div>        
-@endif
+@else
 <div class="container">
         <header class="section__title">
             <!-- <h2>Duis mollisest non commodo luctus nisierat porttito</h2>
@@ -120,7 +120,7 @@
                 </ul>
         </nav>
     </div>
-    
+@endif   
     @include('components.side-search');
 
 <div class=no-show>
