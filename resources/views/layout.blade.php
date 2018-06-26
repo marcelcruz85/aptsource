@@ -3,6 +3,7 @@
 <!--[if IE 9 ]><html lang="en" class="ie9"><![endif]-->
 
 <head>
+<<<<<<< HEAD
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121444877-1"></script>
 <script>
@@ -12,6 +13,19 @@
 
   gtag('config', 'UA-121444877-1');
 </script>
+=======
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121444877-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-121444877-1');
+    </script>
+
+>>>>>>> 43d4f70c63c59df05d3f4da3680b6036dbebad22
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
