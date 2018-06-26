@@ -34,14 +34,14 @@
                             </ul>
                             <div class="contact__social">
                                 <div class="fa-2x">
-                                    <a href="" style="color:#fff">
+                                    <a href="https://www.facebook.com/TheApartmentSource" style="color:#fff">
                                         <span class="fa-layers fa-fw" style="background:#fff">
                                             <i class="fas fa-circle fa-lg" style="color:#3b5998"></i>
                                             <i class="fab fa-facebook-f"></i>
                                         </span>
 
                                     </a>
-                                    <a href="" style="color:#fff">
+                                    <a href="https://www.yelp.com/biz/the-apartment-source-chicago-2" style="color:#fff">
                                         <span class="fa-layers fa-fw" style="background:#fff">
                                             <i class="fas fa-circle fa-lg" style="color:#d32323"></i>
                                             <i class="fab fa-yelp"></i>
