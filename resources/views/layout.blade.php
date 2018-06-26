@@ -15,6 +15,7 @@
 </script>
 =======
 
+<<<<<<< HEAD
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121444877-1"></script>
     <script>
@@ -27,6 +28,8 @@
 
 >>>>>>> 43d4f70c63c59df05d3f4da3680b6036dbebad22
 
+=======
+>>>>>>> b221bfbaffcf5b1e1a4941574e527d1a7fe594c5
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -35,6 +38,16 @@
 
     <!-- FavIcon -->
     <link rel="icon" type="image/png" href="/img/favicon.png" />
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121444877-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+    
+        gtag('config', 'UA-121444877-1');
+        </script>
 
     <!-- Vendors -->
 
