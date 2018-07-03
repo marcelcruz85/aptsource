@@ -84,7 +84,6 @@ class EmailController extends Controller
             'submit_tenant_information' => $submit_tenant_information
         ];
     
-        dd($data);
         Mail::send('emails.contactemail', $data, function ($message) {
             $message->from('info@apartmentsourcechicago.com', 'Apartment Source Chicago');
             $message->subject('You received a message from the website.');

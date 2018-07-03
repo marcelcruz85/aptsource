@@ -134,6 +134,12 @@
               <!-- COPY -->
 
               @if ($form_name != "submit")
+
+              <tr>
+                <td bgcolor="#ffffff" align="left" style="padding: 20px 30px 20px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;" >
+                  <p style="margin: 0;">YGL ID: {{ $listing_id }}</p>
+                </td>
+              </tr>
               <tr>
                 <td bgcolor="#ffffff" align="left" style="padding: 20px 30px 20px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;" >
                   <p style="margin: 0;">Name: {{ $name }}</p>
