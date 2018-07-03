@@ -53,9 +53,9 @@
                                 @else
                                     <h5>Click for details</h5>
                                 @endif
-                                <small>Available: <i class="zmdi zmdi-calendar-check"></i> <span class="availableDate">{{ $listing['AvailableDate'] }}</span></small>    
+                                <small>Available: <i class="zmdi zmdi-calendar-check"></i> <span class="availableDate">{{ $listing['AvailableDate']  ?? "" }}</span></small>    
                         </div>
-
+                        
                         <ul class="listings-grid__attrs">
                                 <li class="number"><i class="listings-grid__icon listings-grid__icon--bed"></i> {{ $listing['Beds'] }}</li>
                                 <li class="number"><i class="listings-grid__icon listings-grid__icon--bath"></i> {{ $listing['Baths'] }}</li>

@@ -93,7 +93,7 @@
                             @else
                                 <h5>Click for details</h5>
                             @endif
-                            <small>Available: <i class="zmdi zmdi-calendar-check"></i> <span class="availableDate">{{ $listing['AvailableDate'] }}</span></small>
+                            <small>Available: <i class="zmdi zmdi-calendar-check"></i> <span class="availableDate">{{ $listing['AvailableDate']  ?? "" }}</span></small>
                         </div>
 
                         <ul class="listings-grid__attrs">

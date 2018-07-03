@@ -16,6 +16,7 @@ class EmailController extends Controller
         $email = $request->input('email');
         $phone = $request->input('phone');
         $text = $request->input('text');
+        $listing_id = $request->input('listing_id');
 
         $submit_address = $request->input('submit_address');
         $submit_address_unit = $request->input('submit_address_unit');
@@ -52,6 +53,7 @@ class EmailController extends Controller
             'email' => $email,
             'phone' => $phone,
             'text' => $text,
+            'listing_id' => $listing_id,
             'submit_address' => $submit_address,
             'submit_address_unit' => $submit_address_unit,
             'submit_name' => $submit_name,
@@ -82,6 +84,7 @@ class EmailController extends Controller
             'submit_tenant_information' => $submit_tenant_information
         ];
     
+        dd($data);
         Mail::send('emails.contactemail', $data, function ($message) {
             $message->from('info@apartmentsourcechicago.com', 'Apartment Source Chicago');
             $message->subject('You received a message from the website.');

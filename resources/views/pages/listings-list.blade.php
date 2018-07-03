@@ -94,7 +94,7 @@
                                     @endif
                                     <small>Available:
                                         <i class="zmdi zmdi-calendar-check"></i>
-                                        <span class="availableDate">{{ $listing['AvailableDate'] }}</span>
+                                        <span class="availableDate">{{ $listing['AvailableDate']  ?? "" }}</span>
                                     </small>
                                 </div>
                                 <ul class="listings-grid__attrs">
