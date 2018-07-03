@@ -15,7 +15,7 @@
             </li>
 
             <li class="navigation__dropdown">
-                <a href="/rentals/grid/updateDate-desc/search?location" {{-- class="prevent-default" --}}>Listings</a>
+                <a href="/rentals/grid/updateDate-desc/search?location" {{-- class="prevent-default" --}}>Rentals</a>
             </li>
 
 
@@ -62,7 +62,7 @@
             </li>
 
             <li class="navigation__dropdown">
-                <a href="/rentals/grid/updateDate-desc/search?location" {{-- class="prevent-default" --}}>Listings</a>
+                <a href="/rentals/grid/updateDate-desc/search?location" {{-- class="prevent-default" --}}>Rentals</a>
             </li>
 
 
