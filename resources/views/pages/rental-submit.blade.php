@@ -123,7 +123,7 @@
 
                             <div class="form-group">
                                 <label>Available from<small class="required">*</small></label>
-                                <input id="date" name="submit_available" class="form-control text-center field-required" type="date">
+                                <input id="date" name="submit_available" class="form-control datepicker text-center field-required">
                                 <i class="form-group__bar"></i>
                             </div>
 

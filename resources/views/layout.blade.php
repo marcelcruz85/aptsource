@@ -25,7 +25,7 @@
 
 
     <!-- Vendors -->
-
+    
     <!-- Fontawesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
 
@@ -51,6 +51,7 @@
     <link rel="stylesheet" href="/vendors/bower_components/EasyAutocomplete/dist/easy-autocomplete.min.css">
     <link rel="stylesheet" href="/vendors/bower_components/EasyAutocomplete/dist/easy-autocomplete.themes.min.css">
 
+
     <!-- Site -->
     <link rel="stylesheet" href="/css/app_1.css">
     <link rel="stylesheet" href="/css/app_2.css">
@@ -71,6 +72,10 @@
 
     <!-- Page Loader JS -->
     <script src="/js/page-loader.min.js" async></script>
+
+    <!-- datepicker -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/css/bootstrap-datepicker.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.8.0/js/bootstrap-datepicker.min.js"></script> 
     
     @yield('head-scripts')
 </head>
