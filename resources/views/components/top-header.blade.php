@@ -128,12 +128,12 @@
 
 
             <li class="pull-right top-nav__icon">
-                <a href="https://www.yelp.com/biz/the-apartment-source-chicago-2">
+                <a href="https://www.yelp.com/biz/the-apartment-source-chicago-2" target="_blank">
                     <i class="fab fa-yelp fa-lg"></i>
                 </a>
             </li>
             <li class="pull-right top-nav__icon">
-                <a href="https://www.facebook.com/TheApartmentSource">
+                <a href="https://www.facebook.com/TheApartmentSource" target="_blank">
                     <i class="fab fa-facebook-f fa-lg"></i>
                 </a>
             </li>

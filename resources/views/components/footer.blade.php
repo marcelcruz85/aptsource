@@ -16,10 +16,10 @@
                 <div class="f-14 m-t-5"><a class="mailto" href="mailto:info@apartmentsourcechicago.com" target="_top">info@apartmentsourcechicago.com</a></div>
 
                 <div class="f-20 m-t-20">
-                    <a href="https://www.facebook.com/TheApartmentSource" class="m-r-10">                        
+                    <a href="https://www.facebook.com/TheApartmentSource" target="_blank" class="m-r-10">                        
                         <i class="fab fa-facebook-f fa-sm"></i>
                     </a>
-                    <a href="https://www.yelp.com/biz/the-apartment-source-chicago-2">                        
+                    <a href="https://www.yelp.com/biz/the-apartment-source-chicago-2" target="_blank">                        
                         <i class="fab fa-yelp fa-sm"></i>
                     </a>
                 </div>
