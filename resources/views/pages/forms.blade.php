@@ -33,12 +33,12 @@
                         </a>
                     </div>
 
-                    <div class="col-sm-6">
+                    <!-- <div class="col-sm-6">
                         <a target="_blank" href="/downloads/non_exclusive_listing_agreement_tas.pdf" class="neighb-guide__item">
                             <img src="/img/non_exclusive_listing_agreement_tas.jpg" alt="">
                             <div class="neighb-guide__label">Non-exclusive Listing Agreement TAS</div>
                         </a>
-                    </div>
+                    </div> -->
 
                     <div class="col-sm-6">
                         <a target="_blank" href="/downloads/credit_card_authorization.pdf" class="neighb-guide__item">
