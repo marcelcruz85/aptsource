@@ -186,16 +186,17 @@
                     }
                 
                 });  
-
-                if ($('.submit_accept').length){
-                    console.log('Exist');
-                    if($('.submit_accept').is(":checked")){
-                        console.log('is checked');
-                    }else{
-                        console.log('is not checked');
-                        requiredField = "empty";
+                
+                $('.accept input').each(function(){
+                    if ($(this).length){
+                        if($(this).is(":checked")){
+                            console.log('is checked');
+                        }else{
+                            requiredField = "empty";
+                            return false;
+                        }
                     }
-                }
+                });
             
             console.log(requiredField);
 

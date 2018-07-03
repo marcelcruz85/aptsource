@@ -5968,3 +5968,8 @@ html:not(.ie9) .page-loader__spinner {
   margin: 1px;
   border-radius: 3px;
 }
+
+.terms{
+  font-size: 10px;
+  text-align: justify;
+}

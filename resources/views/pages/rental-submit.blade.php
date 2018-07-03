@@ -471,10 +471,20 @@
                                 <i class="form-group__bar"></i>
                                 <label>Tenant Information<small class="required">*</small></label>
                             </div>
-
-                            <div class="form-group">
-                                <input name="submit_accept" type="checkbox" class="submit_accept"> Accept Term and Condition
+                            <div class="accept form-group">
+                                <div class="form-group">
+                                <small class="terms">
+                                    Terms: There is no fee if you lease your apartment on your own. We only collect a fee if and when the tenants provided by The Apartment Source are accepted into a lease agreement. The commission fee is equivalent to one month’s rent. To assist you with the approval process, we will provide you with a detailed application including previous landlord verification, employment verification and a detailed credit report. Applicants must be approved or denied within 48 hours of receiving the application.
+                                </small>
+                                </div>
+                                <div class="form-group">
+                                    <input name="submit_accept_terms" type="checkbox" class="submit_accept"> By checking this box I accept the terms stated above and is my digital signature
+                                </div>
+                                <div class="form-group">
+                                    <input name="submit_accept" type="checkbox" class="submit_accept"> Accept Term and Condition
+                                </div>
                             </div>
+
                             <div class="form-group">
                                 <small class="errors"></small>
                                     <div class="submit_capcha">

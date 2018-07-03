@@ -85,9 +85,9 @@ class EmailController extends Controller
         ];
     
         Mail::send('emails.contactemail', $data, function ($message) {
-            $message->from('info@apartmentsourcechicago.com', 'Apartment Source Chicago');
+            $message->from('support@dotgital.com', 'Apartment Source Chicago');
             $message->subject('You received a message from the website.');
-            $message->to('info@apartmentsourcechicago.com');
+            $message->to('support@dotgital.com');
         });
 
         // return view($view, [
