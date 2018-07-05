@@ -214,8 +214,13 @@
                         });
                         $.ajax({
                             type: "POST",
+                            enctype: 'multipart/form-data',
                             url: '/email',
-                            data: $('.contact-email').serialize(),
+                            data: new FormData($(".contact-email")[0]),
+                            // data: $('.contact-email').serialize(),
+                            processData: false,
+                            contentType: false,
+                            cache: false,
                             success: function(msg) {
                                 grecaptcha.reset();
                                 $('.email-success-modal').modal('show')  

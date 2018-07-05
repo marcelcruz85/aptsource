@@ -4,6 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Store;
+
+use Log;
+
 use Mail;
 
 class EmailController extends Controller
@@ -46,6 +50,29 @@ class EmailController extends Controller
         $submit_show = $request->input('submit_show');
         $submit_property_status = $request->input('submit_property_status');
         $submit_tenant_information = $request->input('submit_tenant_information');
+
+        if($request->hasFile('submit_property_pictures'))
+        {
+         
+            
+            $allowedfileExtension=['jpg','png']; 
+            $files = $request->file('submit_property_pictures'); 
+            foreach ($files as $file) {
+  
+
+                $filename = $file->getClientOriginalName(); 
+                $extension = $file->getClientOriginalExtension(); 
+                $check=in_array($extension,$allowedfileExtension); 
+
+                Log::debug($check); 
+                if($check) 
+                { 
+                    $path = $file->store('images');
+                    Log::debug($path); 
+                }
+            }
+        }
+
         
         $data = [
             'form_name' => $form_name,
@@ -85,9 +112,9 @@ class EmailController extends Controller
         ];
     
         Mail::send('emails.contactemail', $data, function ($message) {
-            $message->from('info@apartmentsourcechicago.com', 'Apartment Source Chicago');
+            $message->from('support@dotgital.com', 'Apartment Source Chicago');
             $message->subject('You received a message from the website.');
-            $message->to('info@apartmentsourcechicago.com');
+            $message->to('support@dotgital.com');
         });
 
         // return view($view, [

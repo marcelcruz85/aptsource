@@ -34,7 +34,7 @@
                         <div class="card__header">
                             <h2>Property Location</h2>
                         </div>
-                        <form class="card__body submit_property_form contact-email" method="get" action="/email">
+                        <form class="card__body submit_property_form contact-email" method="post" action="/email" enctype="multipart/form-data">
                             {{ csrf_field() }}
 
                         <input type="hidden" name="form_name" value="submit">
@@ -42,13 +42,13 @@
                                     <div class="form-group form-group--float">
                                         <input type="text" name="submit_address" class="form-control field-required" required>
                                         <i class="form-group__bar"></i>
-                                        <label>Address<small class="required">*</small></label>
+                                        <label>Address<small class="required"> *</small></label>
                                     </div>
 
                                     <div class="form-group form-group--float">
                                         <input type="text" name="submit_address_unit" class="form-control text-center field-required" required>
                                         <i class="form-group__bar"></i>
-                                        <label>Unit/Floor/Block<small class="required">*</small></label>
+                                        <label>Unit/Floor/Block<small class="required"> *</small></label>
                                     </div>
                                     <small class="required required-text">Please fill in all required fields</small>
                                     <a href="#submit-property-2" id="card_one" data-toggle="tab" class="btn btn--circle btn-primary submit-property__button">
@@ -69,23 +69,23 @@
                             <div class="form-group form-group--float form-group--float-center">
                                 <input type="text" name="submit_name" class="form-control text-center field-required">
                                 <i class="form-group__bar"></i>
-                                <label>Full Name<small class="required">*</small></label>
+                                <label>Full Name<small class="required"> *</small></label>
                             </div>
 
                             <div class="form-group form-group--float form-group--float-center">
                                 <input type="text" name="submit_email" class="form-control text-center field-required">
                                 <i class="form-group__bar"></i>
-                                <label>Email Address<small class="required">*</small></label>
+                                <label>Email Address<small class="required"> *</small></label>
                             </div>
 
                             <div class="form-group form-group--float form-group--float-center">
                                 <input type="text" name="submit_phone" class="form-control text-center field-required">
                                 <i class="form-group__bar"></i>
-                                <label>Contact Number<small class="required">*</small></label>
+                                <label>Contact Number<small class="required"> *</small></label>
                             </div>
 
                             <div class="form-group">
-                                <label>Owner Information<small class="required">*</small></label>
+                                <label>Owner Information<small class="required"> *</small></label>
                                 <div class="btn-group btn-group-justified" data-toggle="buttons">
                                     <label class="btn  active">
                                         <input type="radio" name="submit_owner_info" value="Owner" checked>Owner
@@ -118,11 +118,11 @@
                             <div class="form-group form-group--float form-group--float-center">
                                 <input type="text" name="submit_price" class="form-control text-center field-required">
                                 <i class="form-group__bar"></i>
-                                <label>Asking Price<small class="required">*</small></label>
+                                <label>Asking Price<small class="required"> *</small></label>
                             </div>
 
                             <div class="form-group">
-                                <label>Available from<small class="required">*</small></label>
+                                <label>Available from<small class="required"> *</small></label>
                                 <input id="date" name="submit_available" class="form-control datepicker text-center field-required">
                                 <i class="form-group__bar"></i>
                             </div>
@@ -150,13 +150,13 @@
                             <div class="form-group form-group--float form-group--float-center">
                                 <input type="text" name="submit_title" class="form-control text-center field-required" required>
                                 <i class="form-group__bar"></i>
-                                <label>Property title<small class="required">*</small></label>
+                                <label>Property title<small class="required"> *</small></label>
                             </div>
 
                             <div class="form-group form-group--float form-group--float-center">
                                 <textarea name="submit_description" class="form-control text-center textarea-autoheight field-required"></textarea>
                                 <i class="form-group__bar"></i>
-                                <label>Description<small class="required">*</small></label>
+                                <label>Description<small class="required"> *</small></label>
                             </div>
 
                             <div class="row">
@@ -171,7 +171,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label>Bedrooms<small class="required">*</small></label>
+                                <label>Bedrooms<small class="required"> *</small></label>
                                 <div class="btn-group btn-group-justified" data-toggle="buttons">
                                     <label class="btn active">
                                         <input type="radio" name="submit_beds" value="1" checked>1
@@ -192,7 +192,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label>Bathrooms<small class="required">*</small></label>
+                                <label>Bathrooms<small class="required"> *</small></label>
                                 <div class="btn-group btn-group-justified" data-toggle="buttons">
                                     <label class="btn active">
                                         <input type="radio" name="submit_bath" value="1" checked>1
@@ -213,7 +213,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label>No. of Floors<small class="required">*</small></label>
+                                <label>No. of Floors<small class="required"> *</small></label>
                                 <div class="btn-group btn-group-justified" data-toggle="buttons">
                                     <label class="btn active">
                                         <input type="radio" name="submit_floor" value="1"  checked>1
@@ -234,7 +234,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label>Parking Space<small class="required">*</small></label>
+                                <label>Parking Space<small class="required"> *</small></label>
                                 <div class="btn-group btn-group-justified" data-toggle="buttons">
                                     <label class="btn active">
                                         <input type="radio" name="submit_parking" value="none" checked>None
@@ -254,7 +254,7 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <label>Parking<small class="required">*</small></label>
+                                <label>Parking<small class="required"> *</small></label>
                                 <div class="row">
 
                                     <div class="col-sm-5">
@@ -292,7 +292,7 @@
                             </div>
 
                             <div class="form-group">
-                                <label>Pets<small class="required">*</small></label>
+                                <label>Pets<small class="required"> *</small></label>
 
                                 <div class="btn-group btn-group-justified" data-toggle="buttons">
                                     <label class="btn">
@@ -323,7 +323,7 @@
 
                                 <div class="form-group">
                                 <input type="hidden" name="submit_features" class="submit_features_values" value="">
-                                <label>Features<small class="required">*</small></label>
+                                <label>Features<small class="required"> *</small></label>
                                 <div class="features-box form-control text-center submit_features_modal"><ul></ul></div>
 
                                 <!-- <input name="submit_features_modal" class="form-control text-center submit_features_modal" value=""> -->
@@ -453,7 +453,7 @@
                             <div class="form-group form-group--float form-group--float-center">
                                 <textarea name="submit_show" class="form-control text-center textarea-autoheight field-required"></textarea>
                                 <i class="form-group__bar"></i>
-                                <label>How to Show the property<small class="required">*</small></label>
+                                <label>How to Show the property<small class="required"> *</small></label>
                             </div>
 
                             <div class="form-group">
@@ -469,7 +469,11 @@
                             <div class="form-group form-group--float form-group--float-center">
                                 <textarea name="submit_tenant_information" class="form-control text-center textarea-autoheight field-required"></textarea>
                                 <i class="form-group__bar"></i>
-                                <label>Tenant Information<small class="required">*</small></label>
+                                <label>Tenant Information<small class="required"> *</small></label>
+                            </div>
+                            <div class="form-group">
+                                <label>Photos<small class="required"> *</small></label>
+                                <input type="file" name="submit_property_pictures[]" multiple>
                             </div>
                             <div class="accept form-group">
                                 <div class="form-group">
@@ -478,10 +482,10 @@
                                 </small>
                                 </div>
                                 <div class="form-group">
-                                    <input name="submit_accept_terms" type="checkbox" class="submit_accept"> By checking this box I accept the terms stated above and is my digital signature
+                                    <input name="submit_accept_terms" type="checkbox" class="submit_accept"> By checking this box I accept the terms stated above and is my digital signature <small class="required"> *</small>
                                 </div>
                                 <div class="form-group">
-                                    <input name="submit_accept" type="checkbox" class="submit_accept"> Accept Term and Condition
+                                    <input name="submit_accept" type="checkbox" class="submit_accept"> Accept Terms and Conditions <small class="required"> *</small>
                                 </div>
                             </div>
 
