@@ -205,7 +205,9 @@
                 $( ".errors" ).html( "<p>Please, verify that you are a human!</p>" );
             }else if(requiredField == "empty" && response.length != 0){
                 $( ".errors" ).html( "" );
-                $('.required-text').show();           
+                $('.required-text').show();     
+            }else if( $("input:file")[0].files.length < 3 && response.length != 0 ){
+                $( ".errors" ).html( "<p>Please Select 3 pictures or more</p>" );      
             }else{
 
                 $.ajaxSetup({
