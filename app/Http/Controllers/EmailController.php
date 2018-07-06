@@ -51,10 +51,11 @@ class EmailController extends Controller
         $submit_property_status = $request->input('submit_property_status');
         $submit_tenant_information = $request->input('submit_tenant_information');
 
+        $images = array();
         if($request->hasFile('submit_property_pictures'))
         {
-         
-            $images = array();
+            //Log::debug(' Esto es verdad '); 
+            //$images = array();
             $allowedfileExtension=['jpg','png']; 
             $files = $request->file('submit_property_pictures'); 
             foreach ($files as $file) {
