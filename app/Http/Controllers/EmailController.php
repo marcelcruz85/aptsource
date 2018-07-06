@@ -69,7 +69,7 @@ class EmailController extends Controller
                 { 
                     $path = $file->store('photos');
                     //Storage::disk('public_storage')->put($filename, $file);
-                    $image = 'http://dev-aptsource.dotgital.com/storage/' . $path;
+                    $image = 'http://www.apartmentsourcechicago.com/storage/' . $path;
                     array_push($images, $image);
                     
                 }
