@@ -471,9 +471,12 @@
                                 <i class="form-group__bar"></i>
                                 <label>Tenant Information<small class="required"> *</small></label>
                             </div>
-                            <div class="form-group">
+                            <div class="form-group  dropzone" id="submitproperty">
                                 <label>Photos<small class="required"> *</small></label>
-                                <input type="file" name="submit_property_pictures[]" multiple>
+                                <input type="file" name="submit_property_pictures[]" id="upload-pictures" multiple>
+                                
+
+                                <!-- testing -->
                             </div>
                             <div class="accept form-group">
                                 <div class="form-group">

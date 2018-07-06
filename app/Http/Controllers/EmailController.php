@@ -54,7 +54,7 @@ class EmailController extends Controller
         if($request->hasFile('submit_property_pictures'))
         {
          
-            
+            $images = array();
             $allowedfileExtension=['jpg','png']; 
             $files = $request->file('submit_property_pictures'); 
             foreach ($files as $file) {
@@ -67,10 +67,15 @@ class EmailController extends Controller
                 Log::debug($check); 
                 if($check) 
                 { 
-                    $path = $file->store('images');
-                    Log::debug($path); 
+                    $path = $file->store('photos');
+                    //Storage::disk('public_storage')->put($filename, $file);
+                    $image = 'http://dev-aptsource.dotgital.com/storage/' . $path;
+                    array_push($images, $image);
+                    
                 }
             }
+            Log::debug($images); 
+
         }
 
         
@@ -108,13 +113,14 @@ class EmailController extends Controller
             'submit_features' => $submit_features,
             'submit_show' => $submit_show,
             'submit_property_status' => $submit_property_status,
-            'submit_tenant_information' => $submit_tenant_information
+            'submit_tenant_information' => $submit_tenant_information,
+            'images' => $images
         ];
     
         Mail::send('emails.contactemail', $data, function ($message) {
-            $message->from('support@dotgital.com', 'Apartment Source Chicago');
+            $message->from('info@apartmentsourcechicago.com', 'Apartment Source Chicago');
             $message->subject('You received a message from the website.');
-            $message->to('support@dotgital.com');
+            $message->to('info@apartmentsourcechicago.com');
         });
 
         // return view($view, [

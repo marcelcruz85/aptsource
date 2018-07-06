@@ -215,6 +215,14 @@
                   <p style="margin: 0;">Tenant Information: {{ $submit_tenant_information }} </p>
                 </td>
               </tr>
+              <tr>
+                <td bgcolor="#ffffff" align="left" style="padding: 20px 30px 20px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;" >
+                  <h5>Photos</h5>
+                  @foreach ($images as $image)
+                      <a href="{{ $image }}"><img src="{{ $image }}"></a>
+                  @endforeach
+                </td>
+              </tr>
               @endif
             </table>
             <!--[if (gte mso 9)|(IE)]>

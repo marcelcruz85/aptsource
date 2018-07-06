@@ -531,6 +531,20 @@ $(document).ready(function () {
     $('.datepicker').datepicker();
 
     /*-------------------------------------------
+        FILE UPLOAD
+    ---------------------------------------------*/
+    // $("#upload-pictures").fileinput({
+    //     showUpload: false,
+    //     showCancel: false,
+    //     showClose: false,
+    //     minFileCount: 3,
+    //     maxFileCount: 5,
+    //     required: true,
+    //     theme: 'fa',
+    //     showCaption: false,
+    //     allowedFileExtensions: ["jpg", "png", "gif"],
+    // });
+    /*-------------------------------------------
         REQUIRED SUBMIT
     ---------------------------------------------*/
     $('.required-text').hide();

@@ -10,14 +10,14 @@
         <!-- Vendors -->
 
         <!-- Material design colors -->
-        <link href="vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
+        <link href="/vendors/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.min.css" rel="stylesheet">
 
         <!-- CSS animations -->
-        <link rel="stylesheet" href="vendors/bower_components/animate.css/animate.min.css">
+        <link rel="stylesheet" href="/vendors/bower_components/animate.css/animate.min.css">
 
         <!-- Site -->
-        <link rel="stylesheet" href="css/app_1.css">
-        <link rel="stylesheet" href="css/app_2.css">
+        <link rel="stylesheet" href="/css/app_1.css">
+        <link rel="stylesheet" href="/css/app_2.css">
     </head>
 
     <body>
@@ -78,15 +78,15 @@
         <!-- Javascript -->
 
         <!-- jQuery -->
-        <script src="vendors/bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="/vendors/bower_components/jquery/dist/jquery.min.js"></script>
 
         <!-- Bootstrap -->
-        <script src="vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="/vendors/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
         <!-- Waves button ripple effects -->
-        <script src="vendors/bower_components/Waves/dist/waves.min.js"></script>
+        <script src="/vendors/bower_components/Waves/dist/waves.min.js"></script>
 
         <!-- Site functions and actions -->
-        <script src="js/app.min.js"></script>
+        <script src="/js/app.min.js"></script>
     </body>
 </html>

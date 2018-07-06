@@ -50,7 +50,7 @@
     <!-- autocomplete -->
     <link rel="stylesheet" href="/vendors/bower_components/EasyAutocomplete/dist/easy-autocomplete.min.css">
     <link rel="stylesheet" href="/vendors/bower_components/EasyAutocomplete/dist/easy-autocomplete.themes.min.css">
-
+    <link href="/vendors/bower_components/bootstrap-fileinput/css/fileinput.min.css" media="all" rel="stylesheet" type="text/css" />
 
     <!-- Site -->
     <link rel="stylesheet" href="/css/app_1.css">
@@ -69,7 +69,8 @@
 <script src="/vendors/bower_components/autosize/dist/autosize.min.js"></script>
 
  <script src='https://www.google.com/recaptcha/api.js'></script>
-
+ <script src="/vendors/bower_components/bootstrap-fileinput/js/fileinput.min.js"></script>
+ <script src="/vendors/bower_components/bootstrap-fileinput/themes/fa/theme.min.js"></script>
     <!-- Page Loader JS -->
     <script src="/js/page-loader.min.js" async></script>
 
