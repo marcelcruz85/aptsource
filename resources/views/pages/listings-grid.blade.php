@@ -13,10 +13,12 @@
 <div class="action-header">
         <div class="container">
             <div class="action-header__item action-header__item--search">
-                <form>
-                    <input class="hidden-xs top-search autocomplete" type="text" name="location" value="{{ $location }}" placeholder="Search by neighborhood, city, zip or address...">
+                <form class="single-search-form">
+                    <input class="hidden-xs single-search-input top-search autocomplete" type="text" name="location" value="{{ $location }}" placeholder="Search by neighborhood, city, zip or address...">
                     <input class="visible-xs autocomplete" type="text" placeholder="Search..."><!-- For mobile -->
                     
+                    <button class="btn btn-primary single-searh hidden-xs">Search</button>
+
                     <div class="search__type hidden-xs ">
                         <button class="btn btn-primary not-show">Search</button>
                     </div>

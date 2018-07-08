@@ -533,17 +533,19 @@ $(document).ready(function () {
     /*-------------------------------------------
         FILE UPLOAD
     ---------------------------------------------*/
-    // $("#upload-pictures").fileinput({
-    //     showUpload: false,
-    //     showCancel: false,
-    //     showClose: false,
-    //     minFileCount: 3,
-    //     maxFileCount: 5,
-    //     required: true,
-    //     theme: 'fa',
-    //     showCaption: false,
-    //     allowedFileExtensions: ["jpg", "png", "gif"],
-    // });
+
+    var count = 3;
+    $('.add-another-pic').click(function(e){
+        e.preventDefault();
+        count++
+        if(count == 10){
+            $('.add-another-pic').hide();
+        }
+        $('.upload-pictures-' + count).removeClass("hide");
+        //$("#image-upload").append('<input type="file" name="submit_property_pictures[' + count + ']" id="upload-pictures">')
+        console.log(count);
+    });
+
     /*-------------------------------------------
         REQUIRED SUBMIT
     ---------------------------------------------*/

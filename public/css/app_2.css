@@ -678,7 +678,7 @@
 @media (min-width: 768px) {
   .action-header__item--search {
     margin-left: 15px;
-    max-width: 320px;
+    max-width: 820px;
     width: 100%;
   }
 }
@@ -5974,3 +5974,21 @@ html:not(.ie9) .page-loader__spinner {
   text-align: justify;
 }
 
+.single-search-form .easy-autocomplete{
+  width: 90% !important;
+  float: left !important;
+}
+.single-search-form .easy-autocomplete-container{
+  top: 35px !important;
+}
+.single-search{
+  float: right !important;
+}
+
+.single-search-input{
+  float: left !important;
+  width: 100% !important;
+}
+#image-upload input{
+  margin-bottom: 5px;
+}

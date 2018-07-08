@@ -473,9 +473,19 @@
                             </div>
                             <div class="form-group  dropzone" id="submitproperty">
                                 <label>Photos<small class="required"> *</small></label>
-                                <input type="file" name="submit_property_pictures[]" id="upload-pictures" multiple>
-                                
-
+                                <div id="image-upload">
+                                    <input type="file" name="submit_property_pictures[1]" class="upload-pictures-1">
+                                    <input type="file" name="submit_property_pictures[2]" class="upload-pictures-2">
+                                    <input type="file" name="submit_property_pictures[3]" class="upload-pictures-3">
+                                    <input type="file" name="submit_property_pictures[4]" class="upload-pictures-4 hide">
+                                    <input type="file" name="submit_property_pictures[5]" class="upload-pictures-5 hide">
+                                    <input type="file" name="submit_property_pictures[6]" class="upload-pictures-6 hide">
+                                    <input type="file" name="submit_property_pictures[7]" class="upload-pictures-7 hide">
+                                    <input type="file" name="submit_property_pictures[8]" class="upload-pictures-8 hide">
+                                    <input type="file" name="submit_property_pictures[9]" class="upload-pictures-9 hide">
+                                    <input type="file" name="submit_property_pictures[10]" class="upload-pictures-10 hide">
+                                </div>
+                                <a href="#" class="add-another-pic"> Add another</a>
                                 <!-- testing -->
                             </div>
                             <div class="accept form-group">

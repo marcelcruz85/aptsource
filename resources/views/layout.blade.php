@@ -206,8 +206,6 @@
             }else if(requiredField == "empty" && response.length != 0){
                 $( ".errors" ).html( "" );
                 $('.required-text').show();     
-            }else if( $("input:file").length && $("input:file")[0].files.length < 3 && response.length != 0 ){
-                    $( ".errors" ).html( "<p>Please Select 3 pictures or more</p>" );     
             }else{
 
                 $.ajaxSetup({
