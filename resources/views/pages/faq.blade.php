@@ -95,22 +95,22 @@
                             <div class="form-group form-group--float">
                                 <input type="text" name="name" class="field-required form-control">
                                 <i class="form-group__bar"></i>
-                                <label>Name<small class="required">*</small></label>
+                                <label>Name<small class="required"> *</small></label>
                             </div>
                             <div class="form-group form-group--float">
-                                <input type="text" name="email" class="form-control">
+                                <input type="text" name="email" class="field-required form-control">
                                 <i class="form-group__bar"></i>
-                                <label>Email Address</label>
+                                <label>Email Address<small class="required"> *</small></label>
                             </div>
                             <div class="form-group form-group--float">
                                 <input type="text" name="phone" class="field-required form-control">
                                 <i class="form-group__bar"></i>
-                                <label>Contact Number<small class="required">*</small></label>
+                                <label>Contact Number<small class="required"> *</small></label>
                             </div>
                             <div class="form-group form-group--float">
-                                <textarea name="text" class="form-control textarea-autoheight"></textarea>
+                                <textarea name="text" class="field-required form-control textarea-autoheight"></textarea>
                                 <i class="form-group__bar"></i>
-                                <label>Message</label>
+                                <label>Message<small class="required"> *</small></label>
                             </div>
 
                             <small class="errors"></small>
