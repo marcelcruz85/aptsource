@@ -73,8 +73,8 @@
                                 <i class="form-group__bar"></i>
                             </div>
                             <div class="form-group form-group--light form-group--float">
-                                <input type="text" name="email" class="form-control">
-                                <label>Email Address</label>
+                                <input type="text" name="email" class="field-required form-control">
+                                <label>Email Address *</label>
                                 <i class="form-group__bar"></i>
                             </div>
                             <div class="form-group form-group--light form-group--float">
@@ -83,8 +83,8 @@
                                 <i class="form-group__bar"></i>
                             </div>
                             <div class="form-group form-group--light form-group--float">
-                                <textarea name="text" class="form-control textarea-autoheight"></textarea>
-                                <label>Message</label>
+                                <textarea name="text" class="field-required form-control textarea-autoheight"></textarea>
+                                <label>Message *</label>
                                 <i class="form-group__bar"></i>
                             </div>
 
