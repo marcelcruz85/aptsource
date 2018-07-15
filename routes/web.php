@@ -29,6 +29,10 @@ Route::get('/forms', function () {
     return view('pages.forms');
 });
 
+Route::get('/apply', function () {
+    return view('pages.apply');
+});
+
 Route::get('/faq', function () {
     return view('pages.faq');
 });
