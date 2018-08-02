@@ -27,7 +27,7 @@ class CheckoutController extends Controller
                 'currency' => 'usd'
             ));
         
-            return response()->json('Charge successful, you get the course!', 200);
+            return response()->json('Approved', 200);
 
             
         } catch (\Exception $ex) {

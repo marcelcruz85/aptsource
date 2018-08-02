@@ -730,7 +730,7 @@
                 </div>
 
                 <div class="card__footer col-md-12">
-                <button type="submit" class="email-form btn btn-primary">SUBMIT</button>
+                <button type="submit" class="email-form submit-application btn btn-primary">SUBMIT</button>
                 <!-- <button class="btn btn-link hidden-lg hidden-md" data-rmd-action="block-close" data-rmd-target="#inquire">Cancel</button> -->
                 <div class="email-success"></div>
 </form>
@@ -777,7 +777,11 @@
                     contentType: false,
                     cache: false,
                     success: function (msg) {
-                        alert(msg);
+                        //alert(msg);
+                        if(msg == 'Approved'){
+                            $('.submit-application').show();
+                            $('#stripe-form button').hide();
+                        }
                     }
                 });
 

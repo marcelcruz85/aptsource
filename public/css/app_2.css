@@ -6032,3 +6032,7 @@ html:not(.ie9) .page-loader__spinner {
 .StripeElement--webkit-autofill {
   background-color: #fefde5 !important;
 }
+
+.submit-application{
+  display: none;
+}
