@@ -26,6 +26,7 @@
 
     <!-- Vendors -->
     
+<script src="https://js.stripe.com/v3/"></script>
     <!-- Fontawesome -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
 
@@ -64,6 +65,8 @@
 
       <!-- ... -->
   <script type="text/javascript" src="/vendors/bower_components/moment/min/moment.min.js"></script>
+
+  <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
 
   <!-- Jquery Autosize -->
 <script src="/vendors/bower_components/autosize/dist/autosize.min.js"></script>

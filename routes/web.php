@@ -41,6 +41,8 @@ Route::get('/contact', function () {
     return view('pages.contact');
 });
 
+Route::post('/apply', 'CheckoutController@charge');
+
 
 Route::get('/rentals/{view}/{sort}/{parameters}', 'ListingController@search');
 
@@ -59,5 +61,6 @@ Route::get('/dev', function () {
 
 Route::post('email', 'EmailController@send');
 
-//Route::get('/contact', 'RecaptchaController@create');
+Route::post('/online-application', 'OnlineApplicationController@store');
+
 //Route::post('/store', 'RecaptchaController@store');
