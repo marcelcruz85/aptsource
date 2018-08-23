@@ -59,6 +59,10 @@ Route::get('/dev', function () {
     return view('pages.dev');
 });
 
+Route::get('/rent-application', function () {
+    return view('pages.online-application');
+});
+
 Route::post('email', 'EmailController@send');
 
 Route::post('/online-application', 'OnlineApplicationController@store');
