@@ -28,11 +28,6 @@
 
 @section('script')
 
-<script>
-    $(function () {
-        
-    });
-</script>
 <!-- Slick Carousel - Custom Alerts -->
 <script src="/vendors/bower_components/slick-carousel/slick/slick.min.js"></script>
     

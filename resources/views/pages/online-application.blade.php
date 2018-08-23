@@ -35,7 +35,10 @@
 
 <script>
     $(function () {
-        
+        $('#field67968906').change(function(){
+            var email = $(this).val();
+            $('#field67971485').val(email);
+        });
     });
 </script>
 <!-- Slick Carousel - Custom Alerts -->
