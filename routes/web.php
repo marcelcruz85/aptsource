@@ -63,6 +63,10 @@ Route::get('/rent-application', function () {
     return view('pages.online-application');
 });
 
+Route::get('/cosigner-application', function () {
+    return view('pages.cosigner-application');
+});
+
 Route::post('email', 'EmailController@send');
 
 Route::post('/online-application', 'OnlineApplicationController@store');
