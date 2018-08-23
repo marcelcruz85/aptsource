@@ -13,7 +13,6 @@
 @section ('content')
 
 <!-- content here -->
-<section class="section">
         <div class="container">
 <header class="section__title section__title-alt">
     <h2>Online Application</h2>
