@@ -327,6 +327,11 @@
     float: right;
     cursor: pointer;
   }
+
+  .application-button{
+    float:left;
+    width: 94%;
+  }
 }
 
 .navigation__close {

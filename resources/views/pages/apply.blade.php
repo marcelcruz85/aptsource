@@ -18,8 +18,8 @@
     <h2>Online Application</h2>
 </header>
     <div class="col-md-1"></div>
-    <a href="/rent-application" class="col-md-5 application-button"><i class="fas fa-building"></i><br/>Rent Application</a>
-    <a href="/cosigner-application" class="col-md-5 application-button"><i class="fas fa-edit"></i><br/>Cosigner Application</a>
+    <a href="/rent-application" class="col-md-5 application-button"><i class="fas fa-building"></i><br/>Rental Application</a>
+    <a href="/cosigner-application" class="col-md-5 application-button"><i class="fas fa-edit"></i><br/>Co-signer Application</a>
 </div>
 </section>
 
