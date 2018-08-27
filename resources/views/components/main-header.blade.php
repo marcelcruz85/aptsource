@@ -37,13 +37,12 @@
                 </ul> --}}
             </li>
 
-
             <li class="navigation__dropdown">
-                <a href="/submit">List</a>
+                <a href="/apply">Apply</a>
             </li>
 
             <li class="navigation__dropdown">
-                <a href="/apply">Apply</a>
+                <a href="/submit">List</a>
             </li>
             
             <li class="navigation__dropdown">
