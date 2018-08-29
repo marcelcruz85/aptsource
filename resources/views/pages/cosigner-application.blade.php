@@ -37,7 +37,7 @@
         $('#field68262350').change(function(){
             var email = $(this).val();
 			var name = $('option:selected',this).text();
-            $('#field68262880').val(email);
+            $('#field68264250').val(email);
 			$('#field68263755').val(name);
         });
     });
